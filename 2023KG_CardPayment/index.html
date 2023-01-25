@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardPayment</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="visual">
+        <div class="visalWrap">
+            <!-- title -->
+            <div class="headerTitle">
+                <h5>사업소 대금 결제</h5>
+                <a href="#" class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+            </div>
+             <!-- contents -->
+             <div class="contentsWrap">
+                <!-- 결제 청구서 내역 -->
+                <div class="billWrap">                    
+                    <div class="billTitle">[사업소명][00월]대금 결제 청구서</div>
+                    <div class="billListWrap">
+                        <div class="billList">
+                            <div class="price">
+                                <div class="pTitle">과세 물품 구매 금액</div>
+                                <div class="price">₩ 73,000,000</div>
+                            </div>                    
+                            <div class="price">
+                                <div class="pTitle">면세 물품 구매 금액</div>
+                                <div class="price">₩ 37,250,000</div>
+                            </div>
+                            <hr class="line02">
+                            <div class="totalrice">
+                                <div class="price">총 청구 금액</div>
+                                <div class="price">₩ 109,962,100</div>
+                            </div>
+                        </div>    
+                        <div class="billList2">
+                            <div class="totalrice" >
+                                <div class="pTitle" >신용 카드 결제 금액</div>
+                                <div class="price2">₩ 113,260,963</div>
+                            </div>
+                            <div class="totalrice">
+                                <div class="pTitle">실시간 계좌이체 결제 금액</div>
+                                <div class="price2">₩ 111,941,418</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note">※ 온라인 결제 시에는 결제 수수료 포함한 금액으로 결제합니다.</div>
+                    <div class="billBtnWrap">
+                        <div class="btn01">정산 내역서 받기</div>
+                        <div class="btn02W">
+                            <div class="btn02" onclick="location.href='paymentPop.html'">신용카드 결제</div>
+                            <div class="btn02">실시간 계좌이체</div>
+                        </div>
+                    </div>                    
+                </div>
+                <!-- 이전 결제 내역 -->
+                <div class="priceListWrap">
+                    <div class="listTitle">이전 결제 내역</div>
+                    <table>
+                        <tr>
+                            <th>월</th>
+                            <th>결제일</th>
+                            <th>결제금액</th>
+                            <th>결제방식</th>
+                            <th>할부구분</th>
+                        </tr>
+                        <tr>
+                            <td>10월</td>
+                            <td>2022.11.28</td>
+                            <td>222,000원</td>
+                            <td>실시간계좌이체</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>9월</td>
+                            <td>2022.11.28</td>
+                            <td>222,000원</td>
+                            <td>실시간계좌이체</td>
+                            <td>무이자할부</td>
+                          </tr>
+                          <tr>
+                            <td>8월</td>
+                            <td>2022.11.28</td>
+                            <td>222,000원</td>
+                            <td>실시간계좌이체</td>
+                            <td>일반할부</td>
+                          </tr>                        
+                      </table>
+                </div>
+             </div>      
+        </div>
+    </div>
+</body>
+</html>
