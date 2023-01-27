@@ -94,7 +94,7 @@ html,body{height: 100%;}
 /* 청구서 버튼들 */
 .billBtnWrap{
   display: flex; justify-content: space-between;
-  padding: 10px 0px 30px 0px; 
+  padding: 7px 0px 33px 0px; 
 }
 .billBtnWrap .btn01,
 .btn02W .btn02, .btn02W .btn03{
