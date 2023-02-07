@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* common */
+.f_col{color:#ffffff}
+.f_col3{color:#333333}
+.f_s14{font-size: 14px;}
+
+/********** css responsive init **********/
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+/* 최 상단 띠 배너 */
+#topBannerWrap{
+    background: #001E9A;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}    
+#topBannerWrap .topBanner{ 
+    height: 48px; 
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    width: calc(100%/3);
+}
+
+/* GNB */
+#header .logo{
+    /* background-color: red; */
+    padding: 20px 100px 20px 30px;
+}
+#nav {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;   
+}
+#nav .menuWrap, #nav .menuWrap02{
+    display: flex;  
+}
+
+#nav .main_menu{
+    font-size: 18px;
+    display: flex;
+    align-items: center; 
+    gap:20px;
+    background-color: aqua;
+}
+#nav .line_gnb{
+    display: flex;
+    align-items: center;   
+    padding: 20px;   
+}
+#nav .sub_menu{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    background: #F3F4F4;
+}
+#nav .searchWrap{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+    background-color: beige;   
+}
+#nav .in_search{
+    width: 280px; height: 45px;
+    background: #F3F4F4;
+    border-radius: 30px; 
+    
+}
+
+#nav .toggle {
+    width: 25px;
+    height: 25px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+#nav .toggle div {
+    width: 22px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s;
+}
+#nav .toggle .bar1 {
+    transform: translateY(-8px);
+}
+#nav .toggle .bar3 {
+    transform: translateY(8px);
+}
+#nav .toggle.active .bar1 {
+    transform: translateY(0) rotate(315deg);
+}
+#nav .toggle.active .bar2 {
+    opacity: 0;
+}
+#nav .toggle.active .bar3 {
+    transform: translateY(0) rotate(-315deg);
+}
+
+
+
+/********** css responsive **********/
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+        background-color: pink;
+    }
+    #header .logo{
+        /* background-color: red; */
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 1199px) {    
+}
+
+@media (max-width: 991px) {
+    #topBannerWrap .topBanner{    
+        width: calc(100%/2);
+    }
+    #nav .searchWrap{ 
+        justify-content: center;   
+        margin: 0 auto;
+        background-color: gray; 
+    }
+    #header .logo{     
+        padding: 20px 20px 20px 0px;
+    }
+    #nav .main_menu{
+        font-size: 14px;
+        gap: 7px;
+    }
+    #nav .sub_menu{
+        font-size: 12px;
+        gap: 7px;
+    }
+    #nav .in_search{
+        width: 100%; height: 45px;
+        background: #F3F4F4;
+        border-radius: 30px; 
+        
+    }
+    .searchWrap .logout{
+        display: none;
+    } 
+    
+}
+
+
+
+
+@media (max-width: 767px) {
+    .container{
+        padding: 0px 20px;
+    }
+    #topBannerWrap .topBanner{    
+         width: 100%;
+         font-size: 14px;
+    }
+    #nav {
+        display:block; 
+        position: relative;     
+    }
+   
+    #nav .logo img{width: 100px; height: 27px;}
+    #nav .main_menu{
+        font-size: 14px;
+        gap: 10px;
+    }
+    #nav .line_gnb{display: none;}
+    .searchWrap .logout{
+        display: none;
+    } 
+    #nav .toggle {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        cursor: pointer;
+    }
+    
+
+}
+
+@media (max-width: 360px) {
+   
+}
