@@ -5,12 +5,7 @@
 .f_col3{color:#333333}
 .f_s14{font-size: 14px;}
 
-/********** css responsive init **********/
-.container {
-    width: 1400px;
-    margin: 0 auto;
-    /* background-color: pink; */
-}
+
 
 /* 최 상단 띠 배너 */
 #topBannerWrap{
@@ -134,7 +129,7 @@ nav .sub_menu li a{
   padding: 5px 1px;
 }
 nav .sub_menu li a:hover{
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #efefef;
 }
 
  
@@ -182,36 +177,31 @@ nav .toggle.active .bar3 {
 
 /********** css responsive **********/
 @media (max-width: 1399px) {
-    .container {
-        width: 100%;
-        /* background-color: pink; */
-    }
-    nav .logo{       
-        padding: 20px 30px;
-    }
+    .container { width: 100%;}
+    nav .logo{padding: 20px 30px;}
     nav .logo img{height: 35px;}
-    nav .logout{
-        padding-right: 10px;       
-    }  
+    nav .logout{padding-right: 10px;}  
 }
 
 @media (max-width: 1199px) {
     nav .logout{display: none;}
-    .container {
-        width: 100%;
-        /* background-color: rgb(165, 250, 208); */
-    }
-    .container{
-        padding: 0px 20px;
-    }
-    nav {
-        position: relative;     
-    }    
-    nav .logo{     
-        padding: 15px 15px 15px 0px;
-    }    
+    .container {width: 100%; }
+    .container{padding: 0px 20px;}
+    nav {position: relative;}    
+    nav .logo{padding: 15px 15px 15px 0px;}    
     nav .logo img{width: 100px; height: 27px;}
     nav .main_menu{font-size: 14px;}
+    nav .searchWrap{    
+        margin: auto;
+        width: calc(100%/3);  
+    }
+    nav .toggle {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 16px;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 991px) {    
@@ -229,34 +219,17 @@ nav .toggle.active .bar3 {
     nav .line_gnb{       
         padding: 10px;   
     }
+    nav .sub_menu{
+        display: none;
+    }   
+    nav .line_gnb{ 
+        display: none;
+    }  
       
 }
 
 
-
-@media (max-width: 800px) {
-        
-    nav .logout{
-        display: none;
-    }
-    nav .line_gnb{ 
-        display: none;
-    }
-    nav .sub_menu{
-       display: none;
-    }    
-    nav .searchWrap{    
-        margin: auto;
-        width: calc(100%/3);  
-    }
-    nav .toggle {
-        display: flex;
-        position: absolute;
-        right: 0px;
-        top: 16px;
-        cursor: pointer;
-    }
-
+@media (max-width: 800px) {   
     /* 메인메뉴 바 */   
     nav .main_menu li{
         padding: 4px 0;   

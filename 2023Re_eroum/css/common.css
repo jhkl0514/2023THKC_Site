@@ -11,4 +11,62 @@ html, body{
 
 }
 
-    
+/********** css responsive init **********/
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+/* ain 전체 Wrap  */
+#mainWrap{
+    display: flex;
+}
+/* 사이드 메뉴 */
+#asideWrap{
+    width: 302px;
+    background: #fcfcfc;  
+    border-right: 1px solid #E7E7E7;;
+}
+
+/* gap */
+#gap{
+    width: 38px;
+}
+
+/* 메인 컨텐츠 */
+#conWrap{
+    width: 1060px; height: 800px;
+    background-color: #E7E7E7;
+}
+
+/* footer Wrap */
+#footerWrap{
+    height: 100px;
+    background-color: rgb(148, 148, 148);
+}
+
+
+/********** css responsive **********/
+@media (max-width: 1399px) {  
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+    #mainWrap{
+        display: none;        
+    }
+    #footerWrap{
+        display: none;
+    }
+}
+@media (max-width: 767px) {    
+}
+
+@media (max-width: 430px) {     
+}
+
+@media (max-width: 360px) { 
+}
