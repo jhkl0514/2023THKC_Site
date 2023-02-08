@@ -72,7 +72,7 @@ nav .search{
 }
 nav .in_search{
     width: 300px;  height: 45px;
-    background: #E7E7E7;
+    background: #F5F5F5;
     border-radius: 30px; 
     border: 0;
     padding: 0px 25px;
@@ -195,33 +195,8 @@ nav .toggle.active .bar3 {
     }  
 }
 
-@media (max-width: 1199px) { }
-
-@media (max-width: 991px) {    
-    #topBannerWrap .topBanner{    
-        width: calc(100%/2);
-    }
-    nav{position: relative;}
-    nav .logo{     
-        padding: 20px 20px 20px 0px;
-    }    
-    nav .main_menu{
-        font-size: 14px;
-        gap:20px;       
-    }
-    nav .sub_menu{
-        font-size: 12px;
-        gap: 12px; 
-    } 
-    nav .line_gnb{       
-        padding: 10px;   
-    }
-      
-}
-
-
-
-@media (max-width: 800px) {
+@media (max-width: 1199px) {
+    nav .logout{display: none;}
     .container {
         width: 100%;
         /* background-color: rgb(165, 250, 208); */
@@ -235,7 +210,32 @@ nav .toggle.active .bar3 {
     nav .logo{     
         padding: 15px 15px 15px 0px;
     }    
-    nav .logo img{width: 100px; height: 27px;}    
+    nav .logo img{width: 100px; height: 27px;}
+    nav .main_menu{font-size: 14px;}
+}
+
+@media (max-width: 991px) {    
+    #topBannerWrap .topBanner{    
+        width: calc(100%/2);
+    }
+    nav{position: relative;}
+    nav .logo{     
+        padding: 20px 20px 20px 0px;
+    } 
+    nav .sub_menu{
+        font-size: 12px;
+        gap: 12px; 
+    } 
+    nav .line_gnb{       
+        padding: 10px;   
+    }
+      
+}
+
+
+
+@media (max-width: 800px) {
+        
     nav .logout{
         display: none;
     }
@@ -294,7 +294,7 @@ nav .toggle.active .bar3 {
        font-weight: 500;       
        width: 100%;
        gap: 2px;       
-       position: absolute; top:100px;
+       position: absolute; top:105px;
    }
    nav .main_menu li{
         width:100%;
@@ -303,7 +303,7 @@ nav .toggle.active .bar3 {
         /* background-color: red; */
    }
    nav .main_menu li a{       
-        padding: 7px;
+        padding: 7px;           
    }
    
    nav .sub_menu{
@@ -328,12 +328,13 @@ nav .toggle.active .bar3 {
     #topLine_m{
         width: 100%;
         position: absolute;
-        top: 190px;
+        top: 195px;
         height: 1px;
         background: #E7E7E7;
     }
  
 }
+
 @media (max-width: 430px) {     
 }
 
