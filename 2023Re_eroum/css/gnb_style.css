@@ -289,10 +289,13 @@ nav .toggle.active .bar3 {
    }
    nav .searchWrap{    
     margin: auto;
-    width: 100%;    
+    width: 100%;
+    position: relative;   
     }
     nav .search{
-        width: 100%;  
+        width: 100%;
+        position: absolute;
+        top:-5px 
     }
     nav .in_search{
         width: 100%;         
