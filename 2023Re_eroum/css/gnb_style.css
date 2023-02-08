@@ -276,13 +276,13 @@ nav .toggle.active .bar3 {
         /* background-color: red; */
    }
    nav .main_menu li a{       
-        padding: 7px;           
+        padding: 12px 7px 7px 0px;           
    }
    
    nav .sub_menu{
        display: flex;
        position: absolute;
-       top: 20px; left: 120px;
+       top: 23px; left: 120px;
    }
    nav .line_gnb{
        display: none;
@@ -301,7 +301,7 @@ nav .toggle.active .bar3 {
     #topLine_m{
         width: 100%;
         position: absolute;
-        top: 195px;
+        top: 200px;
         height: 1px;
         background: #E7E7E7;
     }
