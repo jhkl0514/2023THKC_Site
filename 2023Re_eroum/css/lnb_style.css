@@ -1,14 +1,19 @@
 @charset "utf-8";
 
+/* common */
+.f_col{color:#ffffff}
+.f_col3{color:#333333}
+.f_s14{font-size: 14px;}
+.f_bold{font-weight: 500;}
+.f_bold700{font-weight: 700;}
+
 aside {
     width: 264px;
-    background: #f1f1f1;
 }
 
 #memberWrap {
     margin-top: 30px;
 }
-
 aside .memTitle{
     font-weight: 500;
     font-size: 24px;
@@ -30,4 +35,197 @@ aside .lavel{
     text-align: center;
     letter-spacing: -0.03em;
     color: #F58220;
+}
+aside .memInfoWrap{
+    margin: 20px 0 10px 0;
+}
+aside .memInfoWrap_02{
+    margin: 15px 0 15px 0;
+}
+aside .memInfoWrap .mem_shipWrap, aside .memInfoWrap_02 .mem_shipWrap{
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    cursor: pointer;
+}
+aside .memInfoWrap .mInfo, aside .memInfoWrap_02 .mInfo{
+    text-decoration-line: underline;
+}
+aside .memInfoWrap .mUnit, aside .memInfoWrap_02 .mUnit {
+    font-size: 10px;
+    padding: 0 0 0 3px;
+    text-decoration: none;
+}
+aside .m_iconWarp{
+    display: flex;
+    gap:10px
+}
+aside .m_iconWarp img{
+    width: 18px;
+}
+aside hr{
+    border: 0.5px solid #E9E9E9; border-bottom:0px;    
+}
+aside .btn_mypage{
+    background: #222222;
+    border-radius: 20px;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+aside .btn_mypage:hover{
+    background: #6e6e6e;
+    cursor: pointer;
+}
+
+/* 간편메뉴 테이블 */
+aside .simpleTabe{  
+    border: 1px solid #7D7D7D;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+}
+aside .simpleTabe table{
+    width: 100%; 
+    border-collapse: collapse 
+}
+aside .simpleTabe table td{
+    padding: 15px 0px 10px 0;  
+    text-align: center;
+}
+aside .simpleTabe table td img{
+    display: block; margin: 0px auto;
+}
+aside .simpleTabe .br{border-right: 1px dashed #CFCFCF;}
+aside .simpleTabe .bb{border-bottom: 1px dashed #CFCFCF;}
+aside .simpleTabe .bt{border-top: 1px dashed #CFCFCF;}
+aside .simpleTabe .bl{border-left: 1px dashed #CFCFCF;}
+aside .simTitle{ font-size: 18px; font-weight: 300; padding: 5px;}
+aside .btn_simple:hover{color:#666}
+
+/* 이로움 고객센터 전화번호 */
+aside .left_csWrap{
+    text-align: center;
+    margin-bottom: 30px;
+}
+aside .left_csWrap .csTitle{font-size: 14px; line-height: 10px; font-weight: 500; color: #666;}
+aside .left_csWrap .csCall{font-size: 30px; font-weight: 500; color: #FF9015;}
+
+/* 사업소 운영관리 */
+aside .mgeWrap .mgTitle{
+    z-index: 10;
+    position: relative;
+    font-size: 18px; font-weight: 500; line-height: 40px; text-align: center;
+}
+aside .mgeWrap .y_bar::after{
+    background:#FDF6D4;
+    content:"";display: block;
+    height: 12px; width: 140px;    
+    position: absolute; left: 50%; top: 70%; transform: translate(-50%, -50%);
+    z-index: -100;
+}
+aside .mgeWrap img{
+    display:inline; padding-right: 10px; line-height: 10px;
+    vertical-align: middle; 
+}
+aside .mgeWrap .office_menu{
+    padding: 10px 10px 30px 15px;
+}
+aside .mgeWrap .office_menu li{
+    padding: 5px 20px;
+}
+aside .mgeWrap .office_menu li:hover{
+    background: #FAF7F5;
+    border-radius: 20px;
+}
+
+/* 공지사항 */
+aside .noticeWrap .mgTitle{
+    z-index: 10;
+    position: relative;
+    font-size: 18px; font-weight: 500; line-height: 40px; text-align: center;
+}
+aside .noticeWrap .y_bar_02::after{
+    background:#FDF6D4;
+    content:"";display: block;
+    height: 12px; width: 80px;    
+    position: absolute; left: 50%; top: 70%; transform: translate(-50%, -50%);
+    z-index: -100;
+}
+aside .noticeWrap{
+    position: relative;
+    margin-top: 10px;
+}
+aside .noticeWrap .more_01{   
+    background: #F2F2F2;
+    width: 25px;height: 24px;
+    display: flex; justify-content: center; align-items: center;
+    position: absolute;
+    right: 0; top:10px;   
+}
+aside .noticeWrap .more_01:hover{
+    background: #fefefe;
+    cursor: pointer;
+}
+aside .notice_menu{
+    margin-bottom: 40px;
+}
+aside .notice_menu img{
+    display:inline; padding-right: 10px; line-height: 10px;
+}
+aside .notice_menu{
+    padding: 10px 0;
+}
+aside .notice_menu li{
+    padding: 3px 3px 0 3px;
+    font-size: 14px;
+}
+aside .notice_menu li:hover{
+    text-decoration: underline; 
+}
+/* 원격지원 서비스 */
+aside .remoteWrap{
+    display: flex; gap:15px;
+    margin-bottom: 10px;
+}
+aside .remoteWrap h4{
+    font-size: 16px; font-weight: 500; line-height: 22px;
+}
+aside .remoteWrap .rem_con{
+    font-size: 14px; font-weight: 300; line-height: 16px;
+    padding-top: 2px;
+}
+aside .btn_remote{
+    background: #001E9A;
+    border-radius: 30px;
+    color: #fff; text-align: center; 
+    padding: 8px 0;
+}
+aside .btn_remote:hover{
+    cursor: pointer;
+    background: #7D7D7D;
+}
+/* 다운로드 바로가기 */
+aside .downlodeWrap{
+    display: flex;
+    border: 1px solid #7D7D7D;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+aside .downlodeWrap div{
+    width: 33%; text-align: center;
+    border-right: 1px solid #E9E9E9;
+    padding: 20px 16px; font-size: 14px;
+    display: flex;  justify-content: space-between;
+    align-items: center; flex-direction: column;
+    gap:10px
+}
+aside .downlodeWrap div:last-child{  
+    border-right: none;
+}
+aside .downlodeWrap div:hover{
+    cursor: pointer;
 }
