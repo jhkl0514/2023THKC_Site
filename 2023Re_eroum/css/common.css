@@ -37,7 +37,7 @@ html, body{
 /* 메인 컨텐츠 */
 #conWrap{
     width: 1060px; height: 800px;
-    background-color: #E7E7E7;
+    /* background-color: #E7E7E7; */
 }
 
 /* footer Wrap */
