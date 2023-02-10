@@ -39,5 +39,5 @@ var swiper = new Swiper(".eventSwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  })
+  });
                     
