@@ -52,11 +52,18 @@ html, body{
 }
 
 @media (max-width: 1199px) {
+    #asideWrap{
+        display: none;        
+    }
 }
 
 @media (max-width: 991px) {
+   
+    #gap{
+        display: none;
+    }
     #mainWrap{
-        display: none;        
+        /* display: none;         */
     }
     #footerWrap{
         display: none;

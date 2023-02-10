@@ -21,8 +21,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      <!-- Swiper JS -->
      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+               
 
 </head>
 <body>
@@ -201,7 +202,72 @@
         <div id="gap">p</div>
         <!--  # 메인 컨텐츠  w1060px # -->
         <div id="conWrap">
-            메인 컨텐츠
+          <section>
+            <!-- 대시보드 -->
+            <div class="dash_bWrap">                
+                <ul class="dashList">
+                    <li class="dashTitle">주문 현황 (당월) <img src="images/common/thkc_ico_arrow_next.svg" alt=""></li>                        
+                    <li class="dash_sTitle">주문 건수 &nbsp;<span class="d_n"><a href="#">100</a></span>&nbsp;<span class="d_unit">건</span></li>
+                    <li class="dash_line"><img src="images/common/thkc_line_gnb.svg" alt="" ></li>
+                    <li class="dash_sTitle">출고 완료 &nbsp;<span class="d_n"><a href="#">10</a></span>&nbsp;<span class="d_unit">건</span></li>
+                    <li class="dash_line"><img src="images/common/thkc_line_gnb.svg" alt="" ></li>
+                    <li class="dash_sTitle">배송 완료 &nbsp;<span class="d_n"><a href="#">5</a></span>&nbsp;<span class="d_unit">건</span></li>
+                    <li class="dash_line"><img src="images/common/thkc_line_gnb.svg" alt="" ></li>
+                    <li class="dash_sTitle">설치 일정 &nbsp;<span class="d_n"><a href="#">5</a></span>&nbsp;<span class="d_unit">건</span></li>
+                </ul>
+            </div>
+            <!-- 공지사항 -->
+            <div class="top_noticeWrap">
+                <ul class="top_notice">
+                    <li class="noticeTitle"><img src="images/main_eroum/thkc_ico_bell.svg" alt=""> 공지사항</li>
+                    <li class="noticeCon"><a href="#">[23년 1월] 복지용구 직배송사 설 연휴 배송 ...</a>
+                        <!-- 모바일에서 글자수 제한필요 -->
+                        <div class="noticeArrow">
+                            <a href="#"><img src="images/common/thkc_btn_arrow_down.svg" alt=""></a>
+                            <a href="#"><img src="images/common/thkc_btn_arrow_above.svg" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 프로모션 슬라이딩 배너 -->
+            <div class="eventWrap">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/main_eroum/thkc_img_banner.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/main_eroum/thkc_img_banner.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/main_eroum/thkc_img_banner.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/main_eroum/thkc_img_banner.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/main_eroum/thkc_img_banner.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+
+            </div>    
+          </section>
         </div>
     </div>
 
