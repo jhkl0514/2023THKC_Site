@@ -76,10 +76,11 @@ section .top_notice .noticeArrow img{
     padding: 0 0 0 10px;    
 }
 /* 프로모션 슬라이딩 배너 */
-section  img{
-    border-radius:20px;
+section .eventWrap{
+    margin-bottom: 100px;
 }
 section .img_r img{
+    border-radius:20px;
     max-width: 100%; height: auto;
 }
 /* swiper */
@@ -94,6 +95,53 @@ section .img_r img{
     --swiper-navigation-sides-offset:20px;
     --swiper-pagination-bottom: 5px !important;
 }
+
+/* 메인 검색 영역 */
+section .m_searchWrap{
+    display: flex; flex-direction: column; align-items: center;
+}
+section .m_searchWrap .ms_Title{
+    font-size: 30px; font-weight: 700;
+    color: #222; letter-spacing: -0.02em;
+    margin-bottom: 30px;
+}
+    /* 검색 */
+section .m_search{
+    position: relative;
+    margin-bottom: 25px;
+}
+section .m_in_search{
+    width: 550px;  height: 45px;
+    background: #fff; 
+    border-top: 0px solid #fff;
+    border-left: 0px solid #fff;
+    border-right: 0px solid #fff;
+    border-top: 0px solid #fff;
+    border-bottom: 4px solid #222;
+    padding: 0px 25px;
+    font-size: 14px;   
+}
+section .m_in_search:focus{outline:none;} 
+section input[type='text']::placeholder, textarea::placeholder{
+    color:#bbb; font-size: 16px; 
+}
+section .m_icon_serch{
+    position: absolute;  
+    right: 10px; top:8px;
+}
+section .m_icon_serch img{
+    width: 25px;
+}
+    /* 해시태그 */
+section .hash_tagWrap{
+    display: flex; gap: 15px;
+}
+section .hash_tagWrap .ht{    
+    background: #F4F4F4;
+    border-radius: 30px;
+    padding: 8px 20px; text-align: center;
+}    
+
 
 
 
@@ -115,12 +163,47 @@ section .img_r img{
     section .top_noticeWrap{display: flex; justify-content: flex-start; padding-left: 10px;}    
     section .top_notice .noticeCon a {font-size: 12px;}   
     section .top_notice{display: block;}
+    /* 프로모션 슬라이딩 배너 */
+    section .eventWrap{
+        margin-bottom: 30px;
+    }
     /* swiper */
     :root {  
     --swiper-pagination-bullet-width: 5px;
     --swiper-pagination-bullet-height: 5px;
-    --swiper-pagination-bottom: 2px !important;
-}
+    --swiper-pagination-bottom: 2px !important;    
+    }
+
+    /* 메인 검색 영역 */   
+    section .m_searchWrap .ms_Title{
+        font-size: 18px; font-weight: 500;
+        margin-bottom: 20px;
+    }
+   /* 검색 */
+    section .m_in_search{
+        width: 100%;  height: 45px;        
+    }
+    section .m_in_search:focus{outline:none;} 
+    section input[type='text']::placeholder, textarea::placeholder{
+        color:#bbb;
+    }
+    section .m_icon_serch{     
+        top:12px;
+    }
+    section .m_icon_serch img{
+        width: 18px;
+    }
+        /* 해시태그 */
+    section .hash_tagWrap{
+        display: flex; gap: 10px;
+    }
+    section .hash_tagWrap .ht{    
+        background: #F4F4F4;
+        border-radius: 30px;
+        font-size: 12px;
+        padding: 8px 20px; text-align: center;
+    }    
+
 
 }
 
