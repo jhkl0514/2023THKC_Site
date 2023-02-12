@@ -102,7 +102,7 @@ section .m_searchWrap{
 }
 section .m_searchWrap .ms_Title{
     font-size: 30px; font-weight: 700;
-    color: #222; letter-spacing: -0.02em;
+    color: #222; letter-spacing: -1px;
     margin-bottom: 30px;
 }
     /* 검색 */
@@ -176,7 +176,7 @@ section .hash_tagWrap .ht{
 
     /* 메인 검색 영역 */   
     section .m_searchWrap .ms_Title{
-        font-size: 18px; font-weight: 500;
+        font-size: 16px; font-weight: 500;
         margin-bottom: 20px;
     }
    /* 검색 */
@@ -200,9 +200,12 @@ section .hash_tagWrap .ht{
     section .hash_tagWrap .ht{    
         background: #F4F4F4;
         border-radius: 30px;
-        font-size: 12px;
+        font-size: 11px;
         padding: 8px 20px; text-align: center;
-    }    
+    }
+    section .hash_tagWrap .ht:last-child{
+        display: none;
+    }
 
 
 }
