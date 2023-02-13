@@ -285,6 +285,9 @@ section .moble_guideBoxWrap{
         font-size: 16px;
         padding: 15px 5px;
     }
+    section .g_BoxWrap{
+        cursor: pointer;
+    }
 
 }
 
