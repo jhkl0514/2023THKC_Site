@@ -31,8 +31,7 @@ html, body{
 /* 사이드 메뉴 */
 #asideWrap{
     width: 302px;
-    border-right: 1px solid #E7E7E7;;
-    /* background: #fcfcfc;   */
+    border-right: 1px solid #E7E7E7;  
 }
 
 /* gap */
@@ -42,7 +41,7 @@ html, body{
 
 /* 메인 컨텐츠 */
 #conWrap{
-    width: 1060px; height: 800px;
+    width: 1060px;
     /* background-color: #E7E7E7; */
 }
 
