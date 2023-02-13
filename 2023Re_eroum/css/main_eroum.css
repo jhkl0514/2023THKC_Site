@@ -99,6 +99,7 @@ section .img_r img{
 /* 메인 검색 영역 */
 section .m_searchWrap{
     display: flex; flex-direction: column; align-items: center;
+    margin-bottom: 120px;
 }
 section .m_searchWrap .ms_Title{
     font-size: 30px; font-weight: 700;
@@ -140,7 +141,54 @@ section .hash_tagWrap .ht{
     background: #F4F4F4;
     border-radius: 30px;
     padding: 8px 20px; text-align: center;
-}    
+}
+/* 05.이로움 가이드  */
+section .guideWrap{
+    display: flex;
+}
+section .e_TitleWrap{
+    width: 300px;
+}
+section .e_TitleWrap .e_Title{
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+section .e_TitleWrap .e_Con{
+    font-size: 18px;  
+    padding-right: 20px;
+}
+section .guideBoxWrap{
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    gap: 20px;   
+}
+section .g_BoxWrap{    
+    display: flex;
+    border-radius:20px;
+    flex-wrap: wrap;
+    justify-content: center; align-content: space-between;
+    background: oldlace;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+section .g_Box{
+    padding: 30px 10px;   
+}
+section .g_Box img{
+    max-width: 100%; height: auto;
+}
+section .guideTitle{
+    width: 100%;
+    font-size: 18px; font-weight: 500;
+    border-radius:0 0 20px 20px;
+    padding: 20px 10px; 
+    display: flex; justify-content: center; align-items:flex-end;
+    background: #fff;
+}
+section .moble_guideBoxWrap{
+    display: none;
+}
+
 
 
 
@@ -174,14 +222,20 @@ section .hash_tagWrap .ht{
     --swiper-pagination-bottom: 2px !important;    
     }
 
-    /* 메인 검색 영역 */   
+    /* 메인 검색 영역 */  
+    section .m_searchWrap {
+        margin-bottom: 40px;
+    }
     section .m_searchWrap .ms_Title{
         font-size: 16px; font-weight: 500;
         margin-bottom: 20px;
     }
    /* 검색 */
+   section .m_search{
+     width: 85%;
+   }
     section .m_in_search{
-        width: 100%;  height: 45px;        
+        width: 100%;  height: 45px;            
     }
     section .m_in_search:focus{outline:none;} 
     section input[type='text']::placeholder, textarea::placeholder{
@@ -207,11 +261,51 @@ section .hash_tagWrap .ht{
         display: none;
     }
 
+    /* 05.이로움 가이드  */   
+    section .guideWrap{
+        display: block;
+        width: 100%;    
+    }
+    section .e_TitleWrap{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    section .e_TitleWrap .e_Title{
+        font-size: 22px;
+    }
+    section .e_TitleWrap .e_Con{
+        font-size: 14px;  
+        padding-right: 0px;
+    }
+    section .moble_guideBoxWrap .g_Box{    
+        padding: 20px 5px;
+    }
+    section .moble_guideBoxWrap .guideTitle{
+        font-size: 16px;
+        padding: 15px 5px;
+    }
 
 }
 
 @media (max-width: 430px) {     
+    section .guideBoxWrap{
+        display: none;
+    }    
+    section .moble_guideBoxWrap{
+        display:block;  
+    }        
+    section  .mySwiper_guide .swiper-slide {
+        width: 80%;
+    }  
+    section  .mySwiper_guide.swiper-slide:nth-child(2n) {
+        width: 30%;
+    }  
+    section .mySwiper_guide.swiper-slide:nth-child(3n) {
+        width: 30%;
+    }
+       
 }
 
-@media (max-width: 360px) { 
+@media (max-width: 360px) {     
 }

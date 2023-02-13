@@ -8,8 +8,14 @@ img{display: block;}
 html, body{
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;
-
 }
+
+/* common */
+.f_col{color:#ffffff}
+.f_col3{color:#333333}
+.f_s14{font-size: 14px;}
+.f_bold{font-weight: 500;}
+.f_bold700{font-weight: 700;}
 
 /********** css responsive init **********/
 .container{

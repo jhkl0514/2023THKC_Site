@@ -44,4 +44,13 @@ var swiper = new Swiper(".eventSwiper", {
         prevEl: ".swiper-button-prev",
       },
     });
-                    
+
+    var swiper = new Swiper(".mySwiper_guide", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
