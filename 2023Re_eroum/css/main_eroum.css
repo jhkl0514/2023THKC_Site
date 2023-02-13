@@ -144,10 +144,10 @@ section .hash_tagWrap .ht{
 }
 /* 05.이로움 가이드  */
 section .guideWrap{
-    display: flex;
+    display: flex;  margin-bottom: 130px;
 }
 section .e_TitleWrap{
-    width: 300px;
+    width: 320px;
 }
 section .e_TitleWrap .e_Title{
     font-size: 35px;
@@ -155,7 +155,7 @@ section .e_TitleWrap .e_Title{
 }
 section .e_TitleWrap .e_Con{
     font-size: 18px;  
-    padding-right: 20px;
+    padding-right: 30px;
 }
 section .guideBoxWrap{
     width: 100%;
@@ -169,7 +169,7 @@ section .g_BoxWrap{
     flex-wrap: wrap;
     justify-content: center; align-content: space-between;
     background: oldlace;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);    
 }
 section .g_Box{
     padding: 30px 10px;   
@@ -190,6 +190,44 @@ section .moble_guideBoxWrap{
 }
 
 
+/* 06.안전손잡이 */
+.banner01_BarWrap{
+    display: flex;
+    background: #EAF3EA;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 130px;
+}
+section .banner01_img img{
+    width: 160px;
+}
+section .banner01_img{
+   position: absolute;
+   bottom: 0; left: 250px;
+}
+section .b_titleWrap {
+    display: flex; flex-direction: column; justify-content: center; align-items:flex-start;
+    padding: 20px 20px 20px 430px;
+
+}
+section .b_titleWrap .banner01Title{
+    font-size: 24px; font-weight: 500;
+}
+section .b_titleWrap .banner01Con{
+    font-size: 20px; font-weight: 300;
+}
+
+/* 07.이로움 추천상품 */
+section  .pdWrap{
+    display: flex;  margin-bottom: 130px;
+}
+section .pdBoxWrap{
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    gap: 5px;   
+    background: pink;
+}
 
 
 
@@ -264,7 +302,8 @@ section .moble_guideBoxWrap{
     /* 05.이로움 가이드  */   
     section .guideWrap{
         display: block;
-        width: 100%;    
+        width: 100%; 
+        margin-bottom: 50px;
     }
     section .e_TitleWrap{
         text-align: center;
@@ -279,15 +318,33 @@ section .moble_guideBoxWrap{
         padding-right: 0px;
     }
     section .moble_guideBoxWrap .g_Box{    
-        padding: 20px 5px;
+        padding: 20px 5px;        
     }
     section .moble_guideBoxWrap .guideTitle{
         font-size: 16px;
-        padding: 15px 5px;
+        padding: 15px 5px;                    
     }
     section .g_BoxWrap{
         cursor: pointer;
     }
+    /* 06.안전손잡이 */    
+    section .banner01_img img{
+        width:90px;
+    }
+    section .banner01_img{
+        bottom: 0; left: 20px;
+    }
+    section .b_titleWrap {
+        display: flex; flex-direction: column; justify-content: center; align-items:flex-start;
+        padding: 15px 10px 15px 120px;
+    }
+    section .b_titleWrap .banner01Title{
+        font-size: 14px; font-weight: 500;
+    }
+    section .b_titleWrap .banner01Con{
+        font-size: 12px; font-weight: 300;
+    }
+        
 
 }
 
@@ -296,8 +353,15 @@ section .moble_guideBoxWrap{
         display: none;
     }    
     section .moble_guideBoxWrap{
-        display:block;  
-    }        
+        display:block;         
+    }
+    section .g_BoxWrap{
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);    
+    }
+    section .guideTitle{
+        padding: 0px;
+        background: rgba(255, 153, 0, 0.09);
+    }
     section  .mySwiper_guide .swiper-slide {
         width: 80%;
     }  

@@ -50,7 +50,7 @@ var swiper = new Swiper(".eventSwiper", {
       centeredSlides: true,
       spaceBetween: 15,
       pagination: {
-        el: ".swiper-pagination",
+        // el: ".swiper-pagination",
         clickable: true,
       },
     });
