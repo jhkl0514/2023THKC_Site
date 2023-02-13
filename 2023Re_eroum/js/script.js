@@ -54,3 +54,13 @@ var swiper = new Swiper(".eventSwiper", {
         clickable: true,
       },
     });
+
+    var swiper = new Swiper(".mySwiper_service", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 15,
+      pagination: {
+        // el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
