@@ -70,12 +70,10 @@ html, body{
     }
     #mainWrap{
         /* display: none;         */
-    }
-    #footerWrap{
-        display: none;
-    }
+    }    
 }
-@media (max-width: 767px) {    
+@media (max-width: 767px) {
+    footer{background: pink;    }
 }
 
 @media (max-width: 430px) {     

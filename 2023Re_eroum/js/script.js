@@ -64,3 +64,6 @@ var swiper = new Swiper(".eventSwiper", {
         clickable: true,
       },
     });
+
+// 패밀리사이트를 가져와서 복제하고 appendTo를 한다 ()
+$(".f_Fsns").clone().appendTo(".m_f_Fsns")
