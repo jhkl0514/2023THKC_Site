@@ -100,6 +100,7 @@ section .img_r img{
 section .m_searchWrap{
     display: flex; flex-direction: column; align-items: center;
     margin-bottom: 120px;
+    width: 100%;
 }
 section .m_searchWrap .ms_Title{
     font-size: 30px; font-weight: 700;
@@ -109,7 +110,7 @@ section .m_searchWrap .ms_Title{
     /* 검색 */
 section .m_search{
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 25px;    
 }
 section .m_in_search{
     width: 550px;  height: 45px;
@@ -149,7 +150,7 @@ section .guideWrap{
 section .e_TitleWrap{
     width: 320px;
 }
-section .e_TitleWrap .e_Title{
+section .e_Title{
     font-size: 35px;
     letter-spacing: -1px;
 }
@@ -307,8 +308,7 @@ section .svBox{
     border-radius: 20px;
     width: 100%;
     padding: 40px 40px;
-    display: flex; flex-direction: column; align-items: center;
-    
+    display: flex; flex-direction: column; align-items: center;    
 }
 section .svBg01{
     background: #FCFAEA;
@@ -333,6 +333,119 @@ section .moble_svWrap{
     display: none;
 }
 
+ /* 09,10.공지사항/고객센터 Wrap */
+ section .boardWrap{
+    margin-bottom: 100px;
+ }
+ section .boardWrap, .board_title{
+    display: flex; justify-content: space-between;
+    gap: 55px;
+ }
+ section .board_titleWrap{
+    width: 100%;
+ }
+ section .board_title{
+    padding: 5px 0;
+    display: flex; align-items: flex-end; 
+    position: relative;
+ }
+ section .board_bar{
+    border: 1px solid #222222;
+ }
+ section .board_title .b_more{
+    width: 22px; height: 22px;
+    background: #efefef;
+    border-radius: 3px;
+    display: flex; align-items: flex-end; justify-content: center;
+    cursor: pointer;
+ }
+ section .board_title .b_more:hover{
+    background: #EEE3E1;
+ }
+ section .noti_conWrap{
+    margin-top: 10px;
+ }
+ section .noti_con{
+    display: flex; justify-content: space-between;
+    padding: 10px 0;
+ }
+ section .noti_text:hover{
+    text-decoration-line: underline;
+ }
+ section .noti_data{
+    color: #B0B0B0; font-weight: 300; font-size: 14px;
+ }
+/* 고객센터 */
+ section .cs_conWrap{
+    border: 1px solid #D6D6D6;
+ }
+ section .cs_conWrap {
+    width: 100%;
+    display: flex; justify-content: space-between;
+ }
+ section .m_csWrap{
+    width: 100%;    
+ }
+ section .m_membWrp{
+    width: 90%;
+    border-left: 1px solid #D6D6D6;
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+    padding: 30px;
+ }
+ section .m_csBoardWrap{
+    padding: 30px 10px 0px 10px;
+    cursor: pointer;    
+ }
+ section .m_cs{
+    display: flex; 
+    margin-bottom: 25px;    
+ }
+ section .m_cs .m_iconBg{
+    width: 70px; height: 70px;
+    background: #EFEFEF;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+ }
+ section .m_cs .m_iconBg img{
+    width: 30px;
+ }
+ section .m_csTitleWrap{
+    width: 70%; 
+    padding: 0px 0px 0px 15px ;    
+ }
+ section .m_csTitleWrap h3, .m_membWrp h3{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+ }
+ section .m_csTitleWrap h3:hover, .m_membWrp h3:hover{
+    text-decoration-line: underline;
+ }
+ section .m_csTitleWrap span, .m_membWrp span {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+ }
+ section .m_membWrp{
+    cursor: pointer;
+ }
+ section .m_membWrp h3{
+    padding: 10px 0px;
+ }
+ section .m_membWrp span{
+    text-align: center;
+ }
+ section .mobile_csBoardWrap{
+    display: none;
+ }
+/* 11.고객센터 정보 (모바일에서만) */
+ section .cs_infoWrap{
+    display: none;
+ }
+
+
 
 
 
@@ -342,11 +455,21 @@ section .moble_svWrap{
 }
 
 @media (max-width: 1199px) {
+    
        
 }
 
 @media (max-width: 991px) {
-  
+    section .guideWrap,  section .pdWrap{display: block; }
+    section .e_TitleWrap{width: 100%;}
+    section .btn_pdMore{font-size: 14px; margin: 10px 0px;}     
+    section .guideTitle{font-size: 14px; }
+    section .svWrap{gap:10px;}
+    section .svWrap .svBox{ padding: 20px 20px; width: 300px;}
+    section .svWrap .svBox .sv_img img{width: 150px;}    
+    
+    section .boardWrap{display: block;} 
+    section .board_titleWrap{margin-bottom: 50px;}
 }
 @media (max-width: 767px) {
     section{margin-top: 80px;}
@@ -415,8 +538,7 @@ section .moble_svWrap{
         width: 100%;
         margin-bottom: 30px;
     }
-    section .e_TitleWrap .e_Title{
-        
+    section  .e_Title{        
         font-size: 22px;
     }
     section .e_TitleWrap .e_Con{
@@ -486,7 +608,7 @@ section .moble_svWrap{
     }
     section .pd_BoxWrap .pd_Tag .tag{
         padding: 0 5px 0 0;
-    }
+    }    
     section .priceWrap h4{   
         font-size: 12px;
         padding: 4px 15px;
@@ -540,9 +662,94 @@ section .moble_svWrap{
     }  
     section .mySwiper_service.swiper-slide:nth-child(3n) {
         width: 30%;
-    }    
+    }
+    
+     /* 09,10.공지사항/고객센터 Wrap */
+    section .boardWrap{
+        margin-bottom: 50px;    
+    }  
+    section .board_titleWrap{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    section .noti_text{
+        font-size: 14px;
+    } 
+    section .noti_data{
+        display:none;
+    }
+    section .m_membWrp{
+        display: none;
+    }
+    section .cs_conWrap{
+        border: 0px solid #D6D6D6;
+    }
+    section .m_cs{ 
+        margin-bottom: 10px;    
+     }
+     section .m_cs .m_iconBg{
+        width: 40px; height: 40px; 
+     }
+     section .m_cs .m_iconBg img{
+        width: 20px;
+     }
+     section .m_csTitleWrap{
+        display: flex; align-items: center;
+     }     
+     section .m_csTitleWrap h3{
+        font-size: 16px;        
+     }   
+     section .m_csTitleWrap span, .m_membWrp span {
+        display: none;
+     }
+     section .m_csBoardWrap, .mobile_csBoardWrap{
+        padding: 15px 0px 0px 0px;
+        cursor: pointer;    
+     }
+     section .mobile_csBoardWrap{
+        display: block;
+     }
+     section .m_csWrap{
+        display: flex; gap:15px  
+     }
+     section .m_csTitleWrap{
+        width: 74%; 
+        padding: 0px 0px 0px 10px ;    
+     }
+     /* 11.고객센터 정보 (모바일에서만) */
+     section .cs_infoWrap{
+        display: block;
+     }
+     section .cs_phone{
+        display: flex;  align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;            
+     }
+     section .cs_phone .phone{
+        font-weight: 700;
+        line-height: 45px;
+        font-size: 40px; color: #FF6915;  
+     }
+     section .cs_m_info{
+        display: flex;
+        margin-bottom: 10px;
+     }
+     section .cs_infoTitle{
+        padding-right:5px;
+        font-weight: 700;
+        width: 80px;
+     }
+     section .null{
+        padding: 0px 20px;
+     }
+     
+    
+    
+
            
 
+}@media (max-width: 515px) {
+    section .pd_BoxWrap:nth-last-child(3){display: none;}
 }
 
 @media (max-width: 430px) {     
@@ -560,7 +767,7 @@ section .moble_svWrap{
         background: rgba(255, 153, 0, 0.09);
     }
     section .moble_svWrap .svBox .sv_img {
-        padding-left: 25px;
+        /* padding-left: 25px; */
     }
     section  .mySwiper_guide .swiper-slide {
         width: 80%;
@@ -570,10 +777,7 @@ section .moble_svWrap{
     }  
     section .mySwiper_guide.swiper-slide:nth-child(3n) {
         width: 30%;
-    }
-    section .pd_BoxWrap:nth-last-child(3){
-        display: none;
-    }
+    }    
    
    
 }

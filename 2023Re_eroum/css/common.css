@@ -16,6 +16,7 @@ html, body{
 .f_s14{font-size: 14px;}
 .f_bold{font-weight: 500;}
 .f_bold700{font-weight: 700;}
+.f_bold100{font-weight: 100;}
 
 /********** css responsive init **********/
 .container{
@@ -31,7 +32,7 @@ html, body{
 /* 사이드 메뉴 */
 #asideWrap{
     width: 302px;
-    border-right: 1px solid #E7E7E7;  
+    border-right: 1px solid #EFEFEF;  
 }
 
 /* gap */
@@ -48,7 +49,7 @@ html, body{
 /* footer Wrap */
 #footerWrap{
     height: 100px;
-    background-color: rgb(148, 148, 148);
+    background: #000
 }
 
 

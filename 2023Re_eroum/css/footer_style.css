@@ -1,1 +1,19 @@
 @charset "utf-8";
+
+
+footer .f_menuBgWrap{
+    background: #EFEFEF;
+}
+footer .f_infoBgWrap{
+    background: #3F3A3A;
+}
+footer .f_menuWrap{
+    display: flex; justify-content: space-between;
+}
+footer .f_logoWrap, .f_menu, .f_Fsns{
+    display: flex;
+}
+footer .f_logo {padding: 10px 20px 10px 0px;}
+footer .f_menu li {
+    padding: 10px 15px;
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/gnb_style.css">
     <link rel="stylesheet" href="css/lnb_style.css">
     <link rel="stylesheet" href="css/main_eroum.css">
+    <link rel="stylesheet" href="css/footer_style.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -248,8 +249,7 @@
             </div>
             <!-- 04.메인 검색 영역  -->
             <div class="m_searchWrap">
-                <div class="ms_Title">찾고 계신 복지용구를 검색 해 보세요!</div>
-                <!-- 검색 -->
+                <div class="ms_Title">찾고 계신 복지용구를 검색 해 보세요!</div>                
                 <div class="m_search">
                     <input class="m_in_search" type="text" name="search" placeholder="품목명/급여코드 검색" >
                     <div class="m_icon_serch">
@@ -270,52 +270,52 @@
                     <div class="e_Con">이로움 서비스를 알기 쉽게 안내해 드립니다.</div>
                 </div>
                 <div class="guideBoxWrap">
-                    <div class="g_BoxWrap" onclick="location.href='#'">
-                        <div class="g_Box">
+                    <ul class="g_BoxWrap" onclick="location.href='#'">
+                        <li class="g_Box">
                             <img src="images/main_eroum/thkc_img_guide_01.png" alt="">
-                        </div>
-                        <div class="guideTitle">사업소 가이드</div>
-                    </div>
-                    <div class="g_BoxWrap">
-                        <div class="g_Box">
+                        </li>
+                        <li class="guideTitle">사업소 가이드</li>
+                    </ul>
+                    <ul class="g_BoxWrap">
+                        <li class="g_Box">
                             <img src="images/main_eroum/thkc_img_guide_02.png" alt="">
-                        </div>
-                        <div class="guideTitle">의료기상 가이드</div>
-                    </div>
-                    <div class="g_BoxWrap">
-                        <div class="g_Box">
+                        </li>
+                        <li class="guideTitle">의료기상 가이드</li>
+                    </ul>
+                    <ul class="g_BoxWrap">
+                        <li class="g_Box">
                             <img src="images/main_eroum/thkc_img_guide_03.png" alt="">
-                        </div>
-                        <div class="guideTitle">복지센터 가이드</div>
-                    </div>
+                        </li>
+                        <li class="guideTitle">복지센터 가이드</li>
+                    </ul>
                 </div>
                 <!-- 모바일 복제 05.이로움 가이드-->
                 <div class="moble_guideBoxWrap">                    
                     <div class="swiper mySwiper_guide">
                         <div class="swiper-wrapper" >
                           <div class="swiper-slide">                       
-                            <div class="g_BoxWrap">
-                                <div class="g_Box">
+                            <ul class="g_BoxWrap" onclick="location.href='#'">
+                                <li class="g_Box">
                                     <img src="images/main_eroum/thkc_img_guide_01.png" alt="">
-                                </div>
-                                <div class="guideTitle">사업소 가이드</div>
-                            </div>
+                                </li>
+                                <li class="guideTitle">사업소 가이드</li>
+                            </ul>
                           </div>
                           <div class="swiper-slide">
-                            <div class="g_BoxWrap">
-                                <div class="g_Box">
+                            <ul class="g_BoxWrap">
+                                <li class="g_Box">
                                     <img src="images/main_eroum/thkc_img_guide_02.png" alt="">
-                                </div>
-                                <div class="guideTitle">의료기상 가이드</div>
-                            </div>
+                                </li>
+                                <li class="guideTitle">의료기상 가이드</li>
+                            </ul>
                           </div>
                           <div class="swiper-slide">
-                            <div class="g_BoxWrap">
-                                <div class="g_Box">
+                            <ul class="g_BoxWrap">
+                                <li class="g_Box">
                                     <img src="images/main_eroum/thkc_img_guide_03.png" alt="">
-                                </div>
-                                <div class="guideTitle">복지센터 가이드</div>
-                            </div>
+                                </li>
+                                <li class="guideTitle">복지센터 가이드</li>
+                            </ul>
                           </div>                   
                         </div>                  
                       </div>
@@ -451,15 +451,147 @@
                     </div>
                 </div>                
             </div>
+             <!-- 09,10.공지사항/고객센터 Wrap -->
+            <div class="boardWrap">
+                <!-- 09.공지사항 -->
+                <div class="board_titleWrap">
+                    <div class="board_title">
+                        <span class="e_Title">공지사항</span>
+                        <span class="b_more f_bold700" onclick="location.href='#'">+</span>
+                    </div>
+                    <hr class="board_bar">
+                    <div class="noti_conWrap">
+                        <ul class="noti_con">
+                            <li class="noti_text"><a href="#">· 이로움 주문 마감시간 안내</a></li>
+                            <li class="noti_data">2022.12.30</li>
+                        </ul>
+                        <hr>
+                        <ul class="noti_con">
+                            <li class="noti_text"><a href="#">· [22년 12월] 이로움 안전손잡이 설치 서비스 안내</a></li>
+                            <li class="noti_data">2022.12.30</li>
+                        </ul>
+                        <hr>
+                        <ul class="noti_con">
+                            <li class="noti_text"><a href="#">· [23년 1월] 뉴케어 패키지 변경 안내 (총5종)</a></li>
+                            <li class="noti_data">2022.12.30</li>
+                        </ul>
+                        <hr>
+                        <ul class="noti_con">
+                            <li class="noti_text"><a href="#">· [22년 12월] 안전손잡이 ASH-201 배송비 변경..</a></li>
+                            <li class="noti_data">2022.12.30</li>
+                        </ul>
+                        <hr>
+                        <ul class="noti_con">
+                            <li class="noti_text"><a href="#">· [22년 12월] 욕창예방매트리스 2종 단종 급여 제외..</a></li>
+                            <li class="noti_data">2022.12.30</li>
+                        </ul>
+                        <hr>                      
+                    </div>
+                </div>
+                <!-- 10.고객센터 -->
+                <div class="board_titleWrap">
+                    <div class="board_title">
+                        <span class="e_Title">고객센터</span>                                        
+                    </div>
+                    <hr class="board_bar">
+                    <div class="cs_conWrap">
+                        <div class="m_csWrap">
+                            <div class="m_csBoardWrap">
+                                <ul class="m_cs">
+                                    <li class="m_iconBg"><img src="images/common/thkc_ico_faq.svg" alt=""><li>                                        
+                                    <li class="m_csTitleWrap" onclick="location.href='#'">
+                                        <h3>자주하는 질문</h3>
+                                        <span>궁금한 사항을 확인하실 수 있습니다.</span>
+                                    </li>                                    
+                                </ul>
+                                <ul class="m_cs"> 
+                                    <li class="m_iconBg"><img src="images/common/thkc_ico_11.svg" alt=""><li>                                        
+                                    <li class="m_csTitleWrap" onclick="location.href='#'">
+                                        <h3>1:1문의</h3>
+                                        <span>운영시간 내에 순차적으로 답변해 드립니다.</span>
+                                    </li>                              
+                                </ul>
+                            </div>
+                            <!-- 모바일 추가 -->
+                            <div class="mobile_csBoardWrap">
+                                <ul class="m_cs">
+                                    <li class="m_iconBg"><img src="images/main_eroum/thkc_ico_member.svg" alt=""><li>                                        
+                                    <li class="m_csTitleWrap" onclick="location.href='#'">
+                                        <h3>멤버십 소개</h3>                                        
+                                    </li>                                    
+                                </ul>
+                                <ul class="m_cs"> 
+                                    <li class="m_iconBg"><img src="images/common/thkc_ico_lnb_remote.svg" alt=""><li>                                        
+                                    <li class="m_csTitleWrap" onclick="location.href='#'">
+                                        <h3>원격지원 서비스</h3>                                        
+                                    </li>                              
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 멤버십 (pc에서만) -->
+                        <div class="m_membWrp" onclick="location.href='#'">
+                                <img src="images/main_eroum/thkc_ico_member.svg" alt="">
+                                <h3>멤버쉽 소개</h3>
+                                <span>회원 등급과 혜택에 대해 한눈에 확인 하실 수 있습니다.</span>  
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 11.고객센터 정보 (모바일에서만)-->
+                <div class="cs_infoWrap">
+                    <div class="cs_phone">
+                        <img src="images/common/thkc_logo_mark.svg" alt="">
+                        <span class="f_s14 f_bold100">이로움 고객센터</span>
+                        <span class="phone">1533-5088</span>
+                    </div>
+                    <div class="f_s14">
+                        <ul class="cs_m_info">
+                            <li class="cs_infoTitle">운영시간</li>
+                            <li>[평일] 08:30~17:30 (점심시간 12시~13시) /<br>
+                                [주말/공휴일]  휴무</li>
+                        </ul>
+                        <ul class="cs_m_info">
+                            <li><span class="cs_infoTitle">이메일</span> cs@thkc.co.kr</li>
+                            <li class="null"> / </li>
+                            <li><span class="cs_infoTitle">팩스</span> 02-861-9084</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             
           </section>
         </div>
     </div>
 
     <!-- footer Wrap -->
-    <div id="footerWrap">
-        풋터
-    </div>
+    <footer id="footerWrap">
+        <!-- footer 메뉴 바 -->
+        <div class="f_menuBgWrap">
+            <div class="f_menuWrap container">
+                <div class="f_logoWrap">
+                    <div class="f_logo"><img src="images/common/thkc_logo_footer.svg" alt="logo"></div>
+                    <ul class="f_menu">
+                        <li><a href="#">회사정보</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="f_Fsns">
+                        <li><input type="text"></li>
+                        <li><img src="images/common/thkc_btn_sns_talk.svg" alt=""></li>
+                        <li><img src="images/common/thkc_btn_sns_youtube.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer 인포 바 -->
+        <div class="f_infoBgWrap">
+            <div class="f_infoWrap">
+                인포바
+            </div>            
+        </div>
+    </footer>
 
 
 
