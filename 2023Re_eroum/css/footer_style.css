@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+footer .f_infoWrap{
+    padding: 0px 20px;
+}
 footer .f_menuBgWrap{
     background: #EFEFEF;
 }
@@ -48,6 +50,17 @@ footer .f_sns .sns{
 footer .f_sns .sns:hover{
     background: #333;
 }
+footer .f_Fsns_d .m_f_Fsns{
+    display: none;
+}
+footer .f_infoWrap{
+    color: #fff;
+    display: flex;
+}
+footer .f_infoWrap .f_info ul li{
+    font-size: 12px; font-weight: 100;
+    padding: 5px 0; letter-spacing: -0.018em;
+}
 
 
 /********** css responsive **********/
@@ -66,17 +79,15 @@ footer .f_sns .sns:hover{
     footer .f_menuWrap {
         display: flex; align-items: center;
         flex-direction: column;
-        padding: 10px 20px;
+        padding: 10px px;
     }    
-    footer .f_Fsns{
-        display: none;
-        /* gap:50px */
-        /* width: 100%;
-        display: flex; justify-content:space-between; */
+    footer .f_menuWrap .f_Fsns, .f_cs, .f_remoteWrap{display: none; }
+    footer .f_Fsns_d .m_f_Fsns{display: block; }
+    footer .f_Fsns_d .m_f_Fsns .f_Fsns{       
+        display: flex; justify-content:space-between; padding: 10px 0;  
     }
-    footer .m_f_Fsn{display: block;}
-    footer .f_menu{margin-bottom: 10px;}
-    footer .f_site {padding: 7px 50px;}
+    footer .f_site {padding: 7px 70px;}
+    footer .f_infoWrap{flex-direction: column;}
 
 }
 
