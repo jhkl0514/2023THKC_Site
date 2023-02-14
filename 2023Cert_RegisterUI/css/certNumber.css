@@ -71,9 +71,9 @@ html,body{height: 100%;}
     border: 2px solid #333;
     border-radius: 5px;    
     padding: 0px 10px;
-    font-size: 20px; 
+    font-size: 14px; 
 }
-input[type='password']::placeholder, textarea::placeholder{
+input[type='text']::placeholder, textarea::placeholder{
     color:#bbb; font-size: 14px; 
 }
 .okType{
