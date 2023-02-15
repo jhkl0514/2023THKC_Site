@@ -55,11 +55,47 @@ footer .f_Fsns_d .m_f_Fsns{
 }
 footer .f_infoWrap{
     color: #fff; display: flex;
-   
+    justify-content: space-between; 
 }
 footer .f_infoWrap .f_info ul li{
     font-size: 12px; font-weight: 100;
     padding: 5px 0; 
+}
+footer .f_infoWrap .f_info{width: 34%;}
+footer .f_infoWrap .f_cs{width: 46%; padding-left: 15%;}
+footer .f_infoWrap .f_remoteWrap{width: 19%;}
+footer .f_info .bnt_license a{
+    color: #333; font-weight: 400;
+    line-height: 20px;
+    background: #F0F0F0;
+    border-radius: 4px;
+    padding: 1px 5px; margin-left: 10px;
+}
+footer .f_info .bnt_license a:hover{
+    background: #FDF6D4; 
+}
+footer .f_info .f_br{display: none;}
+footer .f_cs ul li{display: flex; padding-bottom: 10px; font-size: 14px;}
+footer .f_cs h4{
+    font-size: 18px; font-weight: 500; letter-spacing: -0.03em;
+}
+footer .f_cs .phone{ padding: 0px 0px 10px 10px; font-size: 35px; font-weight: 700; color: #FAC03D;}
+footer .f_cs_title{align-items: center;}
+footer .f_cs_data{padding-left: 10px; font-size: 16px; font-weight: 300;}
+footer .f_cs_data a{color: #fff;}
+footer .f_cs_data a:hover{text-decoration: underline;}
+footer .f_remote{display: flex; gap: 15px; margin-bottom: 25px;}
+footer .f_remote .rem_con{font-size:14px; font-weight: 100; padding-top: 5px;}
+footer .btn_remote{
+    color: #333;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    display: flex; justify-content: space-between; align-items: center;    
+}
+footer .btn_remote:hover{
+    cursor: pointer;
+    background: #FAC03D 
 }
 
 
@@ -82,19 +118,19 @@ footer .f_infoWrap .f_info ul li{
     footer .f_menuWrap {
         display: flex; align-items: center;
         flex-direction: column;
-        padding: 10px px;
+        padding: 10px 0px;
     }    
     footer .f_menuWrap .f_Fsns, .f_cs, .f_remoteWrap{display: none; }
     footer .f_Fsns_d .m_f_Fsns{display: block; }
-    footer .f_Fsns_d .m_f_Fsns .f_Fsns{       
-        display: flex; justify-content:space-between; padding: 10px 0;  
-    }
+    footer .f_Fsns_d .m_f_Fsns .f_Fsns{display: flex; justify-content:space-between; padding: 10px 0;}
     footer .f_site {padding: 7px 70px;}
     footer .f_infoWrap{flex-direction: column;}
-    footer .f_infoWrap .f_info ul li{
-        font-size: 10px; letter-spacing: 0em;
-    }
+    footer .f_infoWrap .f_info{width: 100%;}
+    footer .f_infoWrap .f_info ul li{font-size: 10px; letter-spacing: 0em;}
     footer .f_infoWrap .f_info{padding: 20px 0;}
+    footer .f_info .f_br{display: block;}
+    footer .f_info .bnt_license a{margin-left: 0px;}
+   
 
 }
 

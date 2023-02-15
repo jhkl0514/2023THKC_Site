@@ -2,17 +2,28 @@ console.log("test");
 
 
 let view = true;
+// 토글
 $(".toggle").click(function(){
     if( view == true){
         $(".toggle").addClass("active");
+        $(".asideClone").css("left",0);
+        $(".overlay").show();
         view = false;
     }else{
         $(".toggle").removeClass("active");
+        $(".asideClone").css("left","-100%");
+        $(".overlay").hide();
         view = true;
     }
-    
+})
+$(".overlay").click(function(){
+  $(".asideClone").css("left","-100%");
+  $(".toggle").removeClass("active")
+  $(".overlay").hide();
+
 })
 
+// 메뉴
 $(".main_menu li a").click(function(e){
     e.preventDefault();
     if($(this).hasClass("active")){
@@ -21,9 +32,12 @@ $(".main_menu li a").click(function(e){
         $(".main_menu li a").removeClass("active");
          $(this).addClass("active").addClass("");   
     }
-       
-
 })
+// aside 메뉴를 가져와서 복제하고 appendTo 한다.
+$("#asideWrap aside").clone().appendTo(".mobileAside")
+
+// 패밀리사이트를 가져와서 복제하고 appendTo 한다.
+$(".f_Fsns").clone().appendTo(".m_f_Fsns")
 
 
 // Initialize Swiper               
@@ -65,5 +79,4 @@ var swiper = new Swiper(".eventSwiper", {
       },
     });
 
-// 패밀리사이트를 가져와서 복제하고 appendTo를 한다 ()
-$(".f_Fsns").clone().appendTo(".m_f_Fsns")
+

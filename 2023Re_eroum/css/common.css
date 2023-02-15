@@ -18,6 +18,15 @@ html, body{
 .f_bold700{font-weight: 700;}
 .f_bold100{font-weight: 100;}
 
+
+
+.asideClone,
+.bg,
+.overlay {
+    display: none;
+}
+
+
 /********** css responsive init **********/
 .container{
     width: 1400px;
@@ -73,8 +82,43 @@ html, body{
     }    
 }
 @media (max-width: 767px) {
-    footer{background: pink;    }
-}
+    .asideClone,
+    .bg,
+    .overlay {
+        display: block;
+    }
+    .bg {
+        width: 100%;
+        height: 100%;
+        background: white;
+        position: absolute; top: 0; left: -100%; transition: 0.3s;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgb(0, 0, 0);
+        opacity: 0.5;
+        z-index: 1000;
+
+    }
+   .asideClone {
+        position: fixed;
+        width: 85%;
+        height: 100%;
+        padding-left: 30px;
+        top: -0px;
+        left: -100%;
+        background: white;
+        display: block;
+        transition: 0.5s;
+        z-index: 10000;
+
+    }
+}    
 
 @media (max-width: 430px) {     
 }
