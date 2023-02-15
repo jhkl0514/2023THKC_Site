@@ -90,27 +90,29 @@ html, body{
     .bg {
         width: 100%;
         height: 100%;
-        background: white;
-        position: absolute; top: 0; left: -100%; transition: 0.3s;
+        background: pink;
+        position: absolute;
+        top: 0; _left: -100%; transition: 0.3s;
     }
     .overlay {
         display: none;
-        position: fixed;
+        position:fixed;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
+        border: 0;
         background: rgb(0, 0, 0);
         opacity: 0.5;
         z-index: 1000;
 
     }
    .asideClone {
-        position: fixed;
+        position:absolute;
         width: 85%;
         height: 100%;
         padding-left: 30px;
-        top: -0px;
+        top: 0px;
         left: -100%;
         background: white;
         display: block;

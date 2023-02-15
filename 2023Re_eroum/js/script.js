@@ -1,5 +1,9 @@
 console.log("test");
 
+// 메뉴
+$(".bg").slideUp()
+
+
 
 let view = true;
 // 토글
@@ -7,11 +11,13 @@ $(".toggle").click(function(){
     if( view == true){
         $(".toggle").addClass("active");
         $(".asideClone").css("left",0);
+        $(".bg").css("left",0);
         $(".overlay").show();
         view = false;
     }else{
         $(".toggle").removeClass("active");
         $(".asideClone").css("left","-100%");
+        $(".bg").css("left","-100%");
         $(".overlay").hide();
         view = true;
     }
