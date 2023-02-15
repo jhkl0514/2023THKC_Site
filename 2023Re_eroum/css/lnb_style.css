@@ -6,6 +6,10 @@ aside {
     width: 264px;
     background: #fff;
 }
+.toggleClone .m_toggle  {
+    display: block;
+}
+
 
 #memberWrap {
     margin-top: 30px;
@@ -224,4 +228,37 @@ aside .downlodeWrap div:last-child{
 }
 aside .downlodeWrap div:hover{
     cursor: pointer;
+}
+
+/* 토글 버튼 */
+.m_toggle {   
+    position: absolute; 
+    top: 20px;
+    left: 290px; 
+    width: 25px;
+    height: 25px;
+    background: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    display: block;
+    cursor: pointer;
+}
+.m_toggle div {
+    width: 20px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.m_toggle .bar1 {
+    transform: translateY(10px) rotate(315deg);
+}
+.m_toggle .bar2 {
+    opacity: 0;
+}
+.m_toggle .bar3 {
+    transform: translateY(10px) rotate(-315deg);
 }

@@ -1,8 +1,5 @@
 console.log("test");
 
-// 메뉴
-$(".bg").slideUp()
-
 
 
 let view = true;
@@ -24,8 +21,15 @@ $(".overlay").click(function(){
   $(".asideClone").css("left","-100%");
   $(".toggle").removeClass("active")
   $(".overlay").hide();
-
 })
+
+$(".m_toggle").click(function(){
+  $(".asideClone").css("left","-100%");
+  $(".toggle").removeClass("active")
+  $(".overlay").hide();
+})
+
+
 
 
 // aside 메뉴를 가져와서 복제하고 appendTo 한다.
