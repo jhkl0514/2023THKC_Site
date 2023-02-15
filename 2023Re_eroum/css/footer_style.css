@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 footer .f_infoWrap{
-    padding: 0px 20px;
+    padding: 30px 0px;
 }
 footer .f_menuBgWrap{
     background: #EFEFEF;
@@ -54,12 +54,12 @@ footer .f_Fsns_d .m_f_Fsns{
     display: none;
 }
 footer .f_infoWrap{
-    color: #fff;
-    display: flex;
+    color: #fff; display: flex;
+   
 }
 footer .f_infoWrap .f_info ul li{
     font-size: 12px; font-weight: 100;
-    padding: 5px 0; letter-spacing: -0.018em;
+    padding: 5px 0; 
 }
 
 
@@ -74,7 +74,10 @@ footer .f_infoWrap .f_info ul li{
 @media (max-width: 991px) {   
  
 }
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
+    footer .f_infoWrap{
+        padding: 10px 20px;
+    }  
     footer .f_logo{display: none;}  
     footer .f_menuWrap {
         display: flex; align-items: center;
@@ -88,6 +91,10 @@ footer .f_infoWrap .f_info ul li{
     }
     footer .f_site {padding: 7px 70px;}
     footer .f_infoWrap{flex-direction: column;}
+    footer .f_infoWrap .f_info ul li{
+        font-size: 11px; letter-spacing: 0em;
+    }
+    footer .f_infoWrap .f_info{padding: 20px 0;}
 
 }
 
