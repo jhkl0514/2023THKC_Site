@@ -7,24 +7,24 @@ let view = true;
 $(".toggle").click(function () {
   if (view == true) {
     $(".toggle").addClass("active");
-    $(".asideClone").css("left", 0);
+    $(".asideClone").css("right", 0);
     $(".overlay").show();
 
   } else {
     $(".toggle").removeClass("active");
-    $(".asideClone").css("left", "-100%");
+    $(".asideClone").css("right", "-100%");
     $(".overlay").hide();
     view = true;
   }
 })
 $(".overlay").click(function () {
-  $(".asideClone").css("left", "-100%");
+  $(".asideClone").css("right", "-100%");
   $(".toggle").removeClass("active")
   $(".overlay").hide();
 })
 
 $(".m_toggle").click(function () {
-  $(".asideClone").css("left", "-100%");
+  $(".asideClone").css("right", "-100%");
   $(".toggle").removeClass("active")
   $(".overlay").hide();
 })

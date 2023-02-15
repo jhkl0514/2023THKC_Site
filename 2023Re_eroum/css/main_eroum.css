@@ -261,6 +261,11 @@ section .guideTitle {
     justify-content: center;
     align-items: flex-end;
     background: #fff;
+    gap:15px
+}
+section .guideTitle img{
+    width: 18px;
+    padding-bottom: 5px;
 }
 
 section .moble_guideBoxWrap {
