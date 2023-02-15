@@ -1,88 +1,127 @@
 @charset "utf-8";
 
-section{
+section {
     margin-top: 30px;
 }
+
 /*  대시보드  */
-section .dash_bWrap{
+section .dash_bWrap {
     background: #FAF7F5;
-    padding: 10px; border-radius: 20px;
+    padding: 10px;
+    border-radius: 20px;
 }
-section .dashList{
-    display: flex; justify-content:space-around; align-items: center;
-    font-size: 14px; font-weight: 500;
+
+section .dashList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
 }
-section .dashList .dashTitle{
-   font-size: 16px; font-weight: 500; display: flex;
+
+section .dashList .dashTitle {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
 }
-section .dashList .dash_sTitle{
-    display: flex; align-items:center;
+
+section .dashList .dash_sTitle {
+    display: flex;
+    align-items: center;
 }
-section .dashList .dash_sTitle .d_n{
+
+section .dashList .dash_sTitle .d_n {
     position: relative;
     padding-bottom: 7px;
 }
-section .dashList .dash_sTitle .d_n:hover::after{
+
+section .dashList .dash_sTitle .d_n:hover::after {
     position: absolute;
-    content:""; display: block;
-    height: 1px; width: 100%;  
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
     background: #001E9A;
 }
- section .dashList .dash_line img{
-    height: 20px; width: 1px;
+
+section .dashList .dash_line img {
+    height: 20px;
+    width: 1px;
     filter: invert(9%) sepia(0%) saturate(1294%) hue-rotate(132deg) brightness(92%) contrast(89%);
 }
-section .dashList .dashTitle img{
+
+section .dashList .dashTitle img {
     margin-left: 20px;
 }
-section .dashList .d_n{
-    font-size: 30px; font-weight: 500;
+
+section .dashList .d_n {
+    font-size: 30px;
+    font-weight: 500;
     letter-spacing: -0.5px;
 }
-section .dashList .d_unit{
-    font-size: 12px; 
+
+section .dashList .d_unit {
+    font-size: 12px;
 }
+
 /* 공지사항 */
-section .top_noticeWrap{
+section .top_noticeWrap {
     padding: 15px 0;
-    display: flex; justify-content: center;
+    display: flex;
+    justify-content: center;
     font-size: 14px;
 }
-section .top_notice{
+
+section .top_notice {
     display: flex;
 }
-section .top_notice .noticeTitle{
-    display: flex;  gap: 8px;
-    padding-right: 10px; font-weight: 500;
-    vertical-align: middle; 
+
+section .top_notice .noticeTitle {
+    display: flex;
+    gap: 8px;
+    padding-right: 10px;
+    font-weight: 500;
+    vertical-align: middle;
 }
-section .top_notice .noticeTitle img{
-    width: 16px; margin-top:2px
+
+section .top_notice .noticeTitle img {
+    width: 16px;
+    margin-top: 2px
 }
-section .top_notice .noticeCon{
-    display: flex; 
+
+section .top_notice .noticeCon {
+    display: flex;
 }
+
 section .top_notice .noticeCo_menun a {
-    font-size: 14px; color: #6B6B6B;
+    font-size: 14px;
+    color: #6B6B6B;
 }
+
 section .top_notice .noticeCon a:hover {
     text-decoration: underline;
 }
+
 section .top_notice .noticeArrow {
     padding-left: 20px;
 }
-section .top_notice .noticeArrow img{
+
+section .top_notice .noticeArrow img {
     display: inline;
-    padding: 0 0 0 10px;    
+    padding: 0 0 0 10px;
 }
+
 /* 프로모션 슬라이딩 배너 */
-section .eventWrap{
+section .eventWrap {
     margin-bottom: 100px;
 }
-section .img_r img{
-    border-radius:20px;
-    max-width: 100%; height: auto;
+
+section .img_r img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
 }
+
 /* swiper */
 :root {
     --swiper-theme-color: #FF9015 !important;
@@ -92,698 +131,970 @@ section .img_r img{
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
     --swiper-navigation-top-offset: 50%;
-    --swiper-navigation-sides-offset:20px;
+    --swiper-navigation-sides-offset: 20px;
     --swiper-pagination-bottom: 5px !important;
 }
 
 /* 메인 검색 영역 */
-section .m_searchWrap{
-    display: flex; flex-direction: column; align-items: center;
+section .m_searchWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 120px;
     width: 100%;
 }
-section .m_searchWrap .ms_Title{
-    font-size: 30px; font-weight: 700;
-    color: #222; letter-spacing: -1px;
+
+section .m_searchWrap .ms_Title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: -1px;
     margin-bottom: 30px;
 }
-    /* 검색 */
-section .m_search{
+
+/* 검색 */
+section .m_search {
     position: relative;
-    margin-bottom: 25px;    
+    margin-bottom: 25px;
 }
-section .m_in_search{
-    width: 550px;  height: 45px;
-    background: #fff; 
+
+section .m_in_search {
+    width: 550px;
+    height: 45px;
+    background: #fff;
     border-top: 0px solid #fff;
     border-left: 0px solid #fff;
     border-right: 0px solid #fff;
     border-top: 0px solid #fff;
     border-bottom: 4px solid #222;
     padding: 0px 25px;
-    font-size: 14px;   
+    font-size: 14px;
 }
-section .m_in_search:focus{outline:none;} 
-section input[type='text']::placeholder, textarea::placeholder{
-    color:#bbb; font-size: 16px; 
+
+section .m_in_search:focus {
+    outline: none;
 }
-section .m_icon_serch{
-    position: absolute;  
-    right: 10px; top:8px;
+
+section input[type='text']::placeholder,
+textarea::placeholder {
+    color: #bbb;
+    font-size: 16px;
 }
-section .m_icon_serch img{
+
+section .m_icon_serch {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+section .m_icon_serch img {
     width: 25px;
 }
-    /* 해시태그 */
-section .hash_tagWrap{
-    display: flex; gap: 15px;
+
+/* 해시태그 */
+section .hash_tagWrap {
+    display: flex;
+    gap: 15px;
 }
-section .hash_tagWrap .ht{    
+
+section .hash_tagWrap .ht {
     background: #F4F4F4;
     border-radius: 30px;
-    padding: 8px 20px; text-align: center;
+    padding: 8px 20px;
+    text-align: center;
 }
+
 /* 05.이로움 가이드  */
-section .guideWrap{
-    display: flex;  margin-bottom: 130px;
+section .guideWrap {
+    display: flex;
+    margin-bottom: 130px;
 }
-section .e_TitleWrap{
+
+section .e_TitleWrap {
     width: 320px;
 }
-section .e_Title{
+
+section .e_Title {
     font-size: 35px;
     letter-spacing: -1px;
 }
-section .e_TitleWrap .e_Con{
-    font-size: 18px;  
+
+section .e_TitleWrap .e_Con {
+    font-size: 18px;
     padding-right: 30px;
 }
-section .guideBoxWrap{
+
+section .guideBoxWrap {
     width: 100%;
-    display: flex;    
-    justify-content: space-between;
-    gap: 20px;   
-}
-section .g_BoxWrap{    
     display: flex;
-    border-radius:20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section .g_BoxWrap {
+    display: flex;
+    border-radius: 20px;
     flex-wrap: wrap;
-    justify-content: center; align-content: space-between;
+    justify-content: center;
+    align-content: space-between;
     background: oldlace;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
-section .g_Box{
-    padding: 30px 10px;   
+
+section .g_Box {
+    padding: 30px 10px;
 }
-section .g_Box img{
-    max-width: 100%; height: auto;
+
+section .g_Box img {
+    max-width: 100%;
+    height: auto;
 }
-section .guideTitle{
+
+section .guideTitle {
     width: 100%;
-    font-size: 18px; font-weight: 500;
-    border-radius:0 0 20px 20px;
-    padding: 20px 10px; 
-    display: flex; justify-content: center; align-items:flex-end;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background: #fff;
 }
-section .moble_guideBoxWrap{
+
+section .moble_guideBoxWrap {
     display: none;
 }
 
 
 /* 06.안전손잡이 */
-.banner01_BarWrap{
+.banner01_BarWrap {
     display: flex;
     background: #EAF3EA;
     border-radius: 20px;
     position: relative;
     margin-bottom: 130px;
 }
-section .banner01_img img{
+
+section .banner01_img img {
     width: 160px;
 }
-section .banner01_img{
-   position: absolute;
-   bottom: 0; left: 250px;
+
+section .banner01_img {
+    position: absolute;
+    bottom: 0;
+    left: 250px;
 }
+
 section .b_titleWrap {
-    display: flex; flex-direction: column; justify-content: center; align-items:flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 20px 20px 20px 430px;
 
 }
-section .b_titleWrap .banner01Title{
-    font-size: 24px; font-weight: 500;
+
+section .b_titleWrap .banner01Title {
+    font-size: 24px;
+    font-weight: 500;
 }
-section .b_titleWrap .banner01Con{
-    font-size: 20px; font-weight: 300;
+
+section .b_titleWrap .banner01Con {
+    font-size: 20px;
+    font-weight: 300;
 }
 
 /* 07.이로움 추천상품 */
-section  .pdWrap{
-    display: flex;  margin-bottom: 130px;
+section .pdWrap {
+    display: flex;
+    margin-bottom: 130px;
 }
-section .btn_pdMore{
+
+section .btn_pdMore {
     border: 1px solid #7D7D7D;
     border-radius: 30px;
     text-align: center;
-    width: 170px;  padding: 7px 0px;
+    width: 170px;
+    padding: 7px 0px;
     font-weight: 500;
     margin-top: 20px;
+    cursor: pointer;
 }
-section .pdBoxWrap{
+
+section .pdBoxWrap {
     width: 100%;
-    display: flex;    
+    display: flex;
     justify-content: space-between;
     gap: 5px;
-    cursor: pointer; 
+    cursor: pointer;
 }
-section .pd_BoxWrap .pd_Box{
-    display: flex; justify-content: center;
+
+section .pd_BoxWrap .pd_Box {
+    display: flex;
+    justify-content: center;
     padding: 5px;
     border-radius: 20px;
     border: 1px solid #E7E7E7;
     background-color: #fff;
 }
-section .pd_BoxWrap .pd_Box img{
-    width: 240px; height: 240px;
+
+section .pd_BoxWrap .pd_Box img {
+    width: 240px;
+    height: 240px;
     border-radius: 20px;
 }
-section hr{
-    border: 0.5px solid #E9E9E9; border-bottom:0px;    
+
+section hr {
+    border: 0.5px solid #E9E9E9;
+    border-bottom: 0px;
 }
-section .pd_BoxWrap .pd_Title{
+
+section .pd_BoxWrap .pd_Title {
     padding: 15px 0;
 }
-section .pd_BoxWrap .pd_Title h2{
-    font-size: 22px; 
+
+section .pd_BoxWrap .pd_Title h2 {
+    font-size: 22px;
     line-height: 160%;
 }
-section .pd_BoxWrap .pd_Tag{
-    font-size: 14px; color: #6C6868;
-    letter-spacing: -0.03em; line-height: 130%
+
+section .pd_BoxWrap .pd_Tag {
+    font-size: 14px;
+    color: #6C6868;
+    letter-spacing: -0.03em;
+    line-height: 130%
 }
-section .pd_BoxWrap .pd_Tag .tag{
+
+section .pd_BoxWrap .pd_Tag .tag {
     padding: 0 10px 0 0;
 }
-section .price_BoxWrap{
+
+section .price_BoxWrap {
     margin: 15px 0;
 }
-section .priceWrap{
+
+section .priceWrap {
     display: flex;
     margin: 5px 0px;
     letter-spacing: -0.03em;
 }
-section .priceWrap h4{    
+
+section .priceWrap h4 {
     border-radius: 10px;
     text-align: center;
-    font-size: 14px; font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
     letter-spacing: -0.03em;
     padding: 4px 25px;
     margin-right: 20px;
 }
-section .priceWrap .allPrice{
+
+section .priceWrap .allPrice {
     background: #EDEDED;
     color: #000;
 }
-section .priceWrap .salePrice{
+
+section .priceWrap .salePrice {
     background: #F58220;
     color: #fff;
 }
-section .priceWrap .Price_02{
+
+section .priceWrap .Price_02 {
     font-weight: 700;
     font-size: 20px;
 }
-section .priceWrap .Price_unit{
+
+section .priceWrap .Price_unit {
     font-size: 12px;
-    display: flex; align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 /* 08.이로움만의 서비스 */
-section .serviceWrap{
+section .serviceWrap {
     margin-bottom: 130px;
 }
-section .svBox{
-    margin-top: 20px;   
+
+section .svBox {
+    margin-top: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     width: 100%;
     padding: 40px 40px;
-    display: flex; flex-direction: column; align-items: center;    
-}
-section .svBg01{
-    background: #FCFAEA;
-}
-section .svBg02{
-    background: #EAF3EA;
-}
-section .svBg03{
-    background: #ECF5FB;
-}
-section .svWrap{
-    display: flex; gap:35px; justify-content: space-between;
-}
-section .svWrap .svBox h3{
-    font-size: 25px; font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-section .svWrap .svBox .sv_con{
-   font-weight: 300; text-align: center;
+section .svBg01 {
+    background: #FCFAEA;
 }
-section .moble_svWrap{
+
+section .svBg02 {
+    background: #EAF3EA;
+}
+
+section .svBg03 {
+    background: #ECF5FB;
+}
+
+section .svWrap {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+}
+
+section .svWrap .svBox h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section .svWrap .svBox .sv_con {
+    font-weight: 300;
+    text-align: center;
+}
+
+section .moble_svWrap {
     display: none;
 }
 
- /* 09,10.공지사항/고객센터 Wrap */
- section .boardWrap{
+/* 09,10.공지사항/고객센터 Wrap */
+section .boardWrap {
     margin-bottom: 100px;
- }
- section .boardWrap, .board_title{
-    display: flex; justify-content: space-between;
+}
+
+section .boardWrap,
+.board_title {
+    display: flex;
+    justify-content: space-between;
     gap: 55px;
- }
- section .board_titleWrap{
+}
+
+section .board_titleWrap {
     width: 100%;
- }
- section .board_title{
+}
+
+section .board_title {
     padding: 5px 0;
-    display: flex; align-items: flex-end; 
+    display: flex;
+    align-items: flex-end;
     position: relative;
- }
- section .board_bar{
+}
+
+section .board_bar {
     border: 1px solid #222222;
- }
- section .board_title .b_more{
-    width: 22px; height: 22px;
+}
+
+section .board_title .b_more {
+    width: 22px;
+    height: 22px;
     background: #efefef;
     border-radius: 3px;
-    display: flex; align-items: flex-end; justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     cursor: pointer;
- }
- section .board_title .b_more:hover{
-    background: #EEE3E1;
- }
- section .noti_conWrap{
+}
+
+section .board_title .b_more:hover {
+    filter: brightness(90%);
+}
+
+section .noti_conWrap {
     margin-top: 10px;
- }
- section .noti_con{
-    display: flex; justify-content: space-between;
+}
+
+section .noti_con {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 0;
- }
- section .noti_text:hover{
+}
+
+section .noti_text:hover {
     text-decoration-line: underline;
- }
- section .noti_data{
-    color: #B0B0B0; font-weight: 300; font-size: 14px;
- }
+}
+
+section .noti_data {
+    color: #B0B0B0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
 /* 고객센터 */
- section .cs_conWrap{
+section .cs_conWrap {
     border: 1px solid #D6D6D6;
- }
- section .cs_conWrap {
+}
+
+section .cs_conWrap {
     width: 100%;
-    display: flex; justify-content: space-between;
- }
- section .m_csWrap{
-    width: 100%;    
- }
- section .m_membWrp{
+    display: flex;
+    justify-content: space-between;
+}
+
+section .m_csWrap {
+    width: 100%;
+}
+
+section .m_membWrp {
     width: 90%;
     border-left: 1px solid #D6D6D6;
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 30px;
- }
- section .m_csBoardWrap{
+}
+
+section .m_csBoardWrap {
     padding: 30px 10px 0px 10px;
-    cursor: pointer;    
- }
- section .m_cs{
-    display: flex; 
-    margin-bottom: 25px;    
- }
- section .m_cs .m_iconBg{
-    width: 70px; height: 70px;
+    cursor: pointer;
+}
+
+section .m_cs {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+section .m_cs .m_iconBg {
+    width: 70px;
+    height: 70px;
     background: #EFEFEF;
     border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
- }
- section .m_cs .m_iconBg img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .m_cs .m_iconBg img {
     width: 30px;
- }
- section .m_csTitleWrap{
-    width: 70%; 
-    padding: 0px 0px 0px 15px ;    
- }
- section .m_csTitleWrap h3, .m_membWrp h3{
+}
+
+section .m_csTitleWrap {
+    width: 70%;
+    padding: 0px 0px 0px 15px;
+}
+
+section .m_csTitleWrap h3,
+.m_membWrp h3 {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: -0.03em;
- }
- section .m_csTitleWrap h3:hover, .m_membWrp h3:hover{
+}
+
+section .m_csTitleWrap h3:hover,
+.m_membWrp h3:hover {
     text-decoration-line: underline;
- }
- section .m_csTitleWrap span, .m_membWrp span {
+}
+
+section .m_csTitleWrap span,
+.m_membWrp span {
     font-weight: 300;
     font-size: 14px;
     line-height: 130%;
     letter-spacing: -0.03em;
- }
- section .m_membWrp{
+}
+
+section .m_membWrp {
     cursor: pointer;
- }
- section .m_membWrp h3{
+}
+
+section .m_membWrp h3 {
     padding: 10px 0px;
- }
- section .m_membWrp span{
+}
+
+section .m_membWrp span {
     text-align: center;
- }
- section .mobile_csBoardWrap{
+}
+
+section .mobile_csBoardWrap {
     display: none;
- }
+}
+
 /* 11.고객센터 정보 (모바일에서만) */
- section .cs_infoWrap{
+section .cs_infoWrap {
     display: none;
- }
+}
 
 
 
 
 
 /********** css responsive **********/
-@media (max-width: 1399px) {
+@media (max-width: 1399px) {}
 
-}
-
-@media (max-width: 1199px) {
-    
-       
-}
+@media (max-width: 1199px) {}
 
 @media (max-width: 991px) {
-    section .guideWrap,  section .pdWrap{display: block; }
-    section .e_TitleWrap{width: 100%;}
-    section .btn_pdMore{font-size: 14px; margin: 10px 0px;}     
-    section .guideTitle{font-size: 14px; }
-    section .svWrap{gap:10px;}
-    section .svWrap .svBox{ padding: 20px 20px; width: 300px;}
-    section .svWrap .svBox .sv_img img{width: 150px;}    
-    
-    section .boardWrap{display: block;} 
-    section .board_titleWrap{margin-bottom: 50px;}
-}
-@media (max-width: 767px) {
-    section{margin-top: 80px;}
-    section .dash_bWrap{display: none;}
-    section .top_noticeWrap{display: flex; justify-content: flex-start; padding-left: 10px;}    
-    section .top_notice .noticeCon a {font-size: 12px;}   
-    section .top_notice{display: block;}
-    /* 프로모션 슬라이딩 배너 */
-    section .eventWrap{
-        margin-bottom: 30px;
-    }
-    /* swiper */
-    :root {  
-    --swiper-pagination-bullet-width: 5px;
-    --swiper-pagination-bullet-height: 5px;
-    --swiper-pagination-bottom: 2px !important;    
+
+    section .guideWrap,
+    section .pdWrap {
+        display: block;
     }
 
-    /* 메인 검색 영역 */  
-    section .m_searchWrap {
-        margin-bottom: 40px;
+    section .e_TitleWrap {
+        width: 100%;
     }
-    section .m_searchWrap .ms_Title{
-        font-size: 16px; font-weight: 500;
-        margin-bottom: 20px;
+
+    section .btn_pdMore {
+        font-size: 14px;
+        margin: 10px 0px;
     }
-   /* 검색 */
-   section .m_search{
-     width: 85%;
-   }
-    section .m_in_search{
-        width: 100%;  height: 45px;            
+
+    section .guideTitle {
+        font-size: 14px;
     }
-    section .m_in_search:focus{outline:none;} 
-    section input[type='text']::placeholder, textarea::placeholder{
-        color:#bbb;
+
+    section .svWrap {
+        gap: 10px;
     }
-    section .m_icon_serch{     
-        top:12px;
+
+    section .svWrap .svBox {
+        padding: 20px 20px;
+        width: 300px;
     }
-    section .m_icon_serch img{
-        width: 18px;
+
+    section .svWrap .svBox .sv_img img {
+        width: 150px;
     }
-        /* 해시태그 */
-    section .hash_tagWrap{
-        display: flex; gap: 10px;
+
+    section .boardWrap {
+        display: block;
     }
-    section .hash_tagWrap .ht{    
-        background: #F4F4F4;
-        border-radius: 30px;
-        font-size: 11px;
-        padding: 8px 20px; text-align: center;
+
+    section .board_titleWrap {
+        margin-bottom: 50px;
     }
-    section .hash_tagWrap .ht:last-child{
+}
+
+@media (max-width: 767px) {
+    section {
+        margin-top: 80px;
+    }
+
+    section .dash_bWrap {
         display: none;
     }
 
-    /* 05.이로움 가이드  */   
-    section .guideWrap{
+    section .top_noticeWrap {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    section .top_notice .noticeCon a {
+        font-size: 12px;
+    }
+
+    section .top_notice {
         display: block;
-        width: 100%; 
+    }
+
+    /* 프로모션 슬라이딩 배너 */
+    section .eventWrap {
+        margin-bottom: 30px;
+    }
+
+    /* swiper */
+    :root {
+        --swiper-pagination-bullet-width: 5px;
+        --swiper-pagination-bullet-height: 5px;
+        --swiper-pagination-bottom: 2px !important;
+    }
+
+    /* 메인 검색 영역 */
+    section .m_searchWrap {
+        margin-bottom: 40px;
+    }
+
+    section .m_searchWrap .ms_Title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    /* 검색 */
+    section .m_search {
+        width: 85%;
+    }
+
+    section .m_in_search {
+        width: 100%;
+        height: 45px;
+    }
+
+    section .m_in_search:focus {
+        outline: none;
+    }
+
+    section input[type='text']::placeholder,
+    textarea::placeholder {
+        color: #bbb;
+    }
+
+    section .m_icon_serch {
+        top: 12px;
+    }
+
+    section .m_icon_serch img {
+        width: 18px;
+    }
+
+    /* 해시태그 */
+    section .hash_tagWrap {
+        display: flex;
+        gap: 10px;
+    }
+
+    section .hash_tagWrap .ht {
+        background: #F4F4F4;
+        border-radius: 30px;
+        font-size: 11px;
+        padding: 8px 20px;
+        text-align: center;
+    }
+
+    section .hash_tagWrap .ht:last-child {
+        display: none;
+    }
+
+    /* 05.이로움 가이드  */
+    section .guideWrap {
+        display: block;
+        width: 100%;
         margin-bottom: 50px;
     }
-    section .e_TitleWrap{
+
+    section .e_TitleWrap {
         text-align: center;
         width: 100%;
         margin-bottom: 30px;
     }
-    section  .e_Title{        
+
+    section .e_Title {
         font-size: 22px;
     }
-    section .e_TitleWrap .e_Con{
-        font-size: 14px;  
+
+    section .e_TitleWrap .e_Con {
+        font-size: 14px;
         padding-right: 0px;
     }
-    section .moble_guideBoxWrap .g_Box{    
-        padding: 20px 5px;        
+
+    section .moble_guideBoxWrap .g_Box {
+        padding: 20px 5px;
     }
-    section .moble_guideBoxWrap .guideTitle{
+
+    section .moble_guideBoxWrap .guideTitle {
         font-size: 16px;
-        padding: 15px 5px;                    
+        padding: 15px 5px;
     }
-    section .g_BoxWrap{
-        cursor: pointer;
-    }
+
     /* 06.안전손잡이 */
-    section  .banner01_BarWrap{
+    section .banner01_BarWrap {
         margin-bottom: 50px;
-    }  
-    section .banner01_img img{
-        width:90px;
     }
-    section .banner01_img{
-        bottom: 0; left: 20px;
+
+    section .banner01_img img {
+        width: 90px;
     }
+
+    section .banner01_img {
+        bottom: 0;
+        left: 20px;
+    }
+
     section .b_titleWrap {
-        display: flex; flex-direction: column; justify-content: center; align-items:flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         padding: 15px 10px 15px 120px;
     }
-    section .b_titleWrap .banner01Title{
-        font-size: 14px; font-weight: 500;
+
+    section .b_titleWrap .banner01Title {
+        font-size: 14px;
+        font-weight: 500;
     }
-    section .b_titleWrap .banner01Con{
-        font-size: 12px; font-weight: 300;
+
+    section .b_titleWrap .banner01Con {
+        font-size: 12px;
+        font-weight: 300;
     }
 
     /* 07.이로움 추천상품 */
-    section .pdWrap{
+    section .pdWrap {
         display: block;
         margin-bottom: 50px;
     }
-    section .pdWrap .e_TitleWrap{
+
+    section .pdWrap .e_TitleWrap {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
     }
-    section .btn_pdMore{
-        width: 100px;  padding: 5px 0px;
+
+    section .btn_pdMore {
+        width: 100px;
+        padding: 5px 0px;
         font-size: 14px;
         font-weight: 500;
         margin-top: 10px;
-    }     
-    section .pd_BoxWrap .pd_Box img{
-        width: 150px; height: 150px;
-    }   
-    section .pd_BoxWrap .pd_Title{
+
+    }
+
+    section .pd_BoxWrap .pd_Box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section .pd_BoxWrap .pd_Title {
         padding: 15px 0;
     }
-    section .pd_BoxWrap .pd_Title h2{
-        font-size: 16px; 
+
+    section .pd_BoxWrap .pd_Title h2 {
+        font-size: 16px;
         line-height: 160%;
     }
-    section .pd_BoxWrap .pd_Tag{
-        font-size: 11px; 
+
+    section .pd_BoxWrap .pd_Tag {
+        font-size: 11px;
     }
-    section .pd_BoxWrap .pd_Tag .tag{
+
+    section .pd_BoxWrap .pd_Tag .tag {
         padding: 0 5px 0 0;
-    }    
-    section .priceWrap h4{   
+    }
+
+    section .priceWrap h4 {
         font-size: 12px;
         padding: 4px 15px;
         margin-right: 5px;
-    } 
-    section .priceWrap .Price_01{ 
+    }
+
+    section .priceWrap .Price_01 {
         font-size: 14px;
-    }   
-    section .priceWrap .Price_02{ 
+    }
+
+    section .priceWrap .Price_02 {
         font-size: 16px;
     }
 
     /* 08.이로움만의 서비스 */
-    section .serviceWrap{
+    section .serviceWrap {
         margin-bottom: 50px;
         width: 100%;
     }
-    section .svWrap{
-        display: none;        
-    }   
-    section .moble_svWrap .svBox{
+
+    section .svWrap {
+        display: none;
+    }
+
+    section .moble_svWrap .svBox {
         margin-top: 0px;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
         padding: 30px 30px;
-        width: 100%;        
-    } 
-    section .moble_svWrap{
-        display: flex; gap:35px; justify-content: space-between;      
-    }
-    section .moble_svWrap  .svBox h3{
-        font-size: 20px; font-weight: 500;
-    }    
-    section .moble_svWrap  .svBox .sv_con{
-    font-size: 12px;
-    }
-    section  .mySwiper_service{
         width: 100%;
     }
-    
+
+    section .moble_svWrap {
+        display: flex;
+        gap: 35px;
+        justify-content: space-between;
+    }
+
+    section .moble_svWrap .svBox h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    section .moble_svWrap .svBox .sv_con {
+        font-size: 12px;
+    }
+
+    section .mySwiper_service {
+        width: 100%;
+    }
+
     section .moble_svWrap .svBox .sv_img img {
         width: 80%;
     }
-    section  .mySwiper_service .svBox{
+
+    section .mySwiper_service .svBox {
         text-align: center;
     }
-    section  .mySwiper_service .swiper-slide {
+
+    section .mySwiper_service .swiper-slide {
         width: 80%;
-    }  
-    section  .mySwiper_service.swiper-slide:nth-child(2n) {
-        width: 30%;
-    }conWrap  
-    section .mySwiper_service.swiper-slide:nth-child(3n) {
+    }
+
+    section .mySwiper_service.swiper-slide:nth-child(2n) {
         width: 30%;
     }
-    
-     /* 09,10.공지사항/고객센터 Wrap */
-    section .boardWrap{
-        margin-bottom: 50px;    
-    }  
-    section .board_titleWrap{
+
+    conWrap section .mySwiper_service.swiper-slide:nth-child(3n) {
+        width: 30%;
+    }
+
+    /* 09,10.공지사항/고객센터 Wrap */
+    section .boardWrap {
+        margin-bottom: 50px;
+    }
+
+    section .board_titleWrap {
         margin-bottom: 50px;
         width: 100%;
     }
-    section .noti_text{
+
+    section .noti_text {
         font-size: 14px;
-    } 
-    section .noti_data{
-        display:none;
     }
-    section .m_membWrp{
+
+    section .noti_data {
         display: none;
     }
-    section .cs_conWrap{
+
+    section .m_membWrp {
+        display: none;
+    }
+
+    section .cs_conWrap {
         border: 0px solid #D6D6D6;
     }
-    section .m_cs{ 
-        margin-bottom: 10px;    
-     }
-     section .m_cs .m_iconBg{
-        width: 40px; height: 40px; 
-     }
-     section .m_cs .m_iconBg img{
+
+    section .m_cs {
+        margin-bottom: 10px;
+    }
+
+    section .m_cs .m_iconBg {
+        width: 40px;
+        height: 40px;
+    }
+
+    section .m_cs .m_iconBg img {
         width: 20px;
-     }
-     section .m_csTitleWrap{
-        display: flex; align-items: center;
-     }     
-     section .m_csTitleWrap h3{
-        font-size: 16px;        
-     }   
-     section .m_csTitleWrap span, .m_membWrp span {
+    }
+
+    section .m_csTitleWrap {
+        display: flex;
+        align-items: center;
+    }
+
+    section .m_csTitleWrap h3 {
+        font-size: 16px;
+    }
+
+    section .m_csTitleWrap span,
+    .m_membWrp span {
         display: none;
-     }
-     section .m_csBoardWrap, .mobile_csBoardWrap{
+    }
+
+    section .m_csBoardWrap,
+    .mobile_csBoardWrap {
         padding: 15px 0px 0px 0px;
-        cursor: pointer;    
-     }
-     section .mobile_csBoardWrap{
+        cursor: pointer;
+    }
+
+    section .mobile_csBoardWrap {
         display: block;
-     }
-     section .m_csWrap{
-        display: flex; gap:15px  
-     }
-     section .m_csTitleWrap{
-        width: 74%; 
-        padding: 0px 0px 0px 10px ;    
-     }
-     /* 11.고객센터 정보 (모바일에서만) */
-     section .cs_infoWrap{
+    }
+
+    section .m_csWrap {
+        display: flex;
+        gap: 15px
+    }
+
+    section .m_csTitleWrap {
+        width: 74%;
+        padding: 0px 0px 0px 10px;
+    }
+
+    /* 11.고객센터 정보 (모바일에서만) */
+    section .cs_infoWrap {
         display: block;
-     }
-     section .cs_phone{
-        display: flex;  align-items: center;
+    }
+
+    section .cs_phone {
+        display: flex;
+        align-items: center;
         flex-direction: column;
-        margin-bottom: 40px;            
-     }
-     section .cs_phone .phone{
+        margin-bottom: 40px;
+    }
+
+    section .cs_phone .phone {
         font-weight: 700;
         line-height: 45px;
-        font-size: 40px; color: #FF6915;  
-     }
-     section .cs_m_info{
+        font-size: 40px;
+        color: #FF6915;
+    }
+
+    section .cs_m_info {
         display: flex;
         margin-bottom: 0px;
-     }
-     section .cs_infoTitle{
-        padding-right:5px;
+    }
+
+    section .cs_infoTitle {
+        padding-right: 5px;
         font-weight: 700;
         width: 80px;
-     }
-     section .null{
+    }
+
+    section .null {
         padding: 0px 20px;
-     }
-     
-    
-    
+    }
 
-           
 
-}@media (max-width: 515px) {
-    section .pd_BoxWrap:nth-last-child(3){display: none;}
+
+
+
+
 }
 
-@media (max-width: 430px) {     
-    section .guideBoxWrap{
+@media (max-width: 515px) {
+    section .pd_BoxWrap:nth-last-child(3) {
         display: none;
-    }    
-    section .moble_guideBoxWrap{
-        display:block;         
     }
-    section .g_BoxWrap{
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);    
+}
+
+@media (max-width: 430px) {
+    section .guideBoxWrap {
+        display: none;
     }
-    section .guideTitle{
+
+    section .moble_guideBoxWrap {
+        display: block;
+    }
+
+    section .g_BoxWrap {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    section .guideTitle {
         padding: 0px;
         background: rgba(255, 153, 0, 0.09);
     }
+
     section .moble_svWrap .svBox .sv_img {
         /* padding-left: 25px; */
     }
-    section  .mySwiper_guide .swiper-slide {
+
+    section .mySwiper_guide .swiper-slide {
         width: 80%;
-    }  
-    section  .mySwiper_guide.swiper-slide:nth-child(2n) {
+    }
+
+    section .mySwiper_guide.swiper-slide:nth-child(2n) {
         width: 30%;
-    }  
+    }
+
     section .mySwiper_guide.swiper-slide:nth-child(3n) {
         width: 30%;
-    }    
-   
-   
+    }
+
+
 }
 
-@media (max-width: 360px) { 
-    section  .mySwiper_service{
+@media (max-width: 360px) {
+    section .mySwiper_service {
         width: 100%;
-    }   
+    }
 }
