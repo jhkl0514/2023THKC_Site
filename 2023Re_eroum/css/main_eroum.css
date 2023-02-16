@@ -241,6 +241,11 @@ section .g_BoxWrap {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+section .g_BoxWrap:hover {
+    box-shadow: 0 0 25px rgb(30 35 48 15%);
+    transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;  
+    box-shadow: 0 0 25px  rgba(0,0,0,0.2);
+}
 
 section .g_Box {
     padding: 30px 10px;
@@ -249,6 +254,11 @@ section .g_Box {
 section .g_Box img {
     max-width: 100%;
     height: auto;
+    transition: 0.3s; 
+}
+section .g_Box img:hover{
+    opacity: 90%;
+    transform: scale(1.1);
 }
 
 section .guideTitle {
@@ -274,12 +284,18 @@ section .moble_guideBoxWrap {
 
 
 /* 06.안전손잡이 */
-.banner01_BarWrap {
+section .banner01_BarWrap {
     display: flex;
     background: #EAF3EA;
     border-radius: 20px;
     position: relative;
     margin-bottom: 130px;
+    cursor: pointer;
+}
+section .banner01_BarWrap:hover{
+    box-shadow: 0 0 10px rgb(30 35 48 15%);
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  
+    box-shadow: 0 0 10px  rgba(0,0,0,0.1);
 }
 
 section .banner01_img img {
@@ -297,8 +313,7 @@ section .b_titleWrap {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px 20px 20px 430px;
-
+    padding: 20px 20px 20px 430px;  
 }
 
 section .b_titleWrap .banner01Title {
@@ -343,12 +358,18 @@ section .pd_BoxWrap .pd_Box {
     border-radius: 20px;
     border: 1px solid #E7E7E7;
     background-color: #fff;
+    overflow: hidden
 }
 
 section .pd_BoxWrap .pd_Box img {
     width: 240px;
     height: 240px;
     border-radius: 20px;
+    transform: scale(1);
+    transition: 0.3s ;
+}
+section .pd_BoxWrap .pd_Box img:hover{
+    transform: scale(1.1);
 }
 
 section hr {
@@ -432,6 +453,11 @@ section .svBox {
     flex-direction: column;
     align-items: center;
 }
+section .svBox:hover{
+    box-shadow: 0 0 25px rgb(30 35 48 15%);
+    transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;  
+    box-shadow: 0 0 25px  rgba(0,0,0,0.2);
+}
 
 section .svBg01 {
     background: #FCFAEA;
@@ -463,6 +489,12 @@ section .svWrap .svBox .sv_con {
 
 section .moble_svWrap {
     display: none;
+}
+section .svWrap .sv_img img {
+    transition: 0.3s; 
+}  
+section .svWrap .sv_img img:hover{    
+    transform: scale(1.1);
 }
 
 /* 09,10.공지사항/고객센터 Wrap */
@@ -660,10 +692,9 @@ section .cs_infoWrap {
         padding: 20px 20px;       
     }
 
-    section .svWrap .svBox .sv_img img {
-        width: 150px;
-    }
-
+    section .svWrap .sv_img img {
+        width: 150px;   
+    }  
     section .boardWrap {
         display: block;
     }
@@ -1006,7 +1037,9 @@ section .cs_infoWrap {
 
     section .m_csWrap {
         display: flex;
-        gap: 15px
+        gap: 15px;      
+        justify-content: center;
+        
     }
 
     section .m_csTitleWrap {
@@ -1036,6 +1069,7 @@ section .cs_infoWrap {
     section .cs_m_info {
         display: flex;
         margin-bottom: 0px;
+        justify-content: center;
     }
 
     section .cs_infoTitle {
@@ -1078,11 +1112,6 @@ section .cs_infoWrap {
         padding: 0px;
         background: rgba(255, 153, 0, 0.09);
     }
-
-    section .moble_svWrap .svBox .sv_img {
-        /* padding-left: 25px; */
-    }
-
     section .mySwiper_guide .swiper-slide {
         width: 80%;
     }

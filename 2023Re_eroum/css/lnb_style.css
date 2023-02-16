@@ -146,12 +146,12 @@ aside .simTitle {
 }
 aside .btn_simple{
     cursor: pointer;
+    transition: 0.2s;
 }
 
 aside .btn_simple:hover {
-    border-radius: 10px; 
-    background: rgba(231, 231, 231, 0.5);
-    transition: 0.3s;
+    border-radius: 10px;  
+    transform: scale(1.1);    
 }
 
 /* 이로움 고객센터 전화번호 */
@@ -348,7 +348,7 @@ aside .downlodeWrap div:hover {
     cursor: pointer;
 }
 
-aside .simpleTabe, .m_logout{
+aside .c_down, .m_logout{
     display: none;
 }
 aside .c_down{

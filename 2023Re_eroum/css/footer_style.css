@@ -55,6 +55,7 @@ footer .f_Fsns select {
 footer .f_Fsns select:hover {
     cursor: pointer;
     filter: brightness(90%);
+    transition: 0.3s;
 }
 
 footer .f_Fsns select option {
@@ -81,6 +82,7 @@ footer .f_sns .btn_sns {
 
 footer .f_sns .btn_sns:hover {
     filter: brightness(80%);
+    transition: 0.3s;
 }
 
 footer .f_Fsns_d .m_f_Fsns {
@@ -192,6 +194,7 @@ footer .btn_remote {
 footer .btn_remote:hover {
     cursor: pointer;
     filter: brightness(80%);
+    transition: 0.3s;
 }
 
 
@@ -263,6 +266,13 @@ footer .btn_remote:hover {
     footer .f_remoteWrap {
         display: none;
     }
+    footer .f_info .f_br {
+        display: block;
+    }
+    footer .f_info .bnt_license a {
+        margin-left: 0px;
+        transition: 0.3s;
+    }
 }
 
 @media (max-width: 767px) {
@@ -312,15 +322,9 @@ footer .btn_remote:hover {
 
     footer .f_infoWrap .f_info {
         padding: 20px 0;
-    }
+    }  
 
-    footer .f_info .f_br {
-        display: block;
-    }
-
-    footer .f_info .bnt_license a {
-        margin-left: 0px;
-    }
+    
 
 }
 
