@@ -96,6 +96,7 @@ aside .btn_mypage {
 
 aside .btn_mypage:hover {
     background: #6e6e6e;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -141,11 +142,16 @@ aside .simpleTabe .bl {
 aside .simTitle {
     font-size: 18px;
     font-weight: 300;
-    padding: 5px;
+    padding: 5px;    
+}
+aside .btn_simple{
+    cursor: pointer;
 }
 
 aside .btn_simple:hover {
-    color: #666
+    border-radius: 10px; 
+    background: rgba(231, 231, 231, 0.5);
+    transition: 0.3s;
 }
 
 /* 이로움 고객센터 전화번호 */
@@ -208,6 +214,7 @@ aside .mgeWrap .office_menu li {
 aside .mgeWrap .office_menu li:hover {
     background: #FAF7F5;
     border-radius: 20px;
+    transition: 0.3s;
 }
 
 /* 공지사항 */
@@ -304,6 +311,7 @@ aside .btn_remote {
     color: #fff;
     text-align: center;
     padding: 8px 0;
+    transition: 0.3s;
 }
 
 aside .btn_remote:hover {
@@ -338,6 +346,31 @@ aside .downlodeWrap div:last-child {
 
 aside .downlodeWrap div:hover {
     cursor: pointer;
+}
+
+aside .simpleTabe, .m_logout{
+    display: none;
+}
+aside .c_down{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+aside .c_down .br_c{
+    width: 50%;
+    cursor: pointer;
+}
+aside .c_down .br_c:hover{
+    border-radius: 10px; 
+    background: rgba(231, 231, 231, 0.5);
+    transition: 0.3s;
+}
+
+aside .m_logout{
+    text-align: center;
+    margin-bottom: 30px;
+}
+aside .m_logout, .logout a:hover{
+   text-decoration: underline;
 }
 
 /* 토글 버튼 */
@@ -375,3 +408,30 @@ aside .downlodeWrap div:hover {
 .m_toggle .bar3 {
     transform: translateY(10px) rotate(-315deg);
 }
+
+
+
+
+
+
+
+/********** css responsive **********/
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {
+    aside .simpleTabe, .m_logout{
+        display: block;
+    }
+    aside .downlodeWrap{
+        display: none;
+    }
+
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 430px) {}
+
+@media (max-width: 360px) {}
