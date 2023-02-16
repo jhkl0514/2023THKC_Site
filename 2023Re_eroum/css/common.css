@@ -148,7 +148,7 @@ select::-ms-expand {
     }
 
     .asideClone {
-        position: absolute;
+        position: fixed;
         width: 330px;
         height: calc(100%)*2;
         padding-left: 30px;

@@ -128,7 +128,7 @@ nav .main_menu li a {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);   
 }
 
 .main_menu>li:hover:after {
@@ -143,6 +143,9 @@ nav .main_menu li a {
     transform: translateX(-50%);
     opacity: 0;
     transition: 0.3s;
+}
+.main_menu li:active:after {
+    opacity: 1;
 }
 
 .main_menu li:hover:after {
