@@ -126,7 +126,7 @@ section .img_r img {
 :root {
     --swiper-theme-color: #FF9015 !important;
     --swiper-navigation-size: 30px !important;
-    --swiper-navigation-color: rgba(0, 0, 0, 0.5);
+    --swiper-navigation-color: rgba(0, 0, 0, 0);
     --swiper-pagination-bullet-vertical-gap: 25px;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;

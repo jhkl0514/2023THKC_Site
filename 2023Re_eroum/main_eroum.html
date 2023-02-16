@@ -46,11 +46,18 @@
         <!-- 최상단 띠 배너 -->
         <div id="topBannerWrap">
             <div class="topBanner">
-                <div><a href="#"><img src="images/main_eroum/thkc_btn_arrow_prev.svg" alt=""></a></div>
-                <div class="f_col">이로움이 처음이신가요?</div>
-                <div><a href="#"><img src="images/main_eroum/thkc_btn_arrow_next.svg" alt=""></a></div>
+                <div class="swiper mySwiper_band">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide f_col" onclick="location.href='#'">이로움이 처음이신가요?</div>
+                      <div class="swiper-slide f_col" onclick="location.href='#'">정말 이로움이 처음이신가요?</div>
+                      <div class="swiper-slide f_col" onclick="location.href='#'">진짜로 정말 이로움이 처음이신가요?</div>
+                    </div>
+                    <div class="swiper-button-prev band"><img src="images/main_eroum/thkc_btn_arrow_prev.svg" alt=""></div>
+                    <div class="swiper-button-next band"><img src="images/main_eroum/thkc_btn_arrow_next.svg" alt=""></div>  
+                  </div>
+                                
             </div>
-        </div>
+        </div>       
         <!-- GNB -->
         <header class="container">
             <nav>

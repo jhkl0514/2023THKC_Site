@@ -79,6 +79,14 @@ var swiper = new Swiper(".mySwiper_service", {
 });
 
 
+ var swiper = new Swiper(".mySwiper_band", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
 
 
 

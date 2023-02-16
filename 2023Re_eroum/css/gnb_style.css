@@ -18,6 +18,9 @@
     align-items: center;
     width: calc(100%/3);
 }
+#topBannerWrap .topBanner div{
+    cursor:pointer;
+}
 
 /* 상단 라인 */
 #topLine {
