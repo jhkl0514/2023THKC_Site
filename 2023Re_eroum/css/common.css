@@ -111,46 +111,13 @@ select::-ms-expand {
 
 
 
+
 .asideClone,
 .overlay {
     display: none;
 }
 
 
-/********** css responsive init **********/
-.container {
-    width: 1400px;
-    margin: 0 auto;
-    /* background-color: pink; */
-}
-
-/* ain 전체 Wrap  */
-#mainWrap {
-    display: flex;
-}
-
-/* 사이드 메뉴 */
-#asideWrap {
-    width: 302px;
-    border-right: 1px solid #EFEFEF;
-}
-
-/* gap */
-#gap {
-    width: 38px;
-}
-
-/* 메인 컨텐츠 */
-#conWrap {
-    width: 1060px;
-    /* background-color: #E7E7E7; */
-}
-
-/* footer Wrap */
-#footerWrap {
-    height: 100px;
-    background: #000
-}
 
 
 /********** css responsive **********/
@@ -181,12 +148,12 @@ select::-ms-expand {
     }
 
     .asideClone {
-        position: absolute;
+        position: fixed;
         width: 330px;
         height: calc(100%)*2;
         padding-left: 30px;
         top: 0px;
-        right: -1000%;
+        right: -100%;
         background: white;
         transition: 0.3s;
         z-index: 10000;

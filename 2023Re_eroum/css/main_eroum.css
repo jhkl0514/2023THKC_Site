@@ -640,6 +640,7 @@ section .cs_infoWrap {
 
     section .e_TitleWrap {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     section .btn_pdMore {
@@ -656,8 +657,7 @@ section .cs_infoWrap {
     }
 
     section .svWrap .svBox {
-        padding: 20px 20px;
-        width: 300px;
+        padding: 20px 20px;       
     }
 
     section .svWrap .svBox .sv_img img {
@@ -837,7 +837,7 @@ section .cs_infoWrap {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column;        
     }
 
     section .btn_pdMore {
