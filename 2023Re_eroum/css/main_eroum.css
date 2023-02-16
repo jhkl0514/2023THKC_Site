@@ -1,10 +1,12 @@
-@charset "utf-8";
+/* @charset "utf-8";
+
+/* ** 메인 컨텐츠  "w1060px" ** */
 
 section {
     margin-top: 30px;
 }
 
-/*  대시보드  */
+/*  PC_01.대시보드  */
 section .dash_bWrap {
     background: #FAF7F5;
     padding: 10px;
@@ -64,7 +66,7 @@ section .dashList .d_unit {
     font-size: 12px;
 }
 
-/* 공지사항 */
+/* PC_02.공지사항 */
 section .top_noticeWrap {
     padding: 15px 0;
     display: flex;
@@ -111,7 +113,7 @@ section .top_notice .noticeArrow img {
     padding: 0 0 0 10px;
 }
 
-/* 프로모션 슬라이딩 배너 */
+/* PC_03.프로모션 슬라이딩 배너 */
 section .eventWrap {
     margin-bottom: 100px;
 }
@@ -122,7 +124,7 @@ section .img_r img {
     height: auto;
 }
 
-/* swiper */
+/* PC_03. swiper */
 :root {
     --swiper-theme-color: #FF9015 !important;
     --swiper-navigation-size: 30px !important;
@@ -135,7 +137,7 @@ section .img_r img {
     --swiper-pagination-bottom: 5px !important;
 }
 
-/* 메인 검색 영역 */
+/* PC_04.메인 검색 영역 */
 section .m_searchWrap {
     display: flex;
     flex-direction: column;
@@ -152,7 +154,7 @@ section .m_searchWrap .ms_Title {
     margin-bottom: 30px;
 }
 
-/* 검색 */
+/* PC_04.검색 */
 section .m_search {
     position: relative;
     margin-bottom: 25px;
@@ -191,7 +193,7 @@ section .m_icon_serch img {
     width: 25px;
 }
 
-/* 해시태그 */
+/* PC_04. 해시태그 */
 section .hash_tagWrap {
     display: flex;
     gap: 15px;
@@ -204,7 +206,7 @@ section .hash_tagWrap .ht {
     text-align: center;
 }
 
-/* 05.이로움 가이드  */
+/* PC_05.이로움 가이드  */
 section .guideWrap {
     display: flex;
     margin-bottom: 130px;
@@ -283,7 +285,7 @@ section .moble_guideBoxWrap {
 }
 
 
-/* 06.안전손잡이 */
+/* PC_06.안전손잡이 */
 section .banner01_BarWrap {
     display: flex;
     background: #EAF3EA;
@@ -326,7 +328,7 @@ section .b_titleWrap .banner01Con {
     font-weight: 300;
 }
 
-/* 07.이로움 추천상품 */
+/* PC_07.이로움 추천상품 */
 section .pdWrap {
     display: flex;
     margin-bottom: 130px;
@@ -438,7 +440,7 @@ section .priceWrap .Price_unit {
     align-items: center;
 }
 
-/* 08.이로움만의 서비스 */
+/* PC_08.이로움만의 서비스 */
 section .serviceWrap {
     margin-bottom: 130px;
 }
@@ -497,7 +499,7 @@ section .svWrap .sv_img img:hover{
     transform: scale(1.1);
 }
 
-/* 09,10.공지사항/고객센터 Wrap */
+/* PC_09,10.공지사항/고객센터 Wrap */
 section .boardWrap {
     margin-bottom: 100px;
 }
@@ -559,7 +561,7 @@ section .noti_data {
     font-size: 14px;
 }
 
-/* 고객센터 */
+/* PC_10.고객센터 */
 section .cs_conWrap {
     border: 1px solid #D6D6D6;
 }
@@ -652,7 +654,7 @@ section .mobile_csBoardWrap {
     display: none;
 }
 
-/* 11.고객센터 정보 (모바일에서만) */
+/* PC_10.고객센터 정보 (모바일에서만) */
 section .cs_infoWrap {
     display: none;
 }
@@ -667,7 +669,7 @@ section .cs_infoWrap {
 @media (max-width: 1199px) {}
 
 @media (max-width: 991px) {
-
+    /* Tablet */
     section .guideWrap,
     section .pdWrap {
         display: block;
@@ -708,6 +710,7 @@ section .cs_infoWrap {
 }
 
 @media (max-width: 767px) {
+    /* Mobile */
     section {
         margin-top: 80px;
     }
@@ -730,19 +733,19 @@ section .cs_infoWrap {
         display: block;
     }
 
-    /* 프로모션 슬라이딩 배너 */
+    /* Mobile 프로모션 슬라이딩 배너 */
     section .eventWrap {
         margin-bottom: 30px;
     }
 
-    /* swiper */
+    /* Mobile swiper */
     :root {
         --swiper-pagination-bullet-width: 5px;
         --swiper-pagination-bullet-height: 5px;
         --swiper-pagination-bottom: 2px !important;
     }
 
-    /* 메인 검색 영역 */
+    /* Mobile 메인 검색 영역 */
     section .m_searchWrap {
         margin-bottom: 40px;
     }
@@ -753,7 +756,7 @@ section .cs_infoWrap {
         margin-bottom: 20px;
     }
 
-    /* 검색 */
+    /* Mobile 검색 */
     section .m_search {
         width: 85%;
     }
@@ -780,7 +783,7 @@ section .cs_infoWrap {
         width: 18px;
     }
 
-    /* 해시태그 */
+    /* Mobile 해시태그 */
     section .hash_tagWrap {
         display: flex;
         gap: 10px;
@@ -798,7 +801,7 @@ section .cs_infoWrap {
         display: none;
     }
 
-    /* 05.이로움 가이드  */
+    /* Mobile 05.이로움 가이드  */
     section .guideWrap {
         display: block;
         width: 100%;
@@ -829,7 +832,7 @@ section .cs_infoWrap {
         padding: 15px 5px;
     }
 
-    /* 06.안전손잡이 */
+    /* Mobile 06.안전손잡이 */
     section .banner01_BarWrap {
         margin-bottom: 50px;
     }
@@ -861,7 +864,7 @@ section .cs_infoWrap {
         font-weight: 300;
     }
 
-    /* 07.이로움 추천상품 */
+    /* Mobile 07.이로움 추천상품 */
     section .pdWrap {
         display: block;
         margin-bottom: 50px;
@@ -919,7 +922,7 @@ section .cs_infoWrap {
         font-size: 16px;
     }
 
-    /* 08.이로움만의 서비스 */
+    /* Mobile 08.이로움만의 서비스 */
     section .serviceWrap {
         margin-bottom: 50px;
         width: 100%;
@@ -971,11 +974,11 @@ section .cs_infoWrap {
         width: 30%;
     }
 
-    conWrap section .mySwiper_service.swiper-slide:nth-child(3n) {
+    section .mySwiper_service.swiper-slide:nth-child(3n) {
         width: 30%;
     }
 
-    /* 09,10.공지사항/고객센터 Wrap */
+    /* Mobile 09,10.공지사항/고객센터 Wrap */
     section .boardWrap {
         margin-bottom: 50px;
     }
@@ -1050,7 +1053,7 @@ section .cs_infoWrap {
         padding: 0px 0px 0px 10px;
     }
 
-    /* 11.고객센터 정보 (모바일에서만) */
+    /* Mobile 11.고객센터 정보 (모바일에서만) */
     section .cs_infoWrap {
         display: block;
     }
@@ -1085,11 +1088,6 @@ section .cs_infoWrap {
         padding: 0px 20px;
     }
 
-
-
-
-
-
 }
 
 @media (max-width: 515px) {
@@ -1099,6 +1097,7 @@ section .cs_infoWrap {
 }
 
 @media (max-width: 430px) {
+    /* Mobile 430*/
     section .guideBoxWrap {
         display: none;
     }

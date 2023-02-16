@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-
-
+/* 왼쪽 메뉴 "w302px" */
 aside {
     width: 264px;
     background: #fff;
@@ -10,7 +9,6 @@ aside {
 .toggleClone .m_toggle {
     display: block;
 }
-
 
 #memberWrap {
     margin-top: 30px;
@@ -209,6 +207,7 @@ aside .mgeWrap .office_menu {
 
 aside .mgeWrap .office_menu li {
     padding: 5px 20px;
+    cursor: pointer;
 }
 
 aside .mgeWrap .office_menu li:hover {
@@ -373,7 +372,7 @@ aside .m_logout, .logout a:hover{
    text-decoration: underline;
 }
 
-/* 토글 버튼 */
+/* 모바일 오른쪽 토글 버튼 */
 .m_toggle {
     position: absolute;
     top: 20px;

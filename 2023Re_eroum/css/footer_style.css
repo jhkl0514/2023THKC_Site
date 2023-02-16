@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-
+/* ## 하단 footer 영역 ## */
 footer .f_infoWrap {
     padding: 30px 0px;
 }
-
+/* PC footer 메뉴 바  */
 footer .f_menuBgWrap {
     background: #EFEFEF;
 }
@@ -17,7 +17,7 @@ footer .f_menuWrap {
     display: flex;
     justify-content: space-between;
 }
-
+/*PC footer 로고 */
 footer .f_logoWrap,
 .f_menu {
     display: flex;
@@ -26,7 +26,7 @@ footer .f_logoWrap,
 footer .f_logo {
     padding: 25px 20px 25px 0px;
 }
-
+/*PC footer 메뉴 */
 footer .f_menu li {
     font-size: 14px;
     padding: 10px 15px;
@@ -37,7 +37,7 @@ footer .f_menu li {
 footer .f_menu li a:hover {
     text-decoration: underline;
 }
-
+/*PC footer 패밀리 사이트 */
 footer .f_Fsns {
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ footer .f_sns .btn_sns:hover {
 footer .f_Fsns_d .m_f_Fsns {
     display: none;
 }
-
+/* pc footer 인포 */
 footer .f_infoWrap {
     color: #fff;
     display: flex;
@@ -132,7 +132,7 @@ footer .f_info .bnt_license a:hover {
 footer .f_info .f_br {
     display: none;
 }
-
+/* pc footer 고객센터 */
 footer .f_cs ul li {
     display: flex;
     padding-bottom: 10px;
@@ -169,7 +169,7 @@ footer .f_cs_data a {
 footer .f_cs_data a:hover {
     text-decoration: underline;
 }
-
+/* pc footer 원격지원 */
 footer .f_remote {
     display: flex;
     gap: 15px;

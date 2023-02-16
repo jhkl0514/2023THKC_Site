@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-/* 최 상단 띠 배너 */
+/* 최상단 띠 배너 */
 #topBannerWrap {
     background: #001E9A;
     width: 100%;
@@ -36,7 +36,7 @@ nav .logo {
 nav {
     display: flex;
 }
-
+/* 상단 메뉴 */
 nav .menuWrap,
 nav .menuWrap02 {
     display: flex;
@@ -104,7 +104,7 @@ nav .logout {
     font-size: 14px;
 }
 
-/* 메인메뉴 바 active */
+/* 상단 메인메뉴 바 active */
 nav .main_menu li {
     position: relative;
     height: 100%;
@@ -155,7 +155,7 @@ nav .main_menu li a {
     opacity: 1;
 }
 
-/* submenu active */
+/* 상단 이벤트 메뉴 active */
 nav .sub_menu li a {
     padding: 5px 1px;
 }
@@ -164,7 +164,7 @@ nav .sub_menu li a:hover {
     border-bottom: 1px solid #efefef;
 }
 
-/* 햄버거버튼 */
+/* 토글버튼 */
 nav .toggle {
     position: absolute;
     width: 25px;
@@ -320,9 +320,7 @@ nav .toggle.active .bar3 {
 
     #topLine {
         display: none;
-    }
-
-    /* 상단 라인 */
+    }   
 }
 
 @media (max-width: 767px) {

@@ -40,17 +40,26 @@ select {
     -moz-appearance: none;
     /* 사파리, 크롬 하위버전용 */
 }
+/* 익스플로러용 */
+select::-ms-expand {
+    display: none;
+}
+
 
 /********** css responsive init **********/
 .container {
     width: 1400px;
     margin: 0 auto;
-    /* background-color: pink; */
 }
 
 /* ain 전체 Wrap  */
 #mainWrap {
     display: flex;
+}
+
+/* 메인 컨텐츠 */
+#conWrap {
+    width: 1060px;   
 }
 
 /* 사이드 메뉴 */
@@ -59,27 +68,15 @@ select {
     border-right: 1px solid #EFEFEF;
 }
 
-/* 메인 컨텐츠 */
-#conWrap {
-    width: 1060px;
-    /* background-color: #E7E7E7; */
+/* gap */
+#gap {
+    width: 38px;
 }
 
 /* footer Wrap */
 #footerWrap {
     height: 100px;
     background: #000
-}
-
-
-/* gap */
-#gap {
-    width: 38px;
-}
-
-/* 익스플로러용 */
-select::-ms-expand {
-    display: none;
 }
 
 
@@ -111,7 +108,7 @@ select::-ms-expand {
 
 
 
-
+/* 모바일 토글 메뉴 영역 */
 .asideClone,
 .overlay {
     display: none;
@@ -124,10 +121,10 @@ select::-ms-expand {
 @media (max-width: 1399px) {}
 
 @media (max-width: 1199px) {
+ /* 모바일 토글 메뉴 영역 */
     #asideWrap {
         display: none;
     }
-
     .asideClone,
     .overlay {
         display: block;
@@ -144,7 +141,6 @@ select::-ms-expand {
         background: rgb(0, 0, 0);
         opacity: 0.5;
         z-index: 1000;
-
     }
 
     .asideClone {
