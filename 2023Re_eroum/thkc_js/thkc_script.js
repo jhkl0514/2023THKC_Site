@@ -86,6 +86,35 @@ var swiper = new Swiper(".mySwiper_service", {
     },
   });
 
+//Top버튼 올라가기
+$(".btn_top").click(function(){
+  $("html,body").animate({scrollTop:0},300)
+})
+
+$(window).scroll(function(){
+let scrollY = window.pageYOffset
+
+if($("body").height()/5 < scrollY){ // 문서 반일때 스크롤 Y이 커질때 나타나라
+    $(".btn_top").fadeIn()
+}else{
+    $(".btn_top").fadeOut()
+}
+
+})
+
+//배너 내리기
+$(window).scroll(function(){
+let scrollY = window.pageYOffset
+
+if($("#bannerRight").height()/0.2 > scrollY){ // 문서 반일때 스크롤 Y이 커질때 나타나라
+    $("#bannerRight").fadeIn()
+}else{
+    $("#bannerRight").fadeOut()
+}
+
+})
+
+
 
 
 
