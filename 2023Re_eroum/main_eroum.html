@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <!-- ## 상단 메뉴 ## -->
+    <!-- ## 상단 메뉴 영역 ## -->
     <div id="headerWrap">
         <!-- 최상단 띠 배너 -->
         <div id="topBannerWrap">
@@ -99,24 +99,10 @@
         <!-- GNB 하단 라인 모바일 -->
         <div id="topLine_m"></div>
     </div>
-    <!-- 모바일 왼쪽 aside 복제-->
-    <div class="overlay"></div>
-    <div class="asideClone">
-        <div class="mobileAside">
-            <div class="m_toggle">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <!-- 모바일 토글 아이콘-->
-            <div class="toggleClone">
-            </div>
-        </div>
-    </div>
-
-    <!-- ## main 전체 Wrap (사이드, 컨튼츠) ## -->
+    <!-- // 상단 메뉴 영역 // end-->  
+    <!-- ## 메인 전체 영역 (왼쪽메뉴, gap,  컨텐츠) ## -->
     <div id="mainWrap" class="container">
-        <!-- # 사이드 메뉴 w302px # -->
+        <!-- ** PC 왼쪽 메뉴 "w302px" ** -->
         <div id="asideWrap">
             <aside>
                 <!-- 회원정보 -->
@@ -275,9 +261,23 @@
                 </div>
             </aside>
         </div>
-        <!--  # gap w38px  # -->
+        <!-- ** mobile 왼쪽 aside 복제 **-->
+        <div class="overlay"></div>
+        <div class="asideClone">
+            <div class="mobileAside">
+                <div class="m_toggle">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <!-- 모바일 토글 아이콘-->
+                <div class="toggleClone">
+                </div>
+            </div>
+        </div>       
+        <!--  ** gap w38px ** -->
         <div id="gap"></div>
-        <!--  # 메인 컨텐츠  w1060px # -->
+        <!--  ** 메인 컨텐츠  "w1060px" ** -->
         <div id="conWrap">
             <section>
                 <!-- 01.대시보드 -->
@@ -661,8 +661,9 @@
             </section>
         </div>
     </div>
+    <!-- // 메인 전체 영역 (왼쪽메뉴, 컨텐츠) end// -->
 
-    <!-- footer Wrap -->
+    <!--  ## 하단 footer 영역 ## -->
     <footer id="footerWrap">
         <!-- footer 메뉴 바 -->
         <div class="f_menuBgWrap">
@@ -751,9 +752,7 @@
             </div>
         </div>
     </footer>
-
-
-
+    <!--  // 하단 footer 영역 end// -->
 
     <script src="js/script.js"></script>
 
