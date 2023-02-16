@@ -186,7 +186,7 @@ select::-ms-expand {
         height: calc(100%)*2;
         padding-left: 30px;
         top: 0px;
-        right: -100%;
+        right: -1000%;
         background: white;
         transition: 0.3s;
         z-index: 10000;

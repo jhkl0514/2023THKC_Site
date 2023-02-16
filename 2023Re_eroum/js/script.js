@@ -12,19 +12,19 @@ $(".toggle").click(function () {
 
   } else {
     $(".toggle").removeClass("active");
-    $(".asideClone").css("right", "-100%");
+    $(".asideClone").css("right", "-1000%");
     $(".overlay").hide();
     view = true;
   }
 })
 $(".overlay").click(function () {
-  $(".asideClone").css("right", "-100%");
+  $(".asideClone").css("right", "-1000%");
   $(".toggle").removeClass("active")
   $(".overlay").hide();
 })
 
 $(".m_toggle").click(function () {
-  $(".asideClone").css("right", "-100%");
+  $(".asideClone").css("right", "-1000%");
   $(".toggle").removeClass("active")
   $(".overlay").hide();
 })
