@@ -583,6 +583,9 @@ section .m_membWrp {
     flex-direction: column;
     padding: 30px;
 }
+section .m_membWrp img{
+    width: 80px;
+}
 
 section .m_csBoardWrap {
     padding: 30px 10px 0px 10px;
