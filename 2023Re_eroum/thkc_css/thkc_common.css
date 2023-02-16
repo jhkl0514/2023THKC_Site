@@ -178,7 +178,7 @@ select::-ms-expand {
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex; justify-content: center; align-items: center;
-    position: fixed; right: 30px;bottom: 30px;
+    position: fixed; right: 10px;bottom: 10px;
     cursor: pointer;
 }
 #pageTop .btn_top img{
