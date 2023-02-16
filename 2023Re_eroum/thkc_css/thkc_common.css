@@ -114,6 +114,58 @@ select::-ms-expand {
     display: none;
 }
 
+/* 오른쪽 카달로그 배너 */
+#bannerRight{    
+    position: fixed;
+    top:370px;
+    left:50%;
+    transform: translateX(-50%);
+    margin-left: 755px;
+    z-index: 100;  
+}
+#bannerRight .banner_catalogWrap,
+.banner_catalogWrap div,
+.banner_eroum,
+.banner_del{
+    display: flex; justify-content: center; align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#bannerRight .banner_catalogWrap{
+    width: 70px; height: 200px;
+    background: #FFFFFF;
+    border: 1px solid #D5D3D1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 12px; line-height: 15px;
+}
+#bannerRight .banner_catalogWrap div{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+#bannerRight .banner_catalogWrap div img{   
+    padding: 5px;
+}
+#bannerRight .banner_catalogWrap .c_apply{
+    padding: 15px 0px 20px 0px;
+    border-bottom: 1px dashed #D5D3D1;
+}
+/* 오른쪽 이로움 톡톡 배너 */
+#bannerRight .banner_eroum{
+    border-radius: 50px;
+    background: #FF9016;
+    width: 70px;height: 70px;   
+}
+/* 이로움 톡톡 삭제 */
+#bannerRight .banner_del{
+    width: 70px;height: 10px;    
+}
+
 
 
 
@@ -122,6 +174,7 @@ select::-ms-expand {
 
 @media (max-width: 1199px) {
  /* 모바일 토글 메뉴 영역 */
+    _body{overflow-y:hidden;}
     #asideWrap {
         display: none;
     }
@@ -131,7 +184,7 @@ select::-ms-expand {
     }
 
     .overlay {
-        display: none;
+        display: none;        
         position: fixed;
         width: 100%;
         height: 100%;
@@ -144,9 +197,10 @@ select::-ms-expand {
     }
 
     .asideClone {
+        overflow-y: scroll;
         position: fixed;
         width: 330px;
-        height: calc(100%)*2;
+        height: 100%;    
         padding-left: 30px;
         top: 0px;
         right: -100%;
@@ -154,6 +208,17 @@ select::-ms-expand {
         transition: 0.3s;
         z-index: 10000;
         box-shadow: -4px 0px -4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* 오른쪽 카달로그 배너 */    
+    #bannerRight{
+        _display: none;
+        overflow-y:auto;
+        position: fixed;
+        top:370px;
+        right: 60px;
+        transform: translateX(100%);
+        margin: 0px 10px 0px 0px;  
     }
 }
 
@@ -163,7 +228,36 @@ select::-ms-expand {
     }
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    /* 오른쪽 카달로그 배너 */
+    #bannerRight .banner_catalogWrap{    
+        display: none; 
+    }
+    /* 오른쪽 이로움 톡톡 배너 */
+    #bannerRight{ 
+        _display: none; 
+        position:fixed;        
+        top:350px;
+        right: 45px;
+        transform: translateX(100%);
+        margin: 0px 10px 0px 0px;  
+    }
+    #bannerRight .banner_eroum{
+        _display: none;        
+        width: 50px;height: 50px;   
+    }
+    #bannerRight .banner_eroum img{
+        _display: none;
+        width: 40px;
+    }
+    /* 이로움 톡톡 삭제 */
+    #bannerRight .banner_del{
+        width: 50px; height: 10px;    
+    }
+    #bannerRight .banner_eroum,.banner_del{   
+    margin-bottom: 7px;
+}
+}
 
 @media (max-width: 430px) {}
 
