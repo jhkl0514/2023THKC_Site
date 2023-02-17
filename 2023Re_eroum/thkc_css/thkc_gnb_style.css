@@ -48,6 +48,7 @@ nav.thkc_nav .main_menu {
     font-size: 18px;
     display: flex;
     align-items: center;
+    font-weight: 500;
     gap: 40px;
 }
 
@@ -124,36 +125,42 @@ nav.thkc_nav .main_menu li a.active {
     font-weight: 500;
 }
 
-nav.thkc_nav .main_menu li a.active:after {
+nav.thkc_nav .main_menu li a:after {
     content: "";
     display: block;
     height: 4px;
-    width: 100%;
-    background: #001E9A;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);   
-}
-
-nav.thkc_nav .main_menu>li:hover:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
+    width: 0%;
     background: #001E9A;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: 0.3s;
+    transition: all 0.5s; 
+}
+
+nav.thkc_nav .main_menu>li:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0%;
+    background: #001E9A;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.5s;
 }
 nav.thkc_nav .main_menu li:active:after {
+    transition: all 0.5s;
+    width: 100%;
     opacity: 1;
 }
 
 nav.thkc_nav .main_menu li:hover:after {
+    transition: all 0.5s;
+    width: 100%;
     opacity: 1;
 }
 
@@ -163,7 +170,8 @@ nav.thkc_nav .sub_menu li a {
 }
 
 nav.thkc_nav .sub_menu li a:hover {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #bbb;
+  
 }
 
 /* 토글버튼 */
@@ -256,7 +264,7 @@ nav.thkc_nav .toggle.active .bar3 {
     }
 
     nav.thkc_nav .main_menu {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     nav.thkc_nav .searchWrap {
@@ -313,13 +321,11 @@ nav.thkc_nav .toggle.active .bar3 {
         padding: 4px 0;
     }
 
-    nav.thkc_nav .main_menu>li:hover:after {
-        height: 2px;
+    nav.thkc_nav .main_menu>li:hover:after {       
         width: 90%;
     }
 
-    nav.thkc_nav .main_menu li a.active:after {
-        height: 2px;
+    nav.thkc_nav .main_menu li a.active:after {       
         width: 90%;
     }
 
