@@ -664,7 +664,14 @@ section .cs_infoWrap {
 
 
 /********** css responsive **********/
-@media (max-width: 1399px) {}
+@media (max-width: 1399px) {  
+    .container{
+        padding: 0px 20px;
+    }
+    .asideWrap{
+        padding-right: 20px;
+    }
+}
 
 @media (max-width: 1199px) {}
 
@@ -684,9 +691,54 @@ section .cs_infoWrap {
         font-size: 14px;
         margin: 10px 0px;
     }
+    /* Mobile 05.이로움 가이드  */
+    section .guideWrap {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    section .e_TitleWrap {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 
     section .guideTitle {
         font-size: 14px;
+    }
+    
+    /* Mobile 06.안전손잡이 */ 
+    section .banner01_BarWrap {
+        margin: 100px 0px;
+    }
+    section .banner01_img img {
+        width: 90px;
+    }
+
+    section .banner01_img {
+        bottom: 10px;
+        left: 50px;
+    }
+
+    section .b_titleWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 15px 10px 15px 160px;
+    }    
+
+    section .b_titleWrap .banner01Con {
+        font-size: 16px;       
+    }
+
+    /* Mobile 07.이로움 추천상품 */  
+    section .pdWrap .e_TitleWrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;        
     }
 
     section .svWrap {
@@ -801,19 +853,7 @@ section .cs_infoWrap {
         display: none;
     }
 
-    /* Mobile 05.이로움 가이드  */
-    section .guideWrap {
-        display: block;
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    section .e_TitleWrap {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
+    /* Mobile 05.이로움 가이드  */   
     section .e_Title {
         font-size: 22px;
     }
@@ -836,21 +876,13 @@ section .cs_infoWrap {
     section .banner01_BarWrap {
         margin-bottom: 50px;
     }
-
-    section .banner01_img img {
-        width: 90px;
-    }
-
+   
     section .banner01_img {
         bottom: 0;
         left: 20px;
     }
 
-    section .b_titleWrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    section .b_titleWrap {        
         padding: 15px 10px 15px 120px;
     }
 
@@ -868,13 +900,6 @@ section .cs_infoWrap {
     section .pdWrap {
         display: block;
         margin-bottom: 50px;
-    }
-
-    section .pdWrap .e_TitleWrap {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;        
     }
 
     section .btn_pdMore {

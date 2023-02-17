@@ -38,6 +38,9 @@ $("#asideWrap aside").clone().appendTo(".mobileAside")
 // 패밀리사이트를 가져와서 복제하고 appendTo 한다.
 $(".f_Fsns").clone().appendTo(".m_f_Fsns")
 
+// 이로움 톡톡 배너를 가져와서 복제하고 appendTo 한다.
+$(".banner_eroum").clone().appendTo(".m_banner_eroum")
+
 
 // Initialize Swiper               
 var swiper = new Swiper(".eventSwiper", {
@@ -98,18 +101,6 @@ if($("body").height()/5 < scrollY){ // 문서 반일때 스크롤 Y이 커질때
     $(".btn_top").fadeIn()
 }else{
     $(".btn_top").fadeOut()
-}
-
-})
-
-//배너 내리기
-$(window).scroll(function(){
-let scrollY = window.pageYOffset
-
-if($("#bannerRight").height()/0.2 > scrollY){ // 문서 반일때 스크롤 Y이 커질때 나타나라
-    $("#bannerRight").fadeIn()
-}else{
-    $("#bannerRight").fadeOut()
 }
 
 })

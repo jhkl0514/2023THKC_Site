@@ -70,7 +70,7 @@ select::-ms-expand {
 
 /* gap */
 #gap {
-    width: 38px;
+    width: 38px !important;
 }
 
 /* footer Wrap */
@@ -173,7 +173,7 @@ select::-ms-expand {
 #pageTop .btn_top{
     z-index: 10;
     display: none;
-    width: 40px;height: 40px;
+    width: 50px;height: 50px;
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -190,9 +190,16 @@ select::-ms-expand {
 
 
 /********** css responsive **********/
-@media (max-width: 1399px) {}
+@media (max-width: 1399px) {
+    #conWrap {
+        width: 900px;   
+    }
+}
 
 @media (max-width: 1199px) {
+    #conWrap {
+        width: 1060px;   
+    }
  /* 모바일 토글 메뉴 영역 */
     _body{overflow-y:hidden;}
     #asideWrap {
@@ -250,33 +257,31 @@ select::-ms-expand {
 
 @media (max-width: 767px) {
     /* 오른쪽 카달로그 배너 */
-    #bannerRight .banner_catalogWrap{    
+    #bannerRight .banner_catalogWrap, .banner_del{    
         display: none; 
     }
-    /* 오른쪽 이로움 톡톡 배너 */
-    #bannerRight{ 
-        _display: none; 
-        position:fixed;        
-        top:350px;
-        right: 45px;
-        transform: translateX(100%);
-        margin: 0px 10px 0px 0px;  
+    #bannerRight .banner_eroum {    
+        display: none; 
     }
-    #bannerRight .banner_eroum{
-        _display: none;        
-        width: 50px;height: 50px;   
+    /* 복제 오른쪽 이로움 톡톡 배너 */    
+    .m_banner_eroum{
+        z-index: 10;
+        display: none;
+        width: 52px;height: 52px;       
+        border-radius: 50px; 
+        background: #FF9016;      
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        display: flex; justify-content: center; align-items: center;
+        position: fixed; right: 10px;bottom: 80px;
+        padding: 12px 0px 0px 0px;
+        cursor: pointer;
     }
-    #bannerRight .banner_eroum img{
-        _display: none;
-        width: 40px;
-    }
-    /* 이로움 톡톡 삭제 */
-    #bannerRight .banner_del{
-        width: 50px; height: 10px;    
-    }
-    #bannerRight .banner_eroum,.banner_del{   
-    margin-bottom: 7px;
-}
+    .m_banner_eroum img{
+        width: 45px; height: 45px;
+    }   
+
+
+    
 }
 
 @media (max-width: 430px) {}
