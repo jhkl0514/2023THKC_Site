@@ -33,7 +33,7 @@ $(".m_toggle").click(function () {
 
 
 // aside 메뉴를 가져와서 복제하고 appendTo 한다.
-$("#asideWrap aside").clone().appendTo(".mobileAside")
+$("#thkc_asideWrap aside").clone().appendTo(".mobileAside")
 
 // 패밀리사이트를 가져와서 복제하고 appendTo 한다.
 $(".f_Fsns").clone().appendTo(".m_f_Fsns")
@@ -90,7 +90,7 @@ var swiper = new Swiper(".mySwiper_service", {
   });
 
 //Top버튼 올라가기
-$(".btn_top").click(function(){
+$("#thkc_pageTop .btn_top").click(function(){
   $("html,body").animate({scrollTop:0},300)
 })
 
