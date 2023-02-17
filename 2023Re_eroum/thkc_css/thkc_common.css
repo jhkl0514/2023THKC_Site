@@ -165,6 +165,9 @@ select::-ms-expand {
 #bannerRight .banner_del{
     width: 70px;height: 10px;    
 }
+.m_banner_eroum{
+    display: none;
+}
 
 /* Top버튼 */
 #pageTop{
