@@ -198,11 +198,31 @@ footer.thkc_footer .btn_remote:hover {
     transition: 0.3s;
 }
 
+/* pc(랜딩/로그인) footer.thkc_footer 인포 */
+footer.thkc_footer .f_info_landing {
+    padding: 30px 0px;
+}
+footer.thkc_footer .f_info_landing .f_info {
+    width: 100%;
+    display: flex;
+    color: #fff; 
+}
+
+footer.thkc_footer .f_info_landing .f_info ul{
+    width: 50%;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 5px 0;
+}
+footer.thkc_footer .f_info_landing .f_info ul:last-child{
+    text-align: right;
+}
+
 
 
 /********** css responsive **********/
 @media (max-width: 1399px) {
-    footer.thkc_footer .f_infoWrap {
+    footer.thkc_footer .f_infoWrap, footer.thkc_footer .f_info_landing {
         padding: 10px 20px;
     }
 }
@@ -323,9 +343,18 @@ footer.thkc_footer .btn_remote:hover {
 
     footer.thkc_footer .f_infoWrap .f_info {
         padding: 20px 0;
-    }  
-
-    
+    }
+    /* 랜딩, 로그인 footer 영역 */
+    footer.thkc_footer .f_info_landing .f_info {
+        display: block;
+    }
+    footer.thkc_footer .f_info_landing .f_info ul{
+        width: 100%;
+        font-size: 0.4rem; letter-spacing: 0em;       
+    }    
+    footer.thkc_footer .f_info_landing .f_info ul:last-child{
+        text-align: left;
+    }    
 
 }
 

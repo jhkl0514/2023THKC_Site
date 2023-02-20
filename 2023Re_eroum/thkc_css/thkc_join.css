@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+.thkc_loginWrap{
+    display: flex; justify-content: center;align-items: center; 
+    flex-direction: column;     
+}
+.thkc_loginWrap header{    
+    padding:70px 0px;    
+}
+.thkc_loginWrap section{
+    display: flex; justify-content: center;align-items: center; 
+    margin-bottom: 100px;
+}
+.thkc_loginWrap section .imgView img{
+   height: 500px;
+}
+.thkc_loginWrap section .lineWrap{ 
+    width: 100px;  height: 500px;
+    border-right: 1px solid #E7E7E7;   
+ }
+
+.thkc_loginWrap section .login_contWrap{
+    display: flex; justify-content: center;align-items: center; 
+    flex-direction: column;
+}
+.thkc_loginWrap section .login_contWrap{
+    width: 100%; padding: 0px 40px;
+}
+.thkc_loginWrap section .login_contWrap h3{
+    font-weight: 500;    font-size: 25px;
+    line-height: 130%;
+    text-align: center; margin-bottom: 50px;
+}
+.thkc_loginWrap .joinWrap{ 
+    width: 100%;
+}
+.thkc_loginWrap .blind{display: block; position: absolute; left: 0;top: -9999px;}
+.thkc_loginWrap fieldset {
+    border: none;
+}
+.thkc_loginWrap fieldset .field{
+    position: relative; border-bottom: 1px solid #eee;
+    border: 0px 0px 1px 0px solid #E7E7E7; background-color: #fff;
+    margin-bottom: 10px;
+    display: flex; justify-content: space-between; align-items: center;
+    
+}
+.thkc_loginWrap .field{
+   
+}
+.thkc_loginWrap .field .inp-field{
+    width: calc(100%)/2; height: 45px;
+    border: none; font-size: 16px; text-indent: 0.5rem; 
+}
+input[type='checkbox']{
+    width: 1.4em; height: 1.4em;
+}
+.thkc_loginWrap .field .inTitleWrap{ 
+    display: flex; align-items:flex-start;
+    height: 1.15em; 
+}
+.thkc_loginWrap .field .inTitle{    
+    font-size: 14px; padding: 0px 0px 10px 5px;
+}
+.thkc_loginWrap .field .inp-field:focus{
+    outline:none;
+}
+.thkc_loginWrap .login_btn{
+    width: 100%; padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+.thkc_loginWrap .btn_submit_01{
+    width: 100%;height: 45px;
+    background: #222222;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff; font-size: 16px; font-weight: 700;
+}
+.thkc_loginWrap .btn_submit_02{
+    width: 100%;height: 45px;
+    border: 1px solid #222;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px; font-weight: 700;
+}
+.thkc_loginWrap .login_btn_etc{
+    display: flex; gap: 15px;
+    margin-top: 10px;
+}
+.thkc_loginWrap section .linebar{ 
+    width: 1px;  height: 15px;
+    margin-top: 4px;
+    background: #d1d1d1; 
+ }
+
+
+/********** css responsive **********/
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .thkc_loginWrap header{    
+        padding:30px 0px;    
+    }
+    .thkc_loginWrap header img{    
+        height: 30px;    
+    }
+   .thkc_loginWrap .imgView, .lineWrap {
+        display: none;   
+   }
+   .thkc_loginWrap .lineWrap {
+        width: 10px;  height: 100%;
+        margin-right: 0px;
+   }
+   .thkc_loginWrap section .login_contWrap{
+        padding: 0px 0px;   
+    }
+    .thkc_loginWrap section .login_contWrap h3{
+        font-size: 1.3rem
+    }
+    .thkc_loginWrap .field .inp-field{
+      font-size: 0.9rem; text-indent: 0rem; 
+    }
+    .thkc_loginWrap .field .inTitle{    
+        font-size: 0.8rem;
+    }
+    /* footer */
+   
+    
+}
+
+@media (max-width: 430px) {}
+
+@media (max-width: 360px) {}

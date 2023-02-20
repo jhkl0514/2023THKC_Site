@@ -16,6 +16,7 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
 
 
 .thkc_container {width: 1400px; margin: 0 auto;}
+.thkc_container_02 {width: 1318px; margin: 0 auto;}
 
 /********** HTML/CSS  **********/
 /* 상단 메뉴 Wrap  */
@@ -134,6 +135,9 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
 
 /********** css responsive **********/
 @media (max-width: 1399px) {
+    .thkc_container, .thkc_container_02 {
+        width: 100%;
+    }   
     #thkc_conWrap {
         width: 900px;   
     }
@@ -205,6 +209,9 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
 }
 
 @media (max-width: 767px) {
+    .thkc_container {
+        width: 100%;
+    }
     /* 오른쪽 카달로그 배너 */
     #bannerRight .banner_catalogWrap, .banner_del{    
         display: none; 

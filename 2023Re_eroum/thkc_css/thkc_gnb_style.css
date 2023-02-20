@@ -219,10 +219,7 @@ nav.thkc_nav .toggle.active .bar3 {
 
 
 /********** css responsive **********/
-@media (max-width: 1399px) {
-    .thkc_container {
-        width: 100%;
-    }
+@media (max-width: 1399px) {    
 
     nav.thkc_nav .logo {
         padding: 20px 30px;
@@ -334,11 +331,7 @@ nav.thkc_nav .toggle.active .bar3 {
     }   
 }
 
-@media (max-width: 767px) {
-    .thkc_container {
-        width: 100%;
-    }
-
+@media (max-width: 767px) {   
     #topBannerWrap .topBanner {
         width: 100%;
         font-size: 14px;
