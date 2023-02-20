@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* PC 로그인 페이지 */
 .thkc_loginWrap{
     display: flex; justify-content: center;align-items: center; 
     flex-direction: column;     
@@ -45,9 +46,7 @@
     display: flex; justify-content: space-between; align-items: center;
     
 }
-.thkc_loginWrap .field{
-   
-}
+
 .thkc_loginWrap .field .inp-field{
     width: calc(100%)/2; height: 45px;
     border: none; font-size: 16px; text-indent: 0.5rem; 
@@ -131,7 +130,6 @@ input[type='checkbox']{
     .thkc_loginWrap .field .inTitle{    
         font-size: 0.8rem;
     }
-    /* footer */
    
     
 }
