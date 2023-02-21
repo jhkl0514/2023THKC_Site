@@ -1,0 +1,245 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a:link,a:visited {text-decoration: none; color: #333;}
+.clearfix:after {content: ""; clear: both; display: block;}
+img {display: block;}
+html,body {font-family: 'Noto Sans KR', sans-serif;color: #333;}
+select {appearance: none;
+        -webkit-appearance: none;/* 사파리, 크롬 하위버전용 */
+        -moz-appearance: none; /* 사파리, 크롬 하위버전용 */
+}
+select::-ms-expand {display: none;}/* 익스플로러용 */ 
+
+
+
+.thkc_container {width: 1400px; margin: 0 auto;}
+.thkc_container_02 {width: 1318px; margin: 0 auto;}
+
+/********** HTML/CSS  **********/
+/* 상단 메뉴 Wrap  */
+#thkc_headerWrap{width: 100%;}
+
+/* main 전체 Wrap 1400px */
+#thkc_mainWrap {display: flex;}
+
+/* 메인 컨텐츠 Wrap */
+#thkc_conWrap {width: 1060px;}
+
+/* 사이드 메뉴 Wrap */
+#thkc_asideWrap { width: 302px; border-right: 1px solid #EFEFEF;}
+
+/* gap */
+#thkc_gap {width: 38px !important}
+
+/* footer Wrap */
+#thkc_footerWrap {height: 100px; background: #000}
+
+
+
+/* common */
+.f_col {color: #ffffff}
+.f_col3 {color: #333333}
+.f_s14 {font-size: 14px;}
+.f_bold {font-weight: 500;}
+.f_bold700 {font-weight: 700;}
+.f_bold100 {font-weight: 100;}
+
+
+
+/* 모바일 토글 메뉴 영역 */
+.asideClone,
+.overlay {
+    display: none;
+}
+
+/* 오른쪽 카달로그 배너 */
+#bannerRight{    
+    position: fixed;
+    top:370px;
+    left:50%;
+    transform: translateX(-50%);
+    margin-left: 755px;
+    z-index: 100;  
+}
+#bannerRight .banner_catalogWrap,
+.banner_catalogWrap div,
+.banner_eroum,
+.banner_del{
+    display: flex; justify-content: center; align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#bannerRight .banner_catalogWrap{
+    width: 70px; height: 200px;
+    background: #FFFFFF;
+    border: 1px solid #D5D3D1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 12px; line-height: 15px;
+}
+#bannerRight .banner_catalogWrap div{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+#bannerRight .banner_catalogWrap div img{   
+    padding: 5px;
+}
+#bannerRight .banner_catalogWrap .c_apply{
+    padding: 15px 0px 20px 0px;
+    border-bottom: 1px dashed #D5D3D1;
+}
+/* 오른쪽 이로움 톡톡 배너 */
+#bannerRight .banner_eroum{
+    border-radius: 50px;
+    background: #FF9016;
+    width: 70px;height: 70px;   
+}
+/* 이로움 톡톡 삭제 */
+#bannerRight .banner_del{
+    width: 70px;height: 10px;    
+}
+.m_banner_eroum{
+    display: none;
+}
+
+/* Top버튼 */
+#thkc_pageTop{
+    width: 100%;   
+}
+#thkc_pageTop .btn_top{
+    z-index: 10;
+    display: none;
+    width: 50px;height: 50px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex; justify-content: center; align-items: center;
+    position: fixed; right: 10px;bottom: 10px;
+    cursor: pointer;
+}
+#thkc_pageTop .btn_top img{
+    height: 20px;
+}
+
+
+
+
+
+/********** css responsive **********/
+@media (max-width: 1399px) {
+    .thkc_container, .thkc_container_02 {
+        width: 100%;
+    }   
+    #thkc_conWrap {
+        width: 900px;   
+    }
+    .thkc_container{
+        padding: 0px 20px;
+    }
+    .thkc_asideWrap{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #thkc_conWrap {
+        width: 1060px;   
+    }
+ /* 모바일 토글 메뉴 영역 */
+    _body{overflow-y:hidden;}
+    #thkc_asideWrap {
+        display: none;
+    }
+    .asideClone,
+    .overlay {
+        display: block;
+    }
+
+    .overlay {
+        display: none;        
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border: 0;
+        background: rgb(0, 0, 0);
+        opacity: 0.5;
+        z-index: 1000;
+    }
+
+    .asideClone {
+        overflow-y: scroll;
+        position: fixed;
+        width: 330px;
+        height: 100%;    
+        padding-left: 30px;
+        top: 0px;
+        right: -100%;
+        background: white;
+        transition: 0.3s;
+        z-index: 10000;
+        box-shadow: -4px 0px -4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* 오른쪽 카달로그 배너 */    
+    #bannerRight{
+        _display: none;
+        overflow-y:auto;
+        position: fixed;
+        top:370px;
+        right: 60px;
+        transform: translateX(100%);
+        margin: 0px 10px 0px 0px;  
+    }
+}
+
+@media (max-width: 991px) {
+    #thkc_gap {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .thkc_container {
+        width: 100%;
+    }
+    /* 오른쪽 카달로그 배너 */
+    #bannerRight .banner_catalogWrap, .banner_del{    
+        display: none; 
+    }
+    #bannerRight .banner_eroum {    
+        display: none; 
+    }
+    /* 복제 오른쪽 이로움 톡톡 배너 */    
+    .m_banner_eroum{
+        z-index: 10;
+        display: none;
+        width: 52px;height: 52px;       
+        border-radius: 50px; 
+        background: #FF9016;      
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        display: flex; justify-content: center; align-items: center;
+        position: fixed; right: 10px;bottom: 70px;
+        padding: 12px 0px 0px 0px;
+        cursor: pointer;
+    }
+    .m_banner_eroum img{
+        width: 45px; height: 45px;
+    }   
+
+
+    
+}
+
+@media (max-width: 430px) {}
+
+@media (max-width: 360px) {}

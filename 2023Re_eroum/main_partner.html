@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/common/favicon.svg" type="images/svg+xml">
+    <title>파트너_이로움 시니어 라이프 케어 플랫폼</title>
+    <!-- style -->
+    <link rel="stylesheet" href="thkc_css/thkc_common_partner.css">
+    <link rel="stylesheet" href="thkc_css/thkc_gnb_style_partner.css">
+    <link rel="stylesheet" href="thkc_css/thkc_lnb_style_partner.css">
+    <link rel="stylesheet" href="thkc_css/thkc_main_partner.css">
+    <link rel="stylesheet" href="thkc_css/thkc_footer_style_partner.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- font swesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper_ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css"
+        integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"
+        integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.min.js"
+        integrity="sha512-U0YYmuLwX0Z1X7dX4z45TWvkn0f8cDXPzLL0NvlgGmGs0ugchpFAO7K+7uXBcCrjVDq5A0wAnISCcf/XhSNYiA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- ## 상단 메뉴 영역 ## -->
+    <div id="thkc_headerWrap">       
+        <!-- GNB -->
+        <header class="thkc_container">
+            <nav class="thkc_nav">
+                <div class="menuWrap">
+                    <!-- 상단로고 -->
+                    <h1 class="logo"><a href="#"><img src="images/common/thkc_logo_gnb.svg" alt="로고"></a></h1>
+                    <div class="menuWrap02">
+                        <!-- 상단 대 메뉴 -->
+                        <ul class="main_menu">
+                            <li><a href="#">급여상품(판매)</a></li>
+                            <li><a href="#">급여상품(대여)</a></li>
+                            <li><a href="#">비급여상품</a></li>
+                        </ul>
+                        <!-- 모바일 토글버튼 -->
+                        <div class="toggle">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="searchWrap">
+                    <!-- 검색 -->
+                    <div class="search">
+                        <input class="in_search" type="text" name="search" placeholder="품목명/급여코드 검색">
+                        <div class="icon_serch">
+                            <a href="#"><img src="images/common/thkc_btn_search.svg" alt="검색"></a>
+                        </div>
+                    </div>
+                    <!-- 로그아웃 -->
+                    <div class="logout"><a href="#">로그아웃</a></div>
+                </div>
+            </nav>
+        </header>
+        <!-- GNB 하단 라인 pc -->
+        <div id="topLine"></div>
+        <!-- GNB 하단 라인 모바일 -->
+        <div id="topLine_m"></div>
+    </div>
+    <!-- // 상단 메뉴 영역 // end-->  
+    <!-- ## 메인 전체 영역 (왼쪽메뉴, gap,  컨텐츠) ## -->
+    <div id="thkc_mainWrap" class="thkc_container">
+        <!-- ** PC 왼쪽 메뉴 "w302px" ** -->
+        <div id="thkc_asideWrap">
+            <aside class="thkc_aside">
+                <!-- 회원정보 -->
+                <div id="memberWrap">
+                    <div class="memTitle"><!-- 회원이름 -->
+                        물품공급 파트너<span class="dir"> 님</span>
+                    </div>
+                    <div class="member_modi">
+                        <a href="#">회원정보 수정</a>
+                    </div>                   
+                   
+                    <!-- 간편메뉴 -->
+                    <div class="fastTabe">
+                        <table>
+                            <tr>                              
+                                <td class="bb" onclick="location.href='#'">
+                                    <span><img src="images/main_parther/thkc_ico_parther01.svg" alt="주문내역"></span>
+                                    <div class="simTitle btn_simple"><span class="f_bold700">주문</span>내역</div>
+                                    <div class="">7</div>
+                                </td>                                
+                            </tr>
+                            <tr>                              
+                                <td class="bb" onclick="location.href='#'">
+                                    <span><img src="images/main_eroum/thkc_ico_easy02.svg" alt="주문내역"></span>
+                                    <div class="simTitle btn_simple"><span class="f_bold700">발주</span>내역</div>
+                                </td>
+                            </tr> 
+                            <tr>                              
+                                <td onclick="location.href='#'">
+                                    <span><img src="images/main_eroum/thkc_ico_easy03.svg" alt="주문내역"></span>
+                                    <div class="simTitle btn_simple"><span class="f_bold700">거래처</span>원장</div>
+                                </td>
+                            </tr>                             
+                        </table>
+                        
+                    </div>
+                    <!-- 이로움 고객센터 전화번호 -->
+                    <div class="left_csWrap">
+                        <div class="csTitle">이로움 고객센터</div>
+                        <div class="csCall">1533-5088</div>
+                    </div>
+                    <!-- 사업소 운영관리 -->
+                    <div class="mgeWrap">
+                        <h3 class="mgTitle y_bar">사업소 운영관리</h3>
+                        <hr>
+                        <div class="office_menu">   
+                            <ul>
+                                <li><img src="images/main_eroum/thkc_ico_manage01.svg" alt="주문/배송 관리"><a href="#">주문/배송 관리</a>
+                                </li>
+                                <li><img src="images/main_eroum/thkc_ico_manage02.svg" alt="수급자 관리"><a href="#">수급자 관리</a>
+                                </li>
+                                <li><img src="images/main_eroum/thkc_ico_manage03.svg" alt="계약서 관리"><a href="#">계약서 관리</a>
+                                </li>
+                                <li><img src="images/main_eroum/thkc_ico_manage04.svg" alt="청구 내역 관리"><a href="#">청구 내역 관리</a>
+                                </li>
+                                <li><img src="images/main_eroum/thkc_ico_manage05.svg" alt="보유 급여상품 관리"><a href="#">보유 급여상품 관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 공지사항 -->
+                    <div class="noticeWrap">
+                        <h3 class="mgTitle y_bar_02">공지사항
+                            <a href="#">
+                                <div class="more_01"><img src="images/common/thkc_btn_more_01.svg" alt=""></div>
+                            </a>
+                        </h3>
+                    </div>
+                    <hr>
+                    <div class="notice_menu">
+                        <ul>
+                            <li><img src="images/common/thkc_ico_notice.svg" alt="공지"><a href="#">이로움 주문 마감시간 안내
+                                    공지입니다.</a></li>
+                            <li><img src="images/common/thkc_ico_notice.svg" alt="공지"><a href="#">이로움 주문 마감시간 안내
+                                    공지입니다.</a></li>
+                            <li><img src="images/common/thkc_ico_notice.svg" alt="공지"><a href="#">이로움 주문 마감시간 안내
+                                    공지입니다.</a></li>
+                            <li><img src="images/common/thkc_ico_notice.svg" alt="공지"><a href="#">이로움 주문 마감시간 안내
+                                    공지입니다.</a></li>
+                        </ul>
+                    </div>
+                    <!-- 이로움 고객센터 -->
+                    <div class="mgeWrap">
+                        <h3 class="mgTitle y_bar">이로움 고객센터</h3>
+                        <hr>
+                        <div class="office_menu">
+                            <ul>
+                                <li><img src="images/common/thkc_ico_faq.svg" alt="자주하는 질문"><a href="#">자주하는 질문</a></li>
+                                <li><img src="images/common/thkc_ico_11.svg" alt="1:1문의"><a href="#">1:1문의</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 원격지원 서비스 -->
+                    <div class="remoteWrap">
+                        <div><img src="images/common/thkc_ico_lnb_remote.svg" alt="원격지원 서비스"></div>
+                        <div>
+                            <h4>원격지원 서비스</h4>
+                            <div class="rem_con">전문상담원이 PC화면을 보면서 문제를 해결합니다.</div>
+                        </div>
+                    </div>
+                    <div class="btn_remote">
+                        원격지원 서비스 시작
+                    </div>
+                    <!-- pc다운로드 바로가기 -->
+                    <div class="downlodeWrap">
+                        <div onclick="location.href='images/common/thkc_btn_download.svg'">이로움 카달로그 <img
+                                src="images/common/thkc_btn_download.svg" alt="이로움 카달로그"></a></div>
+                        <div onclick="location.href='images/common/thkc_btn_download.svg'">통장사본 <img
+                                src="images/common/thkc_btn_download.svg" alt="통장사본"></div>
+                        <div onclick="location.href='images/common/thkc_btn_download.svg'">사업자 등록증<img
+                                src="images/common/thkc_btn_download.svg" alt="사업자 등록증"></div>
+                    </div>
+
+                    <!-- Mobile 다운로드 바로가기 -->
+                    <div class="simpleTabe c_down">
+                        <table>
+                            <tr>
+                                <td class="br br_c" onclick="location.href='#'">
+                                    <div class="simTitle">카달로그<br><span class="f_bold700">다운로드</span></div>                                    
+                                </td>
+                                <td class="bb br_c" onclick="location.href='#'">
+                                    <div class="simTitle">카달로그<br><span class="f_bold700">신청하기</span></div>                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bt br_c" onclick="location.href='#'">
+                                    <div class="simTitle">통장사본<br><span class="f_bold700">다운로드</span></div> 
+                                </td>
+                                <td class="bl br_c" onclick="location.href='#'">
+                                    <div class="simTitle">사업자등록증<br><span class="f_bold700">신청하기</span></div> 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Mobile 로그아웃 -->
+                    <div class="m_logout"><a href="#">로그아웃</a></div>
+                </div>
+            </aside>
+        </div>
+        <!-- ** mobile 왼쪽 aside 복제 **-->
+        <div class="overlay"></div>
+        <div class="asideClone">
+            <div class="mobileAside">
+                <div class="m_toggle">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <!-- 모바일 토글 아이콘-->
+                <div class="toggleClone">
+                </div>
+            </div>
+        </div>       
+        <!--  ** gap w38px ** -->
+        <div id="thkc_gap"></div>
+        <!--  ** 메인 컨텐츠  "w1060px" ** -->
+        <div id="thkc_conWrap">
+            <section class="thkc_section">
+                <!-- 01.대시보드 -->
+                <div class="dash_bWrap">
+                    <ul class="dashList">
+                        <li class="dashTitle">주문 현황 (당월) <img src="images/common/thkc_ico_arrow_next.svg" alt="아이콘"></li>
+                        <li class="dash_sTitle">주문 건수 &nbsp;<span class="d_n"><a href="#">100</a></span>&nbsp;<span
+                                class="d_unit">건</span></li>
+                        <li class="dash_line"><img src="images/common/thkc_line_gnb.svg" alt="아이콘"></li>
+                        <li class="dash_sTitle">출고 완료 &nbsp;<span class="d_n"><a href="#">10</a></span>&nbsp;<span
+                                class="d_unit">건</span></li>
+                        <li class="dash_line"><img src="images/common/thkc_line_gnb.svg" alt="아이콘"></li>
+                        <li class="dash_sTitle">배송 완료 &nbsp;<span class="d_n"><a href="#">5</a></span>&nbsp;<span
+                                class="d_unit">건</span></li>
+                        <li class="dash_line"><img src="images/common/thkc_line_gnb.svg" alt="아이콘"></li>
+                        <li class="dash_sTitle">설치 일정 &nbsp;<span class="d_n"><a href="#">5</a></span>&nbsp;<span
+                                class="d_unit">건</span></li>
+                    </ul>
+                </div>
+                <!-- 03.프로모션 슬라이딩 배너 -->
+                <div class="eventWrap">
+                    <!-- Swiper -->
+                    <div class="swiper eventSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide img_r"><img src="images/main_eroum/thkc_img_banner.png" alt="메인배너">
+                            </div>
+                            <div class="swiper-slide img_r"><img src="images/main_eroum/thkc_img_banner.png" alt="메인배너">
+                            </div>
+                            <div class="swiper-slide img_r"><img src="images/main_eroum/thkc_img_banner.png" alt="메인배너">
+                            </div>
+                            <div class="swiper-slide img_r"><img src="images/main_eroum/thkc_img_banner.png" alt="메인배너">
+                            </div>
+                        </div>                       
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>                
+                
+                <!-- 08.이로움만의 서비스 -->
+                <div class="serviceWrap">
+                    <div class="e_TitleWrap">
+                        <div class="e_Title">이로움만의 <span class="f_bold700">서비스</span></div>
+                    </div>
+                    <!-- pc -->
+                    <div class="svWrap">
+                        <div class="svBox svBg01">
+                            <h3>이벤트</h3>
+                            <div class="sv_img"><img src="images/main_eroum/thkc_img_service_01.png" alt="이벤트"></div>
+                            <div class="sv_con">이로움에서만 만나볼 수 있는 다양하고 실속있는 이벤트</div>
+                        </div>
+                        <div class="svBox svBg02">
+                            <h3>렌탈 프로그램</h3>
+                            <div class="sv_img"><img src="images/main_eroum/thkc_img_service_02.png" alt="레탈 프로그램"></div>
+                            <div class="sv_con">대여 사업의 부담을 줄여주는 이로움만의 렌탈 프로그램</div>
+                        </div>
+                        <div class="svBox svBg03">
+                            <h3>비급여 샘플 제공</h3>
+                            <div class="sv_img"><img src="images/main_eroum/thkc_img_service_03.png" alt="비급여 샘플 제공"></div>
+                            <div class="sv_con">비급여 제품을 사업소, 고객 모두 체험할 수 있도록 제공하는 샘플 서비스</div>
+                        </div>
+                    </div>
+                    <!-- 모바일 복제(이로움 서비스) -->
+                    <div class="moble_svWrap">
+                        <div class="swiper mySwiper_service">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="svBox svBg01">
+                                        <h3>이벤트</h3>
+                                        <div class="sv_img"><img src="images/main_eroum/thkc_img_service_01.png" alt="이벤트">
+                                        </div>
+                                        <div class="sv_con">이로움에서만 만나볼 수 있는 다양하고 실속있는 이벤트</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="svBox svBg02">
+                                        <h3>렌탈 프로그램</h3>
+                                        <div class="sv_img"><img src="images/main_eroum/thkc_img_service_02.png" alt="렌탈 프로그램">
+                                        </div>
+                                        <div class="sv_con">대여 사업의 부담을 줄여주는 이로움만의 렌탈 프로그램</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="svBox svBg03">
+                                        <h3>비급여 샘플 제공</h3>
+                                        <div class="sv_img"><img src="images/main_eroum/thkc_img_service_03.png" alt="비급여 샘플 제공">
+                                        </div>
+                                        <div class="sv_con">비급여 제품을 사업소, 고객 모두 체험할 수 있도록 제공하는 샘플 서비스</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 09,10.공지사항/고객센터 Wrap -->
+                <div class="boardWrap">
+                    <!-- 09.공지사항 -->
+                    <div class="board_titleWrap">
+                        <div class="board_title">
+                            <span class="e_Title">공지사항</span>
+                            <span class="b_more f_bold700" onclick="location.href='#'">+</span>
+                        </div>
+                        <hr class="board_bar">
+                        <div class="noti_conWrap">
+                            <ul class="noti_con">
+                                <li class="noti_text"><a href="#">· 이로움 주문 마감시간 안내</a></li>
+                                <li class="noti_data">2022.12.30</li>
+                            </ul>
+                            <hr>
+                            <ul class="noti_con">
+                                <li class="noti_text"><a href="#">· [22년 12월] 이로움 안전손잡이 설치 서비스 안내</a></li>
+                                <li class="noti_data">2022.12.30</li>
+                            </ul>
+                            <hr>
+                            <ul class="noti_con">
+                                <li class="noti_text"><a href="#">· [23년 1월] 뉴케어 패키지 변경 안내 (총5종)</a></li>
+                                <li class="noti_data">2022.12.30</li>
+                            </ul>
+                            <hr>
+                            <ul class="noti_con">
+                                <li class="noti_text"><a href="#">· [22년 12월] 안전손잡이 ASH-201 배송비 변경..</a></li>
+                                <li class="noti_data">2022.12.30</li>
+                            </ul>
+                            <hr>
+                            <ul class="noti_con">
+                                <li class="noti_text"><a href="#">· [22년 12월] 욕창예방매트리스 2종 단종 급여 제외..</a></li>
+                                <li class="noti_data">2022.12.30</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- 10.고객센터 -->
+                    <div class="board_titleWrap">
+                        <div class="board_title">
+                            <span class="e_Title">고객센터</span>
+                        </div>
+                        <hr class="board_bar">
+                        <div class="cs_conWrap">
+                            <div class="m_csWrap">
+                                <div class="m_csBoardWrap">
+                                    <ul class="m_cs"><!--자주하는 질문-->
+                                        <li class="m_iconBg"><img src="images/common/thkc_ico_faq.svg" alt="FAQ">
+                                        <li>
+                                        <li class="m_csTitleWrap" onclick="location.href='#'">
+                                            <h3>자주하는 질문</h3>
+                                            <span>궁금한 사항을 확인하실 수 있습니다.</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="m_cs"><!--1:1문의-->
+                                        <li class="m_iconBg"><img src="images/common/thkc_ico_11.svg" alt="1:1문의">
+                                        <li>
+                                        <li class="m_csTitleWrap" onclick="location.href='#'">
+                                            <h3>1:1문의</h3>
+                                            <span>운영시간 내에 순차적으로 답변해 드립니다.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 모바일에서 추가 메뉴 -->
+                                <div class="mobile_csBoardWrap">
+                                    <ul class="m_cs"><!--멤버십 소개-->
+                                        <li class="m_iconBg"><img src="images/main_eroum/thkc_ico_member.svg" alt="멤버십">
+                                        <li>
+                                        <li class="m_csTitleWrap" onclick="location.href='#'">
+                                            <h3>멤버십 소개</h3>
+                                        </li>
+                                    </ul>
+                                    <ul class="m_cs"><!--원격지원 서비스-->
+                                        <li class="m_iconBg"><img src="images/common/thkc_ico_lnb_remote.svg" alt="원격지원">
+                                        <li>
+                                        <li class="m_csTitleWrap" onclick="location.href='#'">
+                                            <h3>원격지원 서비스</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 멤버십 (pc에서만) -->
+                            <div class="m_membWrp" onclick="location.href='#'">
+                                <img src="images/main_eroum/thkc_ico_member.svg" alt="멤버십">
+                                <h3>멤버십 소개</h3>
+                                <span>회원 등급과 혜택에 대해 한눈에 확인 하실 수 있습니다.</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 11.고객센터 정보 (모바일에서만)-->
+                    <div class="cs_infoWrap">
+                        <div class="cs_phone">
+                            <img src="images/common/thkc_logo_mark.svg" alt="logo">
+                            <span class="f_s14 f_bold100">이로움 고객센터</span>
+                            <span class="phone">1533-5088</span>
+                        </div>
+                        <div class="f_s14">
+                            <ul class="cs_m_info">
+                                <li class="cs_infoTitle">운영시간</li>
+                                <li>[평일] 08:30~17:30 (점심시간 12시~13시) /<br>
+                                    [주말/공휴일] 휴무</li>
+                            </ul>
+                            <ul class="cs_m_info">
+                                <li><span class="cs_infoTitle">이메일</span> <a
+                                        href="mailto:cs@thkc.co.kr">cs@thkc.co.kr</a></li>
+                                <li class="null"> / </li>
+                                <li><span class="cs_infoTitle">팩스</span> 02-861-9084</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>        
+    </div>
+    <!-- // 메인 전체 영역 (왼쪽메뉴, 컨텐츠) end// -->   
+
+    <!--  ## 하단 footer 영역 ## -->
+    <footer id="thkc_footerWrap" class="thkc_footer">
+        <!-- footer 메뉴 바 -->
+        <div class="f_menuBgWrap">
+            <div class="f_menuWrap thkc_container">
+                <div class="f_logoWrap"><!--footer 로고-->
+                    <div class="f_logo"><img src="images/common/thkc_logo_footer.svg" alt="logo"></div>
+                    <ul class="f_menu"><!--footer 메뉴-->
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="f_Fsns"><!--패밀리 사이트-->
+                    <select name="sitelist" id="" class="f_site">
+                        <option value selected>Family Site</option>
+                        <option value="#">이로움 1.0</option>
+                        <option value="#">이로움 1.5</a></option>
+                    </select>
+                    <ul class="f_sns"><!--snsn 버튼-->
+                        <li class="btn_sns"><a href="#"><img src="images/common/thkc_btn_sns_talk.svg" alt=""></a></li>
+                        <li class="btn_sns"><a href="#"><img src="images/common/thkc_btn_sns_youtube.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer 인포 바 -->
+        <div class="f_infoBgWrap">
+            <div class="f_infoWrap thkc_container">
+                <div class="f_Fsns_d"> <!-- 패밀리 사이트 복제  -->
+                    <div class="m_f_Fsns"></div>
+                </div>
+                <div class="f_info"><!--footer 정보-->
+                    <ul>
+                        <li>
+                            (주)티에이치케이컴퍼니 ㅣ 대표 : 신종호 ㅣ 사업자등록번호 : 617-86-14330 <br class="f_br">
+                            <span class="bnt_license"><a href="#">사업자정보확인</a></span><br>
+                            통신판매신고번호 : 2016-부산금정-0114 | 개인정보보호관리자 : 신종호
+                        </li>
+                        <li>
+                            주소 : 부산광역시 금정구 중앙대로 1815, 5층(구서동, 가루라빌딩)<br>
+                            사무소 : 서울시 금천구 서부샛길 606 대성디폴리스 B동 1401호<br>
+                            기업부설연구소 : 경상남도 김해시 주촌면 소망길 88 메디컬실용화센터 504호<br>
+                            물류센터 : 인천광역시 서구 이든1로 21
+                        </li>
+                        <li>
+                            본 쇼핑몰의 콘텐츠 및 모든 정보(UI,UX)는 ㈜티에이치케이컴퍼니에 있으며, 어떠한 이유에서도 무단복제, 도용, 캡처, 스크래핑, 배포 등 저작물 사용 시에는
+                            저작권법(제97조5항)에 의해 보호받는 저작물이므로 이를 위반 시에는 법적 처벌을 받을 수 있습니다.
+                        </li>
+                        <li>
+                            Copyright ⓒEroumcare All righs reserved.
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_cs"><!--footer 고객센터-->
+                    <ul>
+                        <li class="f_cs_title">
+                            <div>
+                                <h4>이로움 고객센터</h4>
+                            </div>
+                            <div class="phone">1533-5088</div>
+                        </li>
+                        <li>운영시간 <div class="f_cs_data">[평일] 08:30~17:30 (점심시간 12시~13시)<br>[주말/공휴일] 휴무</div>
+                        </li>
+                        <li>기타연락 <div class="f_cs_data">[이메일] <a href="mailto:cs@thkc.co.kr">cs@thkc.co.kr</a><br>[팩스]
+                                02-861-9084</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_remoteWrap"><!--footer 원격지원-->
+                    <div class="f_remote">
+                        <div><img src="images/common/thkc_ico_footer_remote.svg" alt=""></div>
+                        <div>
+                            <h4>원격지원 서비스</h4>
+                            <div class="rem_con">전문상담원이 PC화면을 보면서 문제를 해결합니다.</div>
+                        </div>
+                    </div>
+                    <div class="btn_remote" onclick="location.href='#'">
+                        <div>원격지원 서비스 시작</div>
+                        <div><img src="images/common/thkc_ico_arrow_next.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  // 하단 footer 영역 end// -->
+    
+     <!-- ** Top버튼 ** -->
+     <div id="thkc_pageTop">           
+        <div class="btn_top"><img src="images/common/thkc_bnt_arrow_top.svg" alt=""></div>
+    </div>
+    
+
+    <script src="thkc_js/thkc_script.js"></script>
+
+</body>
+
+</html>
