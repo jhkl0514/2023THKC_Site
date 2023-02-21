@@ -400,6 +400,10 @@ nav.thkc_nav .toggle.active .bar3 {
         height: 1px;
         background: #E7E7E7;
     }
+    /* 파트너 */
+    #topLine_partner_m {
+        display: none;
+    }
 }
 
 @media (max-width: 430px) {}

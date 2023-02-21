@@ -107,6 +107,26 @@ if($("body").height()/5 < scrollY){ // 문서 반일때 스크롤 Y이 커질때
 
 
 
+// 파트너 Swiper               
+var swiper = new Swiper(".partnerSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
 
 
 

@@ -12,6 +12,9 @@ section.thkc_section .dash_bWrap {
     padding: 10px;
     border-radius: 20px;
 }
+section.thkc_section .margin30{
+    margin-bottom: 30px;
+}
 
 section.thkc_section .dashList {
     display: flex;
@@ -214,6 +217,11 @@ section.thkc_section .guideWrap {
 
 section.thkc_section .e_TitleWrap {
     width: 320px;
+}
+/* 파트너 추가 */
+section.thkc_section .e_TitleWrap_p {
+    width: 100%;
+    margin-top: 130px;
 }
 
 section.thkc_section .e_Title {
@@ -482,6 +490,7 @@ section.thkc_section .svWrap {
 section.thkc_section .svWrap .svBox h3 {
     font-size: 25px;
     font-weight: 500;
+    letter-spacing: -0.03em;
 }
 
 section.thkc_section .svWrap .svBox .sv_con {
@@ -591,7 +600,34 @@ section.thkc_section .m_membWrp img{
 
 section.thkc_section .m_csBoardWrap {
     padding: 30px 10px 0px 10px;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+/* 파트너 */
+section.thkc_section .m_csBoard_part{
+    display: flex;
+}
+
+section.thkc_section .m_csBoard_part ul{
+    display: block;
+    width: 50%; 
+    border-right: 1px solid #D6D6D6;
+}
+section.thkc_section .m_csBoard_part ul:last-child{  
+    border-right: 0px;
+}
+
+section.thkc_section .m_csBoard_part li{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 35px;    
+}
+section.thkc_section .m_csBoard_part li h3{
+   padding-top: 10px;   
+}
+section.thkc_section .m_csBoard_part ul li img{
+    height: 50px;   
 }
 
 section.thkc_section .m_cs {
@@ -759,6 +795,10 @@ section.thkc_section .cs_infoWrap {
     /* Mobile */
     section.thkc_section {
         margin-top: 80px;
+    }
+    /* 파트너 */
+    section.thkc_section .top_parther {
+        margin-top: 100px;
     }
 
     section.thkc_section .dash_bWrap {
@@ -946,6 +986,9 @@ section.thkc_section .cs_infoWrap {
         margin-bottom: 50px;
         width: 100%;
     }
+    section.thkc_section .e_TitleWrap_p {       
+        margin-top: 70px;
+    }
 
     section.thkc_section .svWrap {
         display: none;
@@ -1070,6 +1113,23 @@ section.thkc_section .cs_infoWrap {
     section.thkc_section .m_csTitleWrap {
         width: 74%;
         padding: 0px 0px 0px 10px;
+    }
+    /* 파트너 */
+    section.thkc_section .m_csBoard_part .m_csTitleWrap {
+        display: block;      
+    }
+    section.thkc_section .m_csBoard_part span {
+        display: block;
+    }
+    section.thkc_section .cs_conWrap .m_csBoard_part {
+        border: 1px solid #D6D6D6;
+    }
+    section.thkc_section .m_csBoard_part .m_iconBg {
+        width: 20px;
+        height: 60px;            
+    }
+    section.thkc_section .m_csBoard_part .m_iconBg img {
+        height: 25px;
     }
 
     /* Mobile 11.고객센터 정보 (모바일에서만) */
