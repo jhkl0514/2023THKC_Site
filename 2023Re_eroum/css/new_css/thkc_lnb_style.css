@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* 왼쪽 메뉴 "w302px" */
+
 aside.thkc_aside {
     width: 264px;
     background: #fff;
@@ -421,7 +422,7 @@ aside.thkc_aside .member_modi{
 }
 
 
-/* 파트너 빠른메뉴 테이블 */
+/* 빠른메뉴 테이블 */
 aside.thkc_aside .fastTabe {
     border: 1px solid #7D7D7D;
     border-radius: 20px;
@@ -434,9 +435,13 @@ aside.thkc_aside .fastTabe .icon_report {
     background: #F58220;
     border-radius: 50px;
     color: #fff;    
-    margin-left: 42px;
+    margin: 8px 0px 0px 42px;
     font-size: 14px;
     display: flex; justify-content: center; align-items: center;
+}
+
+aside.thkc_aside .fastTabe .fast_img{
+    padding: 5px 0px 0px 0px;
 }
 
 aside.thkc_aside .fastTabe table {
@@ -457,6 +462,20 @@ aside.thkc_aside .fastTabe table td {
 
 aside.thkc_aside .fastTabe .bb {
     border-bottom: 1px dashed #CFCFCF;
+}
+
+aside.thkc_aside .simTitle {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 300;    
+}
+aside.thkc_aside .btn_simple{
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+aside.thkc_aside .btn_simple:hover {
+    transform: scale(1.1);    
 }
 
 
