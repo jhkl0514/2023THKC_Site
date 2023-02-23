@@ -2,7 +2,7 @@
 
 /* ## 하단 footer.thkc_footer 영역 ## */
 footer.thkc_footer .f_infoWrap {
-    padding: 30px 0px;
+    padding: 30px 0px;    
 }
 /* PC footer.thkc_footer 메뉴 바  */
 footer.thkc_footer .f_menuBgWrap {
@@ -21,6 +21,7 @@ footer.thkc_footer .f_menuWrap {
 footer.thkc_footer .f_logoWrap,
 .f_menu {
     display: flex;
+    align-items: flex-end;
 }
 
 footer.thkc_footer .f_logo {
@@ -45,7 +46,7 @@ footer.thkc_footer .f_Fsns {
 
 footer.thkc_footer .f_Fsns select {
     background: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px 50px;
     box-sizing: border-box;
     background-image: url(../images/common/thkc_btn_arrow_down.svg);
@@ -66,7 +67,9 @@ footer.thkc_footer .f_Fsns select option {
 
 footer.thkc_footer .f_sns {
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
+    height: 50%;
     gap: 7px;
     padding: 0px 10px;
 }
