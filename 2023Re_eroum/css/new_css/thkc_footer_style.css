@@ -21,7 +21,7 @@ footer.thkc_footer .f_menuWrap {
 footer.thkc_footer .f_logoWrap,
 .f_menu {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 footer.thkc_footer .f_logo {

@@ -383,7 +383,7 @@ nav.thkc_nav .toggle.active .bar3 {
         position: relative;
     }
 
-    nav.thkc_nav .search {
+    nav.thkc_nav .thkc_search {
         width: 100%;
         position: absolute;
         top: -5px
