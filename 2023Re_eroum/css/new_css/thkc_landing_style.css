@@ -230,6 +230,7 @@
     padding: 300px 0px;
 }
 
+
 /* 고객지원 정보  */
 section.thkc_land_section{
     margin: 50px 0px;
@@ -267,6 +268,7 @@ section.thkc_land_section .cs_infoTitle {
 section.thkc_land_section .null {
     padding: 0px 20px;
 }
+
 
 /* section .card{background: 3px 3px 10px rgba(0,0,0,0.3); transition: 0.3s;}
 section .card:hover{
@@ -374,6 +376,16 @@ section .card:hover{
     #thkc_landing .l_title_do01{
         font-size: 20px;
         letter-spacing: -0.05em;
-    }  
+    }
+   .l_MainTitleB_01{
+        font-size: 26px;      
+        letter-spacing: -0.05em;
+    }
+    .l_MainTitleB_02{
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        line-height: 10px;       
+
+    } 
 }
 
