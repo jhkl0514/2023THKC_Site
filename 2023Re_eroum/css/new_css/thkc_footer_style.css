@@ -353,7 +353,7 @@ footer.thkc_footer .f_info_landing .f_info ul:last-child{
     }
     footer.thkc_footer .f_info_landing .f_info ul{
         width: 100%;
-        font-size: 0.4rem; letter-spacing: 0em;       
+        font-size: 12px; letter-spacing: 0em;       
     }    
     footer.thkc_footer .f_info_landing .f_info ul:last-child{
         text-align: left;
