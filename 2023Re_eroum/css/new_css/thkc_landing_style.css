@@ -1,5 +1,140 @@
 @charset "utf-8";
 
+/* visual */
+.l_MainWrap{
+    position: relative;
+}
+.l_MainImg{      
+    display: flex; justify-content: center; align-items: flex-end;
+    width: 100%;
+    bottom: 0px; 
+    z-index: 1;
+}
+.l_MainImg:after{
+    position: absolute;
+    display: block;
+    content: "";
+    background: linear-gradient(137deg, #F3E9E4, #F5EFEF, #F5F2F0, #FFECD2);
+    background-size: 800% 800%;     
+    bottom:0px;
+    height: 80%;
+    width: 100%;
+    z-index: -100;
+
+    -webkit-animation: AnimationName 16s ease infinite;
+    -moz-animation: AnimationName 16s ease infinite;
+    -o-animation: AnimationName 16s ease infinite;
+    animation: AnimationName 16s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.l_MainTitle{
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.l_MainTitle02{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+}
+.l_MainTitle_01{
+    position: absolute;  
+    top: 30%; 
+    left: 25%; 
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    
+}
+.l_MainAny{
+    opacity: 0;
+    -webkit-animation: scrollBtn 1.5s linear infinite alternate;
+          animation: scrollBtn 1.5s linear infinite alternate;
+}
+@keyframes scrollBtn {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    100% {
+      transform: translateY(10px);
+      opacity: 1;
+    }
+}
+.l_MainTitle_01 span{
+    background: #C8E390;    
+}
+.l_MainTitle_02{
+    position: absolute;  
+    bottom: 15%; 
+    left: 20%; 
+    transform: translate(-50%, 50%);
+    opacity: 0;
+}
+.l_MainAny02{
+    opacity: 0;
+    -webkit-animation: scrollBtn02 1.5s linear infinite alternate;
+          animation: scrollBtn02 1.5s linear infinite alternate;
+}
+@keyframes scrollBtn02 {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    100% {
+      transform: translateX(10px);
+      opacity: 1;
+    }
+}
+.l_MainTitle_02 span{
+    background: #B9D7F3;    
+}
+.l_MainTitle_03{
+    position: absolute;  
+    top: 30%; 
+    right: 27%; 
+    transform: translate(-50%, 50%);
+    opacity: 0;
+
+}
+
+.l_MainTitle_03 span{
+    background: #C3C4FC;  
+}
+.l_MainTitle_04{
+    position: absolute;  
+    bottom: 25%; 
+    right: 17%;  
+    transform: translate(-50%, 50%);
+    opacity: 0;   
+}
+.l_MainTitle_04 span{
+    background: #FFC9B4;  
+}
+
 #thkc_landing .mb_70{
     margin-bottom: 70px;
 }
@@ -7,11 +142,13 @@
 #thkc_landing .land_title_01{
     font-size: 25px; 
     font-weight: 100;
-    color: #666; 
+    color: #666;
+    line-height: 50%;
 }
 
 #thkc_landing .land_title_02{
     font-size: 50px; 
+    font-weight: 300;
     padding: 10px 0px 40px 0px;
     text-align: center;
 }
@@ -139,13 +276,48 @@ section .card:hover{
 
 
 /********** css responsive **********/
-@media (max-width: 1399px) {}
-
-@media (max-width: 1199px) {
-   
+@media (max-width: 1399px) {
+    .l_MainTitle_01{  
+        top: 25%; 
+        left: 18%; 
+    }   
+    .l_MainTitle_02{
+        bottom: 20%; 
+        left: 12%; 
+    }   
+    .l_MainTitle_03{
+        top: 25%; 
+        right: 20%;   
+    }
+    .l_MainTitle_04{
+        bottom: 25%; 
+        right: 10%;  
+    }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 1199px) {
+    
+}
+
+@media (max-width: 991px) {
+    .l_MainTitle_01{  
+        top: 25%; 
+        left: 0%; 
+    }   
+    .l_MainTitle_02{
+        bottom: 20%; 
+        left: 0%;
+    }   
+    .l_MainTitle_03{
+        top: 25%; 
+        right: 5%; 
+    }
+    .l_MainTitle_04{
+        bottom: 25%; 
+        right: -10%;  
+    }
+   
+}
 
 @media (max-width: 767px) {
     #thkc_landing .mb_70{
@@ -171,6 +343,10 @@ section .card:hover{
     #thkc_landing .land_bimg_p{
         padding: 100px 0px;
     }
+
+    .l_MainTitle_01,  .l_MainTitle_02, .l_MainTitle_03, .l_MainTitle_04{  
+        display: none;
+    }  
     
   
 
@@ -194,6 +370,10 @@ section .card:hover{
     }
     #thkc_landing .land_title_04{
         font-size: 15px;       
+    }
+    #thkc_landing .l_title_do01{
+        font-size: 20px;
+        letter-spacing: -0.05em;
     }  
 }
 
