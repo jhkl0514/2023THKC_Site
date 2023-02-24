@@ -268,11 +268,11 @@ section.thkc_land_section .null {
     padding: 0px 20px;
 }
 
-section .card{background: 3px 3px 10px rgba(0,0,0,0.3); transition: 0.3s;}
+/* section .card{background: 3px 3px 10px rgba(0,0,0,0.3); transition: 0.3s;}
 section .card:hover{
     box-shadow: var(--shadow-color1);
     transform: scale(1.05) translate(-5px, -5px);
-}
+} */
 
 
 /********** css responsive **********/
