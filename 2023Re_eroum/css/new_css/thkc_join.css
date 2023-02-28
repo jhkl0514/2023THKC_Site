@@ -130,16 +130,26 @@ a.text_line:hover{
 .thkc_joinWrap input.thkc_input::-ms-input-placeholder,textarea::-ms-input-placeholder {
     color: #8f8f8f !important;
 }
-.thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
+.thkc_joinWrap input.thkc_input[type="text"],
+.thkc_joinWrap input.thkc_input[type="password"],
+.thkc_joinWrap select.thkc_input {
     height: 45px;
     width: 50%;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #DDDDDD;
     border-radius: 5px;
     padding: 0 15px;
     box-sizing: border-box;
     vertical-align: top;
     font-size: 16px;
-    color: #494949;    
+    color: #494949;
+    outline: none;  
+}
+.thkc_joinWrap input.thkc_input[type="text"]:focus,
+.thkc_joinWrap input.thkc_input[type="password"]:focus,
+.thkc_joinWrap select.thkc_input:focus
+{
+    border: 2px solid #f1344d;
+    box-shadow: rgba(255, 223, 186, 0.2) 6px 2px 24px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px
 }
 .thkc_joinWrap input.thkc_input50[type="text"],  .thkc_joinWrap input.thkc_input50[type="password"] {
     width: 35%;  
@@ -148,11 +158,13 @@ a.text_line:hover{
 .table-box .error-txt {
     padding: 5px 0 0 0;
     font-weight: 400;
-    color: #FF9015;
+    font-size: 12px;  
+    color: #f1344d;
 }
 .thkc_cont .error_input_inner{
-    border-color: #FF9015!important;
-    background: #FFF9F3; 
+    background: #faedeb;
+    color: #f1344d !important;
+    border-color: #f1344d !important;
 }
 
  .thkc_joinWrap{
@@ -374,6 +386,9 @@ a.text_line:hover{
 @media (max-width: 991px) {}
 
 @media (max-width: 767px) {
+    section.thkc_joinWrap{
+        background: rgba(248, 248, 248, 0.5);
+    }
     .thkc_loginWrap header{    
         padding:30px 0px;    
     }
@@ -402,7 +417,7 @@ a.text_line:hover{
    
     /* 회원가입 */
     .thkc_joinWrap{
-        padding: 0px 20px;
+        padding: 20px 20px;
     }
     .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
         width: 100%;
@@ -413,7 +428,7 @@ a.text_line:hover{
         min-height: 35px;      
         padding: 0;
         font-size: 16px;
-        background: #fff;       
+        background: rgba(248, 248, 248, 0.5);      
      }
      .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont{
         display: table;
@@ -425,9 +440,7 @@ a.text_line:hover{
      .thkc_joinWrap .thkc_tableWrap .table-box{       
         border-bottom: 0px;    
      }
-     .thkc_joinWrap .thkc_titleTop{
-        font-size: 30px;       
-     }
+     
      .thkc_joinWrap .joinTitle .boxRright{
         font-size: 12px;     
      }
