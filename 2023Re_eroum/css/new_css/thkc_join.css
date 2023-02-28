@@ -118,16 +118,19 @@ a.text_line:hover{
  }
 
  /*##### pc 회원가입 페이지 ####*/
- .thkc_joinWrap input.thkc_input::placeholder,textarea::placeholder {
+ .thkc_joinWrap input.thkc_input::placeholder,textarea::placeholder,
+ .thkc_findMeWrap input.thkc_input::placeholder,textarea::placeholder {
     color: #8f8f8f !important;
     opacity: 1;
 }
 
-.thkc_joinWrap input.thkc_input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+.thkc_joinWrap input.thkc_input:-ms-input-placeholder,textarea:-ms-input-placeholder,
+.thkc_findMeWrap input.thkc_input:-ms-input-placeholder,textarea:-ms-input-placeholder {
     color: #8f8f8f !important;
 }
 
-.thkc_joinWrap input.thkc_input::-ms-input-placeholder,textarea::-ms-input-placeholder {
+.thkc_joinWrap input.thkc_input::-ms-input-placeholder,textarea::-ms-input-placeholder,
+.thkc_findMeWrap input.thkc_input::-ms-input-placeholder,textarea::-ms-input-placeholder{
     color: #8f8f8f !important;
 }
 .thkc_joinWrap input.thkc_input[type="text"],
@@ -144,14 +147,34 @@ a.text_line:hover{
     color: #494949;
     outline: none;  
 }
+
+.thkc_findMeWrap input.thkc_input[type="text"],
+.thkc_findMeWrap input.thkc_input[type="password"],
+.thkc_findMeWrap select.thkc_input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 16px;
+    color: #494949;
+    outline: none;  
+}
+
 .thkc_joinWrap input.thkc_input[type="text"]:focus,
 .thkc_joinWrap input.thkc_input[type="password"]:focus,
-.thkc_joinWrap select.thkc_input:focus
+.thkc_joinWrap select.thkc_input:focus,
+.thkc_findMeWrap input.thkc_input[type="text"]:focus,
+.thkc_findMeWrap input.thkc_input[type="password"]:focus,
+.thkc_findMeWrap select.thkc_input:focus
 {
     border: 2px solid #f1344d;
     box-shadow: rgba(255, 223, 186, 0.2) 6px 2px 24px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px
 }
-.thkc_joinWrap input.thkc_input50[type="text"],  .thkc_joinWrap input.thkc_input50[type="password"] {
+.thkc_joinWrap input.thkc_input50[type="text"],
+.thkc_joinWrap input.thkc_input50[type="password"] {
     width: 35%;  
 }
 /* 입력 에러 */
@@ -315,7 +338,9 @@ a.text_line:hover{
 
 
   /* pc title */
- .thkc_joinWrap .thkc_titleTop{
+ .thkc_joinWrap .thkc_titleTop,
+ .thkc_findMeWrap .thkc_titleTop
+ {
     font-size: 35px;
     font-weight: 700;
     text-align: center;

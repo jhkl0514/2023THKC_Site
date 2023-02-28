@@ -20,6 +20,7 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
 
 .thkc_container {width: 1400px; margin: 0 auto;}
 .thkc_container_02 {width: 1318px; margin: 0 auto;}
+.thkc_container_03 {width: 400px; margin: 0 auto;}
 
 /********** HTML/CSS  **********/
 /* 상단 메뉴 Wrap  */
