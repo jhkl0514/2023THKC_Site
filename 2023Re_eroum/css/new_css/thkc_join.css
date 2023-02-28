@@ -1,5 +1,27 @@
 @charset "utf-8";
 
+a.text_under{
+    text-decoration-line: underline;
+}
+a.text_line{
+    text-decoration-line: underline;
+    font-weight: 500;
+    font-size: 14px;
+}
+a.text_under:hover{
+    color:orange;
+    transition: 0.3s;
+}
+a.text_line:hover{
+    text-decoration-line: underline;
+    color:orange;
+    transition: 0.3s;
+}
+.thkc_bg02_input{
+    background: #F8F8F8;;
+}
+
+
 /* PC 로그인 페이지 */
 .thkc_loginWrap{
     display: flex; justify-content: center;align-items: center; 
@@ -51,7 +73,7 @@
     width: calc(100%)/2; height: 45px;
     border: none; font-size: 16px; text-indent: 0.5rem; 
 }
-input[type='checkbox']{
+.thkc_loginWrap input[type='checkbox']{
     width: 1.4em; height: 1.4em;
 }
 .thkc_loginWrap .field .inTitleWrap{ 
@@ -110,14 +132,29 @@ input[type='checkbox']{
 }
 .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
     height: 45px;
-    border: 1px solid #eee;
+    width: 50%;
+    border: 1px solid #E7E7E7;
     border-radius: 5px;
     padding: 0 15px;
     box-sizing: border-box;
     vertical-align: top;
     font-size: 16px;
-    color: #494949;
+    color: #494949;    
 }
+.thkc_joinWrap input.thkc_input50[type="text"],  .thkc_joinWrap input.thkc_input50[type="password"] {
+    width: 35%;  
+}
+/* 입력 에러 */
+.table-box .error-txt {
+    padding: 5px 0 0 0;
+    font-weight: 400;
+    color: #FF9015;
+}
+.thkc_cont .error_input_inner{
+    border-color: #FF9015!important;
+    background: #FFF9F3; 
+}
+
  .thkc_joinWrap{
     display: flex;
     flex-direction: column;
@@ -127,17 +164,156 @@ input[type='checkbox']{
     font-size: 20px;
     color: #FF9015;
  }
+ /* 전화 */
+ .flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.flex-box.flex-wrap {
+    flex-wrap: wrap;
+}
+.table-box.tel-num .thkc_cont .input-box {
+    font-size: 0;
+}
+.table-box.tel-num .thkc_cont select, .table-box.tel-num .thkc_cont input[type="text"] {
+    min-width: 100px;
+    width: 25%;
+}
+.table-box.tel-num .thkc_cont input[type="text"] {
+    margin: 0 0 0 10px;
+}
+.table-box select {
+    padding: 0 40px 0 15px;
+    border: 1px solid #eee;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 150px;
+    height: 45px;
+    box-sizing: border-box;
+    background: #fff url("../../img/new_common/thkc_icon_down-b.png") no-repeat right 15px center;
+    vertical-align: top;
+    font-size: 16px;
+    color: #494949;
+}
+
+.table-box select::-ms-expand {
+    display: none;
+}
+
+/* 체크 타입 */
+.table-box .thkc_dfc{
+    display: flex; align-items: center; gap:10px;
+}
+.table-box .thkc_dfc03{
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px; padding: 5px 0;
+}
+.table-box .thkc_dfc_02{
+    display: flex;  gap:20px;
+}
+.table-box .thkc_dfc .thkc_ml_01{
+    margin-left: -5px;  
+}
+.table-box .thkc_dfc_m{
+    display: flex;
+ }
+.table-box input[type='checkbox']{
+    width: 1.6em; height: 1.6em;
+    accent-color:red;
+}
+
+/* 주소 */
+.table-box.address .thkc_cont .flex-box input[type="text"] {
+    max-width: 200px;
+}
+
+.table-box.address .thkc_cont .flex-box a {
+    margin: 0 0 0 10px;
+}
+
+.table-box .thkc_cont a.thkc_btn_bbs {
+    background: #E6E6E6;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex; justify-content: center;  align-items: center;
+}
+.table-box .thkc_cont a.thkc_btn_bbs:hover{
+    background: #8f8f8f;
+    color:#fff
+}
+
+.table-box.address .thkc_cont > div:not(:first-child) input[type="text"] {
+    max-width: 525px;
+}
+.table-box.address .thkc_cont > div:not(:last-child),.table-box.bank .thkc_cont > div:not(:last-child) {
+    margin: 0 0 10px;
+}
+.table-box .thkc_cont .thkc_cont_txt{
+    font-size: 12px; padding: 10px 0px 0px 0px;
+}
+
+/* 동의하기 */
+.table-box .thkc_agree_title{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.table-box .thkc_agree_title_02{
+    font-size: 16px;  
+    padding-left: 10px;
+}
+.table-box .thkc_agreeWrap {
+    background: #F8F8F8;
+    padding: 20px 30px;
+}
+.table-box .thkc_agree_box{
+    background: #fff;
+    padding: 10px 20px;
+    margin: 10px 0px 10px 25px;
+    font-size: 14px;
+    color: #8f8f8f;
+}
+
+/* 버튼 */
+.thkc_btnWrap {
+    display: flex; align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    margin-bottom: 50px;
+}
+.thkc_btnWrap .btn_submit_01{
+    width: 300px;height: 55px;
+    display: flex; justify-content: center; align-items: center;    
+    background: #222222;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff; font-size: 20px; font-weight: 700;
+}
+.thkc_btnWrap .btn_submit_01:hover{    
+    background: #666;
+    transition: 0.3s;
+}
+
+
   /* pc title */
  .thkc_joinWrap .thkc_titleTop{
     font-size: 35px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 50px;
  }
  .thkc_joinWrap .joinTitle{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0 0 16px;
+    margin: 0 0 5px;
     font-size: 20px;
     font-weight: 700;
     color: #494949;
@@ -157,7 +333,7 @@ input[type='checkbox']{
     table-layout: fixed;
     width: 100%;
     min-height: 50px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;    
  }
  .thkc_joinWrap .thkc_tableWrap .table-box .tit{
     position: relative;
@@ -178,15 +354,22 @@ input[type='checkbox']{
     box-sizing: border-box;
     padding: 20px 0 20px 20px;
     font-size: 16px;
-    color: #494949;
+    color: #494949;    
  }
 
 
 /********** css responsive **********/
 @media (max-width: 1399px) {
+    .thkc_joinWrap{
+        padding: 0px 30px;
+    }
 }
 
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+    .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
+        width: 80%;
+    }
+}
 
 @media (max-width: 991px) {}
 
@@ -217,6 +400,97 @@ input[type='checkbox']{
         font-size: 0.8rem;
     }
    
+    /* 회원가입 */
+    .thkc_joinWrap{
+        padding: 0px 20px;
+    }
+    .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
+        width: 100%;
+    }   
+    .thkc_joinWrap .thkc_tableWrap .table-box .tit{       
+        display:table;        
+        width: 100%;
+        min-height: 35px;      
+        padding: 0;
+        font-size: 16px;
+        background: #fff;       
+     }
+     .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont{
+        display: table;
+        min-height:70px;
+        width: 100%; 
+        font-size: 14px;
+        padding: 0;        
+     }
+     .thkc_joinWrap .thkc_tableWrap .table-box{       
+        border-bottom: 0px;    
+     }
+     .thkc_joinWrap .thkc_titleTop{
+        font-size: 30px;       
+     }
+     .thkc_joinWrap .joinTitle .boxRright{
+        font-size: 12px;     
+     }
+     .thkc_joinWrap .important {      
+        font-size: 16px;
+     }
+     .thkc_joinWrap .table-box.m30{
+        margin-top: 30px;
+     }
+
+       /* 모바일 title */
+    .thkc_joinWrap .thkc_titleTop{
+        font-size:25px;      
+    }
+    .thkc_joinWrap input.thkc_input50[type="text"],  .thkc_joinWrap input.thkc_input50[type="password"] {
+        width: 50%;  
+    }
+    .table-box .thkc_cont a.thkc_btn_bbs {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    
+    .table-box .thkc_dfc_m{
+       display: block;
+    }
+    .pt-5{
+        padding-top: 5px;
+    }
+    .pt-30{
+        padding-top: 30px;
+    }
+    .pl-30{
+        padding-left: 30px;
+    }
+    .table-box.tel-num .thkc_cont select, .table-box.tel-num .thkc_cont input[type="text"] {
+        min-width: 29%;     
+    }
+    /* 모바일 동의하기 */
+    .table-box .thkc_agree_title{
+        font-size: 16px;
+    }
+    .table-box .thkc_agree_title_02{
+        font-size: 14px;  
+        padding-left: 10px;
+    }
+    .table-box .thkc_agree_title_03{
+        font-size: 12px;  
+        padding-left: 30px;
+    }
+    .table-box .thkc_agreeWrap {      
+        padding: 10px 15px;
+    }
+    .table-box .thkc_agree_box{   
+        padding: 10px;
+        margin: 2px;
+        font-size: 14px;
+    }
+    .table-box .thkc_dfc03{
+        display: block;
+        margin-bottom: 10px; padding: 5px 0;
+    }
+        
+    
     
 }
 
