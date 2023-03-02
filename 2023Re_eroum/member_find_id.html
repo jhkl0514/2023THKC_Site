@@ -35,22 +35,23 @@
             <h1><a href="landing_eroum.html"><img src="img/new_common/thkc_logo_gnb.svg" alt="logo"></a></h1>
         </header>          
     </div>
+    <div class="thkc_idfindMeWrap">
     <section class="thkc_findMeWrap thkc_container_03">
         <h2 class="thkc_titleTop">아이디찾기</h2>
         <!-- title 아이디찾기-->
         <div class="tabTitleWrap">
             <div class="tabTitle">
-                <div class="tabLeft">
+                <div class="active">
                     <span>휴대전화로 찾기</span>
                 </div>
-                <div class="tabRright">
+                <div class="">
                     <span>이메일로 찾기</span>
                 </div>
-            </div>
-            <div>사업자 등록번호와 등록된 휴대전화번호를 입력하세요.</div>
+            </div>            
         </div>
         <!-- table 아이디찾기 -->
         <div class="thkc_tableWrap">
+            <div class="tableTxt01">사업자 등록번호와 등록된 휴대전화번호를 입력하세요.</div>
             <div class="table-box m30">
                 <div class="tit">사업자등록번호
                 </div>
@@ -70,25 +71,38 @@
                 <div class="thkc_cont">
                     <div class="flex-box">
                         <div class="flex-box">
-                            <select class="thkc_input">
+                            <select class="thkc_input idpwInput">
                                 <option value="010">010</option>
                                 <option value="011">011</option>
                                 <option value="016">016</option>
                                 <option value="017">017</option>
                                 <option value="018">018</option>
                                 <option value="019">019</option>
-                            </select> &nbsp;-
-                            <input class="thkc_input" id="" name="" maxlength="4" value="" type="text" /> &nbsp;-
-                            <input class="thkc_input" id="" name="" maxlength="4" value="" type="text" />
+                            </select>
+                            <input class="thkc_input idpwInput" id="" name="" maxlength="4" value="" type="text" />
+                            <input class="thkc_input idpwInput" id="" name="" maxlength="4" value="" type="text" />
+                            <div class="flex-box thkc_ml_02">                        
+                                <a href="#none" class="thkc_btn_bbs" onclick="" id="">인증번호 발송</a>                          
+                            </div>
                         </div>                        
+                        
                     </div>
                     <div class="error-txt error"></div>                   
                 </div>
             </div>
+
+            <div class="thkc_btnWrap">
+                <span class="btn_submit_01">로그인으로 이동 </span><br>
+                <a href="#none" class="text_under">뒤로이동</a>         
+            </div>
+            <div class="tableTxt01">
+                휴대폰번호가 변경되었거나 직접 찾기가 힘든 경우<br>고객센터(02-861-9084)로 문의 바랍니다.
+            </div>
         </div>
 
         
-    </section>      
+    </section>
+    </div>     
 
     <!--  ## 하단 footer 영역 ## -->
     <footer id="thkc_footerWrap" class="thkc_footer">
