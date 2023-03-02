@@ -126,6 +126,20 @@ var swiper = new Swiper(".partnerSwiper", {
   },
 });
 
+// 아이디패스워드 Tap
+
+$(".tabTitleWrap .tabTitle>div").click(function(){
+  $(".tabTitleWrap .tabTitle>div").removeClass("active")
+  $(this).addClass("active")
+
+  let i=$(this).index()
+  $(".thkc_tableTapWrap .thkc_tableWrap").hide()
+  $(".thkc_tableTapWrap .thkc_tableWrap").eq(i).show()
+
+})
+
+
+
 
 
 

@@ -24,12 +24,18 @@ a.text_line:hover{
 .thkc_ml_02{
     margin-left: 5px;  
 }
+.thkc_mtb_01{
+    margin: 50px 0; 
+}
+.thkc_pt-30{
+    padding-top: 30px;
+}
 
-/* 아이디 패스워드찾기 */
+/* PC 아이디 패스워드찾기 */
 .thkc_idfindMeWrap{
     margin: 0 auto;
     padding: 30px;
-    width: 600px;    
+    width: 500px;    
     background: #f8f8f8;
     border-radius: 30px;
     margin-bottom: 50px;
@@ -42,10 +48,15 @@ a.text_line:hover{
     border-bottom: 2px solid #E7E7E7;
     width: 100%; padding: 12px 0;
     text-align: center;
-    font-weight: 700;;
+    font-weight: 700;
+}
+.thkc_findMeWrap .tabTitle div a{  
+    padding: 10px 25px;
 }
 .thkc_findMeWrap .tabTitle div.active{    
-    border-bottom: 2px solid #FF9015;
+    border-bottom: 2px solid #FF9015;    
+}
+.thkc_findMeWrap .tabTitle div.active a{  
     color: #FF9015;
 }
 .thkc_findMeWrap .tableTxt01{
@@ -56,11 +67,22 @@ a.text_line:hover{
 }
 .thkc_findMeWrap .table-box .tit{
     box-sizing: border-box;
-    padding: 40px 0 10px 0;
+    padding: 30px 0 10px 0;
     font-size: 14px;
     font-weight: 700;
     color: #000;
 }
+.table-box .thkc_newID{
+    background: #fff;
+    border: 1px solid #eee;  
+    width: 50%; height: 45px;    
+    color: #f1344d;
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+.thkc_tableTapWrap .thkc_tableWrap{display: none;}
+.thkc_tableTapWrap .thkc_tableWrap:first-child{display: block;}
 
 /* PC 로그인 페이지 */
 .thkc_loginWrap{
@@ -157,6 +179,7 @@ a.text_line:hover{
     margin-top: 4px;
     background: #d1d1d1; 
  }
+
 
  /*##### pc 회원가입 페이지 ####*/
  .thkc_joinWrap input.thkc_input::placeholder,textarea::placeholder,
@@ -387,10 +410,10 @@ a.text_line:hover{
  .thkc_joinWrap .thkc_titleTop,
  .thkc_findMeWrap .thkc_titleTop
  {
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
  }
  .thkc_joinWrap .joinTitle{
     display: flex;
@@ -439,6 +462,66 @@ a.text_line:hover{
     font-size: 16px;
     color: #494949;    
  }
+
+ /* 패스워드 찾기 */
+ .table-boxPwWrap{
+    background: #fff;
+    padding: 10px;    
+    border-radius: 10px;
+ }
+.table-boxPwWrap .table-boxPw{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 0px;
+    
+ }
+.table-boxPwWrap .table-boxPw .tit{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+    min-height: 90px;
+    box-sizing: border-box;
+    padding: 5px 0 5px 5px;
+    
+    font-size: 14px;
+    color: #000;
+ }
+.table-boxPwWrap .table-boxPw .thkc_cont{
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 5px 0 5px 5px;
+    font-size: 12px;
+    color: #494949;    
+ }
+ .table-boxPwWrap .table-boxPw input.thkc_input[type="password"] {
+    font-size: 12px;
+ }
+ .table-boxPwWrap a.thkc_btn_bbs {
+    background: #E6E6E6;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    height: 45px;
+    width: 100px;
+    padding: 0 5px;    
+    font-size: 14px;
+    font-weight: 500;
+    display: flex; justify-content: center;  align-items: center;
+}
+.table-boxPwWrap a.thkc_btn_bbs:hover{
+    background: #8f8f8f;
+    color:#fff
+}
+.table-boxPwWrap .thkc_btn_bbsPw{
+    display: flex; justify-content: flex-end;
+}
+.thkc_tableWrap .secureTxt{
+    display: flex; justify-content: space-between; gap: 20px;
+}
+
 
 
 /********** css responsive **********/
@@ -492,7 +575,7 @@ a.text_line:hover{
     }
     .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
         width: 100%;
-    }   
+    }  
     .thkc_joinWrap .thkc_tableWrap .table-box .tit{       
         display:table;        
         width: 100%;
@@ -547,7 +630,11 @@ a.text_line:hover{
         padding-left: 30px;
     }
     .table-box.tel-num .thkc_cont select, .table-box.tel-num .thkc_cont input[type="text"] {
-        min-width: 29%;     
+        min-width: 20px;     
+    }
+    .table-box select {       
+        background:  10px center;
+
     }
     /* 모바일 동의하기 */
     .table-box .thkc_agree_title{
@@ -573,7 +660,27 @@ a.text_line:hover{
         display: block;
         margin-bottom: 10px; padding: 5px 0;
     }
-        
+
+    /* 아이디 패스워드찾기 */
+    .thkc_idfindMeWrap{ 
+        padding: 20px;
+        width: 100%;    
+        background: #fff;
+    }
+    .thkc_idfindMeWrap .thkc_container_03{
+        width: 100%;
+    }
+    .thkc_findMeWrap .tabTitle{
+        display: flex;justify-content: space-around;
+        width: 100%;
+    }   
+    .thkc_findMeWrap .tabTitle div a {
+        padding: 10px;
+    } 
+    .thkc_findMeWrap .tableTxt01{
+        font-size: 13px;     
+    }
+            
     
     
 }

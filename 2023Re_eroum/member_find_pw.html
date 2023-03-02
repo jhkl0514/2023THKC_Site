@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/new_common/favicon.svg" type="img/svg+xml">
-    <title>[아이디찾기]이로움 시니어 라이프 케어 플랫폼</title>
+    <title>[패스워드 찾기]이로움 시니어 라이프 케어 플랫폼</title>
     <!-- style -->
     <link rel="stylesheet" href="css/new_css/thkc_common.css">
     <link rel="stylesheet" href="css/new_css/thkc_join.css">  
@@ -37,7 +37,7 @@
     </div>
     <div class="thkc_idfindMeWrap">
     <section class="thkc_findMeWrap thkc_container_03">
-        <h2 class="thkc_titleTop">아이디찾기</h2>
+        <h2 class="thkc_titleTop">비밀번호 찾기</h2>
         <!-- title 아이디찾기-->
         <div class="tabTitleWrap">
             <div class="tabTitle">
@@ -51,7 +51,7 @@
         </div>
         <!-- tap Wrap -->
         <div class="thkc_tableTapWrap">
-            <!--Tap1 아이디찾기 [휴대폰 찾기] -->
+            <!--Tap1 패스와드찾기 [휴대폰 찾기] -->
             <div class="thkc_tableWrap">
                 <div class="tableTxt01">사업자 등록번호와 등록된 휴대전화번호를 입력하세요.</div>
                 <div class="table-box m30">
@@ -110,19 +110,62 @@
                         </div>                         
                         <div class="error-txt error">남은시간 : 2분 27초</div>                   
                     </div>
-                    <br>
-                    <div class="thkc_joinWrap flex-box">
-                        <p class="tableTxt01">위 정보에 일치하는 계정은 아래와 같습니다.</p>
-                        <span class="thkc_newID ">qhrms971</span>
+                    <br>                    
+                    <p class="tableTxt01">위 계정의 비밀번호를 초기화 하였습니다.<br> 신규 비밀번호를 입력하세요.</p>
+                    <div class="table-boxPwWrap">
+                        <div class="table-boxPw">
+                            <div class="tit">신규비밀번호
+                            </div>
+                            <div class="thkc_cont">
+                                <div>
+                                    <label for="password" class="thkc_blind">신규비밀번호</label>
+                                    <input
+                                        class="thkc_input" id="password"                          
+                                        placeholder="영문/숫자를 포함한 6자리 ~ 12자리 이하로 입력"                        
+                                        value="" type="password" />
+                                </div>
+                                <div class="error-txt error"></div>
+                            </div>
+                        </div>
+                        <div class="table-boxPw">
+                            <div class="tit">비밀번호확인
+                            </div>
+                            <div class="thkc_cont">
+                                <div>
+                                    <label for="password2" class="thkc_blind">비밀번호확인</label>
+                                    <input
+                                        class="thkc_input"  id="password2"                         
+                                        placeholder="영문/숫자를 포함한 6자리 ~ 12자리 이하로 입력"
+                                        value="" type="password" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thkc_btn_bbsPw">                        
+                            <a href="#none" class="thkc_btn_bbs" onclick="" id="">비밀번호 변경</a>                          
+                        </div>
                     </div>
+                        
                     
                 </div>
             </div>
 
-            <!-- Tap2 아이디찾기 [이메일 찾기] -->
+            <!-- Tap2 패스워드 찾기 [이메일로 찾기] -->
             <div class="thkc_tableWrap">
-                <div class="tableTxt01">사업자 등록번호와 등록된 이메일주소를 입력하세요.</div>
+                <div class="tableTxt01">아이디와 사업자 등록번호, 이메일 주소를 입력하세요.</div>
                 <div class="table-box m30">
+                    <div class="tit">아이디
+                    </div>
+                    <div class="thkc_cont">
+                        <div>
+                            <label for="bnum" class="thkc_blind">아이디</label>
+                            <input
+                                class="thkc_input _error_input_inner" id="bnum"                           
+                                placeholder="아이디" value="" type="text" />
+                        </div>
+                        <!-- <div class="error-txt">담당자 이름을 입력해주세요.</div> -->
+                    </div>
+                </div> 
+                <div class="table-box">
                     <div class="tit">사업자등록번호
                     </div>
                     <div class="thkc_cont">
@@ -134,7 +177,7 @@
                         </div>
                         <!-- <div class="error-txt">담당자 이름을 입력해주세요.</div> -->
                     </div>
-                </div>            
+                </div>           
                 
                 <div class="table-box">
                     <div class="tit">이메일주소
@@ -146,12 +189,28 @@
                                     class="thkc_input idpwInput"  id="email"
                                     placeholder="" value="" type="text" />
                                 <div class="flex-box thkc_ml_02">                        
-                                    <a href="#none" class="thkc_btn_bbs" onclick="" id="">확인 요청</a>                          
+                                    <a href="#none" class="thkc_btn_bbs" onclick="" id="">임시비밀<br>번호발급</a>                          
                                 </div>
                             </div>                         
                         <div class="error-txt error"></div>                   
                     </div>
-                </div>            
+                </div>
+                <div class="table-box secureTxt">
+                    <div class="tit">
+                        <input
+                        class="thkc_input idpwInput"  id=""
+                        placeholder="260094" value="" type="text" />    
+                    </div>
+                                         
+                    <div class="tit">
+                        <label for="" class="thkc_blind">보안문자 입력</label>
+                         <input
+                            class="thkc_input idpwInput"  id=""
+                            placeholder="보안문자 입력" value="" type="text" />                                
+                    </div>                         
+                    <div class="error-txt error"></div>                   
+                    
+                </div>               
             </div>
         </div>
         <div class="thkc_btnWrap">
