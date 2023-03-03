@@ -31,6 +31,44 @@ a.text_line:hover{
     padding-top: 30px;
 }
 
+/* 회원가입 seop01 */
+h3.thkc_titleTabJoin {
+    margin-bottom: 5px;
+}
+.thkc_tabJoin ul {
+    display: flex; justify-content: space-between; gap: 15px;
+}
+.thkc_tabJoin ul li{
+    width: 100%;
+    height: 140px;    
+}
+.thkc_tabJoin ul>li>a.active {
+    background: #FF9015;
+    border: 0px;   
+    color:#fff;
+    transition: 0.3s;
+    
+}
+/* .thkc_tabJoin svg path{
+    fill:#fff;
+} */
+.thkc_tabJoin svg path .svg_01{
+    fill:#FF9015;
+}
+.thkc_tabJoin img{
+    filter: invert(1000%) sepia(100%) saturate(1000%) hue-rotate(100deg) brightness(1000%) contrast(1000%);
+}
+.thkc_tabJoin ul>li>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    width: 100%; height: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;   
+}
+
 /* PC 아이디 패스워드찾기 */
 .thkc_idfindMeWrap{
     margin: 0 auto;
