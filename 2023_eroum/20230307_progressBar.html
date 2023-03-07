@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>20230307_Progress Bar</title>
+    <style> 
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        li{list-style: none;}      
+        img{display: block;}
+
+        .thkc_Pro_container{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .thkc_progressBar{
+            font-size: 12px;
+            color: #F08606;
+            display: flex;
+            justify-content: space-between;
+        }
+        .thkc_pro_box{
+            background: #FFFFFF; 
+            border-radius: 30px;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .thkc_pro_finish{ 
+            border: 1px solid #F08606;
+        }
+        .thkc_pro_now{
+            color:#fff;
+            background: #F08606;
+        }
+        .thkc_pro_rest{
+            color: #333;           
+            border: 1px solid #ddd;        
+        }
+        .thkc_pro_line{
+            display: flex;           
+            align-items: center;
+            color: #000;
+            margin: 8px 0;            
+        }
+        .thkc_pro_line::before{
+            content: "";
+            width: 50px;          
+            background: #F08606;
+            height: 1px;
+        }    
+        @media (max-width: 767px){
+            .thkc_Pro_container{width: 100%;}
+            .line::before{width: 10px;}  
+        }
+
+    </style>  
+</head>
+<body>
+    <div class="thkc_Pro_container">
+        <ul class="thkc_progressBar">
+            <li class="thkc_pro_box thkc_pro_finish">주문처리</li>
+            <li class="thkc_pro_line"></li>
+            <li class="thkc_pro_box thkc_pro_finish">이로움 주문처리</li>
+            <li class="thkc_pro_line"></li>
+            <li class="thkc_pro_box thkc_pro_now">계약하기</li>
+            <li class="thkc_pro_line"></li>
+            <li class="thkc_pro_box thkc_pro_rest">서명완료</li>
+        </ul>
+    </div>
+
+</body>
+</html>    
