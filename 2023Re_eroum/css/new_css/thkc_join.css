@@ -18,7 +18,8 @@ a.text_line:hover{
     transition: 0.3s;
 }
 .thkc_bg02_input{
-    background: #F8F8F8;;
+    background: #F8F8F8;
+    
 }
 .thkc_blind{display: block; position: absolute; left: 0;top: -9999px;}
 .thkc_ml_02{
@@ -35,38 +36,93 @@ a.text_line:hover{
 h3.thkc_titleTabJoin {
     margin-bottom: 5px;
 }
+.thkc_tabJoin{
+    margin-bottom: 60px;   
+}
 .thkc_tabJoin ul {
     display: flex; justify-content: space-between; gap: 15px;
-}
-.thkc_tabJoin ul li{
     width: 100%;
-    height: 140px;    
 }
-.thkc_tabJoin ul>li>a.active {
+.thkc_tabJoin ul li a{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 5px;
+}
+
+.thkc_tabJoin ul li.active, .thkc_tabJoin ul li:hover {
     background: #FF9015;
     border: 0px;   
     color:#fff;
     transition: 0.3s;
-    
+    cursor: pointer;   
 }
-/* .thkc_tabJoin svg path{
-    fill:#fff;
-} */
-.thkc_tabJoin svg path .svg_01{
-    fill:#FF9015;
+.thkc_tabJoin svg .svg_01{
+    fill:#ffbd71;
 }
-.thkc_tabJoin img{
-    filter: invert(1000%) sepia(100%) saturate(1000%) hue-rotate(100deg) brightness(1000%) contrast(1000%);
-}
-.thkc_tabJoin ul>li>a{
+.thkc_tabJoin ul>li{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
     align-items: center;
-    width: 100%; height: 100%;
+    width: 100%; height: 140px;
     border-radius: 5px;
-    border: 1px solid #333;   
+    background: #fdf6ee;     
+}
+.thkc_joinWrap  .thkc_JoinConent h5{
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.thkc_JoinConent{
+    position: relative;}
+.thkc_JoinConent .JoinConent{
+    z-index: 2;
+    position: absolute; bottom: 10px; background: pink;}
+.thkc_JoinConent .field{position: relative; border-bottom: 1px solid #eee;}
+.thkc_JoinConent .blind{display: block; position: absolute; left: 0;top: -9999px;}
+.thkc_JoinConent .field.check{height: 49px;}
+.thkc_JoinConent .field.check .btn-label{
+    display: block; width: 100%; height: 55px;
+    margin-bottom: 10px;   
+    display: flex; justify-content: center; align-items: center;
+    cursor: pointer; background: #fff;
+    border: 1px solid #E7E7E7;  border-radius: 5px;
+    font-size: 20px;
+}
+
+.thkc_JoinConent .field.check input:nth-child(1):checked ~ label.join_a,
+.thkc_JoinConent .field.check input:nth-child(2):checked ~ label.join_b,
+.thkc_JoinConent .field.check input:nth-child(3):checked ~ label.join_c,
+
+.thkc_JoinConent .field.check input:nth-child(1):checked ~ label.join_d,
+.thkc_JoinConent .field.check input:nth-child(2):checked ~ label.join_e,
+.thkc_JoinConent .field.check input:nth-child(3):checked ~ label.join_f
+/* {background-color: #FF9015; border: 0px; color: #fff;} */
+{border: 2px solid #333;  font-weight: bold;}
+
+
+
+.thkc_joinWrap .thkc_JoinConent ul{
+    display: flex; gap:8px;
+    flex-direction: column;
+}
+
+.thkc_joinWrap .thkc_JoinConent ul li{
+    width: 100%; height: 55px;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;    
+}
+.thkc_joinWrap  .thkc_JoinConent ul li button{
+    width: 100%; height: 100%;     
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* PC 아이디 패스워드찾기 */
@@ -166,8 +222,7 @@ h3.thkc_titleTabJoin {
     position: relative; border-bottom: 1px solid #eee;
     border: 0px 0px 1px 0px solid #E7E7E7; background-color: #fff;
     margin-bottom: 10px;
-    display: flex; justify-content: space-between; align-items: center;
-    
+    display: flex; justify-content: space-between; align-items: center;    
 }
 
 .thkc_loginWrap .field .inp-field{
@@ -191,22 +246,32 @@ h3.thkc_titleTabJoin {
     width: 100%; padding: 25px 0;
     display: flex;
     flex-direction: column;
-    gap:7px;
+    gap:10px;
+}
+.thkc_loginWrap .login_btn p{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 .thkc_loginWrap .btn_submit_01{
-    width: 100%;height: 45px;
+    width: 100%;height: 50px;
     background: #222222;
     border-radius: 50px;
     cursor: pointer;
     color: #fff; font-size: 16px; font-weight: 700;
 }
 .thkc_loginWrap .btn_submit_02{
-    width: 100%;height: 45px;
+    width: 100%;height: 50px;
     border: 1px solid #222;
     background: #fff;
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px; font-weight: 700;
+}
+.thkc_loginWrap .btn_submit_02:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    
 }
 .thkc_loginWrap .login_btn_etc{
     display: flex; gap: 15px;
@@ -423,12 +488,40 @@ h3.thkc_titleTabJoin {
     color: #8f8f8f;
 }
 
+/* 회원가입 약관 아코디언 */
+.thkc_agreeWrap .thkc_iner_cont{
+    display: none;
+    padding: 20px 0;
+    background: #fff;    
+}
+.thkc_agreeWrap .thkc_menu .thkc_dfc03.active img{
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+.thkc_agreeWrap .thkc_menu .thkc_dfc03 img{
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+.thkc_agreeWrap .agreeForm{
+    width: 100%; height: 150px;
+    overflow:auto;  
+    padding: 10px 40px;
+    background: #fff;
+    font-size: 14px;
+    color: #8f8f8f;
+}
+
 /* 버튼 */
 .thkc_btnWrap {
     display: flex; align-items: center;
     flex-direction: column;
     padding: 30px 0px;
-    /* margin-bottom: 50px; */
+    z-index: 1;
+}
+
+.thkc_btnWrap_02{
+    padding-bottom: 170px;
 }
 .thkc_btnWrap .btn_submit_01{
     width: 300px;height: 55px;
@@ -438,9 +531,11 @@ h3.thkc_titleTabJoin {
     cursor: pointer;
     color: #fff; font-size: 18px; font-weight: 700;
 }
-.thkc_btnWrap .btn_submit_01:hover{    
-    background: #666;
+.thkc_btnWrap .btn_submit_01:hover,
+.login_btn .btn_submit_01:hover{ 
     transition: 0.3s;
+    border: #666;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -578,8 +673,11 @@ h3.thkc_titleTabJoin {
 @media (max-width: 991px) {}
 
 @media (max-width: 767px) {
+    
+    .thkc_loginWrap,
+    .thkc_idfindMeWrap,
     section.thkc_joinWrap{
-        background: rgba(248, 248, 248, 0.5);
+        background: rgba(248, 248, 248, 1);
     }
     .thkc_loginWrap header{    
         padding:30px 0px;    
@@ -600,16 +698,31 @@ h3.thkc_titleTabJoin {
     .thkc_loginWrap section .login_contWrap h3{
         font-size: 1.3rem
     }
+    .thkc_loginWrap fieldset .field{
+        background-color: #f8f8f8;
+    }
     .thkc_loginWrap .field .inp-field{
       font-size: 0.9rem; text-indent: 0rem; 
+      background-color: #f8f8f8;
     }
     .thkc_loginWrap .field .inTitle{    
         font-size: 0.8rem;
     }
+    /* 회원가입 seop01 */   
+    .thkc_tabJoin ul {       
+        /* width: 100%; */
+    }
+    .thkc_memberWrapBg  .thkc_container_03{
+        width: 320px !important;    
+    }
+    
    
     /* 회원가입 */
+    .memberBg{
+        background: #f8f8f8;
+    }
     .thkc_joinWrap{
-        padding: 20px 20px;
+        padding: 20px 20px;       
     }
     .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
         width: 100%;
@@ -700,13 +813,17 @@ h3.thkc_titleTabJoin {
     }
 
     /* 아이디 패스워드찾기 */
+    .thkc_memberWrapBg{
+        background: #f8f8f8;
+        width: 100%;
+    }
     .thkc_idfindMeWrap{ 
         padding: 20px;
-        width: 100%;    
-        background: #fff;
+        width: 100%;
+        border-radius: 0px;    
     }
     .thkc_idfindMeWrap .thkc_container_03{
-        width: 100%;
+        width: 100%;   
     }
     .thkc_findMeWrap .tabTitle{
         display: flex;justify-content: space-around;
@@ -717,6 +834,11 @@ h3.thkc_titleTabJoin {
     } 
     .thkc_findMeWrap .tableTxt01{
         font-size: 13px;     
+    }
+
+    /* 신규회원가입 */
+    .thkc_joinWrap .thkc_container_03{
+        display: none;
     }
             
     
