@@ -127,23 +127,21 @@ var swiper = new Swiper(".partnerSwiper", {
 });
 
 // 아이디패스워드 Tap
-$(".thkc_tableTapWrap .thkc_tableWrap").eq(1).show()
-$(".tabTitleWrap .tabTitle>div").click(function(){
+  $(".thkc_tableTapWrap .thkc_tableWrap").eq(1).show()
+  $(".tabTitleWrap .tabTitle>div").click(function(){
   $(".tabTitleWrap .tabTitle>div").removeClass("active")
   $(this).addClass("active")
 
   let i=$(this).index()
   $(".thkc_tableTapWrap .thkc_tableWrap").hide()
   $(".thkc_tableTapWrap .thkc_tableWrap").eq(i).show()
-
 })
 
 
 // 회원가입 Tap
 $(".thkc_JoinConent").eq(1).hide()
-$(".thkc_tabJoin ul>li>a").click(function(){
-$(".thkc_tabJoin ul>li>a").removeClass("active");
-
+$(".thkc_tabJoin ul>li").click(function(){
+$(".thkc_tabJoin ul>li").removeClass("active");
   $(this).addClass("active")
 
   let i=$(this).index()
@@ -152,11 +150,21 @@ $(".thkc_tabJoin ul>li>a").removeClass("active");
 
 })
 
-// .thkc_tabJoin .svg_01{
-//   fill:#FF9015;
-// }
 
+// 회원가입 약관 아코디언
 
+$(".thkc_agreeWrap .thkc_menu .thkc_dfc03").click(function(){
+  // e.preventDefault(); 
+  $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").parent().find(".thkc_iner_cont").slideUp();
+
+  if( $(this).hasClass("active")){ 
+      $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").removeClass("active")
+  }else{
+      $(this).parent().find(".thkc_iner_cont").slideDown();
+      $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").removeClass("active") 
+      $(this).addClass("active")
+  }
+})
 
 
 
