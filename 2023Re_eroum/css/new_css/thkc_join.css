@@ -421,7 +421,8 @@ h3.thkc_titleTabJoin {
     display: flex;  gap:20px;
 }
 .table-box .thkc_dfc .thkc_ml_01{
-    margin-left: -5px;  
+    margin-left: -5px;
+    word-break: keep-all;
 }
 .table-box .thkc_dfc_m{
     display: flex;
@@ -519,9 +520,17 @@ h3.thkc_titleTabJoin {
     padding: 30px 0px;
     z-index: 1;
 }
+/* 조회결과 */
+.thkc_resultWrap{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
 
 .thkc_btnWrap_02{
     padding-bottom: 170px;
+}
+.thkc_btnWrap_03{
+    display: flex; align-items: center; justify-content: flex-end;
 }
 .thkc_btnWrap .btn_submit_01{
     width: 300px;height: 55px;
@@ -565,7 +574,7 @@ h3.thkc_titleTabJoin {
  /* pc table */
  .thkc_joinWrap .thkc_tableWrap{
     border-top: 2px solid #494949;
-    padding: 0 0 50px;
+    padding: 0 0 20px;
  }
  .thkc_joinWrap .thkc_tableWrap .table-box{
     display: table;
@@ -653,6 +662,51 @@ h3.thkc_titleTabJoin {
 }
 .thkc_tableWrap .secureTxt{
     display: flex; justify-content: space-between; gap: 20px;
+}
+
+/* 회원정보수정 */
+.thkc_memberModifyWrap{
+    margin-bottom: 70px;
+}
+.thkc_memberModifyWrap h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+.thkc_memberModifyWrap ul{
+    width: 100%;
+    display: flex; gap: 10px;  
+    justify-content: space-between;
+}
+.thkc_memberModifyWrap ul li{
+    width: 100%; 
+}
+.thkc_memberModifyWrap ul li a{
+    height: 120px;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;    
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;   
+}
+.thkc_memberModifyWrap ul li p{
+    word-break:keep-all; 
+    text-align: center;
+}
+.thkc_memberModifyWrap ul li a:hover,
+.thkc_memberModifyWrap ul li .active
+{
+   background: #FF9015;
+   border: 0px;
+   color: #fff; 
+}
+.thkc_memberModifyWrap ul li img{
+    padding: 5px 0;
+}
+.thkc_memberModifyWrap ul li .active img,
+.thkc_memberModifyWrap ul li a:hover img
+{
+    filter: brightness(0) invert(1);
 }
 
 
@@ -840,7 +894,25 @@ h3.thkc_titleTabJoin {
     .thkc_joinWrap .thkc_container_03{
         display: none;
     }
-            
+
+    /* 회원정보수정 */
+    .thkc_memberModifyWrap{
+        margin-bottom: 40px;
+    }
+    .thkc_memberModifyWrap h3{
+        margin: 120px 0 20px 0;
+        font-size: 20px;
+    }    
+    .thkc_memberModifyWrap ul{
+        gap: 5px;  
+    }
+    .thkc_memberModifyWrap ul li{
+        font-size: 12px;     
+    }
+    .thkc_memberModifyWrap ul li a{
+        height: 70px; 
+    } 
+                
     
     
 }
