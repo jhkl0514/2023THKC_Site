@@ -46,7 +46,8 @@
             display: flex;           
             align-items: center;
             color: #000;
-            margin: 8px 0;            
+            margin: 8px 0;
+            position: relative;             
         }
         .thkc_pro_line_01::before{
             content: "";
@@ -80,10 +81,33 @@
             margin-top: -6px;
             border-color: transparent transparent transparent #ddd;
             z-index: 200;
-}     
+        }
+
+        .triangle02::after {
+            content: "";
+            display: block;
+            position: absolute; 
+            width: 7px;
+            height: 7px;         
+            border-top: 1px solid #F08606;
+            border-right: 1px solid #F08606;
+            border-bottom: 0px; 
+            border-left: 0px;
+            left: 40%;
+            transform: rotate(45deg);                        
+            z-index: 200;
+        } 
+
+        .thkc_pro_arrow{ 
+            background-image: url(img/thkc_icon_pro_arrow.png);
+            height: 12px;
+            z-index: 200;
+        }
+        
         @media (max-width: 767px){
             .thkc_Pro_container{width: 100%; padding: 0 10px;}
-            .thkc_pro_line_01,.thkc_pro_line_02::before{width: 10px;}  
+            .thkc_pro_line_01,.thkc_pro_line_02::before{width: 10px;} 
+            .triangle02::after { left: 0%;}  
         }
 
     </style>  
@@ -106,14 +130,30 @@
     <div class="thkc_Pro_container">
         <ul class="thkc_progressBar">
             <li class="thkc_pro_box thkc_pro_finish">주문처리완료</li>
-            <li class="thkc_pro_line_01 "></li>
+            <li class="thkc_pro_line_01 triangle02"></li>
             <li class="thkc_pro_box thkc_pro_finish">이로움주문완료</li>
-            <li class="thkc_pro_line_01"></li>
+            <li class="thkc_pro_line_01 triangle02"></li>
             <li class="thkc_pro_box thkc_pro_now">계약서작성완료</li>
-            <li class="thkc_pro_line_02 triangle01"></li>
+            <li class="thkc_pro_line_02"></li>
             <li class="thkc_pro_box thkc_pro_rest">서명완료</li>
         </ul>
     </div>
+
+    <br>
+
+    <div class="thkc_Pro_container">
+        <ul class="thkc_progressBar">
+            <li class="thkc_pro_box thkc_pro_finish">주문처리완료</li>
+            <li class="thkc_pro_line_01 thkc_pro_arrow"></li>
+            <li class="thkc_pro_box thkc_pro_finish">이로움주문완료</li>
+            <li class="thkc_pro_line_01 thkc_pro_arrow"></li>
+            <li class="thkc_pro_box thkc_pro_now">계약서작성완료</li>
+            <li class="thkc_pro_line_02"></li>
+            <li class="thkc_pro_box thkc_pro_rest">서명완료</li>
+        </ul>
+    </div>
+
+    
 
 </body>
 </html>    
