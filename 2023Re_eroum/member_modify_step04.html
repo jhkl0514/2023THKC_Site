@@ -312,7 +312,7 @@
                             <p>사업자 정보</p>
                             </a>
                         </li>
-                        <li><a href="member_modify_step02.html" class="active">
+                        <li><a href="member_modify_step02.html">
                             <img src="img/new_common/thkc_icon_modify02.svg" alt="">
                             <p>계정 관리</p>
                             </a>
@@ -322,7 +322,7 @@
                             <p>배송지 정보</p>
                             </a>
                         </li>
-                        <li><a href="member_modify_step04.html">
+                        <li><a href="member_modify_step04.html" class="active">
                             <img src="img/new_common/thkc_icon_modify04.svg" alt="">
                             <p>서비스 정보</p>
                             </a>
@@ -332,240 +332,92 @@
                             <p>환경 설정</p>
                             </a>
                         </li>
-                    </ul>
+                    </ul>              
                </div>
-               <!-- 회원정보 계정정보 -->
+               <!-- 회원정보 서비스 정보 -->
                <div class="thkc_joinWrap">                   
-                    <!-- title 계정정보-->
+                    <!-- title 간편계약서 추가정보-->
                     <div class="joinTitle">
-                        <div class="boxLeft">계정 정보</div>                        
+                        <div class="boxLeft">간편계약서 추가정보</div>                        
                     </div>
-                    <!-- table 계정정보 -->
+                    <!-- table 배편계약서 추가정보 -->
                     <div class="thkc_tableWrap">
                         <div class="table-box m30">
-                            <div class="tit">아이디
-                            </div>
-                            <div class="thkc_cont">
-                                <div>아이디</div>                              
-                            </div>
-                        </div>
-                        <div class="table-box">
-                            <div class="tit">비밀번호
-                            </div>
-                            <div class="thkc_cont">
-                                <div>
-                                    <label for="password" class="thkc_blind">비밀번호</label>
-                                    <input
-                                        class="thkc_input" id="password"                          
-                                        placeholder="영문/숫자를 포함한 6자리 ~ 12자리 이하로 입력"                        
-                                        value="" type="password" />
-                                </div>
-                                <div class="error-txt error"></div>
-                            </div>
-                        </div>
-                        <div class="table-box">
-                            <div class="tit">비밀번호 확인
-                            </div>
-                            <div class="thkc_cont">
-                                <div>
-                                    <label for="password2" class="thkc_blind">비밀번호 확인</label>
-                                    <input
-                                        class="thkc_input"  id="password2"                         
-                                        placeholder=""                        
-                                        value="" type="password" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table-box">
-                            <div class="tit">이름</div>
-                            <div class="thkc_cont">
-                                <div>
-                                    <label for="name" class="thkc_blind">이름</label>
-                                    <input
-                                        class="thkc_input" id="name"                          
-                                        placeholder="홍길동" value="" type="text" />
-                                </div>
-                                <div class="error-txt error"></div>
-                            </div>
-                        </div>                       
-                        <div class="table-box tel-num">
-                            <div class="tit">휴대전화
-                            </div>
-                            <div class="thkc_cont">
-                                <div class="flex-box">
-                                    <div class="flex-box">
-                                        <label for="tell" class="thkc_blind">휴대전화</label>
-                                        <select class="thkc_input" id="tell">
-                                            <option value="010">010</option>
-                                            <option value="011">011</option>
-                                            <option value="016">016</option>
-                                            <option value="017">017</option>
-                                            <option value="018">018</option>
-                                            <option value="019">019</option>
-                                        </select> &nbsp;-
-                                        <input class="thkc_input" placeholder="5581" id="" name="" maxlength="4" value="" type="text" /> &nbsp;-
-                                        <input class="thkc_input" placeholder="2321" id="" name="" maxlength="4" value="" type="text" />
-                                    </div>                        
-                                </div>
-                                <div class="error-txt error"></div>                   
-                            </div>
-                        </div>
-                        <!-- 이메일  -->           
-                        <div class="table-box">
-                            <div class="tit">이메일
-                            </div>
+                            <div class="tit">장기요양기관번호</div>
                             <div class="thkc_cont">
                                 <div class="thkc_dfc">
-                                    <label for="email" class="thkc_blind">이메일</label>
+                                    <label for="bnum2" class="thkc_blind">장기요양기관번호</label>
                                     <input
-                                        class="thkc_input"  id="email"
-                                        placeholder="hula2993@naver.com" value="" type="text"/>                        
-                                </div>                                        
+                                        class="thkc_input thkc_input50" id="bnum2"                         
+                                        placeholder="계약서에 입력될 장기요양기관번호를 입력" value="" type="text" />                                                        
+                                </div>
                                 <div class="error-txt error"></div>
                             </div>
                         </div>
-                        
-                        <!-- 버튼 -->
-                        <div class="thkc_btnWrap thkc_mtb_01">
+                        <div class="table-box">
+                            <div class="tit">사업자 계좌번호</div>
+                            <div class="thkc_cont">
+                                <div class="thkc_dfc">
+                                    <label for="bnum2" class="thkc_blind">사업자 계좌번호</label>
+                                    <input
+                                        class="thkc_input thkc_input50" id="bnum2"                         
+                                        placeholder="[예] 신한 000-0000-00000 홍길동" value="" type="text" />
+                                        급여비용 명세서에 입력 될 사업자 계좌정보 입력하세요.                             
+                                </div>
+                                <div class="error-txt error"></div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <div class="tit">사업자 직인정보</div>
+                            <div class="thkc_cont">
+                                <div class="thkc_dfc_02">
+                                    <div class="thkc_dfc_03">                        
+                                        <a href="#none" class="thkc_btn_bbs" id="">파일 선택</a>
+                                        <a href="#none" class="thkc_btn_bbs" id="">날인 제작</a>                                   
+                                    </div>
+                                    <div class="thkc_sign">등록 된 이미지가 없습니다.</div>
+                                </div>
+                                <div class="thkc_cont_txt">*파일유형은 pdf, png, jpg, gif 용량은 10Mbyte 이하만 등록가능합니다.</div>
+                                <div class="error-txt error"></div>
+                            </div>
+                        </div>
+                        <div class="table-box">
+                            <div class="tit">계약서 특약사항</div>
+                            <div class="thkc_cont">
+                                <form action="">
+                                    <label for="thkc_textarea" class="thkc_blind">계약서 특약사항</label>
+                                    <textarea class="thkc_textarea" name="" id="thkc_textarea" cols="30" rows="7" placeholder="계약서의 특약사항란에 입력 될 내용을 입력"></textarea>
+                                </form>                              
+                            </div>
+                        </div>
+                         <!-- 버튼 -->
+                         <div class="thkc_btnWrap thkc_mtb_01">
                             <a href="#none"><button class="btn_submit_01">저장</button></a><br>                            
-                        </div>           
+                        </div>                                
                     </div>
+                    
                <!-- 회원정보 계정정보 end -->
                 </div> 
+              
 
-               <!-- 회원정보 직원계정 -->
-               <div class="thkc_joinWrap"> 
+                <!-- 요양정보조회 -->
+                <div class="thkc_joinWrap">                   
+                    <!-- title 요양정보조회-->
                     <div class="joinTitle">
-                        <div class="boxLeft">직원 계정</div>
-                        <div class="thkc_btnWrap_03">
-                            <button>삭제</button>
-                            <button class="on">정보 수정</button>
-                        </div>                        
-                    </div>                  
+                        <div class="boxLeft">요양정보조회</div>                        
+                    </div>
+                    <!-- table 요양정보조회 -->
                     <div class="thkc_tableWrap">
-                        <div class="table-box">
-                            <div class="tit">아이디</div>
-                            <div class="thkc_cont">
-                                <div>hula8804</div>                            
-                            </div>
-                        </div>
                         <div class="table-box m30">
-                            <div class="tit">이름</div>
+                            <div class="tit">공인인증서</div>
                             <div class="thkc_cont">
-                                <div>홍길동</div>                            
+                                <div>공인인증서가 등록되어있습니다.</div>                                
                             </div>
-                        </div>
-                        <div class="table-box m30">
-                            <div class="tit">최근접속일</div>
-                            <div class="thkc_cont">
-                                <div>2022-02-28 16:33</div>                          
-                            </div>
-                        </div>                       
-                        
-                        <!-- 조회결과 -->
-                        <div class="thkc_resultWrap">마지막 조회결과입니다.</div>
-                         <!-- 버튼 -->
-                        <div class="thkc_btnWrap thkc_mtb_01">
-                            <a href="#none"><button class="btn_submit_02">직원 신규 등록 +</button></a><br>                            
-                        </div>
-                    </div> 
-                </div>
-
-                <!-- 회원정보 직원계정 추가 -->
-               <div class="thkc_joinWrap"> 
-                <div class="joinTitle">
-                    <div class="boxLeft">직원신규 등록</div>
-                    <div class="boxRright">
-                        <span class="important">*</span>직원 정보를 입력하세요!
-                    </div>                        
-                </div>                  
-                <!-- table 계정정보 -->
-                <div class="thkc_tableWrap">
-                    <div class="table-box m30">
-                        <div class="tit bbs-pd_01">아이디
-                        </div>
-                        <div class="thkc_cont bbs-pd_01">                         
-                                <label for="id" class="thkc_blind">아이디</label>
-                                <input
-                                class="thkc_input" id="id"                          
-                                placeholder="아이디" value="" type="text" />                          
+                            <div class="thkc_btnWrap_03"><button class="on">초기화</button></div>
                         </div>
                     </div>
-                    <div class="table-box">
-                        <div class="tit bbs-pd_01">비밀번호
-                        </div>
-                        <div class="thkc_cont bbs-pd_01">                         
-                                <label for="password" class="thkc_blind">비밀번호</label>
-                                <input
-                                    class="thkc_input" id="password"                          
-                                    placeholder="영문/숫자를 포함한 6자리 ~ 12자리 이하로 입력"                        
-                                    value="" type="password" />                           
-                            <div class="error-txt error"></div>
-                        </div>
-                    </div>                   
-                    <div class="table-box">
-                        <div class="tit bbs-pd_01">이름</div>
-                        <div class="thkc_cont bbs-pd_01">
-                            <div>
-                                <label for="name" class="thkc_blind">이름</label>
-                                <input
-                                    class="thkc_input" id="name"                          
-                                    placeholder="홍길동" value="" type="text" />
-                            </div>
-                            <div class="error-txt error"></div>
-                        </div>
-                    </div>                       
-                    <div class="table-box tel-num">
-                        <div class="tit bbs-pd_01">연락처
-                        </div>
-                        <div class="thkc_cont bbs-pd_01">
-                            <div class="flex-box">
-                                <div class="flex-box">
-                                    <label for="tell" class="thkc_blind">연락처</label>
-                                    <select class="thkc_input" id="tell">
-                                        <option value="010">010</option>
-                                        <option value="011">011</option>
-                                        <option value="016">016</option>
-                                        <option value="017">017</option>
-                                        <option value="018">018</option>
-                                        <option value="019">019</option>
-                                    </select> &nbsp;-
-                                    <input class="thkc_input" placeholder="" id="" name="" maxlength="4" value="" type="text" /> &nbsp;-
-                                    <input class="thkc_input" placeholder="" id="" name="" maxlength="4" value="" type="text" />
-                                </div>                        
-                            </div>
-                            <div class="error-txt error"></div>                   
-                        </div>
-                    </div>
-                    <!-- 이메일  -->           
-                    <div class="table-box">
-                        <div class="tit bbs-pd_01">이메일</div>
-                        <div class="thkc_cont bbs-pd_01">
-                            <div class="thkc_dfc">
-                                <label for="email" class="thkc_blind">이메일</label>
-                                <input
-                                    class="thkc_input"  id="email"
-                                    placeholder="중복되지 않은 이메일주소를 입력" value="" type="text"/>                        
-                            </div>                                        
-                            <div class="error-txt error"></div>
-                        </div>
-                    </div>
-                    <!-- 메모  -->           
-                    <div class="table-box">
-                        <div class="tit bbs-pd_01">메모
-                        </div>
-                        <div class="thkc_cont bbs-pd_01">
-                            <div class="thkc_dfc">
-                                <label for="memo" class="thkc_blind">메모</label>
-                                <input
-                                    class="thkc_input"  id="memo"
-                                    placeholder="직급/업무내용 등" value="" type="text"/>                        
-                            </div>                                        
-                            <div class="error-txt error"></div>
-                        </div>
-                    </div>
-            </div>
-           
+               <!-- 요양정보조회 end -->
+                   </div> 
 
             </section>
         </div>

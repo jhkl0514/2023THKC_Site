@@ -330,9 +330,21 @@ h3.thkc_titleTabJoin {
     outline: none;  
 }
 
+.thkc_textarea{   
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    color: #494949;
+    outline: none;  
+}
+
 .thkc_joinWrap input.thkc_input[type="text"]:focus,
 .thkc_joinWrap input.thkc_input[type="password"]:focus,
 .thkc_joinWrap select.thkc_input:focus,
+.thkc_textarea:focus,
 .thkc_findMeWrap input.thkc_input[type="text"]:focus,
 .thkc_findMeWrap input.thkc_input[type="password"]:focus,
 .thkc_findMeWrap select.thkc_input:focus
@@ -419,6 +431,21 @@ h3.thkc_titleTabJoin {
 }
 .table-box .thkc_dfc_02{
     display: flex;  gap:20px;
+}
+.table-box .thkc_dfc_03{
+    display: flex;  flex-direction: column; gap:8px;
+}
+/* .table-box .thkc_dfc_04{
+    display: flex; justify-content: space-between;
+} */
+.table-box .thkc_sign{
+    border: 1px solid #ddd;
+    color:#8f8f8f;
+    border-radius: 5px;   
+    width: 120px; height: 100px;
+    font-size: 12px;
+    text-align: center; word-break: keep-all;   
+    display: flex; justify-content: center; align-items: center;    
 }
 .table-box .thkc_dfc .thkc_ml_01{
     margin-left: -5px;
@@ -531,7 +558,34 @@ h3.thkc_titleTabJoin {
 }
 .thkc_btnWrap_03{
     display: flex; align-items: center; justify-content: flex-end;
+    gap: 10px;
 }
+.thkc_btnWrap_03 button{
+    margin-top: 10px;
+    padding: 7px 15px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.thkc_btnWrap_03 button:hover{
+    background:#efefef;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.thkc_btnWrap_03 button.on{
+    /* background: #FF9015;   */
+    border: 1px solid #FF9015; 
+    color: #FF9015;
+}
+.thkc_btnWrap_03 button.on:hover{
+    background:#FF9015;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .thkc_btnWrap .btn_submit_01{
     width: 300px;height: 55px;
     display: flex; justify-content: center; align-items: center;    
@@ -539,12 +593,22 @@ h3.thkc_titleTabJoin {
     border-radius: 50px;
     cursor: pointer;
     color: #fff; font-size: 18px; font-weight: 700;
+    position: relative;
 }
 .thkc_btnWrap .btn_submit_01:hover,
 .login_btn .btn_submit_01:hover{ 
     transition: 0.3s;
-    border: #666;
+    border: 0;
+    background: #FF9015;  
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.thkc_btnWrap .btn_submit_02{
+    width: 300px;height: 55px;  
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #333; font-size: 18px; font-weight: 700;
 }
 
 
@@ -604,6 +668,10 @@ h3.thkc_titleTabJoin {
     font-size: 16px;
     color: #494949;    
  }
+
+ .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01,
+ .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01
+ {padding: 7px 0 7px 20px; background: #f8f8f8;}
 
  /* 패스워드 찾기 */
  .table-boxPwWrap{
@@ -698,7 +766,8 @@ h3.thkc_titleTabJoin {
 {
    background: #FF9015;
    border: 0px;
-   color: #fff; 
+   color: #fff;
+   transition: 0.3s;
 }
 .thkc_memberModifyWrap ul li img{
     padding: 5px 0;
@@ -709,7 +778,68 @@ h3.thkc_titleTabJoin {
     filter: brightness(0) invert(1);
 }
 
+/* 토글 스위치 */
+label.thkc_switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    cursor: pointer;
+    }
 
+    input.thkc_switch[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 1.25em;
+    width: 4em;
+    height: 1.8em;
+    }
+
+    input.thkc_switch[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color: gray;
+    transition: left 250ms linear;
+    }
+
+    input.thkc_switch[type="checkbox"]:checked {
+    background-color: tomato;
+    border-color: tomato;
+    }
+
+    input.thkc_switch[type="checkbox"]:checked::before {
+    background-color: white;
+    left: 2em;
+    }
+
+    input.thkc_switch[type="checkbox"]:disabled {
+    border-color: lightgray;
+    opacity: 0.7;
+    cursor: not-allowed;
+    }
+
+    input.thkc_switch[type="checkbox"]:disabled:before {
+    background-color: lightgray;
+    }
+
+    input.thkc_switch[type="checkbox"]:disabled + span {
+    opacity: 0.7;
+    cursor: not-allowed;
+    }
+
+    input.thkc_switch[type="checkbox"]:focus-visible {
+    outline-offset: max(2px, 0.1em);
+    outline: max(2px, 0.1em) solid #f1344d;
+    }
+
+    input.thkc_switch[type="checkbox"]:enabled:hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+    }
 
 /********** css responsive **********/
 @media (max-width: 1399px) {
@@ -762,10 +892,7 @@ h3.thkc_titleTabJoin {
     .thkc_loginWrap .field .inTitle{    
         font-size: 0.8rem;
     }
-    /* 회원가입 seop01 */   
-    .thkc_tabJoin ul {       
-        /* width: 100%; */
-    }
+    /* 회원가입 seop01 */    
     .thkc_memberWrapBg  .thkc_container_03{
         width: 320px !important;    
     }
