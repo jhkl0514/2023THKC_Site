@@ -664,13 +664,8 @@ h3.thkc_titleTabJoin {
     display: table-cell;
     vertical-align: middle;
     width: 100px;
-    min-height: 90px;
-    box-sizing: border-box;
-    padding: 20px 0 20px 20px;
-    background: #f8f8f8;
-    font-size: 17px;
-    color: #000;
  }
+
  .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont{
     display: table-cell;
     vertical-align: middle;
@@ -683,8 +678,8 @@ h3.thkc_titleTabJoin {
 
  .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01,
  .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01{
-    padding: 7px 0 7px 20px; 
-    font-size: 14px;
+    padding: 10px 0 10px 0px; 
+    font-size: 16px;
 }
 
  .thkc_bbs-more{
@@ -875,12 +870,7 @@ label.thkc_switch {
 @media (max-width: 991px) {}
 
 @media (max-width: 767px) {
-    
-    .thkc_loginWrap,
-    .thkc_idfindMeWrap,
-    section.thkc_joinWrap{
-        /* background: rgba(248, 248, 248, 1); */
-    }
+ 
     .thkc_loginWrap header{    
         padding:30px 0px;    
     }
@@ -936,15 +926,13 @@ label.thkc_switch {
      }
      .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont{
         display: table;
-        min-height:70px;
-        width: 100%; 
-        font-size: 14px;
+        min-height:40px;
+        width: 100%;        
         padding: 0;        
      }   
      .thkc_joinWrap .thkc_tableWrap .table-box .tit02{
         background: #fff;
-        width: 150px;
-        background: pink;
+        width: 150px; 
         min-height: 10px;      
      }
      .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont02{  
@@ -1079,16 +1067,24 @@ label.thkc_switch {
         width: 100%;
     }
     .thkc_joinWrap .thkc_tableWrap .table-box_02 {
-        display: flex;        
-        /* border-bottom: 1px solid #d1d1d1 ; */
-        background: #fff;
-        min-height: 30px;
+        display: block;       
+        /* min-height: 5px; */
     }
-                
-    
-    
+    .thkc_popWrap .thkc_joinWrap .boxRright{
+        display: none;
+    }
+    .thkc_popWrap input.thkc_input[type="text"],    
+    .thkc_popWrap input.thkc_input[type="password"],
+    .thkc_popWrap select.thkc_input{
+        height: 35px; 
+        font-size: 16px;    
+    } 
+    .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01,
+    .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01{
+       padding: 3px 0; 
+       font-size: 12px;
+   } 
 }
-
 @media (max-width: 430px) {}
 
 @media (max-width: 360px) {}
