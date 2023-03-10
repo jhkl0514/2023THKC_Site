@@ -113,8 +113,7 @@ aside.thkc_aside .simpleTabe table {
 }
 
 aside.thkc_aside .simpleTabe table td {
-    padding: 15px 0px 10px 0;
-    text-align: center;
+    padding: 15px 0px 10px 0;   
 }
 
 aside.thkc_aside .simpleTabe table td img {
@@ -141,6 +140,7 @@ aside.thkc_aside .simpleTabe .bl {
 aside.thkc_aside .simTitle {
     font-size: 18px;
     font-weight: 300;
+    text-align: center;
     padding: 5px;    
 }
 aside.thkc_aside .btn_simple{
@@ -464,11 +464,6 @@ aside.thkc_aside .fastTabe .bb {
     border-bottom: 1px dashed #CFCFCF;
 }
 
-aside.thkc_aside .simTitle {
-    padding-left: 20px;
-    font-size: 18px;
-    font-weight: 300;    
-}
 aside.thkc_aside .btn_simple{
     cursor: pointer;
     transition: 0.1s;
