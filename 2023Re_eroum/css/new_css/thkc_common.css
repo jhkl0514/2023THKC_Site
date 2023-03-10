@@ -8,6 +8,7 @@
 li {list-style: none;}
 a:link,a:visited {text-decoration: none; color: #333;}
 .clearfix:after {content: ""; clear: both; display: block;}
+a { -webkit-tap-highlight-color:transparent;}
 img {display: block;}
 html,body {font-family: 'Noto Sans KR', sans-serif; color: #333;}
 select {appearance: none;
