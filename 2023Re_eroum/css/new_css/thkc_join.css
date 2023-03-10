@@ -659,6 +659,18 @@ h3.thkc_titleTabJoin {
     font-size: 17px;
     color: #000;
  }
+ .thkc_popWrap .table-box .tit03{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+    min-height: 90px;
+    box-sizing: border-box;
+    padding: 20px 0 20px 20px;
+    background: #f8f8f8;
+    font-size: 17px;
+    color: #000;
+ }
  .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont{
     display: table-cell;
     vertical-align: middle;
@@ -670,13 +682,13 @@ h3.thkc_titleTabJoin {
  }
 
  .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01,
- .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01
- {padding: 7px 0 7px 20px; background: #fff; width: 100%;
+ .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01{
+    padding: 7px 0 7px 20px; 
     font-size: 14px;
 }
 
  .thkc_bbs-more{
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
  }
  /* 패스워드 찾기 */
@@ -932,7 +944,8 @@ label.thkc_switch {
      .thkc_joinWrap .thkc_tableWrap .table-box .tit02{
         background: #fff;
         width: 150px;
-        min-height: 10px;        
+        background: pink;
+        min-height: 10px;      
      }
      .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont02{  
         min-height: 10px;

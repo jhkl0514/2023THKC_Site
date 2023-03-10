@@ -303,7 +303,9 @@
         <!--  ** 메인 컨텐츠  "w1060px" ** -->
         <div id="thkc_conWrap">
             <section class="thkc_section">
-               <!-- 회원정보수정 (메뉴) -->
+               <!-- 팝업 오버뷰 -->
+                <div class="thkc_popOverlay"></div>
+               <!-- 회원정보수정 (메뉴) -->               
                <div class="thkc_memberModifyWrap">
                     <h3>회원 정보 수정</h3>
                     <ul>
@@ -479,7 +481,7 @@
                 <!-- table 계정정보 -->
                 <div class="thkc_tableWrap thkc_bbs-more">
                     <div class="table-box m30">
-                        <div class="tit tit02 bbs-pd_01">아이디
+                        <div class="tit bbs-pd_01">아이디
                         </div>
                         <div class="thkc_cont bbs-pd_01">                         
                                 <label for="id" class="thkc_blind">아이디</label>
@@ -489,7 +491,7 @@
                         </div>
                     </div>
                     <div class="table-box">
-                        <div class="tit tit02 bbs-pd_01">비밀번호
+                        <div class="tit bbs-pd_01">비밀번호
                         </div>
                         <div class="thkc_cont bbs-pd_01">                         
                                 <label for="password" class="thkc_blind">비밀번호</label>
@@ -501,7 +503,7 @@
                         </div>
                     </div>                   
                     <div class="table-box">
-                        <div class="tit tit02 bbs-pd_01">이름</div>
+                        <div class="tit bbs-pd_01">이름</div>
                         <div class="thkc_cont bbs-pd_01">
                             <div>
                                 <label for="name" class="thkc_blind">이름</label>
@@ -513,7 +515,7 @@
                         </div>
                     </div>                       
                     <div class="table-box tel-num">
-                        <div class="tit tit02 bbs-pd_01">연락처
+                        <div class="tit bbs-pd_01">연락처
                         </div>
                         <div class="thkc_cont bbs-pd_01">
                             <div class="flex-box">
@@ -536,7 +538,7 @@
                     </div>
                     <!-- 이메일  -->           
                     <div class="table-box">
-                        <div class="tit tit02 bbs-pd_01">이메일</div>
+                        <div class="tit bbs-pd_01">이메일</div>
                         <div class="thkc_cont bbs-pd_01">
                             <div class="thkc_dfc">
                                 <label for="email" class="thkc_blind">이메일</label>
@@ -549,7 +551,7 @@
                     </div>
                     <!-- 메모  -->           
                     <div class="table-box">
-                        <div class="tit tit02 bbs-pd_01">메모
+                        <div class="tit bbs-pd_01">메모
                         </div>
                         <div class="thkc_cont bbs-pd_01">
                             <div class="thkc_dfc">
@@ -561,9 +563,109 @@
                             <div class="error-txt error"></div>
                         </div>
                     </div>
-            </div>
-           
+                </div>
 
+                <!-- 회원정보 직원계정 추가 팝업 -->
+                <div class="thkc_popWrap">
+                    <div class="thkc_close"><button>
+                        <i class="fa-solid fa-xmark"></i>                       
+                    </button></div>
+                    
+                    <div class="thkc_joinWrap"> 
+                        <div class="joinTitle">
+                            <div class="boxLeft">직원신규 등록</div>
+                            <div class="boxRright">
+                                <span class="important">*</span>직원 정보를 입력하세요!
+                            </div>                        
+                        </div>                  
+                        <!-- table 계정정보 -->
+                        <div class="thkc_tableWrap thkc_bbs-more">
+                            <div class="table-box m30">
+                                <div class="tit03 bbs-pd_01">아이디
+                                </div>
+                                <div class="thkc_cont bbs-pd_01">                         
+                                        <label for="id" class="thkc_blind">아이디</label>
+                                        <input
+                                        class="thkc_input" id="id"                          
+                                        placeholder="아이디" value="" type="text" />                          
+                                </div>
+                            </div>
+                            <div class="table-box">
+                                <div class="tit03 bbs-pd_01">비밀번호
+                                </div>
+                                <div class="thkc_cont bbs-pd_01">                         
+                                        <label for="password" class="thkc_blind">비밀번호</label>
+                                        <input
+                                            class="thkc_input" id="password"                          
+                                            placeholder="영문/숫자를 포함한 6자리 ~ 12자리 이하로 입력"                        
+                                            value="" type="password" />                           
+                                    <div class="error-txt error"></div>
+                                </div>
+                            </div>                   
+                            <div class="table-box">
+                                <div class="tit03 bbs-pd_01">이름</div>
+                                <div class="thkc_cont bbs-pd_01">
+                                    <div>
+                                        <label for="name" class="thkc_blind">이름</label>
+                                        <input
+                                            class="thkc_input" id="name"                          
+                                            placeholder="홍길동" value="" type="text" />
+                                    </div>
+                                    <div class="error-txt error"></div>
+                                </div>
+                            </div>                       
+                            <div class="table-box tel-num">
+                                <div class="tit03 bbs-pd_01">연락처
+                                </div>
+                                <div class="thkc_cont bbs-pd_01">
+                                    <div class="flex-box">
+                                        <div class="flex-box">
+                                            <label for="tell" class="thkc_blind">연락처</label>
+                                            <select class="thkc_input" id="tell">
+                                                <option value="010">010</option>
+                                                <option value="011">011</option>
+                                                <option value="016">016</option>
+                                                <option value="017">017</option>
+                                                <option value="018">018</option>
+                                                <option value="019">019</option>
+                                            </select> &nbsp;-
+                                            <input class="thkc_input" placeholder="" id="" name="" maxlength="4" value="" type="text" /> &nbsp;-
+                                            <input class="thkc_input" placeholder="" id="" name="" maxlength="4" value="" type="text" />
+                                        </div>                        
+                                    </div>
+                                    <div class="error-txt error"></div>                   
+                                </div>
+                            </div>
+                            <!-- 이메일  -->           
+                            <div class="table-box">
+                                <div class="tit03 bbs-pd_01">이메일</div>
+                                <div class="thkc_cont bbs-pd_01">
+                                    <div class="thkc_dfc">
+                                        <label for="email" class="thkc_blind">이메일</label>
+                                        <input
+                                            class="thkc_input"  id="email"
+                                            placeholder="중복되지 않은 이메일주소를 입력" value="" type="text"/>                        
+                                    </div>                                        
+                                    <div class="error-txt error"></div>
+                                </div>
+                            </div>
+                            <!-- 메모  -->           
+                            <div class="table-box">
+                                <div class="tit03 bbs-pd_01">메모
+                                </div>
+                                <div class="thkc_cont bbs-pd_01">
+                                    <div class="thkc_dfc">
+                                        <label for="memo" class="thkc_blind">메모</label>
+                                        <input
+                                            class="thkc_input"  id="memo"
+                                            placeholder="직급/업무내용 등" value="" type="text"/>                        
+                                    </div>                                        
+                                    <div class="error-txt error"></div>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>        
             </section>
         </div>
         <!--  ** 이로움 톡톡 배너 외 Right ** -->

@@ -68,6 +68,44 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
     display: none;
 }
 
+/* 팝업오버뷰 */
+.thkc_popOverlay{
+    display: block;
+}
+.thkc_popWrap {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 600px;
+    background: seashell;   
+    padding: 70px 50px 30px 50px;
+    border-radius: 20px;
+    z-index: 1001;
+}
+.thkc_popOverlay{                 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0.5;
+    z-index: 1000;
+}
+.thkc_popWrap .thkc_close{
+    display: flex; justify-content: flex-end;
+    position: relative;   
+}
+.thkc_popWrap .thkc_close i{
+    font-size: 30px; color: #333;
+    position: absolute;  
+    top: -50px; right: -20px;
+}
+.thkc_popWrap .thkc_close button{
+    border: none;  background: none;
+}
+
 /* 오른쪽 카달로그 배너 */
 #bannerRight{    
     position: fixed;
@@ -187,7 +225,7 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
         background: rgb(0, 0, 0);
         opacity: 0.5;
         z-index: 1000;
-    }
+    }    
 
     .asideClone {
         overflow-y: scroll;
@@ -247,7 +285,24 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
     }
     .m_banner_eroum img{
         width: 45px; height: 45px;
-    }   
+    }
+
+    /* 팝업뷰 */
+    .thkc_popWrap {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 80%;
+        background: seashell;   
+        padding: 10px;
+        border-radius: 20px;
+        z-index: 1001;
+    }
+    .thkc_popWrap .thkc_close i{
+        font-size: 20px; color: #333;
+        position: absolute;  
+        top: 0px; right: 10px;
+    }
 
 
     
