@@ -152,7 +152,6 @@ $(".thkc_tabJoin ul>li").removeClass("active");
 
 
 // 회원가입 약관 아코디언
-
 $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").click(function(){
   // e.preventDefault(); 
   $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").parent().find(".thkc_iner_cont").slideUp();
@@ -165,6 +164,22 @@ $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").click(function(){
       $(this).addClass("active")
   }
 })
+
+// 모달 팝업창
+$(".thkc_popOverlay").hide();
+$(".thkc_btnWrap .btn_submit_02").click(function(){
+  $(".thkc_popUpWrap").css('display','flex').hide().fadeIn();
+  $(".thkc_popOverlay").show();  
+  document.body.classList.add("stop-scroll");
+});
+$(".thkc_popUpWrap .thkc_close").click(function(){
+  $(".thkc_popUpWrap").hide();
+  // $(".thkc_popUpWrap").css('display','none').show().fadeOut();
+  $(".thkc_popOverlay").hide();
+  document.body.classList.remove("stop-scroll");
+});
+
+
 
 
 

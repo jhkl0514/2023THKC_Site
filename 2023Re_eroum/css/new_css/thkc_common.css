@@ -18,6 +18,8 @@ select {appearance: none;
 }
 select::-ms-expand {display: none;}/* 익스플로러용 */ 
 
+.stop-scroll{ height: 100%; overflow: hidden;} /* body 스크롤 방지용 */
+
 
 
 .thkc_container {width: 1400px; margin: 0 auto;}
@@ -72,15 +74,21 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
 .thkc_popOverlay{
     display: block;
 }
-.thkc_popWrap {
-    position: absolute;
+.thkc_popUpWrap{
+    justify-content:center; 
+    align-items:center;    
+    position:fixed;
+    display:none;   
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    background: #fff; 
+    border-radius: 20px; 
     width: 600px;
-    background: #fff;   
-    padding: 70px 50px 30px 50px;
-    border-radius: 20px;
+    padding: 70px 50px 30px 50px;   
     z-index: 1001;
+}
+.thkc_popWrap {
+    position: relative;  
 }
 .thkc_popOverlay{                 
     position: fixed;
@@ -94,16 +102,14 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
     z-index: 1000;
 }
 .thkc_popWrap .thkc_close{
-    display: flex; justify-content: flex-end;
-    position: relative;   
-}
-.thkc_popWrap .thkc_close i{
-    font-size: 30px; color: #333;
+    display: flex; justify-content: flex-end;   
     position: absolute;  
-    top: -50px; right: -20px;
+    top: -50px; right: -30px; 
+    cursor: pointer;
 }
-.thkc_popWrap .thkc_close button{
-    border: none;  background: none;
+.thkc_popWrap.thkc_close i{
+    font-size: 30px; color: #333;
+   
 }
 
 /* 오른쪽 카달로그 배너 */
@@ -288,25 +294,17 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
     }
 
     /* 팝업뷰 */
-    .thkc_popWrap {
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%); 
-        width: 80%;
-        background: #fff;   
-        padding: 10px;
-        border-radius: 20px;
-        z-index: 1001;
+    .thkc_popUpWrap {           
+        width: 85%;    
+        padding: 10px;       
+    }   
+    .thkc_popWrap .thkc_close{  
+        top: 5px; right: 5px;      
     }
-    .thkc_popWrap .thkc_close i{
-        font-size: 20px; color: #333;
-        position: absolute;  
-        top: 0px; right: 10px;
-    }
-
+   
 
     
-}
+
 
 @media (max-width: 430px) {}
 

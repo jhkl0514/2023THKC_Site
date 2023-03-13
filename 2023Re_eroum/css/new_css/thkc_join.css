@@ -911,7 +911,7 @@ label.thkc_switch {
         background: #f8f8f8;
     }
     .thkc_joinWrap{
-        padding: 20px 20px;       
+        padding: 20px 20px 0px 20px;       
     }
     .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
         width: 100%;
