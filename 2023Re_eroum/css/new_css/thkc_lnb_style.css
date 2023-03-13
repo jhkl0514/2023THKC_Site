@@ -84,6 +84,18 @@ aside.thkc_aside hr {
 
 aside.thkc_aside .btn_mypage {
     background: #222222;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+aside.thkc_aside a.btn_mypage {
+    background: #222222;
     border-radius: 20px;
     padding: 10px 0;
     text-align: center;
