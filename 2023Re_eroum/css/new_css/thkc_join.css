@@ -911,7 +911,10 @@ label.thkc_switch {
         background: #f8f8f8;
     }
     .thkc_joinWrap{
-        padding: 20px 20px 0px 20px;       
+        padding: 10px 0;     
+    }
+    .thkc_container_02{
+        padding: 20px;
     }
     .thkc_joinWrap input.thkc_input[type="text"],  .thkc_joinWrap input.thkc_input[type="password"] {
         width: 100%;
@@ -919,14 +922,14 @@ label.thkc_switch {
     .thkc_joinWrap .thkc_tableWrap .table-box .tit{       
         display:table;        
         width: 100%;
-        min-height: 25px;      
+        min-height: 20px;      
         padding: 0;
         font-size: 14px;
         background: #fff;    
      }
      .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont{
         display: table;
-        min-height:40px;
+        min-height: 50px;  
         width: 100%;        
         padding: 0;        
      }   
@@ -970,6 +973,9 @@ label.thkc_switch {
     
     .table-box .thkc_dfc_m{
        display: block;
+    }
+    .table-box .thkc_dfc .thkc_ml_01 {
+       font-size: 14px;
     }
     .pt-5{
         padding-top: 5px;
@@ -1067,9 +1073,14 @@ label.thkc_switch {
         width: 100%;
     }
     .thkc_joinWrap .thkc_tableWrap .table-box_02 {
-        display: block;       
-        /* min-height: 5px; */
+        display: flex; 
+        padding: 5px 0;
+        /* height: 20px; */
+        /* min-height:55px; */
+        border-bottom: 1px solid #ddd;        
     }
+   
+    
     .thkc_popWrap .thkc_joinWrap .boxRright{
         display: none;
     }
@@ -1084,6 +1095,16 @@ label.thkc_switch {
        padding: 3px 0; 
        font-size: 12px;
    } 
+
+   /* 버튼 */
+    .thkc_btnWrap {   
+        padding: 5px 0px;    
+    }
+    .thkc_btnWrap .btn_submit_01, .thkc_btnWrap .btn_submit_02{
+       height: 45px;     
+       font-size: 16px;      
+    }
+
 }
 @media (max-width: 430px) {}
 
