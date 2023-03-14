@@ -9,24 +9,26 @@ $(".toggle").click(function () {
     $(".toggle").addClass("active");
     $(".asideClone").css("right", 0);
     $(".overlay").show();
+    document.body.classList.add("stop-scroll");
 
   } else {
     $(".toggle").removeClass("active");
     $(".asideClone").css("right", "-100%");
     $(".overlay").hide();
     view = true;
+    document.body.classList.remove("stop-scroll");
   }
 })
 $(".overlay").click(function () {
   $(".asideClone").css("right", "-100%");
   $(".toggle").removeClass("active")
-  $(".overlay").hide();
+  $(".overlay").hide();  
 })
 
 $(".m_toggle").click(function () {
   $(".asideClone").css("right", "-100%");
   $(".toggle").removeClass("active")
-  $(".overlay").hide();
+  $(".overlay").hide();  
 })
 
 
