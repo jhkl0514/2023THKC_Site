@@ -424,6 +424,7 @@ h3.thkc_titleTabJoin {
 /* 체크 타입 */
 .table-box .thkc_dfc{
     display: flex; align-items: center; gap:10px;
+   
 }
 .table-box .thkc_dfc03{
     display: flex; align-items: center; justify-content: space-between;
@@ -435,9 +436,10 @@ h3.thkc_titleTabJoin {
 .table-box .thkc_dfc_03{
     display: flex;  flex-direction: column; gap:8px;
 }
-/* .table-box .thkc_dfc_04{
-    display: flex; justify-content: space-between;
-} */
+.table-box .thkc_dfc_04{
+    margin-left: 10px; gap:5px
+}
+
 .table-box .thkc_sign{
     border: 1px solid #ddd;
     color:#8f8f8f;
@@ -575,8 +577,8 @@ h3.thkc_titleTabJoin {
 }
 .thkc_btnWrap_03 button.on{
     /* background: #FF9015;   */
-    border: 1px solid #FF9015; 
-    color: #FF9015;
+    background:  #333; 
+    color: #fff;
 }
 .thkc_btnWrap_03 button.on:hover{
     background:#FF9015;
@@ -686,7 +688,7 @@ h3.thkc_titleTabJoin {
     box-sizing: border-box;
     padding: 20px 0 20px 20px;
     font-size: 16px;
-    color: #494949;    
+    color: #494949;     
  }
 
  .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01,
@@ -1001,6 +1003,9 @@ label.thkc_switch {
     }
     .table-box .thkc_dfc span{
         font-size: 12px;
+     }
+     .table-box .thkc_dfc_04{
+        margin-left: 0px;
      }
     .pt-5{
         padding-top: 5px;
