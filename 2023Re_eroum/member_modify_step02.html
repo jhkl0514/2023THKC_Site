@@ -340,7 +340,10 @@
                <div class="thkc_joinWrap">                   
                     <!-- title 계정정보-->
                     <div class="joinTitle">
-                        <div class="boxLeft">계정 정보</div>                        
+                        <div class="boxLeft">계정 정보</div>
+                        <div class="thkc_btnWrap_03">                          
+                            <button class="save">정보저장</button>
+                        </div>                        
                     </div>
                     <!-- table 계정정보 -->
                     <div class="thkc_tableWrap">
@@ -376,10 +379,10 @@
                             </div>
                         </div>
                         <div class="table-box">
-                            <div class="tit">이름</div>
+                            <div class="tit">담당자명</div>
                             <div class="thkc_cont">
                                 <div>
-                                    <label for="name" class="thkc_blind">이름</label>
+                                    <label for="name" class="thkc_blind">담당자명</label>
                                     <input
                                         class="thkc_input" id="name"                          
                                         placeholder="홍길동" value="" type="text" />
@@ -388,12 +391,12 @@
                             </div>
                         </div>                       
                         <div class="table-box tel-num">
-                            <div class="tit">휴대전화
+                            <div class="tit">담당자 휴대전화
                             </div>
                             <div class="thkc_cont">
                                 <div class="flex-box">
                                     <div class="flex-box">
-                                        <label for="tell" class="thkc_blind">휴대전화</label>
+                                        <label for="tell" class="thkc_blind">담당자 휴대전화</label>
                                         <select class="thkc_input" id="tell">
                                             <option value="010">010</option>
                                             <option value="011">011</option>
@@ -411,23 +414,19 @@
                         </div>
                         <!-- 이메일  -->           
                         <div class="table-box">
-                            <div class="tit">이메일
+                            <div class="tit">담당자 이메일
                             </div>
                             <div class="thkc_cont">
                                 <div class="thkc_dfc">
-                                    <label for="email" class="thkc_blind">이메일</label>
+                                    <label for="email" class="thkc_blind">담당자 이메일</label>
                                     <input
                                         class="thkc_input"  id="email"
                                         placeholder="hula2993@naver.com" value="" type="text"/>                        
                                 </div>                                        
                                 <div class="error-txt error"></div>
                             </div>
-                        </div>
-                        
-                        <!-- 버튼 -->
-                        <div class="thkc_btnWrap thkc_mtb_01">
-                            <a href="#none"><button class="btn_submit_01">저장</button></a><br>                            
-                        </div>           
+                        </div>                        
+                                  
                     </div>
                <!-- 회원정보 계정정보 end -->
                 </div> 
@@ -435,11 +434,7 @@
                <!-- 회원정보 직원계정 -->
                <div class="thkc_joinWrap"> 
                     <div class="joinTitle">
-                        <div class="boxLeft">직원 계정</div>
-                        <div class="thkc_btnWrap_03">
-                            <button>삭제</button>
-                            <button class="on">정보 수정</button>
-                        </div>                        
+                        <div class="boxLeft">직원 계정1</div>                                               
                     </div>                  
                     <div class="thkc_tableWrap">
                         <div class="table-box table-box_02 m15">
@@ -459,15 +454,48 @@
                             <div class="thkc_cont thkc_cont02">
                                 <div>2022-02-28 16:33</div>                          
                             </div>
-                        </div>                       
-                        
-                        <!-- 조회결과 -->
-                        <div class="thkc_resultWrap">마지막 조회결과입니다.</div>
-                         <!-- 버튼 -->
-                        <div class="thkc_btnWrap thkc_mtb_01">
-                            <button class="btn_submit_02">직원 신규 등록 +</button><br>                            
                         </div>
-                    </div> 
+                        <div class="thkc_btnWrap_03">
+                            <button>삭제</button>
+                            <button class="on">정보수정</button>
+                        </div>
+                    </div>                      
+                </div>
+
+                <!-- 회원정보 직원계정 -->
+               <div class="thkc_joinWrap"> 
+                <div class="joinTitle">
+                    <div class="boxLeft">직원 계정2</div>                                               
+                </div>                  
+                <div class="thkc_tableWrap">
+                    <div class="table-box table-box_02 m15">
+                        <div class="tit tit02">아이디</div>
+                        <div class="thkc_cont thkc_cont02">
+                            <div>hula8804</div>                            
+                        </div>
+                    </div>
+                    <div class="table-box table-box_02">
+                        <div class="tit tit02">이름</div>
+                        <div class="thkc_cont thkc_cont02">
+                            <div>홍길동</div>                            
+                        </div>
+                    </div>
+                    <div class="table-box table-box_02">
+                        <div class="tit tit02">최근접속일</div>
+                        <div class="thkc_cont thkc_cont02">
+                            <div>2022-02-28 16:33</div>                          
+                        </div>
+                    </div>
+                    <div class="thkc_btnWrap_03">
+                        <button>삭제</button>
+                        <button class="on">정보수정</button>
+                    </div>
+                </div>                      
+            </div>
+                               
+                <!-- 버튼 -->
+                <div class="thkc_btnWrap thkc_mtb_01">
+                    <button class="btn_submit_02">직원 신규 등록 +</button><br>                            
                 </div>           
 
                 <!-- 회원정보 직원계정 추가 팝업 -->
@@ -570,8 +598,8 @@
                                     </div>
                                 </div>
                                 <div class="thkc_btnWrap_03">
-                                    <button>삭제</button>
-                                    <button class="on">정보 수정</button>
+                                    <button>취소</button>
+                                    <button class="on">등록하기</button>
                                 </div>
                             </div>                      
                         </div>

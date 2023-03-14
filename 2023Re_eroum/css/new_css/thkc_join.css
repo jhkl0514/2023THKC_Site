@@ -585,6 +585,19 @@ h3.thkc_titleTabJoin {
     transition: 0.3s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+.thkc_btnWrap_03 button.save{
+    margin-top: 0px;
+    background: #000;  
+    /* border: 1px solid #FF9015;  */
+    color: #fff;
+}
+.thkc_btnWrap_03 button.save:hover{
+    background:#FF9015;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 .thkc_btnWrap .btn_submit_01{
     width: 300px;height: 55px;
@@ -746,6 +759,9 @@ h3.thkc_titleTabJoin {
 }
 
 /* 회원정보수정 */
+.thkc_memberModifyWrap ul>li:last-child{
+    display: none;
+}
 .thkc_memberModifyWrap{
     margin-bottom: 70px;
 }
@@ -764,15 +780,16 @@ h3.thkc_titleTabJoin {
     width: 100%; 
 }
 .thkc_memberModifyWrap ul li a{
-    height: 120px;
+    height: 95px;
     display: flex; align-items: center; justify-content: center;
     flex-direction: column;    
     border: 1px solid #E7E7E7;
-    border-radius: 5px;   
+    border-radius: 5px;
+    font-size: 18px; 
 }
 .thkc_memberModifyWrap ul li p{
     word-break:keep-all; 
-    text-align: center;
+    text-align: center;    
 }
 .thkc_memberModifyWrap ul li a:hover,
 .thkc_memberModifyWrap ul li .active
@@ -783,7 +800,7 @@ h3.thkc_titleTabJoin {
    transition: 0.3s;
 }
 .thkc_memberModifyWrap ul li img{
-    padding: 5px 0;
+    padding: 5px 0;    
 }
 .thkc_memberModifyWrap ul li .active img,
 .thkc_memberModifyWrap ul li a:hover img
