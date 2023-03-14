@@ -167,9 +167,24 @@ $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").click(function(){
   }
 })
 
-// 모달 팝업창
+// 모달 팝업창 (직원 등록)
 $(".thkc_popOverlay").hide();
 $(".thkc_btnWrap .btn_submit_02").click(function(){
+  $(".thkc_popUpWrap").css('display','flex').hide().fadeIn();
+  $(".thkc_popOverlay").show();  
+  document.body.classList.add("stop-scroll");
+});
+$(".thkc_popUpWrap .thkc_close").click(function(){
+  $(".thkc_popUpWrap").hide();
+  // $(".thkc_popUpWrap").css('display','none').show().fadeOut();
+  $(".thkc_popOverlay").hide();
+  document.body.classList.remove("stop-scroll");
+});
+
+
+// 모달 팝업창 (배송지 신규등록)
+$(".thkc_popOverlay").hide();
+$(".thkc_btnWrap .btn_submit_01").click(function(){
   $(".thkc_popUpWrap").css('display','flex').hide().fadeIn();
   $(".thkc_popOverlay").show();  
   document.body.classList.add("stop-scroll");
