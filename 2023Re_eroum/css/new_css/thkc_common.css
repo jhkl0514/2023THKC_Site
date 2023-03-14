@@ -296,12 +296,15 @@ select::-ms-expand {display: none;}/* 익스플로러용 */
     /* 팝업뷰 */
     .thkc_popUpWrap {           
         width: 85%;    
-        padding: 10px;       
+        padding: 20px;       
     }   
     .thkc_popWrap .thkc_close{  
         top: 5px; right: 5px;      
     }
-   
+    input::placeholder, select::placeholder, textarea::placeholder {
+        font-size: 12px !important; 
+    }
+}  
 
     
 

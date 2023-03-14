@@ -922,15 +922,17 @@ label.thkc_switch {
     .thkc_joinWrap .thkc_tableWrap .table-box .tit{       
         display:table;        
         width: 100%;
-        min-height: 20px;      
+        min-height: 25px;      
         padding: 0;
         font-size: 14px;
         background: #fff;    
      }
      .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont{
         display: table;
-        min-height: 50px;  
-        width: 100%;        
+        min-height: 50px; 
+        height: 60px; 
+        width: 100%;
+        font-size: 14px;        
         padding: 0;        
      }   
      .thkc_joinWrap .thkc_tableWrap .table-box .tit02{
@@ -940,6 +942,7 @@ label.thkc_switch {
      }
      .thkc_joinWrap .thkc_tableWrap .table-box .thkc_cont02{  
         min-height: 10px;
+        height: 30px;
         color: #999;        
      }
      .thkc_joinWrap .thkc_tableWrap .table-box{       
@@ -963,9 +966,11 @@ label.thkc_switch {
     .thkc_joinWrap .thkc_titleTop{
         font-size:25px;      
     }
-    .thkc_joinWrap input.thkc_input50[type="text"],  .thkc_joinWrap input.thkc_input50[type="password"] {
-        width: 50%;  
+    .thkc_joinWrap input.thkc_input50[type="text"],
+    .thkc_joinWrap input.thkc_input50[type="password"] {
+        width: 100%;  
     }
+    
     .table-box .thkc_cont a.thkc_btn_bbs {
         padding: 0 10px;
         font-size: 12px;
@@ -975,8 +980,11 @@ label.thkc_switch {
        display: block;
     }
     .table-box .thkc_dfc .thkc_ml_01 {
-       font-size: 14px;
+       font-size: 12px;
     }
+    .table-box .thkc_dfc span{
+        font-size: 12px;
+     }
     .pt-5{
         padding-top: 5px;
     }
@@ -1032,7 +1040,7 @@ label.thkc_switch {
         width: 100%;   
     }
     .thkc_findMeWrap .tabTitle{
-        display: flex;justify-content: space-around;
+        display: flex; justify-content: space-around;
         width: 100%;
     }   
     .thkc_findMeWrap .tabTitle div a {
@@ -1042,8 +1050,7 @@ label.thkc_switch {
         font-size: 13px;     
     }
 
-    
-    
+        
 
     /* 신규회원가입 */
     .thkc_joinWrap .thkc_container_03{
@@ -1060,13 +1067,12 @@ label.thkc_switch {
     }    
     .thkc_memberModifyWrap ul{
         gap: 5px;  
-    }
-    .thkc_memberModifyWrap ul li{
-        font-size: 12px;     
-    }
+    }    
     .thkc_memberModifyWrap ul li a{
-        height: 70px; 
-    }
+        height: 80px; 
+        font-size: 12px; 
+        padding: 0 3px;
+    }  
 
     /* 직원신규등록 */
     .thkc_bbs-more{
@@ -1088,8 +1094,9 @@ label.thkc_switch {
     .thkc_popWrap input.thkc_input[type="password"],
     .thkc_popWrap select.thkc_input{
         height: 35px; 
-        font-size: 16px;    
-    } 
+        font-size: 12px !important;    
+    }   
+    
     .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01,
     .thkc_joinWrap .thkc_tableWrap .table-box .bbs-pd_01{
        padding: 3px 0; 
