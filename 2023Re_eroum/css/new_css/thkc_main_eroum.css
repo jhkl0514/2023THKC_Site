@@ -209,7 +209,7 @@ section.thkc_section .hash_tagWrap .ht {
 /* PC_05.이로움 가이드  */
 section.thkc_section .guideWrap {
     display: flex;
-    margin-bottom: 130px;
+    margin-bottom: 130px;   
 }
 
 section.thkc_section .e_TitleWrap {
@@ -245,8 +245,7 @@ section.thkc_section .g_BoxWrap {
 }
 section.thkc_section .g_BoxWrap:hover {
     box-shadow: 0 0 25px rgb(30 35 48 15%);
-    transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;  
-    box-shadow: 0 0 25px  rgba(0,0,0,0.2);
+    transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;      
 }
 
 section.thkc_section .g_Box {
@@ -451,6 +450,9 @@ section.thkc_section .svBox {
     border-radius: 20px;
     width: 100%;
     padding: 40px 40px;
+  
+}
+section.thkc_section .svBox a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -593,6 +595,34 @@ section.thkc_section .m_csBoardWrap {
     padding: 30px 10px 0px 10px;
     cursor: pointer;
 }
+
+/* 멤버쉽 삭제로 인한 마크업 */
+section.thkc_section .m_csBoard_part{
+    display: flex;
+}
+
+section.thkc_section .m_csBoard_part ul{
+    display: block;
+    width: 50%; padding: 5px 0px;
+    border-right: 1px solid #D6D6D6;
+}
+section.thkc_section .m_csBoard_part ul:last-child{  
+    border-right: 0px;
+}
+
+section.thkc_section .m_csBoard_part li{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 35px;    
+}
+section.thkc_section .m_csBoard_part li h3{
+   padding-top: 10px;   
+}
+section.thkc_section .m_csBoard_part ul li img{
+    height: 50px;   
+} 
+/*  */
 
 section.thkc_section .m_cs {
     display: flex;
@@ -739,12 +769,15 @@ section.thkc_section .cs_infoWrap {
         gap: 10px;
     }
 
-    section.thkc_section .svWrap .svBox {
+    section.thkc_section .svBox {
         padding: 20px 20px;       
-    }
-
-    section.thkc_section .svWrap .sv_img img {
-        width: 150px;   
+    }   
+    section.thkc_section .sv_img{      
+        display: flex;
+        justify-content: center;    
+    } 
+    section.thkc_section .sv_img img {
+        width: 80%;   
     }  
     section.thkc_section .boardWrap {
         display: block;
@@ -1070,6 +1103,24 @@ section.thkc_section .cs_infoWrap {
     section.thkc_section .m_csTitleWrap {
         width: 74%;
         padding: 0px 0px 0px 10px;
+    }
+    
+     /* 멤버쉽 삭제로 인한 css */
+    section.thkc_section .m_csBoard_part .m_csTitleWrap {
+        display: block;      
+    }
+    section.thkc_section .m_csBoard_part span {
+        display: block;
+    }
+    section.thkc_section .cs_conWrap .m_csBoard_part {
+        border: 1px solid #D6D6D6;
+    }
+    section.thkc_section .m_csBoard_part .m_iconBg {
+        width: 20px;
+        height: 60px;            
+    }
+    section.thkc_section .m_csBoard_part .m_iconBg img {
+        height: 25px;
     }
 
     /* Mobile 11.고객센터 정보 (모바일에서만) */
