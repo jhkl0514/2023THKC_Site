@@ -147,6 +147,7 @@
                             <div class="thkc_btnBoxWrap">
                                 <a href="#none">
                                     <p>대금 결제하기</p>
+                                    <!-- <p>주문보기</p> -->
                                     <span><img src="img/new_common/thkc_ico_arrow_next.svg" alt="아이콘"></span>
                                 </a>
                             </div>
@@ -771,10 +772,10 @@
                     </ul>
                 </div>
                 <div class="f_Fsns"><!--패밀리 사이트-->
-                    <select name="sitelist" id="" class="f_site">
+                    <select name="sitelist" id="" class="f_site" onchange="window.open(value,'_blank');">
                         <option value selected>Family Site</option>
-                        <option value="#">이로움 1.0</option>
-                        <option value="#">이로움 1.5</a></option>
+                        <option value="http://www.thkc.co.kr/">회사 홈페이지</option>
+                        <option value="https://eroum.co.kr/market">이로움 마켓</option>
                     </select>
                     <ul class="f_sns"><!--snsn 버튼-->
                         <li class="btn_sns"><a href="#"><img src="img/new_common/thkc_btn_sns_talk.svg" alt=""></a></li>
