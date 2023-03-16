@@ -927,11 +927,11 @@ label.thkc_switch {
         font-size: 1.3rem
     }
     .thkc_loginWrap fieldset .field{
-        background-color: #f8f8f8;
+        background-color: #fff;
     }
     .thkc_loginWrap .field .inp-field{
       font-size: 0.9rem; text-indent: 0rem; 
-      background-color: #f8f8f8;
+      background-color: #fff;
     }
     .thkc_loginWrap .field .inTitle{    
         font-size: 0.8rem;
