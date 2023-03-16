@@ -115,8 +115,42 @@ section.thkc_section .top_notice .noticeArrow img {
 
 /* PC_03.프로모션 슬라이딩 배너 */
 section.thkc_section .eventWrap {
-    margin-bottom: 100px;
+    margin-bottom: 130px;
+    position: relative;
 }
+
+.wrap_swiper_navi {
+    position: absolute;
+    left: 0;
+    right: 0; 
+    bottom: -40px;  
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap_swiper_navi .swiper-button-next {
+    right: 40%;
+    background-image: url("../../img/new_common/ic_arrow_b_prev.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transform: translateY(-50%) rotate(360deg);
+    border-radius: 5px;
+    width: 20px; height: 25px;
+}
+
+.wrap_swiper_navi .swiper-button-prev {
+    left: 40%;
+    background-image: url("../../img/new_common/ic_arrow_b_prev.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transform: translateY(-50%) rotate(180deg);
+    border-radius: 5px;
+    width: 20px; height: 25px;   
+}
+
 
 section.thkc_section .img_r img {
     border-radius: 20px;
@@ -134,7 +168,7 @@ section.thkc_section .img_r img {
     --swiper-pagination-bullet-height: 10px;
     --swiper-navigation-top-offset: 50%;
     --swiper-navigation-sides-offset: 20px;
-    --swiper-pagination-bottom: 5px !important;
+    --swiper-pagination-bottom: 5px !important;   
 }
 
 /* PC_04.메인 검색 영역 */
@@ -821,8 +855,14 @@ section.thkc_section .cs_infoWrap {
     :root {
         --swiper-pagination-bullet-width: 5px;
         --swiper-pagination-bullet-height: 5px;
-        --swiper-pagination-bottom: 2px !important;
+        --swiper-pagination-bottom: 20px !important;
     }
+    .wrap_swiper_navi .swiper-button-next,
+    .wrap_swiper_navi .swiper-button-prev {
+        display: none;
+    }
+ 
+    
 
     /* Mobile 메인 검색 영역 */
     section.thkc_section .m_searchWrap {

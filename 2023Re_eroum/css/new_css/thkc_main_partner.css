@@ -74,6 +74,57 @@ section.thkc_section .dashList .d_unit {
 /* PC_03.프로모션 슬라이딩 배너 */
 section.thkc_section .eventWrap {
     margin-bottom: 100px;
+    position: relative;
+}
+
+section.thkc_section .eventWrap .txt{
+    position: absolute;
+    top:15%;
+    left: 40px;   
+    z-index: 10;
+    color: #fff;
+}
+section.thkc_section .eventWrap .txt h2{
+   font-size: 40px;
+   font-weight: 500;
+   letter-spacing: -0.05em;
+   margin-bottom: 10px;
+}
+section.thkc_section .eventWrap .txt p{    
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+ }
+
+.wrap_swiper_navi {
+    position: absolute;
+    left: 0;
+    right: 0;   
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap_swiper_navi .swiper-button-next {
+    right: 40%;
+    background-image: url("../../img/new_common/ic_arrow_b_prev.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transform: translateY(-50%) rotate(360deg);
+    border-radius: 5px;
+    width: 20px; height: 25px;
+}
+
+.wrap_swiper_navi .swiper-button-prev {
+    left: 40%;
+    background-image: url("../../img/new_common/ic_arrow_b_prev.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transform: translateY(-50%) rotate(180deg);
+    border-radius: 5px;
+    width: 20px; height: 25px;   
 }
 
 section.thkc_section .img_r img {
@@ -85,14 +136,14 @@ section.thkc_section .img_r img {
 /* PC_03. swiper */
 :root {
     --swiper-theme-color: #FF9015 !important;
-    --swiper-navigation-size: 30px !important;
+    --swiper-navigation-size: -50px !important;
     --swiper-navigation-color: rgba(0, 0, 0, 0);
     --swiper-pagination-bullet-vertical-gap: 25px;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
     --swiper-navigation-top-offset: 50%;
     --swiper-navigation-sides-offset: 20px;
-    --swiper-pagination-bottom: 5px !important;
+    --swiper-pagination-bottom: -35px !important;   
 }
 
 /* 파트너 추가 */
@@ -480,12 +531,28 @@ section.thkc_section .cs_infoWrap {
     section.thkc_section .eventWrap {
         margin-bottom: 30px;
     }
+    section.thkc_section .eventWrap .txt{   
+        left: 20px;        
+        top: 15%;
+    }
+    section.thkc_section .eventWrap .txt h2{
+       font-size: 16px;
+       font-weight: 400;
+       margin-bottom: 2px;        
+    }
+    section.thkc_section .eventWrap .txt p{    
+        font-size: 9px;      
+     }
 
     /* Mobile swiper */
     :root {
         --swiper-pagination-bullet-width: 5px;
         --swiper-pagination-bullet-height: 5px;
         --swiper-pagination-bottom: 2px !important;
+    }
+    .wrap_swiper_navi .swiper-button-next,
+    .wrap_swiper_navi .swiper-button-prev {
+        display: none;
     }
 
     
