@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <!-- 로그아웃 -->
-                    <div class="logout"><a href="#">로그아웃</a></div>
+                    <div class="logout"><a href="landing_eroum.html">로그아웃</a></div>
                 </div>
             </nav>
         </header>
@@ -117,77 +117,103 @@
             <aside class="thkc_aside">
                 <!-- 회원정보 -->
                 <div id="memberWrap">
-                    <div class="memTitle"><!-- 회원이름 -->
-                        훌라복지 사업소<span class="dir"> 님</span>
+                    <div class="thkc_memberTitle">
+                        <p class="memTitle"><!-- 회원이름 -->
+                            훌라복지 사업<span class="dir"> 님</span>
+                        </p>
+                        <p class="member_modi">
+                            <a href="member_modify_step00.html">회원정보 수정</a>
+                        </p>
                     </div>
-                    <div class="lavel"><!-- 등급 -->
-                        회원등급:다이아몬드
-                    </div>
-                    <div class="memInfoWrap"><!-- 포인트/쿠폰 -->
-                        <div class="mem_shipWrap f_s14" onclick="location.href='#'">
-                            <div>포인트</div>
-                            <div><span class="mInfo">15,000</span><span class="mUnit">p</span></div>
+
+                    <!-- 쿠폰, 장바구니, 간편메뉴, 고객센터 -->
+                    <div class="thkc_leftMenuWrap">
+                        <!-- 쿠폰, 장바구니, (대금결제 <> 주문보기) -->
+                        <div class="memInfoWrap">
+                            <div class="mem_shipWrap f_s14" onclick="location.href='#'">
+                                <a href="#none">
+                                    <p>쿠폰</p>
+                                    <p><span class="mInfo">5</span><span class="mUnit">장</span></p>
+                                </a>
+                            </div>
+                            <div class="mem_shipWrap f_s14">
+                                <a href="#none">
+                                    <p>사업소 장바구니</p>
+                                    <p><span class="mInfo">1</span><span class="mUnit">건</span></p>
+                                </a>
+                            </div>
+                            <div class="thkc_btnBoxWrap">
+                                <a href="#none">
+                                    <p>대금 결제하기</p>
+                                    <span><img src="img/new_common/thkc_ico_arrow_next.svg" alt="아이콘"></span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="mem_shipWrap f_s14" onclick="location.href='#'">
-                            <div>쿠폰</div>
-                            <div><span class="mInfo">5</span><span class="mUnit">장</span></div>
+
+                        <!-- 간편메뉴 -->
+                        <div class="simpleTabe">
+                            <table>
+                                <tr>
+                                    <td class="br btn_simple">
+                                        <a href="#none">
+                                            <img src="img/new_main_eroum/thkc_ico_easy01.svg" alt="간편조회">
+                                            <p class="simTitle">간편<span class="f_bold700">조회</span></p>
+                                        </a>
+                                    </td>
+                                    <td class="bb btn_simple">
+                                        <a href="#none">
+                                            <img src="img/new_main_eroum/thkc_ico_easy02.svg" alt="간편제안">
+                                            <p class="simTitle">간편<span class="f_bold700">제안</span></p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bt btn_simple">
+                                        <a href="#none">
+                                            <img src="img/new_main_eroum/thkc_ico_easy03.svg" alt="간편주문">
+                                            <p class="simTitle">간편<span class="f_bold700">주문</span></p>
+                                        </a>
+                                    </td>
+                                    <td class="bl btn_simple">
+                                        <a href="#none">
+                                            <img src="img/new_main_eroum/thkc_ico_easy04.svg" alt="간편계약">
+                                            <p class="simTitle">간편<span class="f_bold700">계약</span></p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- 이로움 고객센터 전화번호 -->
+                        <div class="left_csWrap">
+                            <div class="csTitle">이로움 고객센터</div>
+                            <div class="csCall">1533-5088</div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="memInfoWrap_02"><!-- 장바구니 -->
-                        <div class="mem_shipWrap" onclick="location.href='#'">
-                            <div class="m_iconWarp"><img src="img/new_main_eroum/thkc_ico_cart.svg" alt="장바구니"><span
-                                    class="f_bold">수급자 장바구니</span></div>
-                            <div><span class="mInfo f_bold">1</span><span class="mUnit">건</span></div>
-                        </div>
-                    </div>
-                    <div class="btn_mypage">마이페이지</div><!--마이페이지 버튼-->
-                    <!-- 간편메뉴 -->
-                    <div class="simpleTabe">
-                        <table>
-                            <tr>
-                                <td class="br btn_simple" onclick="location.href='#'">
-                                    <img src="img/new_main_eroum/thkc_ico_easy01.svg" alt="간편조회">
-                                    <div class="simTitle">간편<span class="f_bold700">조회</span></div>
-                                   
-                                </td>
-                                <td class="bb btn_simple" onclick="location.href='#'">
-                                    <img src="img/new_main_eroum/thkc_ico_easy02.svg" alt="간편제안">
-                                    <div class="simTitle">간편<span class="f_bold700">제안</span></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="bt btn_simple" onclick="location.href='#'">
-                                    <img src="img/new_main_eroum/thkc_ico_easy03.svg" alt="간편주문">
-                                    <div class="simTitle">간편<span class="f_bold700">주문</span></div>
-                                </td>
-                                <td class="bl btn_simple" onclick="location.href='#'">
-                                    <img src="img/new_main_eroum/thkc_ico_easy04.svg" alt="간편계약">
-                                    <div class="simTitle">간편<span class="f_bold700">계약</span></div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- 이로움 고객센터 전화번호 -->
-                    <div class="left_csWrap">
-                        <div class="csTitle">이로움 고객센터</div>
-                        <div class="csCall">1533-5088</div>
-                    </div>
+                    <!-- 쿠폰, 장바구니, 간편메뉴, 고객센터 end -->
+
                     <!-- 사업소 운영관리 -->
                     <div class="mgeWrap">
                         <h3 class="mgTitle y_bar">사업소 운영관리</h3>
                         <hr>
-                        <div class="office_menu">   
+                        <div class="office_menu">
                             <ul>
-                                <li><img src="img/new_main_eroum/thkc_ico_manage01.svg" alt="주문/배송 관리"><a href="#">주문/배송 관리</a>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage08.svg" alt="복지용구 신청관리"><a href="#">복지용구
+                                        신청관리</a>
                                 </li>
-                                <li><img src="img/new_main_eroum/thkc_ico_manage02.svg" alt="수급자 관리"><a href="#">수급자 관리</a>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage01.svg" alt="주문/배송 관리"><a href="#">주문/배송
+                                        관리</a>
                                 </li>
-                                <li><img src="img/new_main_eroum/thkc_ico_manage03.svg" alt="계약서 관리"><a href="#">계약서 관리</a>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage02.svg" alt="수급자 관리"><a href="#">수급자
+                                        관리</a>
                                 </li>
-                                <li><img src="img/new_main_eroum/thkc_ico_manage04.svg" alt="청구 내역 관리"><a href="#">청구 내역 관리</a>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage03.svg" alt="계약서 관리"><a href="#">계약서
+                                        관리</a>
                                 </li>
-                                <li><img src="img/new_main_eroum/thkc_ico_manage05.svg" alt="보유 급여상품 관리"><a href="#">보유 급여상품 관리</a>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage04.svg" alt="청구 내역 관리"><a href="#">청구 내역
+                                        관리</a>
+                                </li>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage05.svg" alt="보유 급여상품 관리"><a href="#">보유
+                                        급여상품 관리</a>
                                 </li>
                             </ul>
                         </div>
@@ -220,8 +246,10 @@
                         <hr>
                         <div class="office_menu">
                             <ul>
-                                <li><img src="img/new_main_eroum/thkc_ico_manage06.svg" alt="사업소 운영 자료실"><a href="#">사업소 운영 자료실</a></li>
-                                <li><img src="img/new_main_eroum/thkc_ico_manage07.svg" alt="복지용구 뉴스"><a href="#">복지용구 뉴스</a></li>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage06.svg" alt="사업소 운영 자료실"><a href="#">사업소
+                                        운영 자료실</a></li>
+                                <li><img src="img/new_main_eroum/thkc_ico_manage07.svg" alt="복지용구 뉴스"><a href="#">복지용구
+                                        뉴스</a></li>
                             </ul>
                         </div>
                     </div>
@@ -232,30 +260,44 @@
                         <hr>
                         <div class="office_menu">
                             <ul>
-                                <li><img src="img/new_common/thkc_ico_faq.svg" alt="자주하는 질문"><a href="#">자주하는 질문</a></li>
+                                <li><img src="img/new_common/thkc_ico_faq.svg" alt="자주하는 질문"><a href="#">자주하는 질문</a>
+                                </li>
                                 <li><img src="img/new_common/thkc_ico_11.svg" alt="1:1문의"><a href="#">1:1문의</a></li>
                             </ul>
                         </div>
                     </div>
                     <!-- 원격지원 서비스 -->
                     <div class="remoteWrap">
-                        <div><img src="img/new_common/thkc_ico_lnb_remote.svg" alt="원격지원 서비스"></div>
+                        <img src="img/new_common/thkc_ico_lnb_remote.svg" alt="원격지원 서비스">
                         <div>
                             <h4>원격지원 서비스</h4>
-                            <div class="rem_con">전문상담원이 PC화면을 보면서 문제를 해결합니다.</div>
+                            <p class="rem_con">전문상담원이 PC화면을 보면서 문제를 해결합니다.</p>
                         </div>
                     </div>
-                    <div class="btn_remote">
-                        원격지원 서비스 시작
-                    </div>
+                    <div class="btn_remote">원격지원 서비스 시작</div>
+
                     <!-- pc다운로드 바로가기 -->
                     <div class="downlodeWrap">
-                        <div onclick="location.href='img/new_common/thkc_btn_download.svg'">이로움 카달로그 <img
-                                src="img/new_common/thkc_btn_download.svg" alt="이로움 카달로그"></a></div>
-                        <div onclick="location.href='img/new_common/thkc_btn_download.svg'">통장사본 <img
-                                src="img/new_common/thkc_btn_download.svg" alt="통장사본"></div>
-                        <div onclick="location.href='img/new_common/thkc_btn_download.svg'">사업자 등록증<img
-                                src="img/new_common/thkc_btn_download.svg" alt="사업자 등록증"></div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    이로움 카달로그
+                                    <img src="img/new_common/thkc_btn_download.svg" alt="이로움 카달로그">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    통장사본
+                                    <img src="img/new_common/thkc_btn_download.svg" alt="통장사본">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    사업자 등록증
+                                    <img src="img/new_common/thkc_btn_download.svg" alt="사업자 등록증">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                     <!-- Mobile 다운로드 바로가기 -->
@@ -263,18 +305,18 @@
                         <table>
                             <tr>
                                 <td class="br br_c" onclick="location.href='#'">
-                                    <div class="simTitle">카달로그<br><span class="f_bold700">다운로드</span></div>                                    
+                                    <p class="simTitle">카달로그<br><span class="f_bold700">다운로드</span></p>
                                 </td>
                                 <td class="bb br_c" onclick="location.href='#'">
-                                    <div class="simTitle">카달로그<br><span class="f_bold700">신청하기</span></div>                                    
+                                    <p class="simTitle">카달로그<br><span class="f_bold700">신청하기</span></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="bt br_c" onclick="location.href='#'">
-                                    <div class="simTitle">통장사본<br><span class="f_bold700">다운로드</span></div> 
+                                    <p class="simTitle">통장사본<br><span class="f_bold700">다운로드</span></p>
                                 </td>
                                 <td class="bl br_c" onclick="location.href='#'">
-                                    <div class="simTitle">사업자등록증<br><span class="f_bold700">신청하기</span></div> 
+                                    <p class="simTitle">사업자등록증<br><span class="f_bold700">신청하기</span></p>
                                 </td>
                             </tr>
                         </table>
