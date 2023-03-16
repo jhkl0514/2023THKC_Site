@@ -198,10 +198,27 @@ h3.thkc_titleTabJoin {
     border-right: 1px solid #E7E7E7;   
  }
 
-.thkc_loginWrap section .login_contWrap{
-    display: flex; justify-content: center;align-items: center; 
+.thkc_loginWrap .login_contWrap{
+    display: flex; justify-content: center; align-items: center; 
     flex-direction: column;
 }
+
+.thkc_loginWrap .login_contWrap img{
+    width: 25%;
+    padding-top: 30px;
+}
+.thkc_loginWrap .login_contWrap h2{
+    font-size: 1.6em;
+    text-align: center;
+    padding: 40px 0 5px 0;
+}
+.thkc_loginWrap .login_contWrap h6{
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
 .thkc_loginWrap section .login_contWrap{
     width: 100%; padding: 0px 40px;
 }

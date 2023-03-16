@@ -183,10 +183,12 @@ aside.thkc_aside .simpleTabe .bb {
 
 aside.thkc_aside .simpleTabe .bt {
     border-top: 1px dashed #CFCFCF;
+    padding: 15px 0 0 0;
 }
 
 aside.thkc_aside .simpleTabe .bl {
     border-left: 1px dashed #CFCFCF;
+    padding: 15px 0 0 0;
 }
 
 aside.thkc_aside .simTitle {
@@ -511,6 +513,7 @@ aside.thkc_aside .fastTabe table td {
 aside.thkc_aside .fastTabe .bb {
     border-bottom: 1px dashed #CFCFCF;
 }
+
 
 aside.thkc_aside .btn_simple img{    
     transition: 0.3s;
