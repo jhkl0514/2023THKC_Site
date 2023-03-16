@@ -22,13 +22,15 @@ $(".toggle").click(function () {
 $(".overlay").click(function () {
   $(".asideClone").css("right", "-100%");
   $(".toggle").removeClass("active")
-  $(".overlay").hide();  
+  $(".overlay").hide();
+  document.body.classList.add("stop-scroll"); 
 })
 
 $(".m_toggle").click(function () {
   $(".asideClone").css("right", "-100%");
   $(".toggle").removeClass("active")
-  $(".overlay").hide();  
+  $(".overlay").hide();
+  document.body.classList.remove("stop-scroll");
 })
 
 
