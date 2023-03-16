@@ -193,7 +193,7 @@ aside.thkc_aside .simTitle {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    padding: 5px;    
+    padding: 5px 10px;    
 }
 
 /* 이로움 고객센터 전화번호 */
@@ -272,7 +272,8 @@ aside.thkc_aside .noticeWrap .mgTitle {
 }
 
 aside.thkc_aside .noticeWrap .y_bar_02::after {
-    background: #FDF6D4;
+    background: #FFF5EF;
+    border-radius: 10px;
     content: "";
     display: block;
     height: 12px;
