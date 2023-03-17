@@ -46,22 +46,24 @@ $(".f_Fsns").clone().appendTo(".m_f_Fsns")
 $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 
 
-// Initialize Swiper               
-var swiper = new Swiper(".eventSwiper", {
-  slidesPerView: "auto",
+// 사업소 이벤트 Swiper               
+var swiper = new Swiper(".eventWrap .eventSwiper", {
+  slidesPerView: "auto", 
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
+  loop : true,
+  loopAdditionalSlides : 1,
   pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+    el: ".wrap_swiper_navi .swiper-pagination",
+    clickable: true,    
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".wrap_swiper_navi .swiper-button-next",
+    prevEl: ".wrap_swiper_navi .swiper-button-prev",
   },
 });
 
@@ -85,11 +87,11 @@ var swiper = new Swiper(".mySwiper_service", {
   },
 });
 
-
+//상단 띠배너
  var swiper = new Swiper(".mySwiper_band", {
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".topBanner_swiper_navi .swiper-button-next",
+      prevEl: ".topBanner_swiper_navi .swiper-button-prev",
     },
   });
 
@@ -112,7 +114,7 @@ if($("body").height()/5 < scrollY){ // 문서 반일때 스크롤 Y이 커질때
 
 
 // 파트너 Swiper               
-var swiper = new Swiper(".partnerSwiper", {
+var swiper = new Swiper(".top_parther .partnerSwiper", {
   slidesPerView: "auto",
   spaceBetween: 30,
   centeredSlides: true,
@@ -120,13 +122,15 @@ var swiper = new Swiper(".partnerSwiper", {
     delay: 5000,
     disableOnInteraction: false,
   },
+  loop : true,
+  loopAdditionalSlides : 1,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".wrap_swiper_navi .swiper-button-next",
+    prevEl: ".wrap_swiper_navi .swiper-button-prev",
   },
 });
 

@@ -77,6 +77,10 @@ section.thkc_section .eventWrap {
     position: relative;
 }
 
+section.thkc_section .partnerSwiper{
+    border-radius: 20px; 
+}
+
 section.thkc_section .eventWrap .txt{
     position: absolute;
     top:15%;

@@ -75,7 +75,7 @@ section.thkc_section .top_noticeWrap {
 }
 
 section.thkc_section .top_notice {
-    display: flex;
+    display: flex; 
 }
 
 section.thkc_section .top_notice .noticeTitle {
@@ -92,7 +92,7 @@ section.thkc_section .top_notice .noticeTitle img {
 }
 
 section.thkc_section .top_notice .noticeCon {
-    display: flex;
+    display: flex;    
 }
 
 section.thkc_section .top_notice .noticeCo_menun a {
@@ -117,6 +117,9 @@ section.thkc_section .top_notice .noticeArrow img {
 section.thkc_section .eventWrap {
     margin-bottom: 130px;
     position: relative;
+}
+section.thkc_section .eventWrap .eventSwiper {
+    border-radius: 20px;
 }
 
 .wrap_swiper_navi {
@@ -151,11 +154,9 @@ section.thkc_section .eventWrap {
     width: 20px; height: 25px;   
 }
 
-
-section.thkc_section .img_r img {
-    border-radius: 20px;
+section.thkc_section .img_r img {    
     max-width: 100%;
-    height: auto;
+    height: auto;    
 }
 
 /* PC_03. swiper */
@@ -848,7 +849,7 @@ section.thkc_section .cs_infoWrap {
 
     /* Mobile 프로모션 슬라이딩 배너 */
     section.thkc_section .eventWrap {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     /* Mobile swiper */

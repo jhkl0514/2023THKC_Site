@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
+    
 }
 
 #topBannerWrap .topBanner {
@@ -15,12 +17,41 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100%/3);
+    width: calc(100%/3);   
+    padding: 0 15px;
     position: relative;
-    padding-left: 18px;    
 }
 #topBannerWrap .topBanner div{
     cursor:pointer;
+    
+}
+#topBannerWrap .topBanner_swiper_navi{
+    position: absolute;   
+    left: 0px;
+    right: 0px;  
+    top: 40px;   
+    width: 100%;
+    max-width: 1000px;
+}
+
+#topBannerWrap .topBanner_swiper_navi .swiper-button-next {
+    right: -30px;
+    background-image: url("../../img/new_main_eroum/thkc_btn_arrow_prev.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transform: translateY(-50%) rotate(180deg);     
+    width: 30px; height: 30px;   
+}
+
+#topBannerWrap .topBanner_swiper_navi .swiper-button-prev {
+    left: -15px;
+    background-image: url("../../img/new_main_eroum/thkc_btn_arrow_prev.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transform: translateY(-50%) rotate(360deg); 
+    width: 30px; height: 30px;
 }
 
 
@@ -125,20 +156,6 @@ nav.thkc_nav .main_menu li a.active {
     font-weight: 500;
 }
 
-nav.thkc_nav .main_menu li a:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 0%;
-    background: #001E9A;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: all 0.5s; 
-}
-
 nav.thkc_nav .main_menu>li:after {
     content: "";
     display: block;
@@ -167,11 +184,11 @@ nav.thkc_nav .main_menu li:hover:after {
 /* 상단 이벤트 메뉴 active */
 nav.thkc_nav .sub_menu li a {
     padding: 5px 1px;
+    transition: all 0.5s;    
 }
 
 nav.thkc_nav .sub_menu li a:hover {
-    border-bottom: 1px solid #bbb;
-  
+    border-bottom: 1px solid #bbb;    
 }
 
 /* 토글버튼 */
