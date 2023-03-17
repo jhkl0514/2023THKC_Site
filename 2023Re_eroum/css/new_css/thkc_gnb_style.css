@@ -353,6 +353,15 @@ nav.thkc_nav .toggle.active .bar3 {
         width: 100%;
         font-size: 14px;
     }
+    #topBannerWrap .mySwiper_band{
+        width: 80%;
+    }
+    #topBannerWrap .topBanner_swiper_navi .swiper-button-next {
+        right: 15px;
+    }    
+    #topBannerWrap .topBanner_swiper_navi .swiper-button-prev {
+        left: 15px;        
+    }
 
     nav.thkc_nav {
         display: block;
