@@ -37,9 +37,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-
 </head>
 
 <body>
@@ -48,23 +45,26 @@
         <!-- 최상단 띠 배너 (스와이퍼 슬라이드) -->
         <div id="topBannerWrap">
             <div class="topBanner">
+                <div class="topBanner_swiper_navi">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
                 <div class="swiper mySwiper_band">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide f_col" onclick="location.href='#'">이로움이 처음이신가요?</div>
-                      <div class="swiper-slide f_col" onclick="location.href='#'">정말 이로움이 처음이신가요?</div>
-                      <div class="swiper-slide f_col" onclick="location.href='#'">진짜로 정말 이로움이 처음이신가요?</div>
+                        <div class="swiper-slide f_col" onclick="location.href='#'">이로움이 처음이신가요?</div>
+                        <div class="swiper-slide f_col" onclick="location.href='#'">정말 이로움이 처음이신가요?</div>
+                        <div class="swiper-slide f_col" onclick="location.href='#'">진짜로 정말 이로움이 처음이신가요?</div>
                     </div>
-                    <div class="swiper-button-prev band"><img src="img/new_main_eroum/thkc_btn_arrow_prev.svg" alt="이전"></div>
-                    <div class="swiper-button-next band"><img src="img/new_main_eroum/thkc_btn_arrow_next.svg" alt="다음"></div>  
-                  </div>      
+                </div>
             </div>
-        </div>       
+        </div>
         <!-- GNB -->
         <header class="thkc_container">
             <nav class="thkc_nav">
                 <div class="menuWrap">
                     <!-- 상단로고 -->
-                    <h1 class="logo"><a href="landing_eroum.html"><img src="img/new_common/thkc_logo_gnb.svg" alt="로고"></a></h1>
+                    <h1 class="logo"><a href="landing_eroum.html"><img src="img/new_common/thkc_logo_gnb.svg"
+                                alt="로고"></a></h1>
                     <div class="menuWrap02">
                         <!-- 상단 대 메뉴 -->
                         <ul class="main_menu">
@@ -109,7 +109,7 @@
         <!-- GNB 하단 라인 모바일 -->
         <div id="topLine_m"></div>
     </div>
-    <!-- // 상단 메뉴 영역 // end-->  
+    <!-- // 상단 메뉴 영역 // end-->
     <!-- ## 메인 전체 영역 (왼쪽메뉴, gap,  컨텐츠) ## -->
     <div id="thkc_mainWrap" class="thkc_container">
         <!-- ** PC 왼쪽 메뉴 "w302px" ** -->
@@ -339,48 +339,48 @@
                 <div class="toggleClone">
                 </div>
             </div>
-        </div>       
+        </div>
         <!--  ** gap w38px ** -->
         <div id="thkc_gap"></div>
         <!--  ** 메인 컨텐츠  "w1060px" ** -->
         <div id="thkc_conWrap">
             <section class="thkc_section">
-               <!-- 회원정보수정 (메뉴) -->
-               <div class="thkc_memberModifyWrap">
+                <!-- 회원정보수정 (메뉴) -->
+                <div class="thkc_memberModifyWrap">
                     <h3>회원 정보 수정</h3>
                     <ul>
                         <li><a href="member_modify_step01.html">
-                            <img src="img/new_common/thkc_icon_modify01.svg" alt="">
-                            <p>사업자 정보</p>
+                                <img src="img/new_common/thkc_icon_modify01.svg" alt="">
+                                <p>사업자 정보</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step02.html">
-                            <img src="img/new_common/thkc_icon_modify02.svg" alt="">
-                            <p>계정 관리</p>
+                                <img src="img/new_common/thkc_icon_modify02.svg" alt="">
+                                <p>계정 관리</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step03.html">
-                            <img src="img/new_common/thkc_icon_modify03.svg" alt="">
-                            <p>배송지 정보</p>
+                                <img src="img/new_common/thkc_icon_modify03.svg" alt="">
+                                <p>배송지 정보</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step04.html">
-                            <img src="img/new_common/thkc_icon_modify04.svg" alt="">
-                            <p>서비스 정보</p>
+                                <img src="img/new_common/thkc_icon_modify04.svg" alt="">
+                                <p>서비스 정보</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step05.html" class="active">
-                            <img src="img/new_common/thkc_icon_modify05.svg" alt="">
-                            <p>환경 설정</p>
+                                <img src="img/new_common/thkc_icon_modify05.svg" alt="">
+                                <p>환경 설정</p>
                             </a>
                         </li>
                     </ul>
-               </div>
-               <!-- 회원정보 서비스 정보 -->
-               <div class="thkc_joinWrap">                   
+                </div>
+                <!-- 회원정보 서비스 정보 -->
+                <div class="thkc_joinWrap">
                     <!-- title 환경설정-->
                     <div class="joinTitle">
-                        <div class="boxLeft">환경설정</div>                        
+                        <div class="boxLeft">환경설정</div>
                     </div>
                     <!-- table 환경설정-->
                     <div class="thkc_tableWrap">
@@ -389,10 +389,9 @@
                             <div class="thkc_cont">
                                 <div class="thkc_dfc">
                                     <label for="email" class="thkc_blind">세금계산서 수신</label>
-                                    <input
-                                        class="thkc_input thkc_input50" id="email"                         
-                                        placeholder="이메일" value="" type="text" /> 
-                                        <spna>세금계산서를 수신받으실 이메일 정보를 입력하세요.</spna>                                                       
+                                    <input class="thkc_input thkc_input50" id="email" placeholder="이메일" value=""
+                                        type="text" />
+                                    <spna>세금계산서를 수신받으실 이메일 정보를 입력하세요.</spna>
                                 </div>
                                 <div class="error-txt error"></div>
                             </div>
@@ -402,22 +401,23 @@
                             <div class="thkc_cont">
                                 <div class="thkc_dfc">
                                     <label for="switch" class="thkc_switch">
-                                        <input class="thkc_switch" role="switch" type="checkbox" id="switch" placeholder="on"/>
+                                        <input class="thkc_switch" role="switch" type="checkbox" id="switch"
+                                            placeholder="on" />
                                         <span>주문내역, 계약서 수신 등 문자발송에 대한 여부를 체크합니다.</span>
-                                    </label>                             
-                                </div>                                
+                                    </label>
+                                </div>
                             </div>
-                        </div>                                             
-                         <!-- 버튼 -->
-                         <div class="thkc_btnWrap thkc_mtb_01">
-                            <a href="#none"><button class="btn_submit_01">저장</button></a><br>                            
-                        </div>                                
+                        </div>
+                        <!-- 버튼 -->
+                        <div class="thkc_btnWrap thkc_mtb_01">
+                            <a href="#none"><button class="btn_submit_01">저장</button></a><br>
+                        </div>
                     </div>
-                    
-               <!-- 회원정보 계정정보 end -->
-                </div>               
 
-                
+                    <!-- 회원정보 계정정보 end -->
+                </div>
+
+
 
             </section>
         </div>
@@ -437,19 +437,19 @@
             <!-- 이로움 톡톡 배너 -->
             <div class="banner_eroum" onclick="location.href='#'">
                 <img src="img/new_main_eroum/thkc_btn_banner_talk.png" alt="">
-            </div>              
+            </div>
             <!-- 이로움 톡톡 삭제 -->
             <div class="banner_del">
                 <img src="img/new_main_eroum/thkc_btn_x_delete.svg" alt="">
             </div>
         </div>
-         <!-- ** 이로움 톡톡 배너 외 복제 ** -->
-         <div id="bannerRightClone">
-            <div class="m_banner_eroum">         
+        <!-- ** 이로움 톡톡 배너 외 복제 ** -->
+        <div id="bannerRightClone">
+            <div class="m_banner_eroum">
             </div>
-        </div>  
+        </div>
     </div>
-    <!-- // 메인 전체 영역 (왼쪽메뉴, 컨텐츠) end// -->   
+    <!-- // 메인 전체 영역 (왼쪽메뉴, 컨텐츠) end// -->
 
     <!--  ## 하단 footer 영역 ## -->
     <footer id="thkc_footerWrap" class="thkc_footer">
@@ -538,12 +538,12 @@
         </div>
     </footer>
     <!--  // 하단 footer 영역 end// -->
-    
-     <!-- ** Top버튼 ** -->
-     <div id="thkc_pageTop">           
+
+    <!-- ** Top버튼 ** -->
+    <div id="thkc_pageTop">
         <div class="btn_top"><img src="img/new_common/thkc_bnt_arrow_top.svg" alt=""></div>
     </div>
-    
+
 
     <script src="js/new_js/thkc_script.js"></script>
 

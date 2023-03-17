@@ -3,7 +3,7 @@ console.log("test");
 
 
 let view = true;
-// 토글
+// 메뉴 토글
 $(".toggle").click(function () {
   if (view == true) {
     $(".toggle").addClass("active");
@@ -23,7 +23,7 @@ $(".overlay").click(function () {
   $(".asideClone").css("right", "-100%");
   $(".toggle").removeClass("active")
   $(".overlay").hide();
-  document.body.classList.add("stop-scroll"); 
+  document.body.classList.add("stop-scroll");
 })
 
 $(".m_toggle").click(function () {
@@ -48,18 +48,18 @@ $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 
 // 사업소 이벤트 Swiper               
 var swiper = new Swiper(".eventWrap .eventSwiper", {
-  slidesPerView: "auto", 
+  slidesPerView: "auto",
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
-  loop : true,
-  loopAdditionalSlides : 1,
+  loop: true,
+  loopAdditionalSlides: 1,
   pagination: {
     el: ".wrap_swiper_navi .swiper-pagination",
-    clickable: true,    
+    clickable: true,
   },
   navigation: {
     nextEl: ".wrap_swiper_navi .swiper-button-next",
@@ -87,27 +87,27 @@ var swiper = new Swiper(".mySwiper_service", {
   },
 });
 
-//상단 띠배너
- var swiper = new Swiper(".mySwiper_band", {
-    navigation: {
-      nextEl: ".topBanner_swiper_navi .swiper-button-next",
-      prevEl: ".topBanner_swiper_navi .swiper-button-prev",
-    },
-  });
+//상단 띠배너 스와이퍼
+var swiper = new Swiper(".mySwiper_band", {
+  navigation: {
+    nextEl: ".topBanner_swiper_navi .swiper-button-next",
+    prevEl: ".topBanner_swiper_navi .swiper-button-prev",
+  },
+});
 
 //Top버튼 올라가기
-$("#thkc_pageTop .btn_top").click(function(){
-  $("html,body").animate({scrollTop:0},300)
+$("#thkc_pageTop .btn_top").click(function () {
+  $("html,body").animate({ scrollTop: 0 }, 300)
 })
 
-$(window).scroll(function(){
-let scrollY = window.pageYOffset
+$(window).scroll(function () {
+  let scrollY = window.pageYOffset
 
-if($("body").height()/5 < scrollY){ // 문서 반일때 스크롤 Y이 커질때 나타나라
+  if ($("body").height() / 5 < scrollY) { // 문서 반일때 스크롤 Y이 커질때 나타나라
     $(".btn_top").fadeIn()
-}else{
+  } else {
     $(".btn_top").fadeOut()
-}
+  }
 
 })
 
@@ -122,8 +122,8 @@ var swiper = new Swiper(".top_parther .partnerSwiper", {
     delay: 5000,
     disableOnInteraction: false,
   },
-  loop : true,
-  loopAdditionalSlides : 1,
+  loop: true,
+  loopAdditionalSlides: 1,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -135,12 +135,12 @@ var swiper = new Swiper(".top_parther .partnerSwiper", {
 });
 
 // 아이디패스워드 Tap
-  $(".thkc_tableTapWrap .thkc_tableWrap").eq(1).hide()
-  $(".tabTitleWrap .tabTitle>div").click(function(){
+$(".thkc_tableTapWrap .thkc_tableWrap").eq(1).hide()
+$(".tabTitleWrap .tabTitle>div").click(function () {
   $(".tabTitleWrap .tabTitle>div").removeClass("active")
   $(this).addClass("active")
 
-  let i=$(this).index()
+  let i = $(this).index()
   $(".thkc_tableTapWrap .thkc_tableWrap").hide()
   $(".thkc_tableTapWrap .thkc_tableWrap").eq(i).show()
 })
@@ -148,11 +148,11 @@ var swiper = new Swiper(".top_parther .partnerSwiper", {
 
 // 회원가입 Tap
 $(".thkc_JoinConent").eq(1).hide()
-$(".thkc_tabJoin ul>li").click(function(){
-$(".thkc_tabJoin ul>li").removeClass("active");
+$(".thkc_tabJoin ul>li").click(function () {
+  $(".thkc_tabJoin ul>li").removeClass("active");
   $(this).addClass("active")
 
-  let i=$(this).index()
+  let i = $(this).index()
   $(".thkc_JoinConent").hide()
   $(".thkc_JoinConent").eq(i).show()
 
@@ -160,27 +160,27 @@ $(".thkc_tabJoin ul>li").removeClass("active");
 
 
 // 회원가입 약관 아코디언
-$(".thkc_agreeWrap .thkc_menu .thkc_dfc03").click(function(){
+$(".thkc_agreeWrap .thkc_menu .thkc_dfc03").click(function () {
   // e.preventDefault(); 
   $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").parent().find(".thkc_iner_cont").slideUp();
 
-  if( $(this).hasClass("active")){ 
-      $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").removeClass("active")
-  }else{
-      $(this).parent().find(".thkc_iner_cont").slideDown();
-      $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").removeClass("active") 
-      $(this).addClass("active")
+  if ($(this).hasClass("active")) {
+    $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").removeClass("active")
+  } else {
+    $(this).parent().find(".thkc_iner_cont").slideDown();
+    $(".thkc_agreeWrap .thkc_menu .thkc_dfc03").removeClass("active")
+    $(this).addClass("active")
   }
 })
 
 // 모달 팝업창 (직원 등록)
 $(".thkc_popOverlay").hide();
-$(".thkc_btnWrap .btn_submit_02").click(function(){
-  $(".thkc_popUpWrap").css('display','flex').hide().fadeIn();
-  $(".thkc_popOverlay").show();  
+$(".thkc_btnWrap .btn_submit_02").click(function () {
+  $(".thkc_popUpWrap").css('display', 'flex').hide().fadeIn();
+  $(".thkc_popOverlay").show();
   document.body.classList.add("stop-scroll");
 });
-$(".thkc_popUpWrap .thkc_close").click(function(){
+$(".thkc_popUpWrap .thkc_close").click(function () {
   $(".thkc_popUpWrap").hide();
   // $(".thkc_popUpWrap").css('display','none').show().fadeOut();
   $(".thkc_popOverlay").hide();
@@ -190,12 +190,12 @@ $(".thkc_popUpWrap .thkc_close").click(function(){
 
 // 모달 팝업창 (배송지 신규등록)
 $(".thkc_popOverlay").hide();
-$(".thkc_btnWrap .btn_submit_01").click(function(){
-  $(".thkc_popUpWrap").css('display','flex').hide().fadeIn();
-  $(".thkc_popOverlay").show();  
+$(".thkc_btnWrap .btn_submit_01").click(function () {
+  $(".thkc_popUpWrap").css('display', 'flex').hide().fadeIn();
+  $(".thkc_popOverlay").show();
   document.body.classList.add("stop-scroll");
 });
-$(".thkc_popUpWrap .thkc_close").click(function(){
+$(".thkc_popUpWrap .thkc_close").click(function () {
   $(".thkc_popUpWrap").hide();
   // $(".thkc_popUpWrap").css('display','none').show().fadeOut();
   $(".thkc_popOverlay").hide();

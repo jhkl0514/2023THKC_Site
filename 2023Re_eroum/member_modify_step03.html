@@ -37,7 +37,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -46,23 +45,26 @@
         <!-- 최상단 띠 배너 (스와이퍼 슬라이드) -->
         <div id="topBannerWrap">
             <div class="topBanner">
+                <div class="topBanner_swiper_navi">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
                 <div class="swiper mySwiper_band">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide f_col" onclick="location.href='#'">이로움이 처음이신가요?</div>
-                      <div class="swiper-slide f_col" onclick="location.href='#'">정말 이로움이 처음이신가요?</div>
-                      <div class="swiper-slide f_col" onclick="location.href='#'">진짜로 정말 이로움이 처음이신가요?</div>
+                        <div class="swiper-slide f_col" onclick="location.href='#'">이로움이 처음이신가요?</div>
+                        <div class="swiper-slide f_col" onclick="location.href='#'">정말 이로움이 처음이신가요?</div>
+                        <div class="swiper-slide f_col" onclick="location.href='#'">진짜로 정말 이로움이 처음이신가요?</div>
                     </div>
-                    <div class="swiper-button-prev band"><img src="img/new_main_eroum/thkc_btn_arrow_prev.svg" alt="이전"></div>
-                    <div class="swiper-button-next band"><img src="img/new_main_eroum/thkc_btn_arrow_next.svg" alt="다음"></div>  
-                  </div>      
+                </div>
             </div>
-        </div>       
+        </div>
         <!-- GNB -->
         <header class="thkc_container">
             <nav class="thkc_nav">
                 <div class="menuWrap">
                     <!-- 상단로고 -->
-                    <h1 class="logo"><a href="landing_eroum.html"><img src="img/new_common/thkc_logo_gnb.svg" alt="로고"></a></h1>
+                    <h1 class="logo"><a href="landing_eroum.html"><img src="img/new_common/thkc_logo_gnb.svg"
+                                alt="로고"></a></h1>
                     <div class="menuWrap02">
                         <!-- 상단 대 메뉴 -->
                         <ul class="main_menu">
@@ -107,7 +109,7 @@
         <!-- GNB 하단 라인 모바일 -->
         <div id="topLine_m"></div>
     </div>
-    <!-- // 상단 메뉴 영역 // end-->  
+    <!-- // 상단 메뉴 영역 // end-->
     <!-- ## 메인 전체 영역 (왼쪽메뉴, gap,  컨텐츠) ## -->
     <div id="thkc_mainWrap" class="thkc_container">
         <!-- ** PC 왼쪽 메뉴 "w302px" ** -->
@@ -337,204 +339,202 @@
                 <div class="toggleClone">
                 </div>
             </div>
-        </div>       
+        </div>
         <!--  ** gap w38px ** -->
         <div id="thkc_gap"></div>
         <!--  ** 메인 컨텐츠  "w1060px" ** -->
         <div id="thkc_conWrap">
             <section class="thkc_section">
-               <!-- 팝업 오버뷰 -->
-               <div class="thkc_popOverlay"></div>
-               <!-- 회원정보수정 (메뉴) -->
-               <div class="thkc_memberModifyWrap">
+                <!-- 팝업 오버뷰 -->
+                <div class="thkc_popOverlay"></div>
+                <!-- 회원정보수정 (메뉴) -->
+                <div class="thkc_memberModifyWrap">
                     <h3>회원 정보 수정</h3>
                     <ul>
                         <li><a href="member_modify_step01.html">
-                            <img src="img/new_common/thkc_icon_modify01.svg" alt="">
-                            <p>사업자 정보</p>
+                                <img src="img/new_common/thkc_icon_modify01.svg" alt="">
+                                <p>사업자 정보</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step02.html">
-                            <img src="img/new_common/thkc_icon_modify02.svg" alt="">
-                            <p>계정 관리</p>
+                                <img src="img/new_common/thkc_icon_modify02.svg" alt="">
+                                <p>계정 관리</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step03.html" class="active">
-                            <img src="img/new_common/thkc_icon_modify03.svg" alt="">
-                            <p>배송지 정보</p>
+                                <img src="img/new_common/thkc_icon_modify03.svg" alt="">
+                                <p>배송지 정보</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step04.html">
-                            <img src="img/new_common/thkc_icon_modify04.svg" alt="">
-                            <p>서비스 정보</p>
+                                <img src="img/new_common/thkc_icon_modify04.svg" alt="">
+                                <p>서비스 정보</p>
                             </a>
                         </li>
                         <li><a href="member_modify_step05.html">
-                            <img src="img/new_common/thkc_icon_modify05.svg" alt="">
-                            <p>환경 설정</p>
+                                <img src="img/new_common/thkc_icon_modify05.svg" alt="">
+                                <p>환경 설정</p>
                             </a>
                         </li>
                     </ul>
-               </div>
-               <!-- 회원정보 계정정보 -->
-               <div class="thkc_joinWrap">                   
+                </div>
+                <!-- 회원정보 계정정보 -->
+                <div class="thkc_joinWrap">
                     <!-- title 배송지 정보-->
                     <div class="joinTitle">
-                        <div class="boxLeft">기본배송지 정보</div>                        
+                        <div class="boxLeft">기본배송지 정보</div>
                     </div>
                     <!-- table 배송지정보 -->
                     <div class="thkc_tableWrap">
                         <div class="table-box table-box_02 m15">
                             <div class="tit tit02">배송지명</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>기본배송지</div>                              
+                                <div>기본배송지</div>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="table-box table-box_02">
                             <div class="tit tit02">배송지 주소</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>경기도 화성시 동찬대로 182번길 1층</div>                              
+                                <div>경기도 화성시 동찬대로 182번길 1층</div>
                             </div>
                         </div>
                         <div class="table-box table-box_02">
                             <div class="tit tit02">수령인</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>홍길동</div>                              
+                                <div>홍길동</div>
                             </div>
                         </div>
                         <div class="table-box table-box_02">
                             <div class="tit tit02">연락처</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>010-5572-5751</div>                              
+                                <div>010-5572-5751</div>
                             </div>
-                        </div>                               
+                        </div>
                     </div>
-               <!-- 회원정보 계정정보 end -->
-               </div> 
-               <br><br>
+                    <!-- 회원정보 계정정보 end -->
+                </div>
+                <br><br>
 
                 <!-- 회원정보 추가 배송지 1-->
-               <div class="thkc_joinWrap">                   
-                <!-- title 추가 배송지-->
-                <div class="joinTitle">
-                    <div class="boxLeft">추가 배송지 1</div>                                            
-                </div>
-                <!-- table 추가 배송지 -->
-                <div class="thkc_tableWrap">
-                    <div class="table-box table-box_02 m15">
-                        <div class="tit tit02">배송지명</div>
-                        <div class="thkc_cont thkc_cont02">
-                            <div>기본배송지</div>                              
-                        </div>
-                    </div>                        
-                    <div class="table-box table-box_02">
-                        <div class="tit tit02">배송지 주소</div>
-                        <div class="thkc_cont thkc_cont02">
-                            <div>경기도 화성시 동찬대로 182번길 1층</div>                              
-                        </div>
-                    </div>
-                    <div class="table-box table-box_02">
-                        <div class="tit tit02">수령인</div>
-                        <div class="thkc_cont thkc_cont02">
-                            <div>홍길동</div>                              
-                        </div>
-                    </div>
-                    <div class="table-box table-box_02">
-                        <div class="tit tit02">연락처</div>
-                        <div class="thkc_cont thkc_cont02">
-                            <div>010-5572-5751</div>                              
-                        </div>
-                    </div>
-                    <div class="thkc_btnWrap_03">
-                        <button>기본배송지로 설정</button>
-                        <button>삭제</button>
-                        <button class="on">정보수정</button>
-                     </div>                                            
-                </div>
-           <!-- 회원정보 계정정보 end -->
-               </div> 
-
-                <!-- 회원정보 추가 배송지2 -->
-                <div class="thkc_joinWrap">                   
+                <div class="thkc_joinWrap">
                     <!-- title 추가 배송지-->
                     <div class="joinTitle">
-                        <div class="boxLeft">추가 배송지 2</div>                        
+                        <div class="boxLeft">추가 배송지 1</div>
                     </div>
                     <!-- table 추가 배송지 -->
                     <div class="thkc_tableWrap">
                         <div class="table-box table-box_02 m15">
                             <div class="tit tit02">배송지명</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>기본배송지</div>                              
+                                <div>기본배송지</div>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="table-box table-box_02">
                             <div class="tit tit02">배송지 주소</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>경기도 화성시 동찬대로 182번길 1층 안양천 아파트 1208동2901호</div>                              
+                                <div>경기도 화성시 동찬대로 182번길 1층</div>
                             </div>
                         </div>
                         <div class="table-box table-box_02">
                             <div class="tit tit02">수령인</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>홍길동</div>                              
+                                <div>홍길동</div>
                             </div>
                         </div>
                         <div class="table-box table-box_02">
                             <div class="tit tit02">연락처</div>
                             <div class="thkc_cont thkc_cont02">
-                                <div>010-5572-5751</div>                              
+                                <div>010-5572-5751</div>
                             </div>
-                        </div>                   
-    
+                        </div>
                         <div class="thkc_btnWrap_03">
-                           <button>기본배송지로 설정</button>
-                           <button>삭제</button>
-                           <button class="on">정보수정</button>
-                        </div>                     
-                       
-                        
+                            <button>기본배송지로 설정</button>
+                            <button>삭제</button>
+                            <button class="on">정보수정</button>
+                        </div>
+                    </div>
+                    <!-- 회원정보 계정정보 end -->
+                </div>
+
+                <!-- 회원정보 추가 배송지2 -->
+                <div class="thkc_joinWrap">
+                    <!-- title 추가 배송지-->
+                    <div class="joinTitle">
+                        <div class="boxLeft">추가 배송지 2</div>
+                    </div>
+                    <!-- table 추가 배송지 -->
+                    <div class="thkc_tableWrap">
+                        <div class="table-box table-box_02 m15">
+                            <div class="tit tit02">배송지명</div>
+                            <div class="thkc_cont thkc_cont02">
+                                <div>기본배송지</div>
+                            </div>
+                        </div>
+                        <div class="table-box table-box_02">
+                            <div class="tit tit02">배송지 주소</div>
+                            <div class="thkc_cont thkc_cont02">
+                                <div>경기도 화성시 동찬대로 182번길 1층 안양천 아파트 1208동2901호</div>
+                            </div>
+                        </div>
+                        <div class="table-box table-box_02">
+                            <div class="tit tit02">수령인</div>
+                            <div class="thkc_cont thkc_cont02">
+                                <div>홍길동</div>
+                            </div>
+                        </div>
+                        <div class="table-box table-box_02">
+                            <div class="tit tit02">연락처</div>
+                            <div class="thkc_cont thkc_cont02">
+                                <div>010-5572-5751</div>
+                            </div>
+                        </div>
+
+                        <div class="thkc_btnWrap_03">
+                            <button>기본배송지로 설정</button>
+                            <button>삭제</button>
+                            <button class="on">정보수정</button>
+                        </div>
+
+
                         <!-- 버튼 -->
                         <div class="thkc_btnWrap thkc_mtb_01">
-                            <button class="btn_submit_02">배송지 신규등록 +</button><br>                            
-                        </div>                                 
+                            <button class="btn_submit_02">배송지 신규등록 +</button><br>
+                        </div>
                     </div>
-               <!-- 회원정보 계정정보 end -->
-                   </div>
+                    <!-- 회원정보 계정정보 end -->
+                </div>
                 <!-- 배송지신규 등록 팝업 -->
                 <div class="thkc_popUpWrap">
                     <div class="thkc_popWrap">
                         <div class="thkc_close">
-                            <i class="fa-solid fa-xmark"></i>                       
+                            <i class="fa-solid fa-xmark"></i>
                         </div>
-                        
-                        <div class="thkc_joinWrap"> 
+
+                        <div class="thkc_joinWrap">
                             <div class="joinTitle">
-                                <div class="boxLeft">배송지 신규 등록</div>                                                       
-                            </div>                  
+                                <div class="boxLeft">배송지 신규 등록</div>
+                            </div>
                             <!-- table 계정정보 -->
                             <div class="thkc_tableWrap thkc_bbs-more">
                                 <div class="table-box table-box_02">
                                     <div class="tit03 bbs-pd_01">배송지명
                                     </div>
-                                    <div class="thkc_cont bbs-pd_01">                         
-                                            <label for="id" class="thkc_blind">배송지명</label>
-                                            <input s
-                                            class="thkc_input" id="id"                          
-                                            placeholder="배송지이름 입력" value="" type="text" />                          
+                                    <div class="thkc_cont bbs-pd_01">
+                                        <label for="id" class="thkc_blind">배송지명</label>
+                                        <input s class="thkc_input" id="id" placeholder="배송지이름 입력" value=""
+                                            type="text" />
                                     </div>
                                 </div>
                                 <div class="table-box table-box_02">
                                     <div class="tit03 bbs-pd_01">수령인
                                     </div>
-                                    <div class="thkc_cont bbs-pd_01">                         
-                                            <label for="id" class="thkc_blind">수령인</label>
-                                            <input s
-                                            class="thkc_input" id="id"                          
-                                            placeholder="수령인이름 입력" value="" type="text" />                          
+                                    <div class="thkc_cont bbs-pd_01">
+                                        <label for="id" class="thkc_blind">수령인</label>
+                                        <input s class="thkc_input" id="id" placeholder="수령인이름 입력" value=""
+                                            type="text" />
                                     </div>
-                                </div>                                              
-                                                  
+                                </div>
+
                                 <div class="table-box table-box_02 tel-num">
                                     <div class="tit03 bbs-pd_01">연락처
                                     </div>
@@ -550,55 +550,55 @@
                                                     <option value="018">018</option>
                                                     <option value="019">019</option>
                                                 </select> &nbsp;-
-                                                <input class="thkc_input" placeholder="" id="" name="" maxlength="4" value="" type="text" /> &nbsp;-
-                                                <input class="thkc_input" placeholder="" id="" name="" maxlength="4" value="" type="text" />
-                                            </div>                        
+                                                <input class="thkc_input" placeholder="" id="" name="" maxlength="4"
+                                                    value="" type="text" /> &nbsp;-
+                                                <input class="thkc_input" placeholder="" id="" name="" maxlength="4"
+                                                    value="" type="text" />
+                                            </div>
                                         </div>
-                                        <div class="error-txt error"></div>                   
+                                        <div class="error-txt error"></div>
                                     </div>
-                                </div>                                
-                                <!-- 배송지 주소  -->           
+                                </div>
+                                <!-- 배송지 주소  -->
                                 <div class="table-box table-box_02 address ">
                                     <div class="tit03 bbs-pd_01">배송지 주소</div>
                                     <div class="thkc_cont bbs-pd_01">
                                         <div class="thkc_dfc_m">
                                             <div class="flex-box thkc_dfc">
                                                 <label for="zip" class="thkc_blind">주소 찾기</label>
-                                                <input class="thkc_input" id="addr1" name=""                                
-                                                    placeholder="22850" readonly="readonly"
-                                                    maxlength="14" value="" type="text" />
-                                                <a href="#none" class="thkc_btn_bbs" onclick="" id="">주소 찾기</a>                          
-                                            </div>                                  
+                                                <input class="thkc_input" id="addr1" name="" placeholder="22850"
+                                                    readonly="readonly" maxlength="14" value="" type="text" />
+                                                <a href="#none" class="thkc_btn_bbs" onclick="" id="">주소 찾기</a>
+                                            </div>
                                         </div>
                                         <div title="기본주소">
                                             <label for="addr1" class="thkc_blind">기본주소</label>
-                                            <input class="thkc_input" id="addr1"
-                                                placeholder="경기도 화성시 동탄영천로192-39길" readonly="readonly"
-                                                value="" type="text"/>
+                                            <input class="thkc_input" id="addr1" placeholder="경기도 화성시 동탄영천로192-39길"
+                                                readonly="readonly" value="" type="text" />
                                         </div>
                                         <div title="나머지주소">
                                             <label for="addr2" class="thkc_blind">나머지주소</label>
-                                            <input class="thkc_input" id="addr2"                          
-                                                placeholder="3층" value="" type="text" />
+                                            <input class="thkc_input" id="addr2" placeholder="3층" value=""
+                                                type="text" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="table-box table-box_02">
                                     <div class="tit03 bbs-pd_01">기본주소지
                                     </div>
-                                    <div class="thkc_cont bbs-pd_01">                                    
-                                        <input id="" value="" type="checkbox" checked/>
-                                        <span>기본주소지를 등록 된 주소로 변경합니다.</span>                                             
+                                    <div class="thkc_cont bbs-pd_01">
+                                        <input id="" value="" type="checkbox" checked />
+                                        <span>기본주소지를 등록 된 주소로 변경합니다.</span>
                                     </div>
                                 </div>
                                 <div class="thkc_btnWrap_03">
                                     <button>취소</button>
                                     <button class="on">등록하기</button>
                                 </div>
-                            </div>                      
+                            </div>
                         </div>
                     </div>
-                </div>  
+                </div>
 
             </section>
         </div>
@@ -618,19 +618,19 @@
             <!-- 이로움 톡톡 배너 -->
             <div class="banner_eroum" onclick="location.href='#'">
                 <img src="img/new_main_eroum/thkc_btn_banner_talk.png" alt="">
-            </div>              
+            </div>
             <!-- 이로움 톡톡 삭제 -->
             <div class="banner_del">
                 <img src="img/new_main_eroum/thkc_btn_x_delete.svg" alt="">
             </div>
         </div>
-         <!-- ** 이로움 톡톡 배너 외 복제 ** -->
-         <div id="bannerRightClone">
-            <div class="m_banner_eroum">         
+        <!-- ** 이로움 톡톡 배너 외 복제 ** -->
+        <div id="bannerRightClone">
+            <div class="m_banner_eroum">
             </div>
-        </div>  
+        </div>
     </div>
-    <!-- // 메인 전체 영역 (왼쪽메뉴, 컨텐츠) end// -->   
+    <!-- // 메인 전체 영역 (왼쪽메뉴, 컨텐츠) end// -->
 
     <!--  ## 하단 footer 영역 ## -->
     <footer id="thkc_footerWrap" class="thkc_footer">
@@ -719,12 +719,12 @@
         </div>
     </footer>
     <!--  // 하단 footer 영역 end// -->
-    
-     <!-- ** Top버튼 ** -->
-     <div id="thkc_pageTop">           
+
+    <!-- ** Top버튼 ** -->
+    <div id="thkc_pageTop">
         <div class="btn_top"><img src="img/new_common/thkc_bnt_arrow_top.svg" alt=""></div>
     </div>
-    
+
 
     <script src="js/new_js/thkc_script.js"></script>
 

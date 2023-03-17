@@ -14,6 +14,7 @@ aside.thkc_aside {
 #memberWrap {
     margin-top: 32px;
 }
+
 #memberWrap .thkc_memberTitle {
     height: 120px;
 }
@@ -51,29 +52,38 @@ aside.thkc_aside .thkc_leftMenuWrap {
     margin-bottom: 40px;
 }
 
-aside.thkc_aside .thkc_btnBoxWrap a{
-    display: flex; justify-content: space-between;
+aside.thkc_aside .thkc_btnBoxWrap a {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 8px 20px;
-    font-size: 14px;    
+    font-size: 14px;
 }
-aside.thkc_aside .thkc_btnBoxWrap a:hover{
+
+aside.thkc_aside .thkc_btnBoxWrap a:hover {
     background: #FCFAEA;
 }
-aside.thkc_aside .thkc_btnBoxWrap span{
+
+aside.thkc_aside .thkc_btnBoxWrap span {
     background: #FF9015;
     border-radius: 50px;
-    width: 20px; height: 20px;
-    display: flex; justify-content: center; align-items: center;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-aside.thkc_aside .thkc_btnBoxWrap span img{
+
+aside.thkc_aside .thkc_btnBoxWrap span img {
     filter: brightness(0) invert(1);
 }
-aside.thkc_aside .memInfoWrap {    
-    display: flex; flex-direction: column;
+
+aside.thkc_aside .memInfoWrap {
+    display: flex;
+    flex-direction: column;
     gap: 3px;
     margin-bottom: 15px;
 }
@@ -81,10 +91,11 @@ aside.thkc_aside .memInfoWrap {
 aside.thkc_aside .memInfoWrap_02 {
     margin: 15px 0 15px 0;
 }
-aside.thkc_aside .memInfoWrap .mem_shipWrap{
+
+aside.thkc_aside .memInfoWrap .mem_shipWrap {
     padding: 0 20px;
 }
-    
+
 
 aside.thkc_aside .memInfoWrap .mem_shipWrap a,
 aside.thkc_aside .memInfoWrap_02 .mem_shipWrap {
@@ -150,7 +161,7 @@ aside.thkc_aside .btn_mypage:hover {
 }
 
 /* 간편메뉴 테이블 */
-aside.thkc_aside .simpleTabe {    
+aside.thkc_aside .simpleTabe {
     border-radius: 20px;
     padding: 15px 20px;
     margin-bottom: 15px;
@@ -160,7 +171,7 @@ aside.thkc_aside .simpleTabe {
 
 aside.thkc_aside .simpleTabe table {
     width: 100%;
-    border-collapse: collapse;    
+    border-collapse: collapse;
 }
 
 aside.thkc_aside .simpleTabe table td {
@@ -195,13 +206,13 @@ aside.thkc_aside .simTitle {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    padding: 5px 10px;    
+    padding: 5px 10px;
 }
 
 /* 이로움 고객센터 전화번호 */
 aside.thkc_aside .left_csWrap {
     text-align: center;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 aside.thkc_aside .left_csWrap .csTitle {
@@ -373,53 +384,61 @@ aside.thkc_aside .downlodeWrap ul {
     border-radius: 20px;
     margin: 50px 0;
 }
-aside.thkc_aside .downlodeWrap ul li{
-    width: 33%;    
+
+aside.thkc_aside .downlodeWrap ul li {
+    width: 33%;
     border-right: 1px solid #E9E9E9;
-    padding: 20px 16px;    
+    padding: 20px 16px;
 }
-aside.thkc_aside .downlodeWrap ul li a{
+
+aside.thkc_aside .downlodeWrap ul li a {
     font-size: 14px;
     height: 100%;
     text-align: center;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     justify-content: space-between;
-  }
+}
 
-aside.thkc_aside .downlodeWrap ul li a img{
-    width: 40%;  
+aside.thkc_aside .downlodeWrap ul li a img {
+    width: 40%;
 }
 
 aside.thkc_aside .downlodeWrap ul li:last-child {
     border-right: none;
 }
 
-aside.thkc_aside .c_down, .m_logout{
+aside.thkc_aside .c_down,
+.m_logout {
     display: none;
 }
-aside.thkc_aside .c_down{
+
+aside.thkc_aside .c_down {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-aside.thkc_aside .c_down .br_c{
+
+aside.thkc_aside .c_down .br_c {
     width: 50%;
     cursor: pointer;
 }
-aside.thkc_aside .c_down .br_c:hover{
-    border-radius: 10px; 
+
+aside.thkc_aside .c_down .br_c:hover {
+    border-radius: 10px;
     background: rgba(231, 231, 231, 0.5);
     transition: 0.3s;
 }
 
-aside.thkc_aside .m_logout{
+aside.thkc_aside .m_logout {
     text-align: center;
     margin-bottom: 30px;
 }
-aside.thkc_aside .m_logout, .logout a:hover{
-   text-decoration: underline;
+
+aside.thkc_aside .m_logout,
+.logout a:hover {
+    text-decoration: underline;
 }
 
 /* 모바일 오른쪽 토글 버튼 */
@@ -460,7 +479,7 @@ aside.thkc_aside .m_logout, .logout a:hover{
 
 
 /* 파트너 회원수정 */
-aside.thkc_aside .member_modi{
+aside.thkc_aside .member_modi {
     text-align: center;
     letter-spacing: -0.03em;
     text-decoration-line: underline;
@@ -476,38 +495,42 @@ aside.thkc_aside .fastTabe {
     border: 1px solid #7D7D7D;
     border-radius: 20px;
     padding: 5px 20px;
-    margin-bottom: 40px;     
+    margin-bottom: 40px;
 }
 
 aside.thkc_aside .fastTabe .icon_report {
-    width: 25px; height: 25px;
+    width: 25px;
+    height: 25px;
     background: #F58220;
     border-radius: 50px;
-    color: #fff;    
+    color: #fff;
     margin: 8px 0px 0px 42px;
     font-size: 14px;
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-aside.thkc_aside .fastTabe .fast_img{
+aside.thkc_aside .fastTabe .fast_img {
     padding: 5px 0px 0px 0px;
 }
 
 aside.thkc_aside .fastTabe table {
     width: 100%;
     border-collapse: collapse;
-   
+
 }
 
-aside.thkc_aside .fastTabe table tr td{
+aside.thkc_aside .fastTabe table tr td {
     display: flex;
 }
-aside.thkc_aside .fastTabe table tr td img{
+
+aside.thkc_aside .fastTabe table tr td img {
     width: 32px;
 }
 
 aside.thkc_aside .fastTabe table td {
-    padding: 15px 15px;    
+    padding: 15px 15px;
 }
 
 aside.thkc_aside .fastTabe .bb {
@@ -515,12 +538,12 @@ aside.thkc_aside .fastTabe .bb {
 }
 
 
-aside.thkc_aside .btn_simple img{    
+aside.thkc_aside .btn_simple img {
     transition: 0.3s;
 }
 
-aside.thkc_aside .btn_simple:hover img{
-    transform: scale(1.1);    
+aside.thkc_aside .btn_simple:hover img {
+    transform: scale(1.1);
 }
 
 
@@ -530,17 +553,21 @@ aside.thkc_aside .btn_simple:hover img{
 @media (max-width: 1399px) {}
 
 @media (max-width: 1199px) {
-    aside.thkc_aside .simpleTabe, .m_logout{
+
+    aside.thkc_aside .simpleTabe,
+    .m_logout {
         display: block;
     }
-    aside.thkc_aside .downlodeWrap{
+
+    aside.thkc_aside .downlodeWrap {
         display: none;
     }
-    aside.thkc_aside .downlode_partner{
+
+    aside.thkc_aside .downlode_partner {
         display: block;
     }
-    
-   
+
+
 }
 
 @media (max-width: 991px) {}

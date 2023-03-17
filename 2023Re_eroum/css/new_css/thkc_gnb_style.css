@@ -3,12 +3,12 @@
 
 /* 최상단 띠 배너 */
 #topBannerWrap {
-    background: #001E9A;   
+    background: #001E9A;
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    
+
 }
 
 #topBannerWrap .topBanner {
@@ -17,19 +17,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100%/3);   
+    width: calc(100%/3);
     padding: 0 15px;
     position: relative;
 }
-#topBannerWrap .topBanner div{
-    cursor:pointer;
-    
+
+#topBannerWrap .topBanner div {
+    cursor: pointer;
+
 }
-#topBannerWrap .topBanner_swiper_navi{
-    position: absolute;   
+
+#topBannerWrap .topBanner_swiper_navi {
+    position: absolute;
     left: 0px;
-    right: 0px;  
-    top: 40px;   
+    right: 0px;
+    top: 40px;
     width: 100%;
     max-width: 1000px;
 }
@@ -40,8 +42,9 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    transform: translateY(-50%) rotate(180deg);     
-    width: 30px; height: 30px;   
+    transform: translateY(-50%) rotate(180deg);
+    width: 30px;
+    height: 30px;
 }
 
 #topBannerWrap .topBanner_swiper_navi .swiper-button-prev {
@@ -50,8 +53,9 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    transform: translateY(-50%) rotate(360deg); 
-    width: 30px; height: 30px;
+    transform: translateY(-50%) rotate(360deg);
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -69,6 +73,7 @@ nav.thkc_nav .logo {
 nav.thkc_nav {
     display: flex;
 }
+
 /* 상단 메뉴 */
 nav.thkc_nav .menuWrap,
 nav.thkc_nav .menuWrap02 {
@@ -169,6 +174,7 @@ nav.thkc_nav .main_menu>li:after {
     opacity: 0;
     transition: all 0.5s;
 }
+
 nav.thkc_nav .main_menu li:active:after {
     transition: all 0.5s;
     width: 100%;
@@ -184,11 +190,11 @@ nav.thkc_nav .main_menu li:hover:after {
 /* 상단 이벤트 메뉴 active */
 nav.thkc_nav .sub_menu li a {
     padding: 5px 1px;
-    transition: all 0.5s;    
+    transition: all 0.5s;
 }
 
 nav.thkc_nav .sub_menu li a:hover {
-    border-bottom: 1px solid #bbb;    
+    border-bottom: 1px solid #bbb;
 }
 
 /* 토글버튼 */
@@ -236,7 +242,7 @@ nav.thkc_nav .toggle.active .bar3 {
 
 
 /********** css responsive **********/
-@media (max-width: 1399px) {    
+@media (max-width: 1399px) {
 
     nav.thkc_nav .logo {
         padding: 20px 30px;
@@ -312,8 +318,9 @@ nav.thkc_nav .toggle.active .bar3 {
         font-size: 13px;
         gap: 8px
     }
+
     nav.thkc_nav .in_search {
-        width: 250px;       
+        width: 250px;
     }
 
     nav.thkc_nav .line_gnb {
@@ -335,32 +342,35 @@ nav.thkc_nav .toggle.active .bar3 {
         padding: 4px 0;
     }
 
-    nav.thkc_nav .main_menu>li:hover:after {       
+    nav.thkc_nav .main_menu>li:hover:after {
         width: 90%;
     }
 
-    nav.thkc_nav .main_menu li a.active:after {       
+    nav.thkc_nav .main_menu li a.active:after {
         width: 90%;
     }
 
     #topLine {
         display: none;
-    }   
+    }
 }
 
-@media (max-width: 767px) {   
+@media (max-width: 767px) {
     #topBannerWrap .topBanner {
         width: 100%;
         font-size: 14px;
     }
-    #topBannerWrap .mySwiper_band{
+
+    #topBannerWrap .mySwiper_band {
         width: 80%;
     }
+
     #topBannerWrap .topBanner_swiper_navi .swiper-button-next {
         right: 15px;
-    }    
+    }
+
     #topBannerWrap .topBanner_swiper_navi .swiper-button-prev {
-        left: 15px;        
+        left: 15px;
     }
 
     nav.thkc_nav {
@@ -426,6 +436,7 @@ nav.thkc_nav .toggle.active .bar3 {
         height: 1px;
         background: #E7E7E7;
     }
+
     /* 파트너 */
     #topLine_partner_m {
         display: none;
