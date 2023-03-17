@@ -241,6 +241,9 @@ section.thkc_section .hash_tagWrap .ht {
     padding: 8px 20px;
     text-align: center;
 }
+section.thkc_section .hash_tagWrap .ht:hover {
+    background: #FFF5EF;    
+}
 
 /* PC_05.이로움 가이드  */
 section.thkc_section .guideWrap {
@@ -330,9 +333,8 @@ section.thkc_section .banner01_BarWrap {
     cursor: pointer;
 }
 section.thkc_section .banner01_BarWrap:hover{
-    box-shadow: 0 0 10px rgb(30 35 48 15%);
     transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  
-    box-shadow: 0 0 10px  rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.1);
 }
 
 section.thkc_section .banner01_img img {
@@ -378,6 +380,11 @@ section.thkc_section .btn_pdMore {
     font-weight: 500;
     margin-top: 20px;
     cursor: pointer;
+}
+section.thkc_section .btn_pdMore:hover {
+    background: #333;
+    color: #fff;
+    transition: 0.3s;
 }
 
 section.thkc_section .pdBoxWrap {
