@@ -154,7 +154,8 @@ section.thkc_section .eventWrap .eventSwiper {
     width: 20px; height: 25px;   
 }
 
-section.thkc_section .img_r img {    
+section.thkc_section .img_r img {  
+    border-radius: 20px;  
     max-width: 100%;
     height: auto;    
 }
