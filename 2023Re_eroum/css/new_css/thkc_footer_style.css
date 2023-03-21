@@ -23,7 +23,7 @@ footer.thkc_footer .f_menu li a:hover { text-decoration: underline; }
 /*PC footer.thkc_footer 패밀리 사이트 */
 footer.thkc_footer .f_Fsns { display: flex; align-items: center; } 
 
-footer.thkc_footer .f_Fsns select { background: #FFFFFF; border-radius: 30px; padding: 10px 50px; box-sizing: border-box; background-image: url(../images/common/thkc_btn_arrow_down.svg); background-repeat: no-repeat; background-position: calc(100% - 15px) center; } 
+footer.thkc_footer .f_Fsns select { background: #FFFFFF; border-radius: 30px; padding: 10px 50px; box-sizing: border-box; background-image: url(../../img/new_common/thkc_btn_arrow_down.svg); background-repeat: no-repeat; background-position: calc(100% - 15px) center; } 
 
 footer.thkc_footer .f_Fsns select:hover { cursor: pointer; filter: brightness(90%); transition: 0.3s; } 
 
