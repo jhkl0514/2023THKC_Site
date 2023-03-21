@@ -54,11 +54,15 @@
                                 <span class="inTitleWrap"><input type="checkbox"><span
                                         class="inTitle">자동로그인</span></span>
                             </p>
-                            <p class="field">
+                            <p class="field show">
                                 <label for="user-pass" class="blind">패스워드</label>
                                 <input type="password" id="user-pass" name="userpass" placeholder="패스워드 입력"
-                                    class="inp-field">
+                                    class="inp-field _error_input_inner"> <!-- error css -->
+                                <i><img class="icon icon-eyes-on" src="img/new_common/icon_input_eye.png">
+                                   <img class="icon icon-eyes-off" src="img/new_common/icon_input_slash.png">
+                                </i>
                             </p>
+                            <span class="_error-text" style="display: none;">8글자 이상 입력해 주세요.</span>
                         </fieldset>
                     </form>
                 </div>

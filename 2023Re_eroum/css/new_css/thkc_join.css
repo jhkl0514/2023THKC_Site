@@ -181,6 +181,43 @@ h3.thkc_titleTabJoin {
     justify-content: center;
     align-items: center;
 }
+/* 패스워드 show,hide */
+.table-box .thkc_cont .field,
+.joinWrap .field .inp_field{
+    position: relative;
+}
+.table-box .thkc_cont .field i{
+    position: absolute;
+    right: 30px;
+    top:50%;
+    transform: translateY(-50%); 
+}
+.joinWrap .field>i{
+    position: absolute;
+    bottom:-10px;
+    transform: translateY(-50%);
+    line-height: 0;
+    right: 20px; 
+}
+
+.table-box .thkc_cont .field .thkc_input>i img,
+.joinWrap .field>i img{
+    width: 100%;
+}
+.table-box .thkc_cont .field>i .icon,
+.joinWrap .field>i .icon {
+    cursor: pointer;  
+}
+.table-box .thkc_cont .field>i .icon.icon-eyes-off,
+.joinWrap .field>i .icon.icon-eyes-off {
+    display: none;
+}
+
+.table-box .thkc_cont .field>i .icon.icon-eyes-on,
+.joinWrap .field>i .icon.icon-eyes-on {
+    display: block;
+}
+
 
 /* PC 아이디 패스워드찾기 */
 .thkc_idfindMeWrap {
@@ -511,6 +548,16 @@ textarea::-ms-input-placeholder {
 }
 
 /* 입력 에러 */
+.field .error_input_inner{
+    color: #f1344d;
+}
+.joinWrap .error-text {
+    color: #e52929;
+    padding: 8px 12px 0 12px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
 .table-box .error-txt {
     padding: 5px 0 0 0;
     font-weight: 400;

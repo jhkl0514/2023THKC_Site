@@ -203,6 +203,29 @@ $(".thkc_popUpWrap .thkc_close").click(function () {
 });
 
 
+///* 패스워드 show,hide */
+$(document).on('click', '.icon-eyes-on, .icon-eyes-off', function (e) {
+  const $target = $(e.target);
+  const $targetBox = $target.closest('.field, .field_01');
+  const $targetInput = $targetBox.find('input');
+  if
+   ($targetBox.hasClass('show')){
+   $targetBox.removeClass('show');
+   $targetInput.attr('type', 'text');
+   $(".icon-eyes-off").css('display', 'block');
+   $(".icon-eyes-on").css('display', 'none');
+   }else{
+    $targetBox.addClass('show');
+    $targetInput.attr('type', 'password');
+    $(".icon-eyes-off").css('display', 'none');
+    $(".icon-eyes-on").css('display', 'block');
+   }
+
+  $targetInput.focus();
+});
+
+
+
 
 
 
