@@ -67,6 +67,7 @@ var swiper = new Swiper(".eventWrap .eventSwiper", {
   },
 });
 
+
 var swiper = new Swiper(".mySwiper_guide", {
   slidesPerView: "auto",
   centeredSlides: true,
@@ -76,6 +77,7 @@ var swiper = new Swiper(".mySwiper_guide", {
     clickable: true,
   },
 });
+
 
 var swiper = new Swiper(".mySwiper_service", {
   slidesPerView: "auto",
@@ -110,7 +112,6 @@ $(window).scroll(function () {
   }
 
 })
-
 
 
 // 파트너 Swiper               
@@ -209,18 +210,17 @@ $(document).on('click', '.icon-eyes-on, .icon-eyes-off', function (e) {
   const $targetBox = $target.closest('.field, .field_01');
   const $targetInput = $targetBox.find('input');
   if
-   ($targetBox.hasClass('show')){
-   $targetBox.removeClass('show');
-   $targetInput.attr('type', 'text');
-   $(".icon-eyes-off").css('display', 'block');
-   $(".icon-eyes-on").css('display', 'none');
-   }else{
+    ($targetBox.hasClass('show')) {
+    $targetBox.removeClass('show');
+    $targetInput.attr('type', 'text');
+    $(".icon-eyes-off").css('display', 'block');
+    $(".icon-eyes-on").css('display', 'none');
+  } else {
     $targetBox.addClass('show');
     $targetInput.attr('type', 'password');
     $(".icon-eyes-off").css('display', 'none');
     $(".icon-eyes-on").css('display', 'block');
-   }
-
+  }
   $targetInput.focus();
 });
 
