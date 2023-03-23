@@ -155,6 +155,11 @@ footer.thkc_footer .f_info_landing .f_info ul:last-child { text-align: right; }
  footer.thkc_footer .f_info_landing .f_info ul { width: 100%; font-size: 12px; letter-spacing: -0.03em; } 
 
  footer.thkc_footer .f_info_landing .f_info ul:last-child { text-align: left; } 
+
+ /* 부트스트랩 */
+ ol, ul {
+  padding-left: 0rem !important;
+}
 }
 
 @media (max-width: 430px) { } 

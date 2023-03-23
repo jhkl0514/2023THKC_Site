@@ -291,28 +291,32 @@
         </section>
     </div>
 
+    <!-- // 메인 전체 영역 (왼쪽메뉴, 컨텐츠) end// -->
+
     <!--  ## 하단 footer 영역 ## -->
     <footer id="thkc_footerWrap" class="thkc_footer">
         <!-- footer 메뉴 바 -->
         <div class="f_menuBgWrap">
-            <div class="f_menuWrap thkc_container_02">
+            <div class="f_menuWrap thkc_container">
                 <div class="f_logoWrap"><!--footer 로고-->
                     <div class="f_logo"><img src="img/new_common/thkc_logo_footer.svg" alt="logo"></div>
                     <ul class="f_menu"><!--footer 메뉴-->
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#none">회사소개</a></li>
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">개인정보처리방침</a></li>
                     </ul>
                 </div>
                 <div class="f_Fsns"><!--패밀리 사이트-->
-                    <select name="sitelist" id="" class="f_site">
+                    <select name="sitelist" id="" class="f_site" onchange="window.open(value,'_blank');">
                         <option value selected>Family Site</option>
-                        <option value="#">이로움 1.0</option>
-                        <option value="#">이로움 1.5</a></option>
+                        <option value="http://www.thkc.co.kr/">회사 홈페이지</option>
+                        <option value="https://eroum.co.kr/market">이로움 마켓</option>
                     </select>
                     <ul class="f_sns"><!--snsn 버튼-->
-                        <li class="btn_sns"><a href="#"><img src="img/new_common/thkc_btn_sns_talk.svg" alt=""></a></li>
-                        <li class="btn_sns"><a href="#"><img src="img/new_common/thkc_btn_sns_youtube.svg" alt=""></a>
+                        <li class="btn_sns"><a href="#none"><img src="img/new_common/thkc_btn_sns_talk.svg" alt=""></a>
+                        </li>
+                        <li class="btn_sns"><a href="#none"><img src="img/new_common/thkc_btn_sns_youtube.svg"
+                                    alt=""></a>
                         </li>
                     </ul>
                 </div>
@@ -320,15 +324,15 @@
         </div>
         <!-- footer 인포 바 -->
         <div class="f_infoBgWrap">
-            <div class="f_info_landing thkc_container_02">
+            <div class="f_infoWrap thkc_container">
                 <div class="f_Fsns_d"> <!-- 패밀리 사이트 복제  -->
                     <div class="m_f_Fsns"></div>
                 </div>
-                <div class="f_info "><!--footer 정보-->
+                <div class="f_info"><!--footer 정보-->
                     <ul>
                         <li>
                             (주)티에이치케이컴퍼니 ㅣ 대표 : 신종호 ㅣ 사업자등록번호 : 617-86-14330 <br class="f_br">
-                            <span class="bnt_license"><a href="#">사업자정보확인</a></span><br>
+                            <span class="bnt_license"><a href="#none">사업자정보확인</a></span><br>
                             통신판매신고번호 : 2016-부산금정-0114 | 개인정보보호관리자 : 신종호
                         </li>
                         <li>
@@ -337,8 +341,6 @@
                             기업부설연구소 : 경상남도 김해시 주촌면 소망길 88 메디컬실용화센터 504호<br>
                             물류센터 : 인천광역시 서구 이든1로 21
                         </li>
-                    </ul>
-                    <ul>
                         <li>
                             본 쇼핑몰의 콘텐츠 및 모든 정보(UI,UX)는 ㈜티에이치케이컴퍼니에 있으며, 어떠한 이유에서도 무단복제, 도용, 캡처, 스크래핑, 배포 등 저작물 사용 시에는
                             저작권법(제97조5항)에 의해 보호받는 저작물이므로 이를 위반 시에는 법적 처벌을 받을 수 있습니다.
@@ -347,6 +349,34 @@
                             Copyright ⓒEroumcare All righs reserved.
                         </li>
                     </ul>
+                </div>
+                <div class="f_cs"><!--footer 고객센터-->
+                    <ul>
+                        <li class="f_cs_title">
+                            <div>
+                                <h4>이로움 고객센터</h4>
+                            </div>
+                            <div class="phone">1533-5088</div>
+                        </li>
+                        <li>운영시간 <div class="f_cs_data">[평일] 08:30~17:30 (점심시간 12시~13시)<br>[주말/공휴일] 휴무</div>
+                        </li>
+                        <li>기타연락 <div class="f_cs_data">[이메일] <a href="mailto:cs@thkc.co.kr">cs@thkc.co.kr</a><br>[팩스]
+                                02-861-9084</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_remoteWrap"><!--footer 원격지원-->
+                    <div class="f_remote">
+                        <img src="img/new_common/thkc_ico_footer_remote.svg" alt="">
+                        <div>
+                            <h4>원격지원 서비스</h4>
+                            <p class="rem_con">전문상담원이 PC화면을 보면서 문제를 해결합니다.</p>
+                        </div>
+                    </div>
+                    <div class="btn_remote" onclick="location.href='#'">
+                        <p>원격지원 서비스 시작</p>
+                        <p><img src="img/new_common/thkc_ico_arrow_next.svg" alt=""></p>
+                    </div>
                 </div>
             </div>
         </div>
