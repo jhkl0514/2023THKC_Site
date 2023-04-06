@@ -156,7 +156,6 @@ $(".thkc_tabJoin ul>li").click(function () {
   let i = $(this).index()
   $(".thkc_JoinConent").hide()
   $(".thkc_JoinConent").eq(i).show()
-
 })
 
 
@@ -224,6 +223,40 @@ $(document).on('click', '.icon-eyes-on, .icon-eyes-off', function (e) {
   $targetInput.focus();
 });
 
+/* 상품 카데고리*/
+/* 상품 카데고리 - my 보유재고 */
+$(".thkc_ToggleWrap .myOff").hide();
+$(".thkc_ToggleWrap .myOn").click(function () {
+  $(".thkc_ToggleWrap .myOff").show();
+  $(".thkc_ToggleWrap .myOn").hide();  
+})
+$(".thkc_ToggleWrap .myOff").click(function () {
+  $(".thkc_ToggleWrap .myOn").show();
+  $(".thkc_ToggleWrap .myOff").hide();  
+})
+/* 상품 카데고리 - 아이콘 더보기 접기 */
+$(".category_moreview").show();
+$(".category_morfold").hide();
+$(".category_moreview").click(function () {
+  $(".thkc_category .menu_list").css("height", "100%");
+  $(".category_morfold").show();
+  $(".category_moreview").hide();
+})
+$(".category_morfold").click(function () {
+  $(".thkc_category .menu_list").css("height", "120px");
+  $(".category_morfold").hide();
+  $(".category_moreview").show();
+})
+/* 상품 카데고리 - active */
+$(".thkc_category .thkc_cateBg").click(function () {
+  $(".thkc_category .thkc_cateBg").removeClass("active");
+  $(this).addClass("active")
+})
+/* 상품 Type - active */
+$(".prouctType>li>a").click(function () {
+  $(".prouctType>li>a").removeClass("active");
+  $(this).addClass("active")
+})
 
 
 
