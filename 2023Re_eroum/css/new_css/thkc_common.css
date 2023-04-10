@@ -499,10 +499,10 @@ section.thkc_section .pdWrap .pdBoxWrap {
         font-size: 10px;
     }
     section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_allPrice{
-      padding: 0px 19px; 
+      padding: 0px 19px; border-radius: 5px;
     }
     section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_salePrice{
-       padding: 0px 5px;      
+       padding: 0px 5px; border-radius: 5px;     
     }
     section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .Price_03{
         font-size: 16px; line-height: 140%;
