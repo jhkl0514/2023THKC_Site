@@ -271,6 +271,22 @@ section.thkc_section .pd_BoxWrap .pd_Detail {
 section.thkc_section .pd_BoxWrap .price_BoxWrap{   
     margin-bottom: 0px;
 }
+section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap p{
+    display: flex; align-items: center;
+    font-size: 12px; font-weight: 400;     
+    margin-right: 10px;  border-radius: 10px;
+}
+section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_allPrice{
+    background:#EDEDED; padding: 0px 31px; 
+}
+section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_salePrice{
+    background:#FF9015; padding: 0px 15px;
+    color: #fff;
+}
+section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .Price_03{
+    font-size: 20px; font-weight: 700; letter-spacing: -0.05em; 
+    line-height: 100%;
+}
 section.thkc_section .pd_BoxWrap .pd_iconOption{
     display: inline-block;  
 }
