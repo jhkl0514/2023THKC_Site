@@ -502,10 +502,13 @@ section.thkc_section .pdWrap .pdBoxWrap {
       padding: 0px 19px; border-radius: 5px;
     }
     section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_salePrice{
-       padding: 0px 5px; border-radius: 5px;     
+       padding: 0px 6px; border-radius: 5px;     
     }
     section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .Price_03{
         font-size: 16px; line-height: 140%;
+    }
+    section.thkc_section .pd_BoxWrap>hr{
+        display: none;
     }
 
  } 
