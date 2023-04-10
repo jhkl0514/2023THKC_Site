@@ -439,6 +439,10 @@ section.thkc_section .pdWrap .pdBoxWrap {
     width: 100%; height: 40px;
 }
 /* subPage - list - 상품 */
+section.thkc_section .pd_BoxWrap .pd_Title .pd_TitleT{
+    font-size: 16px; font-weight: 500; line-height: 125%;
+    margin-top: 5px; height: 25px;
+}
 section.thkc_section .pdWrap .pdBoxWrap {   
     display: grid;
     grid-gap: 50px 20px;
