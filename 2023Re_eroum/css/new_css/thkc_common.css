@@ -277,10 +277,10 @@ section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap p{
     margin-right: 10px;  border-radius: 10px;
 }
 section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_allPrice{
-    background:#EDEDED; padding: 0px 26px; 
+    background:#EDEDED; padding: 0px 31px; 
 }
 section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_salePrice{
-    background:#FF9015; padding: 0px 10px;
+    background:#FF9015; padding: 0px 15px;
     color: #fff;
 }
 section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .Price_03{
@@ -495,6 +495,18 @@ section.thkc_section .pdWrap .pdBoxWrap {
         display: none;
     }
     section.thkc_section .pd_BoxWrap .pd_Title .pd_Tag .tag:last-child { display: none; }
+    section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap p{ 
+        font-size: 10px;
+    }
+    section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_allPrice{
+      padding: 0px 19px; 
+    }
+    section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_salePrice{
+       padding: 0px 5px;      
+    }
+    section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .Price_03{
+        font-size: 16px; line-height: 140%;
+    }
 
  } 
 
