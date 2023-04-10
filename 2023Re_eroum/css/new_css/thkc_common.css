@@ -277,10 +277,10 @@ section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap p{
     margin-right: 10px;  border-radius: 10px;
 }
 section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_allPrice{
-    background:#EDEDED; padding: 0px 31px; 
+    background:#EDEDED; padding: 0px 26px; 
 }
 section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .pd_salePrice{
-    background:#FF9015; padding: 0px 15px;
+    background:#FF9015; padding: 0px 10px;
     color: #fff;
 }
 section.thkc_section .pd_BoxWrap .price_BoxWrap .priceWrap .Price_03{
