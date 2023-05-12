@@ -95,6 +95,7 @@ var swiper = new Swiper(".mySwiper_band", {
     nextEl: ".topBanner_swiper_navi .swiper-button-next",
     prevEl: ".topBanner_swiper_navi .swiper-button-prev",
   },
+  loop: true, 
 });
 
 //Top버튼 올라가기
