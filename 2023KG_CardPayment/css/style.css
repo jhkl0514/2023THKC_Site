@@ -365,7 +365,7 @@ html,body{height: 100%;}
     }
     .preListWrap .listWrap .listType{
       display: flex; align-items: center;
-      gap: 5px;
+      gap: 7px;
     }
     .listWrap .font_L01{
       font-weight: 500;
