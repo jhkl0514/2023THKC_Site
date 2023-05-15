@@ -275,7 +275,7 @@ html,body{height: 100%;}
         font-size: 14px;
         letter-spacing: -0.03em;
         padding: 15px 20px;
-        margin: 10px 0;
+        margin: 10px 0 5px 0;
       }
       .m_PayClaimWrap>.list{
         display: flex; justify-content: space-between; align-items: center;
