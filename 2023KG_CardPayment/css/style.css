@@ -385,7 +385,7 @@ html,body{height: 100%;}
     }
     
     .list_hr02{
-      border: 0.5px solid rgba(51, 51, 51, 0.2);       
+      border: 0.5px solid rgba(51, 51, 51, 0.2); border-bottom: 0px;       
     }
 
     /* 결제완료OK */
