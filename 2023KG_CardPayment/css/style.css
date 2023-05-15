@@ -441,6 +441,15 @@ html,body{height: 100%;}
 }
 @media (max-width: 430px){}
 @media (max-width: 360px){}
-@media (max-width: 320px){}
+@media (max-width: 320px){
+  .m_PayMainTitle{
+    font-size: 18px;
+  }
+  .m_PayClaimWrap,
+  .m_PayClaimWrap>.list>.font_B03,
+  .m_boxOK{    
+    font-size: 12px;    
+  } 
+}
 
 
