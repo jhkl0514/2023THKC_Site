@@ -41,8 +41,11 @@
 <body>
     <!-- ## 상단 메뉴 영역 ## -->
     <div id="thkc_headerWrap">
+        <div class="topBanner_mode">
+            "구매모드" 실행 중입니다
+        </div>
         <!-- 최상단 띠 배너 (스와이퍼 슬라이드) -->
-        <div id="topBannerWrap">
+        <!-- <div id="topBannerWrap">            
             <div class="topBanner">
                 <div class="topBanner_swiper_navi">
                     <div class="swiper-button-next"></div>
@@ -56,7 +59,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- GNB -->
         <header class="thkc_container">
             <nav class="thkc_nav">
@@ -120,9 +123,13 @@
                         <p class="memTitle"><!-- 회원이름 -->
                             훌라복지 사업<span class="dir"> 님</span>
                         </p>
-                        <p class="member_modi">
-                            <a href="member_modify_step00.html">회원정보 수정</a>
-                        </p>
+                        <!-- <p class="member_modi">
+                            <a href="#" onclick="location.href='https://eroumcare.com/bbs/member_confirm.php?url=member_info_newform.php'">회원정보 수정</a>
+                        </p> -->
+                        <p>
+                            <a href="member_modify_step00.html" class="member_modi">[회원정보 수정]</a> &nbsp;
+                            <a href="#" class="member_modi">[구매모드]</a>
+                        </p>                                           
                     </div>
 
                     <!-- 쿠폰, 장바구니, 간편메뉴, 고객센터 -->

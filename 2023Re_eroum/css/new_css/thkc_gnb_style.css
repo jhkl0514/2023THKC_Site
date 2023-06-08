@@ -13,6 +13,9 @@
 
 #topBannerWrap .topBanner_swiper_navi .swiper-button-prev { left: -15px; background-image: url("../../img/new_main_eroum/thkc_btn_arrow_prev.svg"); background-repeat: no-repeat; background-size: auto; background-position: center; transform: translateY(-50%) rotate(360deg); width: 30px; height: 30px; } 
 
+/* 구매모드 띠 배너 */
+.topBanner_mode { height: 48px; text-align: center; color: #fff; background: #555; display: flex; justify-content: center; align-items: center;} 
+
 
 /* 상단 라인 */
 #topLine { height: 1px; background: #E7E7E7; } 

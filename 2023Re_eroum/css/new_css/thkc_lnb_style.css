@@ -7,7 +7,7 @@ aside.thkc_aside { width: 264px; background: #fff; }
 
 #memberWrap { margin-top: 32px; } 
 
-#memberWrap .thkc_memberTitle { height: 120px; } 
+#memberWrap .thkc_memberTitle { height: 120px; text-align: center;} 
 
 aside.thkc_aside .memTitle { font-weight: 500; font-size: 24px; line-height: 35px; text-align: center; letter-spacing: -0.03em; padding: 0 0 8px 0; } 
 
