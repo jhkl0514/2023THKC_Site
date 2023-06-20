@@ -42,7 +42,7 @@
     <!-- ## 상단 메뉴 영역 ## -->
     <div id="thkc_headerWrap">
         <div class="topBanner_mode">
-            "구매모드" 실행 중입니다
+            "급여가 안내" 모드 실행 중입니다
         </div>
         <!-- 최상단 띠 배너 (스와이퍼 슬라이드) -->
         <!-- <div id="topBannerWrap">            
@@ -126,11 +126,76 @@
                         <!-- <p class="member_modi">
                             <a href="#" onclick="location.href='https://eroumcare.com/bbs/member_confirm.php?url=member_info_newform.php'">회원정보 수정</a>
                         </p> -->
-                        <p>
-                            <a href="member_modify_step00.html" class="member_modi">[회원정보 수정]</a> &nbsp;
-                            <a href="#" class="member_modi">[구매모드]</a>
-                        </p>                                           
+                        <p style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+                            <a href="member_modify_step00.html" class="member_modi">· 회원정보 수정</a> &nbsp;&nbsp;
+                            <span class="member_modi" style="display: flex; align-items: center; justify-content: center;">· 급여가 안내 &nbsp;
+                                <label class="switch left-right">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                  </label>                                  
+                            </span>
+                            
+                        </p>
+                                                                  
                     </div>
+                    <style>
+                        .switch {
+                          position: relative;
+                          display: inline-block;
+                          width: 35px;
+                          height: 16px;
+                        }
+                        
+                        .switch input {
+                          opacity: 0;
+                          width: 0;
+                          height: 0;
+                        }
+                        
+                        .slider {
+                          position: absolute;
+                          cursor: pointer;
+                          top: 0;
+                          left: 0;
+                          right: 0;
+                          bottom: 0;
+                          background-color: gray;
+                          -webkit-transition: .4s;
+                          transition: .4s;
+                          border-radius: 10px;
+                        }
+                        
+                        input:checked + .slider {
+                          background-color: orange;
+                        }
+                        
+                        .slider:before {
+                          position: absolute;
+                          content: "";
+                          height: 12px;
+                          width: 12px;
+                          left: 4px;
+                          bottom: 2px;
+                          background-color: white;
+                          -webkit-transition: .4s;
+                          transition: .4s;
+                          border-radius: 50%;
+                        }
+                        
+                        input:checked + .slider:before {
+                           -webkit-transform: translateX(-15px);
+                          -ms-transform: translateX(-15px);
+                          transform: translateX(-15px);
+                          
+                        }
+                        
+                        /* Custom styles for left and right switch */
+                        .switch.left-right input:checked + .slider:before {
+                            -webkit-transform: translateX(15px);
+                          -ms-transform: translateX(15px);
+                          transform: translateX(15px);
+                        }
+                      </style>
 
                     <!-- 쿠폰, 장바구니, 간편메뉴, 고객센터 -->
                     <div class="thkc_leftMenuWrap">
