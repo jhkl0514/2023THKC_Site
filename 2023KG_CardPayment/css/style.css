@@ -23,13 +23,50 @@ html,body{height: 100%;}
 }
 .hanacardWrap p span a{
   position: absolute;
-  right: 0px;
-  padding: 20px;
+  top:20px;
+  right: 20px; 
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: #B1AFB2;
+  display: flex; justify-content: center; align-items: center;
 }
+.hanacardWrap p span a:hover{
+  background-color: #44BDD8;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.hanacardWrap p span a:not(:hover){
+  background-color: #B1AFB2;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
 .hanacardWrap .hanacardImg{
   background-image: url(../img/hanacard_img.jpg);
   background-repeat: no-repeat;
   }
+
+.hanacardWrap .hanacarBtn{
+  width: 630px; height: 70px;
+  background: linear-gradient(to right, #2FDCC9 0%, #519EE6 100%);
+  transition: background-color 0.5s;
+  text-align: center;
+  color: #FFF;
+  font-size: 28px;  font-weight: 500;
+  display: flex; justify-content: center; align-items: center;   
+}
+.hanacardWrap .hanacarBtn img{
+  width: 20px; height: 23px;
+  margin: 12px 10px 10px 10px;
+}
+
+.hanacardWrap .hanacarBtn:hover{
+  background: linear-gradient(45deg, #26dbc6, #4393df);
+  transition: background-color 0.5s  ease infinite;
+}
+
+
+
 /* 하나카드 */
 
 .visalWrap{
