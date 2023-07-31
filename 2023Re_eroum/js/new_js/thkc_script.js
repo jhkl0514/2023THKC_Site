@@ -46,6 +46,21 @@ $(".f_Fsns").clone().appendTo(".m_f_Fsns")
 $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 
 
+
+// var swiper = new Swiper(".mySwiper", {
+//   cssMode: true,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+//   mousewheel: true,
+//   keyboard: true,
+// });
+
+
 // 사업소 이벤트 Swiper               
 var swiper = new Swiper(".eventWrap .eventSwiper", {
   slidesPerView: "auto",
@@ -55,17 +70,22 @@ var swiper = new Swiper(".eventWrap .eventSwiper", {
     delay: 5000,
     disableOnInteraction: false,
   },
-  loop: true,
+  // loop: true,
   loopAdditionalSlides: 1,
   pagination: {
     el: ".wrap_swiper_navi .swiper-pagination",
     clickable: true,
   },
+ 
   navigation: {
     nextEl: ".wrap_swiper_navi .swiper-button-next",
     prevEl: ".wrap_swiper_navi .swiper-button-prev",
   },
 });
+
+
+
+
 
 
 var swiper = new Swiper(".mySwiper_guide", {

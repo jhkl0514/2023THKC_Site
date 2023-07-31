@@ -2,11 +2,40 @@
 html,body{height: 100%;}
 
 
-.visual{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; }
+.visual{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; position: relative; }
+
+/* 하나카드 */
+.hanacardWrap{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; 
+}
+.hanacardWrap p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hanacardWrap p span{
+  width: 630px; height: 560px;
+  position: relative;
+}
+.hanacardWrap p span a{
+  position: absolute;
+  right: 0px;
+  padding: 20px;
+}
+.hanacardWrap .hanacardImg{
+  background-image: url(../img/hanacard_img.jpg);
+  background-repeat: no-repeat;
+  }
+/* 하나카드 */
+
 .visalWrap{
   margin: 0 auto;
   width: 600px;height: 580px;
-  background: white;  
+  background: white; 
 }
 .headerTitle{
   background: #111111;
