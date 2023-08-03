@@ -316,6 +316,11 @@ input[type="checkBox"]
     .matchingPolicy{
         margin: 20px 0;    
     }
+    input.thkc_inputM[type="text"], input.thkc_inputM[type="number"], input.thkc_inputM {
+        width: 100%;
+    }
+        
+
 
     
     
