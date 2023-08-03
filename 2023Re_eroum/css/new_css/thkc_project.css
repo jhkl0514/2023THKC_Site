@@ -1,0 +1,334 @@
+@charset "utf-8";
+.f_bold500{
+    font-weight: 500;
+}
+
+.matchingTop{
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, #7802E4 0%, #5078DD 100%);
+    display: flex; align-items: center;
+    color: #fff;
+}
+.matchingTop .matchingImg{
+    width: 55%;
+    padding: 15px 50px;    
+}
+
+.matchingTop .titleSummary{
+    width: 45%;
+}
+.matchingTop .titleSummary h2{
+    width: 45%;
+    padding-bottom: 10px;
+}
+.matchingTop .titleSummary ul li{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 160%;
+    display: flex;
+}
+.matchingTop .titleSummary ul li img{
+    padding-right: 7px;
+}
+.matchingkeyInput{
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+    padding: 50px 0;   
+}
+.matchingkeyInput h4{
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.matchingkeyInput ul li{
+    display:flex; 
+    justify-content: flex-end;
+    font-size: 20px;
+    padding: 3px 0;
+}
+.matchingkeyInput ul li p{
+    padding-right: 20px;
+    display: flex;  align-items: center;
+}
+
+
+input.thkc_input::placeholder{
+    color: #999 !important; opacity: 0.5;}
+
+
+input.thkc_input[type="text"],
+input.thkc_input[type="number"],
+input.thkc_input {    
+    height: 45px;
+    border: 1px solid #DDDDDD; border-radius: 5px;
+    padding: 0 15px; box-sizing: border-box;
+    vertical-align: top; font-size: 16px;
+    color: #494949; outline: none;
+}
+input.inpuSize01{
+     width: 410px;
+}
+input.inpuSize02{
+    width: 83px;
+}
+input.inpuSize03{
+    width: 150px;
+}
+
+.matchingQuest{
+    background: #F9F9F9;
+    padding: 10px 0 50px 0;
+}
+.matchingQuest .QuestTitleWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 0;    
+}
+.matchingQuest .QuestTitleWrap p{
+    text-align: center;  
+}
+.matchingQuest .QuestTitleWrap .mQ_title01{
+    font-size: 35px;
+    padding: 5px 0 10px 0;
+}
+.matchingQuest .QuestTitleWrap .mQ_title02{
+    font-weight: 700;
+    color: #5173DD;
+}
+.matchingQuest br{
+    display: none;
+}
+.matchingQuest .QuestTitleWrap .mQ_title03{
+    color: #666;
+    font-size: 14px;
+}
+.QuestBoxWrap{
+    padding: 30px;    
+}
+.QuestBoxWrap p{
+    font-size: 18px; 
+    padding: 10px 0;
+    font-weight: 500;
+}
+.QuestBoxWrap p>span{
+    color: #5270DD;
+}
+.QuestBoxWrap p>b{
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #7304FF;
+    background: #fff;
+    padding: 2px 5px;
+}
+.QuestBoxWrap ul{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: 1px solid #E7E7E7;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+.QuestBoxWrap .Questdf{
+    display: flex;
+    justify-content: space-between;
+}
+.QuestBoxWrap ul li{
+    padding: 5px 0;
+    display: flex; align-items: center;
+}
+.QuestBoxWrap ul li span{
+    padding:0 0 0 10px;
+}
+.QuestBoxWrap input[type="radio"],
+input[type="checkBox"]
+{
+  width: 20px; height: 20px;
+}
+
+.matchingPolicy{
+    margin: 70px 0;    
+}
+.matchingPolicy>p{
+    text-align: center;
+    padding: 0 0 30px 0;
+    color: #666;  
+}
+.matchingPolicy h1{
+    font-size: 35px;
+    font-weight: 400;
+    padding: 5px 0;
+    text-align: center;
+}
+.matchingPolicy .policyWrqp{
+    border-radius: 5px;
+    border: 1px solid #E7E7E7;
+    background: #F7F7F7;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+.matchingPolicy .policyWrqp .p_text{
+    color: #666;
+}
+.matchingPolicy .policyWrqp .agreeForm {
+    width: 100%; height: 200px; overflow: auto;
+    padding:0 20px;
+}
+.matchingPolicy .matchingAgree{    
+    display: flex;
+    justify-content: center;
+}
+.matchingPolicy .matchingAgree>ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 50px 0;
+    width: 30%;
+}
+.matchingPolicy .matchingAgree ul>li{
+    display: flex;
+    align-items: center;    
+    gap: 7px; 
+}
+.matchingBtnWrap{
+    display: flex; justify-content: center;
+    padding: 10px 0;
+}
+.matchingBtnWrap a{    
+    display: flex; align-items: center;
+    gap: 20px;
+    border-radius: 50px;
+    background: #694AE4;   
+    padding: 15px 70px;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+}
+.matchingBtnWrap a:hover{
+    background: #7D00E5;  
+}
+
+
+
+/********** css responsive **********/
+@media (max-width: 1399px){}
+   
+@media (max-width: 1199px) {} 
+   
+@media (max-width: 991px) {} 
+   
+@media (max-width: 767px){
+    .matchingTop {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .matchingTop .matchingImg{
+        width: 100%;
+        padding: none;
+        margin: 0 0 20px 0;
+    }
+    .matchingTop .matchingImg img{
+        width: 100%;        
+    }
+    .matchingTop .titleSummary{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;           
+    }
+    .matchingTop .titleSummary h2{
+        font-size: 20px;
+        width: 100%;
+        text-align: center; 
+    }
+    .matchingTop .titleSummary ul li {
+        font-size: 14px;
+    }
+   
+    .matchingkeyInput ul>li{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 0 0;
+        font-size: 18px;
+    }
+    .matchingkeyInput ul>li>div{
+        line-height: 10%;
+    }
+    .matchingkeyInput ul>li>input{
+        display: flex;
+        flex-direction: column;
+    }
+    input.thkc_input[type="text"], input.thkc_input[type="number"], input.thkc_input {
+        min-width: 10%;
+        width: 100%;
+    }
+    input.inpuSize01{
+        min-width: 10%;
+        width: 100%;
+    }
+    input.inpuSize02{
+        min-width: 10%;
+        width: 50%;
+    
+    }
+    input.inpuSize03{
+        min-width: 10%;
+        width: 50%;  
+    }
+    .QuestBoxWrap ul li{
+        padding:5px 20px;
+    }
+    .QuestBoxWrap .Questdf {
+      display: flex;
+      flex-direction: column;
+    }
+    .QuestBoxWrap {
+       padding: 20px 0px;
+    }
+    .matchingQuest {
+        background: #fff;
+        padding: 10px 0 50px 0;
+    }
+    .matchingPolicy .matchingAgree{
+        padding: 0 0 0 20px;
+    }
+    .matchingPolicy .matchingAgree>ul {
+        display:block;  
+        padding: 30px 0 50px 0;
+        width: 100%;
+    }    
+    .matchingBtnWrap a{ 
+        gap: 10px;   
+        padding: 15px 25px;
+        font-size: 20px; 
+    }
+    .matchingBtnWrap a img{
+        width: 70%;
+    }
+    .matchingPolicy .policyWrqp {   
+        background: #F7F7F7;
+        padding: 30px 10px;
+        font-size: 12px;
+    }
+    .matchingPolicy .policyWrqp .agreeForm {
+        padding: 0 5px;
+    }
+    
+    
+}
+
+@media (max-width: 430px) { } 
+
+@media (max-width: 360px) {
+    .matchingQuest br{
+        display: block;
+    }
+} 
+
+
+
+
+
