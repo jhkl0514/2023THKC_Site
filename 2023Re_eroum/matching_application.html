@@ -347,6 +347,8 @@
         <div id="thkc_conWrap">
             <section class="thkc_section">               
                 <!-- 예비수급자 & 보호자  매칭 서비스 신청서 start -->
+                    <!-- 관리자 페이지에서만 display -->
+                   <div>엑셀다운로드</div> 
                 <div class="matchingTitle">
                     <h3>예비수급자 & 보호자 <br><span class="f_bold700">매칭 서비스 신청서</span></h3>
                 </div>
@@ -369,22 +371,15 @@
                     <ul>
                         <li><p>사업자번호<b>*</b></p>
                             <label for="number" class="thkc_blind">사업자번호</label>
-                            <input class="thkc_input inpuSize01" id="" name="" placeholder="숫자만 입력 " maxlength="12" value="" type="text" autocomplete="off">
+                            <input class="thkc_inputM" id="" name="" placeholder="숫자만 입력 " maxlength="12" value="" type="text" autocomplete="off">
                         </li>
                         <li><p>대표자 성명 <b>*</b></p>
                             <label for="boss_name" class="thkc_blind">대표자 성명</label>
-                            <input class="thkc_input inpuSize01" id="boss_name" placeholder="홍길동" value="" type="text" />
+                            <input class="thkc_inputM " id="boss_name" placeholder="홍길동" value="" type="text" />
                         </li>
                         <li><p>휴대전화번호 <b>*</b></p>
-                            <div>
-                            <label for="tell" class="thkc_blind">사휴대전화번호</label>
-                                <input class="thkc_input inpuSize02" placeholder="010" id="" name="" maxlength="3"
-                                            value="" type="text" /> &nbsp;
-                                <input class="thkc_input inpuSize03" placeholder="0000" id="" name="" maxlength="4"
-                                            value="" type="text" /> &nbsp;
-                                <input class="thkc_input inpuSize03" placeholder="00000" id="" name="" maxlength="4"
-                                            value="" type="text" />
-                            </div>    
+                            <label for="number" class="thkc_blind">휴대전화번호</label>
+                            <input class="thkc_inputM " id="" name="" placeholder="010-1111-2222 " maxlength="12" value="" type="text" autocomplete="off">  
                         </li>
                     </ul>                   
                 </div>
