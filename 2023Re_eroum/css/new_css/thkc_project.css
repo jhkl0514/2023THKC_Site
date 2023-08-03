@@ -60,27 +60,18 @@
 }
 
 
-input.thkc_input::placeholder{
+input.thkc_inputM::placeholder{
     color: #999 !important; opacity: 0.5;}
 
-
-input.thkc_input[type="text"],
-input.thkc_input[type="number"],
-input.thkc_input {    
+input.thkc_inputM[type="text"],
+input.thkc_inputM[type="number"],
+input.thkc_inputM {
+    width: 400px;   
     height: 45px;
     border: 1px solid #DDDDDD; border-radius: 5px;
     padding: 0 15px; box-sizing: border-box;
     vertical-align: top; font-size: 16px;
     color: #494949; outline: none;
-}
-input.inpuSize01{
-     width: 410px;
-}
-input.inpuSize02{
-    width: 83px;
-}
-input.inpuSize03{
-    width: 150px;
 }
 
 .matchingQuest{
@@ -264,7 +255,9 @@ input[type="checkBox"]
         font-size: 18px;
         padding-bottom: 10px;
     }
-   
+    .matchingkeyInput ul{
+        width: 100%;
+    }
     .matchingkeyInput ul>li{
         display: flex;
         flex-direction: column;
@@ -278,23 +271,7 @@ input[type="checkBox"]
         display: flex;
         flex-direction: column;
     }
-    input.thkc_input[type="text"], input.thkc_input[type="number"], input.thkc_input {
-        min-width: 10%;
-        width: 100%;
-    }
-    input.inpuSize01{
-        min-width: 10%;
-        width: 100%;
-    }
-    input.inpuSize02{
-        min-width: 10%;
-        width: 50%;
-    
-    }
-    input.inpuSize03{
-        min-width: 10%;
-        width: 50%;  
-    }
+     
     .QuestBoxWrap ul li{
         padding:5px 20px;
     }
@@ -336,6 +313,10 @@ input[type="checkBox"]
     .matchingTitle br{
         display: block;
     }
+    .matchingPolicy{
+        margin: 20px 0;    
+    }
+
     
     
 }
