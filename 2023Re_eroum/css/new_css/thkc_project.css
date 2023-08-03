@@ -336,7 +336,7 @@ input[type="checkBox"]
     
 }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
     .matchingQuest br{
         display: block;
     }
