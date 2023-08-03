@@ -2,6 +2,18 @@
 .f_bold500{
     font-weight: 500;
 }
+.matchingExcel{
+   /* display: none; */
+   display: flex;
+   justify-content: end;   
+}
+.matchingExcel a{    
+    border-radius: 7px;
+    background: #2FA46C;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+ }
 .matchingTitle { margin: 60px 0 40px 0; } 
 
 .matchingTitle h3 {font-size: 35px; font-weight: 400;  text-align: center; } 
