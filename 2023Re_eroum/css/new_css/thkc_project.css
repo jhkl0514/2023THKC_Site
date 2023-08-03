@@ -336,12 +336,14 @@ input[type="checkBox"]
     
 }
 
-@media (max-width: 430px) { } 
-
-@media (max-width: 360px) {
+@media (max-width: 430px) {
     .matchingQuest br{
         display: block;
     }
+} 
+
+@media (max-width: 360px) {
+  
 } 
 
 
