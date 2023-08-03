@@ -199,6 +199,8 @@ input.thkc_inputM {
 }
 
 .QuestBoxWrap input[type="radio"],
+input[type="checkBox"],
+.matchingAgree input[type="radio"],
 input[type="checkBox"] {
     width: 20px;
     height: 20px;
