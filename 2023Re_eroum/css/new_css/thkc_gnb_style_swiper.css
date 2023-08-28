@@ -73,7 +73,7 @@ nav.thkc_nav>.menuWrap02>.swiper_m>.swiper-wrapper>.swiper-slide_m img {
     } 
 
 nav.thkc_nav .menuWrap02 .swiper_m .swiper-wrapper {
-        touch-action: pan-y;
+        touch-action: pan-x;
     }
 
 /* 상단 메인메뉴 바 active */
