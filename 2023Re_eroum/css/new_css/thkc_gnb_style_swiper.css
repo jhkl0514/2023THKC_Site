@@ -69,10 +69,15 @@ nav.thkc_nav>.menuWrap02>.swiper_m>.swiper-wrapper>.swiper-slide_m img {
     display: block;
     width: 100%;
     height: 100%;    
-    object-fit: cover;
+    object-fit: hidden;
     } 
 
+nav.thkc_nav .menuWrap02 .swiper_m .swiper-wrapper {
+        touch-action: pan-y;
+    }
+
 /* 상단 메인메뉴 바 active */
+nav.thkc_nav .main_menu{ width: 100%; background: pink;}
 nav.thkc_nav .main_menu li { position: relative; height: 100%; display: flex; align-items: center; } 
 
 nav.thkc_nav .main_menu li a { height: 100%; display: flex; align-items: center; } 
@@ -164,6 +169,7 @@ nav.thkc_nav .toggle.active .bar3 { transform: translateY(0) rotate(-315deg); }
  }
 
 @media (max-width: 767px){
+
  #topBannerWrap .topBanner { width: 100%; font-size: 14px; } 
 
  #topBannerWrap .mySwiper_band { width: 80%; } 
