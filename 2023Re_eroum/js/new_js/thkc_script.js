@@ -62,14 +62,14 @@ $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 
 var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
   slidesPerView: 1,
-      spaceBetween: 5,
+      spaceBetween: 1,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
       slidesPerView: "auto",
       autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -82,8 +82,8 @@ var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
           spaceBetween: 1,
         },
         640: {
-          slidesPerView: 4,
-          spaceBetween: 1,
+          slidesPerView: 3,
+          spaceBetween: 2,
         },
         768: {
           slidesPerView: 4,
