@@ -61,8 +61,8 @@ $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 // });
 
 var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
-  slidesPerView: 1,
-      spaceBetween: 100,
+  slidesPerView: 4,
+      spaceBetween: 10,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -75,15 +75,15 @@ var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
       breakpoints: {
         300: {
           slidesPerView: 2,
-          spaceBetween: 50,
+          spaceBetween: 1,
         },
         400: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 1,
         },
         640: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 1,
         },
         768: {
           slidesPerView: 4,
