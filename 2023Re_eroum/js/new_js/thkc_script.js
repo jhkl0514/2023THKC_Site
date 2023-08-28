@@ -61,7 +61,7 @@ $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 // });
 
 var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
-  slidesPerView: 1,
+  slidesPerView: 3,
       spaceBetween: 1,
       pagination: {
         el: ".swiper-pagination",
