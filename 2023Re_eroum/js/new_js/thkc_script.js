@@ -60,7 +60,7 @@ $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 //   keyboard: true,
 // });
 
-var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
+var swiper = new Swiper(" .mySwiper_menu", {
   slidesPerView: 4,
       spaceBetween: 10,
       pagination: {
