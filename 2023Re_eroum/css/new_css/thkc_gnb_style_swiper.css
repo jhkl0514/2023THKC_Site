@@ -56,23 +56,24 @@ nav.thkc_nav .logout { font-size: 14px; }
 nav.thkc_nav .menuWrap02 .swiper_m {
     width: 500px; 
     }
-/* nav.thkc_nav .menuWrap02 .swiper-slide_m {
+nav.thkc_nav .menuWrap02 .swiper-slide_m {
     width: 100%;   
     text-align: center;
-    background:skyblue;
+    background: #efefef;
     display: flex;
     justify-content: center;
     align-items: center;   
     }
 
-nav.thkc_nav .menuWrap02 .swiper-slide_m img {
+nav.thkc_nav>.menuWrap02>.swiper_m>.swiper-wrapper>.swiper-slide_m img {
     display: block;
     width: 100%;
     height: 100%;    
     object-fit: cover;
-    }  */
+    } 
 
 /* 상단 메인메뉴 바 active */
+nav.thkc_nav .main_menu{ width: 100%; background: pink;}
 nav.thkc_nav .main_menu li { position: relative; height: 100%; display: flex; align-items: center; } 
 
 nav.thkc_nav .main_menu li a { height: 100%; display: flex; align-items: center; } 
