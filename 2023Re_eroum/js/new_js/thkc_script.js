@@ -60,16 +60,16 @@ $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 //   keyboard: true,
 // });
 
-var swiper = new Swiper(" .mySwiper_menu", {
-  slidesPerView: 4,
-      spaceBetween: 10,
+var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
+  slidesPerView: 1,
+      spaceBetween: 5,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
       slidesPerView: "auto",
       autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -77,12 +77,12 @@ var swiper = new Swiper(" .mySwiper_menu", {
           slidesPerView: 2,
           spaceBetween: 1,
         },
-        400: {
+        360: {
           slidesPerView: 3,
           spaceBetween: 1,
         },
         640: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 1,
         },
         768: {
@@ -96,7 +96,6 @@ var swiper = new Swiper(" .mySwiper_menu", {
       },
   
 });
-
 
 
 
