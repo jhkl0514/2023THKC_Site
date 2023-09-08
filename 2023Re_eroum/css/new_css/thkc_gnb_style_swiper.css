@@ -37,6 +37,10 @@ nav.thkc_nav .sub_menu { display: flex; align-items: center; gap: 10px; }
 
 nav.thkc_nav .searchWrap { display: flex; align-items: center; margin-left: auto; gap: 20px; } 
 
+nav.thkc_nav .menuWrap02 .mySwiper_menu .mainMenu_swiper_navi { position: absolute; left: 0px; right: 0px; top: 40px; width: 100%; max-width: 1000px; }
+nav.thkc_nav .menuWrap02 .mySwiper_menu .mainMenu_swiper_navi .swiper-button-next { background: pink; right: -30px; background-image: url("../../img/new_common/thkc_icon_down-b.png"); background-repeat: no-repeat; background-size: auto; background-position: center; transform: translateY(-50%) rotate(180deg); width: 30px; height: 30px; } 
+nav.thkc_nav .menuWrap02 .mySwiper_menu .mainMenu_swiper_navi .swiper-button-prev { background: pink; left: -15px; background-image: url("../../img/new_main_eroum/thkc_btn_arrow_prev.svg"); background-repeat: no-repeat; background-size: auto; background-position: center; transform: translateY(-50%) rotate(360deg); width: 30px; height: 30px; } 
+
 /* search */
 nav.thkc_nav .thkc_search { position: relative; } 
 
@@ -69,7 +73,7 @@ nav.thkc_nav .logout { font-size: 14px; }
     display: block;
     width: 100%;
     height: 100%;    
-    object-fit: cover;
+    object-fit: hidden;
     } 
 
 /* nav.thkc_nav .menuWrap02 .swiper_m .swiper-wrapper {

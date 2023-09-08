@@ -60,44 +60,75 @@ $(".banner_eroum").clone().appendTo(".m_banner_eroum")
 //   keyboard: true,
 // });
 
+// var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
+//   slidesPerView: 1,
+//       spaceBetween: 5,
+//       pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//       },
+//       slidesPerView: "auto",
+//       autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: false,
+//       },
+//       breakpoints: {
+//         300: {
+//           slidesPerView: 2,
+//           spaceBetween: 1,
+//         },
+//         360: {
+//           slidesPerView: 3,
+//           spaceBetween: 1,
+//         },
+//         640: {
+//           slidesPerView: 4,
+//           spaceBetween: 1,
+//         },
+//         768: {
+//           slidesPerView: ,
+//           spaceBetween: 1,
+//         },
+//         1024: {
+//           slidesPerView: 4,
+//           spaceBetween: 1,
+//         },
+//       },
+  
+// });
+
 var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
   slidesPerView: 1,
-      spaceBetween: 5,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+  spaceBetween: 5, 
+      navigation: {
+        nextEl: ".menu_swiper_navi .swiper-button-next",
+        prevEl: ".menu_swiper_navi .swiper-button-prev",
+      },         
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      //   dynamicBullets: true,        
+      // },
       slidesPerView: "auto",
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
       breakpoints: {
-        300: {
+        240: {
           slidesPerView: 2,
-          spaceBetween: 1,
+          spaceBetween: 5,
         },
-        360: {
+        335: {
           slidesPerView: 3,
-          spaceBetween: 1,
+          spaceBetween: 5,
         },
-        640: {
+        460: {
           slidesPerView: 4,
-          spaceBetween: 1,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 1,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 1,
-        },
-      },
-  
-});
-
-
+          spaceBetween: 5,
+        }
+      },          
+ });
 
 // 사업소 이벤트 Swiper               
 var swiper = new Swiper(".eventWrap .eventSwiper", {
