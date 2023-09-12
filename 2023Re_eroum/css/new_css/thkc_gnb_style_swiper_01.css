@@ -134,13 +134,12 @@ nav.thkc_nav {
 	margin-left:-10px;
 }
 .mySwiper_menu {
-    width: 500px; 
+    width: 520px; 
     }
 .swiper-slide_m {
     width: 100%;   
     text-align: center;
     font-size: 18px;
-    /* background: #a0ff9d; */
     display: flex;
     justify-content: center;
     align-items: center;   
@@ -154,6 +153,40 @@ nav.thkc_nav {
     object-fit: cover;
     background: blue;
     }
+    .mainMenu_swiper_navi {
+        display: none;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 125px;
+        width: 100%;
+        height: 50px;
+        _min-width: 100%;
+        _max-width: 460px;
+    }
+    
+    .mainMenu_swiper_navi .swiper-button-next {
+        _background: pink;
+        right: 0px;
+        background-image: url("../../img/new_common/thkc_ico_arrow_next_02.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        transform: translateY(-50%) rotate(180deg);
+        padding: 15px 15px;
+       
+    }
+    
+    .mainMenu_swiper_navi .swiper-button-prev {
+        _background: skyblue;
+        left: -5px;
+        background-image: url("../../img/new_common/thkc_ico_arrow_next_02.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        transform: translateY(-50%) rotate(0deg);
+        padding: 15px 15px;
+    }    
 
 nav.thkc_nav .menuWrap,
 nav.thkc_nav .menuWrap02 {
@@ -171,7 +204,7 @@ nav.thkc_nav .main_menu {
 nav.thkc_nav .line_gnb {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav.thkc_nav .sub_menu {
@@ -386,6 +419,7 @@ nav.thkc_nav .toggle.active .bar3 {
     nav.thkc_nav .searchWrap {
         margin: auto;
         width: calc(100%/4);
+		z-index:80;
     }
 
     nav.thkc_nav .toggle {
@@ -394,6 +428,7 @@ nav.thkc_nav .toggle.active .bar3 {
         right: 0px;
         top: 30px;
         cursor: pointer;
+		z-index:81;
     }
 }
 
@@ -425,6 +460,7 @@ nav.thkc_nav .toggle.active .bar3 {
 
 
 @media (max-width: 800px) {
+	
     nav.thkc_nav .main_menu li {
         padding: 4px 0;
     }
@@ -451,6 +487,9 @@ nav.thkc_nav .toggle.active .bar3 {
 }
 
 @media (max-width: 767px) {
+	nav.thkc_nav .main_menu>li:after {	
+		bottom: -7px;	
+	}
 	nav.thkc_nav .menuWrap02 .mySwiper_menu { width: 100%;height:90px;position: absolute;}
 	nav.thkc_nav .main_menu li { width: 100%; margin-bottom: 20px; height: 80%;  display: flex; justify-content: center; }
     #topBannerWrap .topBanner {
@@ -490,8 +529,11 @@ nav.thkc_nav .toggle.active .bar3 {
         top: -20px
     }
 
+    .mainMenu_swiper_navi {
+        display: block;
+    }
 	.swiper-slide_m {
-    font-size: 18px;
+        font-size: 18px;
     }
 
     nav.thkc_nav .main_menu {
@@ -566,7 +608,7 @@ nav.thkc_nav .toggle.active .bar3 {
 }
 
 @media (max-width: 640px){
-    nav.thkc_nav .main_menu li a {padding: 12px 3px 12px 0px; } 
+    nav.thkc_nav .main_menu li a {padding: 15px 3px 3px 0px; } 
 	.swiper-slide_m {
     font-size: 16px;
     }
@@ -574,25 +616,11 @@ nav.thkc_nav .toggle.active .bar3 {
 
 
 @media (max-width: 430px) {
-    nav.thkc_nav .menuWrap02 .mySwiper_menu .spWrap{
-        position: absolute;          
-        bottom:-20px;
-        height: 100%; 
-        width: 100%;  
+	nav.thkc_nav .main_menu li a {padding: 3px 3px 3px 0px; } 
+    nav.thkc_nav .main_menu {
+        letter-spacing: -0.05rem;  
+		min-width:360px;		
     }
-    nav.thkc_nav .main_menu li{    
-        padding: 7px 0;
-        border-radius: 10px;
-        padding: 0;
-    }
-    nav.thkc_nav .main_menu>li:active {   
-        background:#efefef;
-        border-radius: 10px;
-    }
-    nav.thkc_nav .main_menu>li:after {
-        display: none;        
-    }
-    
     nav.thkc_nav .thkc_search {      
         top: -40px
     }
@@ -601,6 +629,25 @@ nav.thkc_nav .toggle.active .bar3 {
         height: 40px;
         top:7px
     }
+}
+
+@media (max-width: 460px) {
+    nav.thkc_nav .menuWrap02 .mySwiper_menu .spWrap{
+        position: absolute;          
+        bottom:-26px;
+        height: 100%; 
+        width: 100%;  
+    }
+    nav.thkc_nav .main_menu li{    
+        padding: 7px 0;
+        border-radius: 10px;
+        padding: 0;
+    }
+   
+    nav.thkc_nav .main_menu>li:after {
+        display: none;        
+    }
+
 }
 
 @media (max-width: 360px) {

@@ -101,31 +101,35 @@ var swiper = new Swiper(".menuWrap02 .mySwiper_menu", {
   slidesPerView: 1,
   spaceBetween: 5, 
       navigation: {
-        nextEl: ".menu_swiper_navi .swiper-button-next",
-        prevEl: ".menu_swiper_navi .swiper-button-prev",
+        nextEl: ".mainMenu_swiper_navi .swiper-button-next",
+        prevEl: ".mainMenu_swiper_navi .swiper-button-prev",
       },         
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      //   dynamicBullets: true,        
-      // },
-      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,        
+      },
+      // slidesPerView: "auto",
       // autoplay: {
       //   delay: 3000,
       //   disableOnInteraction: false,
       // },
       breakpoints: {
-        240: {
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        300: {
           slidesPerView: 2,
-          spaceBetween: 5,
+          spaceBetween: 10,
         },
-        335: {
+        400: {
           slidesPerView: 3,
-          spaceBetween: 5,
+          spaceBetween: 10,
         },
-        460: {
+        530: {
           slidesPerView: 4,
-          spaceBetween: 5,
+          spaceBetween: 10,
         }
       },          
  });
